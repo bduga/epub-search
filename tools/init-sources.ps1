@@ -1,4 +1,8 @@
-﻿$sources = @(
+﻿param(
+    [string]$ProjectRoot = (Resolve-Path (Join-Path $PSScriptRoot "..")).Path
+)
+
+$sources = @(
     @{
         id = "epub-overview-33"
         title = "EPUB 3 Overview (3.3)"
@@ -382,7 +386,8 @@
 )
 
 $json = $sources | ConvertTo-Json -Depth 5
-Set-Content -Path "C:\Users\duga\projects\epub-search\data\sources.json" -Value $json -Encoding UTF8
+Set-Content -Path (Join-Path (Join-Path $ProjectRoot "data") "sources.json") -Value $json -Encoding UTF8
 
-$sources | Export-Csv -Path "C:\Users\duga\projects\epub-search\data\sources.csv" -NoTypeInformation -Encoding UTF8
+$sources | Export-Csv -Path (Join-Path (Join-Path $ProjectRoot "data") "sources.csv") -NoTypeInformation -Encoding UTF8
 Write-Output "Successfully wrote $($sources.Count) sources to data/sources.json and data/sources.csv"
+

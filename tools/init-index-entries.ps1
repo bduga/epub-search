@@ -1,4 +1,8 @@
-﻿$entries = @(
+﻿param(
+    [string]$ProjectRoot = (Resolve-Path (Join-Path $PSScriptRoot "..")).Path
+)
+
+$entries = @(
     # EPUB 3.3 Core Specification
     @{
         id = "sec-package-def"
@@ -396,5 +400,6 @@
 )
 
 $json = $entries | ConvertTo-Json -Depth 5
-Set-Content -Path "C:\Users\duga\projects\epub-search\data\index-entries.json" -Value $json -Encoding UTF8
+Set-Content -Path (Join-Path (Join-Path $ProjectRoot "data") "index-entries.json") -Value $json -Encoding UTF8
 Write-Output "Successfully wrote $($entries.Count) deep index entries to data/index-entries.json"
+

@@ -1,10 +1,14 @@
-﻿$prefix = "http://localhost:8080/"
+﻿param(
+    [string]$ProjectRoot = (Resolve-Path (Join-Path $PSScriptRoot "..")).Path,
+    [int]$Port = 8080
+)
+
+$prefix = "http://localhost:$Port/"
 $listener = New-Object System.Net.HttpListener
 $listener.Prefixes.Add($prefix)
 $listener.Start()
-$baseDir = "C:\Users\duga\projects\epub-search"
 
-Write-Output "HTTP server listening at $prefix"
+Write-Output "HTTP server listening at $prefix (serving: $ProjectRoot)"
 
 while ($listener.IsListening) {
     $context = $listener.GetContext()
@@ -14,7 +18,7 @@ while ($listener.IsListening) {
     $localPath = $req.Url.LocalPath.TrimStart('/')
     if ([string]::IsNullOrWhiteSpace($localPath)) { $localPath = "index.html" }
     $localPath = $localPath -replace '/', '\'
-    $filePath = Join-Path $baseDir $localPath
+    $filePath = Join-Path $ProjectRoot $localPath
 
     if (Test-Path $filePath -PathType Leaf) {
         $bytes = [System.IO.File]::ReadAllBytes($filePath)
