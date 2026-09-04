@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EPUB Official Documentation Search Engine</title>
+    <meta name="description" content="Fast, unified search across official W3C EPUB specifications, working group notes, community group reports, and authoring guidelines.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="app-header">
+            <div class="brand-section">
+                <div class="brand-logo" aria-hidden="true">📖</div>
+                <div>
+                    <h1 class="app-title">EPUB Documentation Search</h1>
+                    <p class="app-subtitle">Official W3C specifications, working group notes, and community reports</p>
+                </div>
+            </div>
+            <div class="header-controls">
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle dark mode">🌙 Dark</button>
+            </div>
+        </header>
+
+        <!-- Stats Ribbon -->
+        <div class="stats-ribbon">
+            <div class="stat-item">
+                <span>Indexed Official Sources:</span>
+                <strong id="total-sources-count">38</strong>
+            </div>
+            <div class="stat-item">
+                <span>Deep Specification Sections:</span>
+                <strong id="total-entries-count">29</strong>
+            </div>
+            <div class="stat-item">
+                <span>Publisher Coverage:</span>
+                <strong>PMWG, PubCG, EPUB3 WG</strong>
+            </div>
+        </div>
+
+        <!-- Search Bar -->
+        <section class="search-section" aria-label="Search">
+            <div class="search-input-wrapper">
+                <span class="search-icon" aria-hidden="true">🔍</span>
+                <input 
+                    type="search" 
+                    id="search-input" 
+                    class="search-input" 
+                    placeholder="Search specifications, elements, attributes, or topics... (e.g. manifest, metadata, a11y, spine)" 
+                    autocomplete="off" 
+                    spellcheck="false"
+                    aria-label="Search official EPUB documentation"
+                >
+                <button id="clear-btn" class="clear-btn" aria-label="Clear search">✕</button>
+                <span class="search-shortcut" title="Press / to focus">/</span>
+            </div>
+
+            <!-- Quick Topic Pills -->
+            <div class="quick-tags-wrapper">
+                <span class="quick-tags-label">Quick Searches:</span>
+                <button class="quick-tag" data-query="manifest">manifest</button>
+                <button class="quick-tag" data-query="metadata">metadata</button>
+                <button class="quick-tag" data-query="spine">spine</button>
+                <button class="quick-tag" data-query="navigation toc">navigation (toc)</button>
+                <button class="quick-tag" data-query="accessibility discovery">accessibility metadata</button>
+                <button class="quick-tag" data-query="fixed-layout">fixed-layout</button>
+                <button class="quick-tag" data-query="media overlays audio">media overlays</button>
+                <button class="quick-tag" data-query="reading systems scripting">reading systems</button>
+                <button class="quick-tag" data-query="crosswalk onix">ONIX crosswalk</button>
+            </div>
+        </section>
+
+        <!-- Facet Filter Bar -->
+        <div class="filter-bar" aria-label="Search filters">
+            <div class="filter-group">
+                <select id="filter-type" class="filter-select" aria-label="Filter by Document Type">
+                    <option value="all">All Document Types</option>
+                </select>
+
+                <select id="filter-category" class="filter-select" aria-label="Filter by Topic">
+                    <option value="all">All Topics / Categories</option>
+                </select>
+
+                <select id="filter-publisher" class="filter-select" aria-label="Filter by Publisher">
+                    <option value="all">All Publishers / Groups</option>
+                </select>
+            </div>
+
+            <div class="scope-toggle" role="group" aria-label="Search scope">
+                <button class="scope-btn active" data-scope="all">All Content</button>
+                <button class="scope-btn" data-scope="sections">Spec Sections</button>
+                <button class="scope-btn" data-scope="sources">Full Documents</button>
+            </div>
+        </div>
+
+        <!-- Results Section -->
+        <main>
+            <div class="results-info">
+                <div>
+                    Showing <strong id="result-count">0</strong> results
+                </div>
+                <div>
+                    Search latency: <span id="search-time">0ms</span>
+                </div>
+            </div>
+
+            <div id="results-container" class="results-list" aria-live="polite">
+                <!-- Dynamically populated by app.js -->
+            </div>
+        </main>
+    </div>
+
+    <!-- Data payloads (supports both file:// execution and web servers) -->
+    <script src="data/sources.js"></script>
+    <script src="data/index-entries.js"></script>
+    <script src="js/search-engine.js"></script>
+    <script src="js/data-loader.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
