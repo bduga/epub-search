@@ -83,15 +83,26 @@ class EpubSearchEngine {
     }
 
     /**
-     * Search with query and facet filters
+     * Search with query and multi-select facet filters
      */
     search(query = '', filters = {}) {
         const {
-            category = 'all',
-            type = 'all',
-            publisher = 'all',
+            categories = [],
+            types = [],
+            publishers = [],
             scope = 'all' // 'all' | 'sources' | 'sections'
         } = filters;
+
+        // Support both Set/Array or single string for backwards compatibility
+        const categorySet = categories instanceof Set ? categories : new Set(
+            Array.isArray(categories) ? categories : (categories && categories !== 'all' ? [categories] : [])
+        );
+        const typeSet = types instanceof Set ? types : new Set(
+            Array.isArray(types) ? types : (types && types !== 'all' ? [types] : [])
+        );
+        const publisherSet = publishers instanceof Set ? publishers : new Set(
+            Array.isArray(publishers) ? publishers : (publishers && publishers !== 'all' ? [publishers] : [])
+        );
 
         const trimmed = query.trim().toLowerCase();
         const queryTokens = this.tokenize(trimmed);
@@ -99,7 +110,7 @@ class EpubSearchEngine {
         let candidateIndices = null;
 
         if (queryTokens.length === 0) {
-            // No search query: all docs matching filters
+            // No search query: all docs
             candidateIndices = new Set(this.documents.map((_, i) => i));
         } else {
             // Find docs matching ANY or ALL query tokens (with prefix matching)
@@ -129,14 +140,14 @@ class EpubSearchEngine {
             if (scope === 'sources' && doc.docType !== 'source') return;
             if (scope === 'sections' && doc.docType !== 'section') return;
 
-            // Category filter
-            if (category !== 'all' && doc.category !== category) return;
+            // Multi-select Category filter
+            if (categorySet.size > 0 && !categorySet.has(doc.category)) return;
 
-            // Type filter
-            if (type !== 'all' && doc.type !== type) return;
+            // Multi-select Type filter
+            if (typeSet.size > 0 && !typeSet.has(doc.type)) return;
 
-            // Publisher filter
-            if (publisher !== 'all' && doc.publisher !== publisher) return;
+            // Multi-select Publisher filter
+            if (publisherSet.size > 0 && !publisherSet.has(doc.publisher)) return;
 
             // Compute score
             let score = 0;

@@ -77,24 +77,88 @@
         <!-- Facet Filter Bar -->
         <div class="filter-bar" aria-label="Search filters">
             <div class="filter-group">
-                <select id="filter-type" class="filter-select" aria-label="Filter by Document Type">
-                    <option value="all">All Document Types</option>
-                </select>
+                <!-- Multi-select Types -->
+                <div class="dropdown-multiselect" id="dropdown-type">
+                    <button type="button" class="dropdown-trigger" aria-haspopup="true" aria-expanded="false" id="trigger-type">
+                        <span class="dropdown-trigger-label">Document Types</span>
+                        <span class="dropdown-badge" id="badge-count-type" style="display: none;">0</span>
+                        <span class="dropdown-arrow" aria-hidden="true">▾</span>
+                    </button>
+                    <div class="dropdown-menu" id="menu-type" role="menu">
+                        <div class="dropdown-menu-header">
+                            <span class="dropdown-menu-title">Document Types</span>
+                            <div class="dropdown-actions">
+                                <button type="button" class="dropdown-action-btn action-select-all" data-target="type">Select All</button>
+                                <span class="dropdown-action-sep">·</span>
+                                <button type="button" class="dropdown-action-btn action-clear" data-target="type">Clear</button>
+                            </div>
+                        </div>
+                        <div class="dropdown-options-list" id="options-type">
+                            <!-- Populated dynamically with checkboxes -->
+                        </div>
+                    </div>
+                </div>
 
-                <select id="filter-category" class="filter-select" aria-label="Filter by Topic">
-                    <option value="all">All Topics / Categories</option>
-                </select>
+                <!-- Multi-select Topics / Categories -->
+                <div class="dropdown-multiselect" id="dropdown-category">
+                    <button type="button" class="dropdown-trigger" aria-haspopup="true" aria-expanded="false" id="trigger-category">
+                        <span class="dropdown-trigger-label">Topics / Categories</span>
+                        <span class="dropdown-badge" id="badge-count-category" style="display: none;">0</span>
+                        <span class="dropdown-arrow" aria-hidden="true">▾</span>
+                    </button>
+                    <div class="dropdown-menu" id="menu-category" role="menu">
+                        <div class="dropdown-menu-header">
+                            <span class="dropdown-menu-title">Topics</span>
+                            <div class="dropdown-actions">
+                                <button type="button" class="dropdown-action-btn action-select-all" data-target="category">Select All</button>
+                                <span class="dropdown-action-sep">·</span>
+                                <button type="button" class="dropdown-action-btn action-clear" data-target="category">Clear</button>
+                            </div>
+                        </div>
+                        <div class="dropdown-options-list" id="options-category">
+                            <!-- Populated dynamically -->
+                        </div>
+                    </div>
+                </div>
 
-                <select id="filter-publisher" class="filter-select" aria-label="Filter by Publisher">
-                    <option value="all">All Publishers / Groups</option>
-                </select>
+                <!-- Multi-select Publishers / Groups -->
+                <div class="dropdown-multiselect" id="dropdown-publisher">
+                    <button type="button" class="dropdown-trigger" aria-haspopup="true" aria-expanded="false" id="trigger-publisher">
+                        <span class="dropdown-trigger-label">Publishers / Groups</span>
+                        <span class="dropdown-badge" id="badge-count-publisher" style="display: none;">0</span>
+                        <span class="dropdown-arrow" aria-hidden="true">▾</span>
+                    </button>
+                    <div class="dropdown-menu" id="menu-publisher" role="menu">
+                        <div class="dropdown-menu-header">
+                            <span class="dropdown-menu-title">Publishers</span>
+                            <div class="dropdown-actions">
+                                <button type="button" class="dropdown-action-btn action-select-all" data-target="publisher">Select All</button>
+                                <span class="dropdown-action-sep">·</span>
+                                <button type="button" class="dropdown-action-btn action-clear" data-target="publisher">Clear</button>
+                            </div>
+                        </div>
+                        <div class="dropdown-options-list" id="options-publisher">
+                            <!-- Populated dynamically -->
+                        </div>
+                    </div>
+                </div>
             </div>
 
+            <!-- Scope Toggle -->
             <div class="scope-toggle" role="group" aria-label="Search scope">
                 <button class="scope-btn active" data-scope="all">All Content</button>
                 <button class="scope-btn" data-scope="sections">Spec Sections</button>
                 <button class="scope-btn" data-scope="sources">Full Documents</button>
             </div>
+        </div>
+
+        <!-- Active Filter Pills Bar -->
+        <div id="active-filters-bar" class="active-filters-bar" style="display: none;">
+            <span class="active-filters-label">Active Filters:</span>
+            <div id="active-filter-chips" class="active-filter-chips">
+                <!-- Dynamically populated with removable pill chips -->
+            </div>
+            <button id="clear-all-filters-btn" class="clear-all-filters-btn">Clear All</button>
         </div>
 
         <!-- Results Section -->

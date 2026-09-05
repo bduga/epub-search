@@ -1,5 +1,5 @@
 ﻿/**
- * EPUB Search Engine UI Coordinator
+ * EPUB Search Engine UI Coordinator (with Multi-Select Filtering)
  */
 document.addEventListener('DOMContentLoaded', async () => {
     const searchInput = document.getElementById('search-input');
@@ -9,14 +9,19 @@ document.addEventListener('DOMContentLoaded', async () => {
     const searchTimeEl = document.getElementById('search-time');
     const themeToggleBtn = document.getElementById('theme-toggle');
 
-    // Facet selects / radios
-    const typeFilter = document.getElementById('filter-type');
-    const categoryFilter = document.getElementById('filter-category');
-    const publisherFilter = document.getElementById('filter-publisher');
+    // Filter controls
     const scopeButtons = document.querySelectorAll('.scope-btn');
     const quickTags = document.querySelectorAll('.quick-tag');
+    const activeFiltersBar = document.getElementById('active-filters-bar');
+    const activeFilterChips = document.getElementById('active-filter-chips');
+    const clearAllFiltersBtn = document.getElementById('clear-all-filters-btn');
 
+    // Multi-select state
+    const selectedTypes = new Set();
+    const selectedCategories = new Set();
+    const selectedPublishers = new Set();
     let currentScope = 'all';
+
     const engine = new EpubSearchEngine();
 
     // 1. Initialize Theme
@@ -48,23 +53,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     const { sources, entries } = await EpubDataLoader.load();
     engine.initialize(sources, entries);
 
-    // 3. Populate Facet Dropdowns
+    // 3. Facets & Dropdown Population
     const facets = engine.getFacetCounts();
-
-    function populateSelect(selectEl, counts, defaultLabel) {
-        if (!selectEl) return;
-        selectEl.innerHTML = `<option value="all">${defaultLabel}</option>`;
-        Object.keys(counts).sort().forEach(val => {
-            const opt = document.createElement('option');
-            opt.value = val;
-            opt.textContent = `${val} (${counts[val]})`;
-            selectEl.appendChild(opt);
-        });
-    }
-
-    populateSelect(typeFilter, facets.types, 'All Document Types');
-    populateSelect(categoryFilter, facets.categories, 'All Topics / Categories');
-    populateSelect(publisherFilter, facets.publishers, 'All Publishers / Groups');
 
     // Update Header Stats
     const totalSourcesEl = document.getElementById('total-sources-count');
@@ -72,14 +62,234 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (totalSourcesEl) totalSourcesEl.textContent = facets.totalSources;
     if (totalEntriesEl) totalEntriesEl.textContent = facets.totalEntries;
 
-    // 4. Render Results
+    function populateMultiSelect(containerId, counts, selectedSet, filterKey) {
+        const listEl = document.getElementById(containerId);
+        if (!listEl) return;
+        listEl.innerHTML = '';
+
+        Object.keys(counts).sort().forEach(val => {
+            const optionDiv = document.createElement('div');
+            optionDiv.className = 'dropdown-option';
+
+            const inputId = `filter-${filterKey}-${val.replace(/[^a-zA-Z0-9]/g, '-')}`;
+            const checkbox = document.createElement('input');
+            checkbox.type = 'checkbox';
+            checkbox.id = inputId;
+            checkbox.value = val;
+            checkbox.checked = selectedSet.has(val);
+
+            const label = document.createElement('label');
+            label.htmlFor = inputId;
+
+            const textSpan = document.createElement('span');
+            textSpan.textContent = val;
+
+            const countSpan = document.createElement('span');
+            countSpan.className = 'option-count';
+            countSpan.textContent = counts[val];
+
+            label.appendChild(textSpan);
+            label.appendChild(countSpan);
+
+            optionDiv.appendChild(checkbox);
+            optionDiv.appendChild(label);
+
+            checkbox.addEventListener('change', () => {
+                if (checkbox.checked) {
+                    selectedSet.add(val);
+                } else {
+                    selectedSet.delete(val);
+                }
+                updateDropdownTriggerState(filterKey, selectedSet);
+                renderActiveFilterPills();
+                render();
+            });
+
+            listEl.appendChild(optionDiv);
+        });
+    }
+
+    populateMultiSelect('options-type', facets.types, selectedTypes, 'type');
+    populateMultiSelect('options-category', facets.categories, selectedCategories, 'category');
+    populateMultiSelect('options-publisher', facets.publishers, selectedPublishers, 'publisher');
+
+    // Dropdown Trigger UI & Toggle Listeners
+    const dropdownWrappers = document.querySelectorAll('.dropdown-multiselect');
+    dropdownWrappers.forEach(dropdown => {
+        const trigger = dropdown.querySelector('.dropdown-trigger');
+        if (!trigger) return;
+
+        trigger.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const isOpen = dropdown.classList.contains('open');
+            // Close all other dropdowns
+            dropdownWrappers.forEach(d => {
+                if (d !== dropdown) {
+                    d.classList.remove('open');
+                    d.querySelector('.dropdown-trigger')?.setAttribute('aria-expanded', 'false');
+                }
+            });
+
+            dropdown.classList.toggle('open', !isOpen);
+            trigger.setAttribute('aria-expanded', String(!isOpen));
+        });
+
+        // Prevent clicks inside dropdown menu from closing it
+        dropdown.querySelector('.dropdown-menu')?.addEventListener('click', (e) => {
+            e.stopPropagation();
+        });
+    });
+
+    // Close dropdowns on outside click
+    document.addEventListener('click', () => {
+        dropdownWrappers.forEach(d => {
+            d.classList.remove('open');
+            d.querySelector('.dropdown-trigger')?.setAttribute('aria-expanded', 'false');
+        });
+    });
+
+    // "Select All" and "Clear" in dropdown headers
+    document.querySelectorAll('.dropdown-action-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const target = btn.dataset.target;
+            const isSelectAll = btn.classList.contains('action-select-all');
+            let set, counts, containerId;
+
+            if (target === 'type') {
+                set = selectedTypes;
+                counts = facets.types;
+                containerId = 'options-type';
+            } else if (target === 'category') {
+                set = selectedCategories;
+                counts = facets.categories;
+                containerId = 'options-category';
+            } else if (target === 'publisher') {
+                set = selectedPublishers;
+                counts = facets.publishers;
+                containerId = 'options-publisher';
+            }
+
+            if (!set) return;
+
+            if (isSelectAll) {
+                Object.keys(counts).forEach(k => set.add(k));
+            } else {
+                set.clear();
+            }
+
+            // Sync checkboxes
+            const container = document.getElementById(containerId);
+            if (container) {
+                container.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+                    cb.checked = set.has(cb.value);
+                });
+            }
+
+            updateDropdownTriggerState(target, set);
+            renderActiveFilterPills();
+            render();
+        });
+    });
+
+    function updateDropdownTriggerState(target, set) {
+        const badge = document.getElementById(`badge-count-${target}`);
+        const trigger = document.getElementById(`trigger-${target}`);
+        if (!badge || !trigger) return;
+
+        if (set.size > 0) {
+            badge.style.display = 'inline-block';
+            badge.textContent = set.size;
+            trigger.classList.add('has-selection');
+        } else {
+            badge.style.display = 'none';
+            trigger.classList.remove('has-selection');
+        }
+    }
+
+    // 4. Active Filters Bar
+    function renderActiveFilterPills() {
+        if (!activeFiltersBar || !activeFilterChips) return;
+        activeFilterChips.innerHTML = '';
+
+        const allFilters = [
+            ...Array.from(selectedTypes).map(v => ({ type: 'type', label: v, display: `Type: ${v}` })),
+            ...Array.from(selectedCategories).map(v => ({ type: 'category', label: v, display: `Topic: ${v}` })),
+            ...Array.from(selectedPublishers).map(v => ({ type: 'publisher', label: v, display: `Publisher: ${v}` }))
+        ];
+
+        if (allFilters.length === 0) {
+            activeFiltersBar.style.display = 'none';
+            return;
+        }
+
+        activeFiltersBar.style.display = 'flex';
+
+        allFilters.forEach(item => {
+            const chip = document.createElement('span');
+            chip.className = 'active-chip';
+
+            const text = document.createElement('span');
+            text.textContent = item.display;
+
+            const removeBtn = document.createElement('button');
+            removeBtn.type = 'button';
+            removeBtn.className = 'active-chip-remove';
+            removeBtn.innerHTML = '✕';
+            removeBtn.setAttribute('aria-label', `Remove filter ${item.display}`);
+
+            removeBtn.addEventListener('click', () => {
+                let set, containerId;
+                if (item.type === 'type') { set = selectedTypes; containerId = 'options-type'; }
+                else if (item.type === 'category') { set = selectedCategories; containerId = 'options-category'; }
+                else if (item.type === 'publisher') { set = selectedPublishers; containerId = 'options-publisher'; }
+
+                set.delete(item.label);
+
+                // Uncheck corresponding checkbox
+                const cb = document.querySelector(`#${containerId} input[value="${CSS.escape(item.label)}"]`);
+                if (cb) cb.checked = false;
+
+                updateDropdownTriggerState(item.type, set);
+                renderActiveFilterPills();
+                render();
+            });
+
+            chip.appendChild(text);
+            chip.appendChild(removeBtn);
+            activeFilterChips.appendChild(chip);
+        });
+    }
+
+    if (clearAllFiltersBtn) {
+        clearAllFiltersBtn.addEventListener('click', () => {
+            selectedTypes.clear();
+            selectedCategories.clear();
+            selectedPublishers.clear();
+
+            document.querySelectorAll('.dropdown-options-list input[type="checkbox"]').forEach(cb => {
+                cb.checked = false;
+            });
+
+            ['type', 'category', 'publisher'].forEach(t => {
+                const badge = document.getElementById(`badge-count-${t}`);
+                const trigger = document.getElementById(`trigger-${t}`);
+                if (badge) badge.style.display = 'none';
+                if (trigger) trigger.classList.remove('has-selection');
+            });
+
+            renderActiveFilterPills();
+            render();
+        });
+    }
+
+    // 5. Render Results
     function render() {
         const startTime = performance.now();
         const query = searchInput.value;
         const filters = {
-            category: categoryFilter ? categoryFilter.value : 'all',
-            type: typeFilter ? typeFilter.value : 'all',
-            publisher: publisherFilter ? publisherFilter.value : 'all',
+            categories: selectedCategories,
+            types: selectedTypes,
+            publishers: selectedPublishers,
             scope: currentScope
         };
 
@@ -94,7 +304,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 <div class="empty-state">
                     <div class="empty-icon">🔍</div>
                     <h3>No matching documents or sections found</h3>
-                    <p>Try broadening your query, adjusting the filters, or searching for terms like <code>manifest</code>, <code>accessibility</code>, or <code>spine</code>.</p>
+                    <p>Try clearing some active filters or searching for terms like <code>manifest</code>, <code>accessibility</code>, or <code>spine</code>.</p>
                 </div>
             `;
             return;
@@ -173,7 +383,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             .replace(/'/g, '&#039;');
     }
 
-    // 5. Event Listeners
+    // 6. Event Listeners
     let debounceTimer = null;
     searchInput.addEventListener('input', () => {
         if (clearBtn) clearBtn.style.display = searchInput.value ? 'block' : 'none';
@@ -189,11 +399,6 @@ document.addEventListener('DOMContentLoaded', async () => {
             render();
         });
     }
-
-    // Facet listeners
-    [typeFilter, categoryFilter, publisherFilter].forEach(sel => {
-        if (sel) sel.addEventListener('change', render);
-    });
 
     // Scope button listeners
     scopeButtons.forEach(btn => {
@@ -216,13 +421,21 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // Global keyboard shortcuts
     window.addEventListener('keydown', (e) => {
+        // Press Escape: close any open dropdown first
+        const openDropdown = document.querySelector('.dropdown-multiselect.open');
+        if (e.key === 'Escape' && openDropdown) {
+            openDropdown.classList.remove('open');
+            openDropdown.querySelector('.dropdown-trigger')?.setAttribute('aria-expanded', 'false');
+            return;
+        }
+
         // Press '/' to search
         if (e.key === '/' && document.activeElement !== searchInput) {
             e.preventDefault();
             searchInput.focus();
             searchInput.select();
         }
-        // Press 'Escape' to clear
+        // Press 'Escape' in search input to clear
         if (e.key === 'Escape' && document.activeElement === searchInput) {
             searchInput.value = '';
             if (clearBtn) clearBtn.style.display = 'none';
