@@ -152,19 +152,23 @@ class EpubSearchEngine {
             // Compute score
             let score = 0;
             if (queryTokens.length > 0) {
-                const titleTokens = this.tokenize(doc.title);
-                const descTokens = this.tokenize(doc.description);
+                const titleLower = doc.title.toLowerCase();
+                const descLower = doc.description.toLowerCase();
+                const catLower = doc.category.toLowerCase();
+                const typeLower = doc.type.toLowerCase();
+                const pubLower = doc.publisher.toLowerCase();
                 const kwTokens = (doc.keywords || []).flatMap(k => this.tokenize(k));
 
+                // Exact full-phrase match in title (evaluated once)
+                if (titleLower.includes(trimmed)) score += 30;
+
                 queryTokens.forEach(qt => {
-                    // Exact full phrase in title
-                    if (doc.title.toLowerCase().includes(trimmed)) score += 30;
-                    if (doc.title.toLowerCase().includes(qt)) score += 10;
+                    if (titleLower.includes(qt)) score += 10;
                     if (kwTokens.some(k => k === qt || k.startsWith(qt))) score += 8;
-                    if (doc.description.toLowerCase().includes(qt)) score += 3;
-                    if (doc.category.toLowerCase().includes(qt)) score += 4;
-                    if (doc.type.toLowerCase().includes(qt)) score += 4;
-                    if (doc.publisher.toLowerCase().includes(qt)) score += 3;
+                    if (descLower.includes(qt)) score += 3;
+                    if (catLower.includes(qt)) score += 4;
+                    if (typeLower.includes(qt)) score += 4;
+                    if (pubLower.includes(qt)) score += 3;
                 });
 
                 // Boost official recommendations
@@ -224,3 +228,4 @@ class EpubSearchEngine {
 }
 
 window.EpubSearchEngine = EpubSearchEngine;
+
