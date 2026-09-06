@@ -172,13 +172,14 @@ class EpubSearchEngine {
                 });
 
                 // Boost official recommendations
-                if (doc.type === 'Standard') score += 2;
+                if (doc.type === 'Recommendation' || doc.type === 'Standard') score += 2;
                 if (doc.type === 'Candidate Standard') score += 1.5;
             } else {
                 // Default sorting order when no search term
-                if (doc.type === 'Standard') score += 10;
+                if (doc.type === 'Recommendation' || doc.type === 'Standard') score += 10;
                 else if (doc.type === 'Candidate Standard') score += 8;
                 else if (doc.type === 'Note') score += 5;
+                else if (doc.type === 'Working Draft') score += 4;
                 else score += 1;
             }
 
@@ -228,4 +229,5 @@ class EpubSearchEngine {
 }
 
 window.EpubSearchEngine = EpubSearchEngine;
+
 

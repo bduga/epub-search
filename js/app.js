@@ -365,8 +365,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     function getTypeBadgeClass(type) {
         if (!type) return '';
         const t = type.toLowerCase();
-        if (t.includes('standard') && !t.includes('candidate') && !t.includes('draft')) return 'badge-standard';
+        if (t.includes('recommendation') || (t.includes('standard') && !t.includes('candidate') && !t.includes('draft') && !t.includes('working'))) return 'badge-standard';
         if (t.includes('candidate')) return 'badge-candidate';
+        if (t.includes('working') || t.includes('draft')) return 'badge-draft';
         if (t.includes('note')) return 'badge-note';
         if (t.includes('report')) return 'badge-report';
         if (t.includes('legacy')) return 'badge-legacy';
@@ -447,3 +448,4 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Initial render
     render();
 });
+

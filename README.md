@@ -8,7 +8,7 @@ The EPUB ecosystem spans multiple specifications, working group notes, community
 
 This application provides a unified, fast, searchable catalog and index across **38 official document sources**, featuring:
 - **Instant Search**: Sub-millisecond tokenized full-text search across documents, sections, element definitions, and topics.
-- **Faceted Filtering**: Filter by Document Type/Status (*Standard / Recommendation*, *Candidate Standard*, *Note*, *Report*, *Legacy*), Publisher (*PMWG*, *PubCG*, *EPUB3 WG*), and Subject Category (*Authoring*, *A11y*, *Reading Systems*, *Annotations*, *Audio | Media*, *EPUB General*).
+- **Faceted Filtering**: Filter by Document Type/Status (*Recommendation*, *Candidate Standard*, *Working Draft*, *Draft Note*, *Note*, *Report*, *Legacy*), Publisher (*PMWG*, *PubCG*, *EPUB3 WG*), and Subject Category (*Authoring*, *A11y*, *Reading Systems*, *Annotations*, *Audio | Media*, *EPUB General*).
 - **Direct Official Linking**: Deep-links directly to canonical W3C Recommendation anchors.
 - **Zero Dependencies**: Pure modern HTML5, Vanilla CSS, and JavaScript. Runs instantly in any browser without requiring node, npm, or backend servers.
 
@@ -58,3 +58,4 @@ epub-search/
 
 ## License
 MIT License
+

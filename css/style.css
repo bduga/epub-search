@@ -641,6 +641,16 @@ body {
     color: var(--badge-cand-text);
 }
 
+.badge-type.badge-draft {
+    background: rgba(14, 165, 233, 0.15);
+    color: #0284c7;
+}
+
+[data-theme="dark"] .badge-type.badge-draft {
+    background: rgba(56, 189, 248, 0.15);
+    color: #38bdf8;
+}
+
 .badge-type.badge-note {
     background: var(--badge-note-bg);
     color: var(--badge-note-text);
@@ -851,3 +861,4 @@ mark {
         justify-content: center;
     }
 }
+

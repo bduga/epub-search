@@ -16,7 +16,7 @@
                          "opf"
                      ],
         "sourceId":  "epub-33",
-        "type":  "Standard",
+        "type":  "Recommendation",
         "publisher":  "PMWG",
         "anchor":  "#sec-package-def",
         "title":  "The package Document and Root Element"
@@ -38,7 +38,7 @@
                          "refines"
                      ],
         "sourceId":  "epub-33",
-        "type":  "Standard",
+        "type":  "Recommendation",
         "publisher":  "PMWG",
         "anchor":  "#sec-pkg-metadata",
         "title":  "Package Metadata (\u003cmetadata\u003e)"
@@ -62,7 +62,7 @@
                          "mathml"
                      ],
         "sourceId":  "epub-33",
-        "type":  "Standard",
+        "type":  "Recommendation",
         "publisher":  "PMWG",
         "anchor":  "#sec-pkg-manifest",
         "title":  "The manifest Element and Publication Resources (\u003cmanifest\u003e)"
@@ -84,7 +84,7 @@
                          "ltr"
                      ],
         "sourceId":  "epub-33",
-        "type":  "Standard",
+        "type":  "Recommendation",
         "publisher":  "PMWG",
         "anchor":  "#sec-pkg-spine",
         "title":  "The spine Element and Reading Order (\u003cspine\u003e)"
@@ -107,7 +107,7 @@
                          "epub:type"
                      ],
         "sourceId":  "epub-33",
-        "type":  "Standard",
+        "type":  "Recommendation",
         "publisher":  "PMWG",
         "anchor":  "#sec-nav-doc",
         "title":  "EPUB Navigation Document"
@@ -128,7 +128,7 @@
                          "rendition:spread"
                      ],
         "sourceId":  "epub-33",
-        "type":  "Standard",
+        "type":  "Recommendation",
         "publisher":  "PMWG",
         "anchor":  "#sec-fxl",
         "title":  "Fixed-Layout Documents"
@@ -151,7 +151,7 @@
                          "narration"
                      ],
         "sourceId":  "epub-33",
-        "type":  "Standard",
+        "type":  "Recommendation",
         "publisher":  "PMWG",
         "anchor":  "#sec-media-overlays",
         "title":  "Media Overlays (Synchronized Audio and Text)"
@@ -172,7 +172,7 @@
                          "embedded content"
                      ],
         "sourceId":  "epub-33",
-        "type":  "Standard",
+        "type":  "Recommendation",
         "publisher":  "PMWG",
         "anchor":  "#sec-contentdocs",
         "title":  "EPUB Content Documents (XHTML \u0026 SVG)"
@@ -229,7 +229,7 @@
                          "conformance"
                      ],
         "sourceId":  "epub-rs-33",
-        "type":  "Standard",
+        "type":  "Recommendation",
         "publisher":  "PMWG",
         "anchor":  "#sec-processing",
         "title":  "Reading Systems: Content Processing \u0026 XML Parsing"
@@ -249,7 +249,7 @@
                          "container"
                      ],
         "sourceId":  "epub-rs-33",
-        "type":  "Standard",
+        "type":  "Recommendation",
         "publisher":  "PMWG",
         "anchor":  "#sec-script-container",
         "title":  "Reading Systems: Scripting Environment \u0026 Security"
@@ -270,7 +270,7 @@
                          "pagination"
                      ],
         "sourceId":  "epub-rs-33",
-        "type":  "Standard",
+        "type":  "Recommendation",
         "publisher":  "PMWG",
         "anchor":  "#sec-css-support",
         "title":  "Reading Systems: User Styles \u0026 CSS Overrides"
@@ -291,7 +291,7 @@
                          "schema:accessModeSufficient"
                      ],
         "sourceId":  "epub-a11y-11",
-        "type":  "Standard",
+        "type":  "Recommendation",
         "publisher":  "PMWG",
         "anchor":  "#sec-disc-package",
         "title":  "Accessibility Discovery Metadata Requirements"
@@ -312,7 +312,7 @@
                          "certifierCredential"
                      ],
         "sourceId":  "epub-a11y-11",
-        "type":  "Standard",
+        "type":  "Recommendation",
         "publisher":  "PMWG",
         "anchor":  "#sec-wcag",
         "title":  "Accessibility Conformance \u0026 WCAG Mapping"
@@ -418,7 +418,7 @@
                          "note"
                      ],
         "sourceId":  "epub-anno-10",
-        "type":  "Draft Standard",
+        "type":  "Working Draft",
         "publisher":  "PMWG",
         "anchor":  "#sec-model",
         "title":  "EPUB Annotations 1.0 Data Model"

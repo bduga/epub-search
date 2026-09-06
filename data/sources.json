@@ -74,7 +74,7 @@
         "category":  "Annotations",
         "title":  "EPUB Annotations 1.0",
         "url":  "https://www.w3.org/TR/epub-anno-10/",
-        "type":  "Draft Standard",
+        "type":  "Working Draft",
         "description":  "Standard specification for representing user and publisher annotations in EPUB.",
         "id":  "epub-anno-10",
         "publisher":  "PMWG"
@@ -144,7 +144,7 @@
         "category":  "Authoring",
         "title":  "EPUB 3.3 Core Specification",
         "url":  "https://www.w3.org/TR/epub-33/",
-        "type":  "Standard",
+        "type":  "Recommendation",
         "description":  "Official W3C Recommendation defining the core structure, package document, manifest, spine, and navigation for EPUB 3.3.",
         "id":  "epub-33",
         "publisher":  "PMWG"
@@ -184,7 +184,7 @@
         "category":  "A11y",
         "title":  "EPUB Accessibility 1.1",
         "url":  "https://www.w3.org/TR/epub-a11y-11/",
-        "type":  "Standard",
+        "type":  "Recommendation",
         "description":  "Official W3C Recommendation specifying content accessibility requirements and metadata for EPUB.",
         "id":  "epub-a11y-11",
         "publisher":  "PMWG"
@@ -194,7 +194,7 @@
         "category":  "Reading Systems",
         "title":  "EPUB Reading Systems 3.3",
         "url":  "https://www.w3.org/TR/epub-rs-33/",
-        "type":  "Standard",
+        "type":  "Recommendation",
         "description":  "Official W3C Recommendation defining reading system conformance and processing requirements for EPUB 3.3.",
         "id":  "epub-rs-33",
         "publisher":  "PMWG"
@@ -324,7 +324,7 @@
         "category":  "EPUB General",
         "title":  "EPUB Standard (Latest W3C Recommendation Redirect)",
         "url":  "https://www.w3.org/TR/epub/",
-        "type":  "Standard",
+        "type":  "Recommendation",
         "description":  "Canonical redirect pointing to the latest version of the EPUB standard.",
         "id":  "epub-current-standard",
         "publisher":  "PMWG"

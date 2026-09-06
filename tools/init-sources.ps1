@@ -77,7 +77,7 @@ $sources = @(
         id = "epub-anno-10"
         title = "EPUB Annotations 1.0"
         url = "https://www.w3.org/TR/epub-anno-10/"
-        type = "Draft Standard"
+        type = "Working Draft"
         publisher = "PMWG"
         category = "Annotations"
         version = "1.0"
@@ -147,7 +147,7 @@ $sources = @(
         id = "epub-33"
         title = "EPUB 3.3 Core Specification"
         url = "https://www.w3.org/TR/epub-33/"
-        type = "Standard"
+        type = "Recommendation"
         publisher = "PMWG"
         category = "Authoring"
         version = "3.3"
@@ -187,7 +187,7 @@ $sources = @(
         id = "epub-a11y-11"
         title = "EPUB Accessibility 1.1"
         url = "https://www.w3.org/TR/epub-a11y-11/"
-        type = "Standard"
+        type = "Recommendation"
         publisher = "PMWG"
         category = "A11y"
         version = "1.1"
@@ -197,7 +197,7 @@ $sources = @(
         id = "epub-rs-33"
         title = "EPUB Reading Systems 3.3"
         url = "https://www.w3.org/TR/epub-rs-33/"
-        type = "Standard"
+        type = "Recommendation"
         publisher = "PMWG"
         category = "Reading Systems"
         version = "3.3"
@@ -327,7 +327,7 @@ $sources = @(
         id = "epub-current-standard"
         title = "EPUB Standard (Latest W3C Recommendation Redirect)"
         url = "https://www.w3.org/TR/epub/"
-        type = "Standard"
+        type = "Recommendation"
         publisher = "PMWG"
         category = "EPUB General"
         version = "Latest"
@@ -390,4 +390,5 @@ Set-Content -Path (Join-Path (Join-Path $ProjectRoot "data") "sources.json") -Va
 
 $sources | Export-Csv -Path (Join-Path (Join-Path $ProjectRoot "data") "sources.csv") -NoTypeInformation -Encoding UTF8
 Write-Output "Successfully wrote $($sources.Count) sources to data/sources.json and data/sources.csv"
+
 
