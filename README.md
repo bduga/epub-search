@@ -63,9 +63,6 @@ npm run reindex:fresh
 
 # Using Bash on macOS/Linux:
 ./tools/reindex.sh
-
-# Using PowerShell on Windows:
-.\tools\reindex.ps1
 ```
 
 ### 2. Add a New Document Source
@@ -80,15 +77,6 @@ node tools/manage-sources.js --add \
   --type "Note" \
   --cat "Audio | Media" \
   --pub "PMWG"
-
-# Using PowerShell on Windows:
-.\tools\manage-sources.ps1 -Add `
-    -Id "epub-tts-11" `
-    -Title "EPUB Text-to-Speech 1.1" `
-    -Url "https://www.w3.org/TR/epub-tts-11/" `
-    -Type "Note" `
-    -Category "Audio | Media" `
-    -Publisher "PMWG"
 ```
 
 ### 3. Remove a Document Source
@@ -97,9 +85,6 @@ Remove a document and prune its indexed sections automatically:
 ```bash
 # Cross-Platform (Node.js):
 node tools/manage-sources.js --remove --id "epub-tts-11"
-
-# Using PowerShell on Windows:
-.\tools\manage-sources.ps1 -Remove -Id "epub-tts-11"
 ```
 
 ### 4. List Registered Document Sources
@@ -108,9 +93,6 @@ node tools/manage-sources.js --remove --id "epub-tts-11"
 # Cross-Platform:
 npm run sources
 # or: node tools/manage-sources.js --list
-
-# Using PowerShell on Windows:
-.\tools\manage-sources.ps1 -List
 ```
 
 ## Project Structure
@@ -137,12 +119,9 @@ epub-search/
 └── tools/
     ├── reindex.js           # Cross-platform crawler & indexer (Node.js standard lib)
     ├── reindex.sh           # Unix/macOS shell wrapper
-    ├── reindex.ps1          # Windows PowerShell crawler (delegates to Node if present)
     ├── manage-sources.js    # Cross-platform source management CLI (Node.js)
     ├── manage-sources.sh    # Unix/macOS shell wrapper
-    ├── manage-sources.ps1   # Windows PowerShell CLI (delegates to Node if present)
     ├── server.js            # Cross-platform zero-dependency HTTP server
-    ├── server.ps1           # Windows PowerShell HTTP server
     └── test-search.js       # Node.js automated test runner
 ```
 
