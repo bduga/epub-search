@@ -1,7 +1,8 @@
 # Set default behavior to automatically normalize line endings
 * text=auto
 
-# Windows batch scripts require CRLF
+# Windows PowerShell scripts require CRLF on older Windows hosts
+*.ps1 text eol=crlf
 *.bat text eol=crlf
 
 # Shell scripts must always use LF
