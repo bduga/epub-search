@@ -1,0 +1,27 @@
+{
+  "name": "epub-search",
+  "version": "1.0.0",
+  "description": "High-performance, client-side search engine and explorer for official W3C EPUB documentation",
+  "main": "js/search-engine.js",
+  "scripts": {
+    "start": "node tools/server.js",
+    "serve": "node tools/server.js",
+    "reindex": "node tools/reindex.js",
+    "reindex:fresh": "node tools/reindex.js --refresh",
+    "sources": "node tools/manage-sources.js --list",
+    "sources:list": "node tools/manage-sources.js --list",
+    "sources:add": "node tools/manage-sources.js --add",
+    "sources:remove": "node tools/manage-sources.js --remove",
+    "test": "node tools/test-search.js"
+  },
+  "keywords": [
+    "epub",
+    "w3c",
+    "search-engine",
+    "documentation",
+    "accessibility",
+    "standards"
+  ],
+  "author": "",
+  "license": "MIT"
+}

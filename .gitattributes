@@ -1,0 +1,17 @@
+# Set default behavior to automatically normalize line endings
+* text=auto
+
+# Windows PowerShell scripts require CRLF on older Windows hosts
+*.ps1 text eol=crlf
+*.bat text eol=crlf
+
+# Shell scripts must always use LF
+*.sh text eol=lf
+
+# Explicit text for code files
+*.js text
+*.json text
+*.html text
+*.css text
+*.md text
+*.csv text

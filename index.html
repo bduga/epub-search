@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
@@ -55,22 +55,27 @@
                     spellcheck="false"
                     aria-label="Search official EPUB documentation"
                 >
-                <button id="clear-btn" class="clear-btn" aria-label="Clear search">✕</button>
-                <span class="search-shortcut" title="Press / to focus">/</span>
+                <div class="search-input-actions">
+                    <button id="clear-btn" class="clear-btn" aria-label="Clear search">✕</button>
+                    <button id="syntax-guide-btn" class="syntax-guide-btn" type="button" aria-label="Search syntax guide" title="Search Syntax Guide (AND, OR, NOT, phrases, filters)">
+                        <span class="syntax-icon" aria-hidden="true">⚡</span>
+                        <span class="syntax-btn-text">Syntax Guide</span>
+                    </button>
+                    <span class="search-shortcut" title="Press / to focus">/</span>
+                </div>
             </div>
 
             <!-- Quick Topic Pills -->
             <div class="quick-tags-wrapper">
-                <span class="quick-tags-label">Quick Searches:</span>
-                <button class="quick-tag" data-query="manifest">manifest</button>
-                <button class="quick-tag" data-query="metadata">metadata</button>
-                <button class="quick-tag" data-query="spine">spine</button>
-                <button class="quick-tag" data-query="navigation toc">navigation (toc)</button>
-                <button class="quick-tag" data-query="accessibility discovery">accessibility metadata</button>
-                <button class="quick-tag" data-query="fixed-layout">fixed-layout</button>
-                <button class="quick-tag" data-query="media overlays audio">media overlays</button>
-                <button class="quick-tag" data-query="reading systems scripting">reading systems</button>
-                <button class="quick-tag" data-query="crosswalk onix">ONIX crosswalk</button>
+                <span class="quick-tags-label">Quick & Boolean Searches:</span>
+                <button class="quick-tag" data-query="manifest AND spine">manifest AND spine</button>
+                <button class="quick-tag" data-query='"package document"'>"package document"</button>
+                <button class="quick-tag" data-query="accessibility NOT draft">accessibility NOT draft</button>
+                <button class="quick-tag" data-query="navigation OR toc">navigation OR toc</button>
+                <button class="quick-tag" data-query="type:Recommendation manifest">type:Recommendation manifest</button>
+                <button class="quick-tag" data-query="(manifest OR spine) AND package">(manifest OR spine) AND package</button>
+                <button class="quick-tag" data-query="pub:PMWG spine">pub:PMWG spine</button>
+                <button class="quick-tag" data-query="nav*">nav*</button>
             </div>
         </section>
 
@@ -164,11 +169,12 @@
         <!-- Results Section -->
         <main>
             <div class="results-info">
-                <div>
-                    Showing <strong id="result-count">0</strong> results
+                <div class="results-info-left">
+                    <span>Showing <strong id="result-count">0</strong> results</span>
+                    <span id="parsed-query-pill" class="parsed-query-pill" style="display: none;"></span>
                 </div>
-                <div>
-                    Search latency: <span id="search-time">0ms</span>
+                <div class="results-info-right">
+                    <span>Search latency: <span id="search-time">0ms</span></span>
                 </div>
             </div>
 
@@ -176,6 +182,125 @@
                 <!-- Dynamically populated by app.js -->
             </div>
         </main>
+    </div>
+
+    <!-- Syntax Guide Modal -->
+    <div id="syntax-modal" class="modal-overlay" aria-hidden="true">
+        <div class="modal-container" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+            <div class="modal-header">
+                <div class="modal-header-left">
+                    <span class="modal-icon" aria-hidden="true">⚡</span>
+                    <div>
+                        <h2 id="modal-title" class="modal-title">Advanced Search Syntax</h2>
+                        <p class="modal-subtitle">Full boolean operators, exact phrase search, exclusions, and field filters</p>
+                    </div>
+                </div>
+                <button id="close-modal-btn" class="modal-close-btn" aria-label="Close syntax guide">✕</button>
+            </div>
+            <div class="modal-body">
+                <div class="syntax-grid">
+                    <div class="syntax-card">
+                        <div class="syntax-card-header">
+                            <span class="syntax-badge syntax-and">AND</span>
+                            <strong>Require Both Terms</strong>
+                        </div>
+                        <p>Matches documents containing both specified terms or phrases.</p>
+                        <div class="syntax-example">
+                            <code>manifest AND spine</code>
+                            <button class="use-example-btn" data-query="manifest AND spine">Try It</button>
+                        </div>
+                    </div>
+
+                    <div class="syntax-card">
+                        <div class="syntax-card-header">
+                            <span class="syntax-badge syntax-or">OR</span>
+                            <strong>Require Either Term</strong>
+                        </div>
+                        <p>Matches documents containing one or more of the specified terms.</p>
+                        <div class="syntax-example">
+                            <code>metadata OR navigation</code>
+                            <button class="use-example-btn" data-query="metadata OR navigation">Try It</button>
+                        </div>
+                    </div>
+
+                    <div class="syntax-card">
+                        <div class="syntax-card-header">
+                            <span class="syntax-badge syntax-not">NOT / -</span>
+                            <strong>Exclude Term / Drafts</strong>
+                        </div>
+                        <p>Strictly excludes documents containing the term or matching draft status.</p>
+                        <div class="syntax-example">
+                            <code>accessibility NOT draft</code>
+                            <button class="use-example-btn" data-query="accessibility NOT draft">Try It</button>
+                        </div>
+                    </div>
+
+                    <div class="syntax-card">
+                        <div class="syntax-card-header">
+                            <span class="syntax-badge syntax-phrase">"..."</span>
+                            <strong>Exact Quoted Phrase</strong>
+                        </div>
+                        <p>Matches exact contiguous word sequences in titles, sections, or descriptions.</p>
+                        <div class="syntax-example">
+                            <code>"package document"</code>
+                            <button class="use-example-btn" data-query='"package document"'>Try It</button>
+                        </div>
+                    </div>
+
+                    <div class="syntax-card">
+                        <div class="syntax-card-header">
+                            <span class="syntax-badge syntax-group">( ... )</span>
+                            <strong>Grouped Logic</strong>
+                        </div>
+                        <p>Group boolean expressions using parentheses for precise evaluation precedence.</p>
+                        <div class="syntax-example">
+                            <code>(manifest OR spine) AND package</code>
+                            <button class="use-example-btn" data-query="(manifest OR spine) AND package">Try It</button>
+                        </div>
+                    </div>
+
+                    <div class="syntax-card">
+                        <div class="syntax-card-header">
+                            <span class="syntax-badge syntax-field">field:</span>
+                            <strong>Field-Specific Filter</strong>
+                        </div>
+                        <p>Filter by document metadata: <code>type:</code>, <code>pub:</code>, <code>cat:</code>, or <code>title:</code>.</p>
+                        <div class="syntax-example">
+                            <code>type:Recommendation AND manifest</code>
+                            <button class="use-example-btn" data-query="type:Recommendation AND manifest">Try It</button>
+                        </div>
+                    </div>
+
+                    <div class="syntax-card">
+                        <div class="syntax-card-header">
+                            <span class="syntax-badge syntax-prefix">*</span>
+                            <strong>Prefix Wildcard</strong>
+                        </div>
+                        <p>Matches words starting with the specified prefix.</p>
+                        <div class="syntax-example">
+                            <code>nav*</code>
+                            <button class="use-example-btn" data-query="nav*">Try It</button>
+                        </div>
+                    </div>
+
+                    <div class="syntax-card">
+                        <div class="syntax-card-header">
+                            <span class="syntax-badge syntax-complex">COMBO</span>
+                            <strong>Full Power Query</strong>
+                        </div>
+                        <p>Combine field filters, boolean groups, and exclusion shorthand.</p>
+                        <div class="syntax-example">
+                            <code>type:Recommendation (manifest OR spine) -legacy</code>
+                            <button class="use-example-btn" data-query="type:Recommendation (manifest OR spine) -legacy">Try It</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <span class="modal-footer-tip">💡 Tip: Press <kbd>/</kbd> to jump to search anytime, or <kbd>Esc</kbd> to close.</span>
+                <button id="modal-got-it-btn" class="modal-primary-btn">Got It</button>
+            </div>
+        </div>
     </div>
 
     <!-- Data payloads (supports both file:// execution and web servers) -->

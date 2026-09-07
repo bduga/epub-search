@@ -1,4 +1,4 @@
-﻿/**
+/**
  * EPUB Search Engine UI Coordinator (with Multi-Select Filtering)
  */
 document.addEventListener('DOMContentLoaded', async () => {
@@ -8,6 +8,11 @@ document.addEventListener('DOMContentLoaded', async () => {
     const resultCountEl = document.getElementById('result-count');
     const searchTimeEl = document.getElementById('search-time');
     const themeToggleBtn = document.getElementById('theme-toggle');
+    const syntaxGuideBtn = document.getElementById('syntax-guide-btn');
+    const syntaxModal = document.getElementById('syntax-modal');
+    const closeModalBtn = document.getElementById('close-modal-btn');
+    const modalGotItBtn = document.getElementById('modal-got-it-btn');
+    const parsedQueryPill = document.getElementById('parsed-query-pill');
 
     // Filter controls
     const scopeButtons = document.querySelectorAll('.scope-btn');
@@ -299,14 +304,35 @@ document.addEventListener('DOMContentLoaded', async () => {
         if (searchTimeEl) searchTimeEl.textContent = `${duration}ms`;
         if (resultCountEl) resultCountEl.textContent = results.length;
 
+        if (parsedQueryPill) {
+            const hasAdvancedSyntax = /["'():*]|(\b(AND|OR|NOT)\b)|(\b(type|pub|publisher|cat|category|title|sec):)|(^[+-]|\s[+-])/.test(query);
+            if (hasAdvancedSyntax && query.trim()) {
+                parsedQueryPill.style.display = 'inline-flex';
+                parsedQueryPill.textContent = '⚡ Advanced Syntax Active';
+            } else {
+                parsedQueryPill.style.display = 'none';
+            }
+        }
+
         if (results.length === 0) {
-            resultsContainer.innerHTML = `
-                <div class="empty-state">
-                    <div class="empty-icon">🔍</div>
-                    <h3>No matching documents or sections found</h3>
-                    <p>Try clearing some active filters or searching for terms like <code>manifest</code>, <code>accessibility</code>, or <code>spine</code>.</p>
-                </div>
-            `;
+            const hasQueryOrFilters = query.trim().length > 0 || selectedCategories.size > 0 || selectedTypes.size > 0 || selectedPublishers.size > 0;
+            if (!hasQueryOrFilters) {
+                resultsContainer.innerHTML = `
+                    <div class="empty-state initial-prompt-state">
+                        <div class="empty-icon">📖</div>
+                        <h3>Explore Official EPUB Specifications</h3>
+                        <p>Type a search term above, use <code>AND</code> / <code>OR</code> / <code>NOT</code> syntax, or click one of the quick searches to explore 38 official specifications and 2,100+ deep sections.</p>
+                    </div>
+                `;
+            } else {
+                resultsContainer.innerHTML = `
+                    <div class="empty-state">
+                        <div class="empty-icon">🔍</div>
+                        <h3>No matching documents or sections found</h3>
+                        <p>Try refining your query, clearing some active filters, or using broader boolean expressions.</p>
+                    </div>
+                `;
+            }
             return;
         }
 
@@ -420,18 +446,62 @@ document.addEventListener('DOMContentLoaded', async () => {
         });
     });
 
+    // 7. Syntax Modal Controls & Interactive Examples
+    function openSyntaxModal() {
+        if (!syntaxModal) return;
+        syntaxModal.classList.add('open');
+        syntaxModal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeSyntaxModal() {
+        if (!syntaxModal) return;
+        syntaxModal.classList.remove('open');
+        syntaxModal.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+    }
+
+    if (syntaxGuideBtn) syntaxGuideBtn.addEventListener('click', openSyntaxModal);
+    if (closeModalBtn) closeModalBtn.addEventListener('click', closeSyntaxModal);
+    if (modalGotItBtn) modalGotItBtn.addEventListener('click', closeSyntaxModal);
+
+    if (syntaxModal) {
+        syntaxModal.addEventListener('click', (e) => {
+            if (e.target === syntaxModal) closeSyntaxModal();
+        });
+    }
+
+    document.querySelectorAll('.use-example-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const query = btn.dataset.query;
+            if (query && searchInput) {
+                searchInput.value = query;
+                if (clearBtn) clearBtn.style.display = 'block';
+                closeSyntaxModal();
+                render();
+                searchInput.focus();
+            }
+        });
+    });
+
     // Global keyboard shortcuts
     window.addEventListener('keydown', (e) => {
-        // Press Escape: close any open dropdown first
-        const openDropdown = document.querySelector('.dropdown-multiselect.open');
-        if (e.key === 'Escape' && openDropdown) {
-            openDropdown.classList.remove('open');
-            openDropdown.querySelector('.dropdown-trigger')?.setAttribute('aria-expanded', 'false');
-            return;
+        // Press Escape: close open modal or open dropdown first
+        if (e.key === 'Escape') {
+            if (syntaxModal && syntaxModal.classList.contains('open')) {
+                closeSyntaxModal();
+                return;
+            }
+            const openDropdown = document.querySelector('.dropdown-multiselect.open');
+            if (openDropdown) {
+                openDropdown.classList.remove('open');
+                openDropdown.querySelector('.dropdown-trigger')?.setAttribute('aria-expanded', 'false');
+                return;
+            }
         }
 
-        // Press '/' to search
-        if (e.key === '/' && document.activeElement !== searchInput) {
+        // Press '/' to search (when modal isn't open)
+        if (e.key === '/' && document.activeElement !== searchInput && (!syntaxModal || !syntaxModal.classList.contains('open'))) {
             e.preventDefault();
             searchInput.focus();
             searchInput.select();

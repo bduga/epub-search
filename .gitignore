@@ -1,4 +1,4 @@
-﻿# Operating System Files
+# Operating System Files
 Thumbs.db
 Desktop.ini
 .DS_Store
@@ -10,4 +10,5 @@ Desktop.ini
 # Logs and Builds
 *.log
 dist/
+data/cache/
 

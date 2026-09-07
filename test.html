@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EPUB Query Engine Verification Suite</title>
+    <style>
+        body { font-family: monospace; background: #0f172a; color: #f8fafc; padding: 2rem; }
+        .pass { color: #4ade80; }
+        .fail { color: #f87171; font-weight: bold; }
+        .summary { margin-top: 1.5rem; font-size: 1.2rem; border-top: 1px solid #334155; padding-top: 1rem; }
+    </style>
+</head>
+<body>
+    <h1>Query Engine Automated Test Suite</h1>
+    <div id="output"></div>
+
+    <script src="data/sources.js"></script>
+    <script src="data/index-entries.js"></script>
+    <script src="js/search-engine.js"></script>
+    <script>
+        const output = document.getElementById('output');
+        let passed = 0;
+        let failed = 0;
+
+        function log(msg, isPass) {
+            const div = document.createElement('div');
+            div.className = isPass ? 'pass' : 'fail';
+            div.textContent = (isPass ? '✓ PASS: ' : '✗ FAIL: ') + msg;
+            output.appendChild(div);
+            if (isPass) passed++; else failed++;
+        }
+
+        const engine = new EpubSearchEngine();
+        engine.initialize(window.EPUB_SOURCES, window.EPUB_ENTRIES);
+
+        // 0. Empty Search (No query, no filters)
+        const rEmpty = engine.search('');
+        log('Empty search without filters returns 0 results', rEmpty.length === 0);
+
+        // 1. Basic Token Search
+        const r1 = engine.search('manifest');
+        log('Single term search (manifest) returns results', r1.length > 0);
+        log('Manifest results include EPUB 3.3 manifest entry', r1.some(d => d.title.toLowerCase().includes('manifest')));
+
+        // 2. Boolean AND
+        const rAnd = engine.search('manifest AND spine');
+        log('Boolean AND (manifest AND spine) returns matching results', rAnd.length > 0);
+        log('All manifest AND spine results contain manifest and spine concepts', 
+            rAnd.every(d => d.rawText.includes('manifest') && d.rawText.includes('spine')));
+
+        // 3. Boolean OR
+        const rOr = engine.search('manifest OR spine');
+        log('Boolean OR returns more results than AND (' + rOr.length + ' vs ' + rAnd.length + ')', rOr.length >= rAnd.length);
+
+        // 4. Boolean NOT
+        const rNot = engine.search('accessibility NOT draft');
+        log('Boolean NOT excludes draft documents', 
+            rNot.length > 0 && rNot.every(d => !d.type.toLowerCase().includes('draft') && !d.title.toLowerCase().includes('draft')));
+
+        // 5. Shorthand Negation (-draft)
+        const rMinus = engine.search('accessibility -draft');
+        log('Shorthand negation (-draft) matches Boolean NOT', rMinus.length === rNot.length);
+
+        // 6. Exact Quoted Phrase
+        const rPhrase = engine.search('"package document"');
+        log('Exact phrase ("package document") returns results', rPhrase.length > 0);
+        log('All phrase results contain "package document"', rPhrase.every(d => d.rawText.includes('package document')));
+
+        // 7. Field Qualifier (type:Recommendation)
+        const rField = engine.search('type:Recommendation AND manifest');
+        log('Field qualifier (type:Recommendation AND manifest) returns results', rField.length > 0);
+        log('All field qualifier results have type === Recommendation', rField.every(d => d.type === 'Recommendation'));
+
+        // 8. Field Qualifier for Publisher (pub:PMWG)
+        const rPub = engine.search('pub:PMWG spine');
+        log('Field qualifier (pub:PMWG spine) returns PMWG results', rPub.length > 0);
+        log('All results are published by PMWG', rPub.every(d => d.publisher === 'PMWG'));
+
+        // 9. Parentheses Grouping
+        const rGroup = engine.search('(manifest OR spine) AND package');
+        log('Grouped query ((manifest OR spine) AND package) returns results', rGroup.length > 0);
+        log('Grouped results satisfy both branches', 
+            rGroup.every(d => (d.rawText.includes('manifest') || d.rawText.includes('spine')) && d.rawText.includes('package')));
+
+        // 10. Prefix Wildcard
+        const rPrefix = engine.search('nav*');
+        log('Prefix wildcard (nav*) matches navigation and nav elements', rPrefix.length > 0);
+
+        // 11. Highlighting Accuracy (does not highlight syntax keywords like AND, OR, NOT)
+        const text = "Defines the manifest and package element in the specification.";
+        const highlighted = EpubSearchEngine.highlightText(text, 'manifest AND package NOT draft');
+        log('Highlighting marks "manifest"', highlighted.includes('<mark>manifest</mark>'));
+        log('Highlighting marks "package"', highlighted.includes('<mark>package</mark>'));
+        log('Highlighting DOES NOT mark "AND"', !highlighted.includes('<mark>and</mark>') && !highlighted.includes('<mark>AND</mark>'));
+        log('Highlighting DOES NOT mark "NOT"', !highlighted.includes('<mark>not</mark>') && !highlighted.includes('<mark>NOT</mark>'));
+
+        // 12. Quoted Phrase Highlighting
+        const phraseText = "The EPUB package document contains manifest items.";
+        const phraseHighlighted = EpubSearchEngine.highlightText(phraseText, '"package document"');
+        log('Highlighting marks exact phrase as single unit', phraseHighlighted.includes('<mark>package document</mark>'));
+
+        const summary = document.createElement('div');
+        summary.className = 'summary ' + (failed === 0 ? 'pass' : 'fail');
+        summary.textContent = `SUMMARY: ${passed} passed, ${failed} failed.`;
+        document.body.appendChild(summary);
+    </script>
+</body>
+</html>
