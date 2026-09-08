@@ -111,6 +111,41 @@ const phraseText = "The EPUB package document contains manifest items.";
 const phraseHighlighted = EpubSearchEngine.highlightText(phraseText, '"package document"');
 assert('Highlighting marks exact phrase as single unit', phraseHighlighted.includes('<mark>package document</mark>'));
 
+// 13. RFC 2119 Qualifier: req:any
+const rReqAny = engine.search('req:any');
+assert('req:any returns normative sections (' + rReqAny.length + ' sections)', rReqAny.length > 0);
+assert('All req:any sections contain at least 1 RFC 2119 keyword', rReqAny.every(d => d.rfc2119 && d.rfc2119.length > 0));
+
+// 14. RFC 2119 Qualifier: req:must (collapsing MUST and MUST NOT)
+const rReqMust = engine.search('req:must');
+assert('req:must returns sections (' + rReqMust.length + ' sections)', rReqMust.length > 0);
+assert('All req:must sections contain MUST or MUST NOT', 
+    rReqMust.every(d => d.rfc2119 && (d.rfc2119.includes('MUST') || d.rfc2119.includes('MUST NOT'))));
+
+// 15. RFC 2119 Qualifier: req:should (collapsing SHOULD and SHOULD NOT)
+const rReqShould = engine.search('req:should');
+assert('req:should returns sections (' + rReqShould.length + ' sections)', rReqShould.length > 0);
+assert('All req:should sections contain SHOULD or SHOULD NOT',
+    rReqShould.every(d => d.rfc2119 && (d.rfc2119.includes('SHOULD') || d.rfc2119.includes('SHOULD NOT'))));
+
+// 16. RFC 2119 Qualifier: specific negative req:"must not"
+const rReqMustNot = engine.search('req:"must not"');
+assert('req:"must not" returns sections (' + rReqMustNot.length + ' sections)', rReqMustNot.length > 0);
+assert('All req:"must not" sections explicitly contain MUST NOT',
+    rReqMustNot.every(d => d.rfc2119 && d.rfc2119.includes('MUST NOT')));
+
+// 17. RFC 2119 Combined query: req:must AND type:Recommendation
+const rReqCombo = engine.search('req:must AND type:Recommendation');
+assert('req:must AND type:Recommendation returns matching results (' + rReqCombo.length + ' sections)', rReqCombo.length > 0);
+assert('Combined results satisfy both requirement and type',
+    rReqCombo.every(d => d.type === 'Recommendation' && d.rfc2119 && (d.rfc2119.includes('MUST') || d.rfc2119.includes('MUST NOT'))));
+
+// 18. RFC 2119 Highlighting: does not highlight 'any' when using req:any
+const sampleText = "Any creator must provide a fallback.";
+const anyHighlighted = EpubSearchEngine.highlightText(sampleText, 'req:any fallback');
+assert('Highlighting marks "fallback"', anyHighlighted.includes('<mark>fallback</mark>'));
+assert('Highlighting DOES NOT mark "any" from req:any', !anyHighlighted.toLowerCase().includes('<mark>any</mark>'));
+
 console.log(`\n======================================================`);
 console.log(`Test Results: ${passed} passed, ${failed} failed`);
 console.log(`======================================================\n`);

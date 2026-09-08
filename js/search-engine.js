@@ -301,6 +301,7 @@ class EpubSearchEngine {
                 version: src.version || '',
                 description: src.description || '',
                 keywords: [src.title, src.type, src.publisher, src.category, src.version].filter(Boolean),
+                rfc2119: [],
                 rawText: raw,
                 tokens: this.tokenize(raw)
             });
@@ -326,6 +327,7 @@ class EpubSearchEngine {
                 version: parentSource ? parentSource.version : '',
                 description: entry.summary || '',
                 keywords: entry.keywords || [],
+                rfc2119: entry.rfc2119 || [],
                 rawText: raw,
                 tokens: this.tokenize(raw)
             });
@@ -543,9 +545,36 @@ class EpubSearchEngine {
 
             case 'FIELD': {
                 const field = node.field.toLowerCase();
-                const val = node.value;
-                let target = '';
+                const val = (node.value || '').trim().toLowerCase();
 
+                // RFC 2119 requirement qualifier support (e.g. req:must, req:should, req:any, req:"must not")
+                if (field === 'req' || field === 'rfc' || field === 'rfc2119' || field === 'requirement' || field === 'requirements') {
+                    const reqs = (doc.rfc2119 || []).map(r => r.toLowerCase());
+                    let matched = false;
+
+                    if (val === 'any' || val === '*') {
+                        matched = reqs.length > 0;
+                    } else if (val === 'none') {
+                        matched = reqs.length === 0;
+                    } else if (val === 'must') {
+                        // Collapse NOT variants: 'must' matches 'must' and 'must not'
+                        matched = reqs.some(r => r === 'must' || r === 'must not');
+                    } else if (val === 'should') {
+                        // Collapse NOT variants: 'should' matches 'should' and 'should not'
+                        matched = reqs.some(r => r === 'should' || r === 'should not');
+                    } else if (val === 'must not' || val === 'must-not') {
+                        matched = reqs.includes('must not');
+                    } else if (val === 'should not' || val === 'should-not') {
+                        matched = reqs.includes('should not');
+                    } else {
+                        // Exact matching for may, optional, recommended, required
+                        matched = reqs.some(r => r === val || r.replace(/\s+/g, '-') === val);
+                    }
+
+                    return { matches: matched, score: matched ? 35 : 0 };
+                }
+
+                let target = '';
                 if (field === 'type') target = doc.type.toLowerCase();
                 else if (field === 'pub' || field === 'publisher') target = doc.publisher.toLowerCase();
                 else if (field === 'cat' || field === 'category') target = doc.category.toLowerCase();
@@ -622,8 +651,14 @@ class EpubSearchEngine {
             if (t.type === 'PHRASE') {
                 phrases.push(t.value);
             } else if (t.type === 'FIELD') {
-                if (t.isPhrase) phrases.push(t.value);
-                else terms.push(t.value);
+                const isReqField = t.field === 'req' || t.field === 'rfc' || t.field === 'rfc2119' || t.field === 'requirement' || t.field === 'requirements';
+                if (isReqField && (t.value === 'any' || t.value === '*' || t.value === 'none')) {
+                    // skip highlighting meta-values
+                } else if (t.isPhrase) {
+                    phrases.push(t.value);
+                } else {
+                    terms.push(t.value);
+                }
             } else if (t.type === 'TERM') {
                 terms.push(t.value);
             }

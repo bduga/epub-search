@@ -89,6 +89,10 @@ $stopWords = [System.Collections.Generic.HashSet[string]]::new([System.StringCom
   "div", "span", "true", "false", "http", "https", "null", "string", "number", "none",
   "see", "note", "section", "appendix", "table", "example", "using", "used", "defined") | ForEach-Object { $stopWords.Add($_) | Out-Null }
 
+# Canonical RFC 2119 requirement keywords
+$validRfc2119 = [System.Collections.Generic.HashSet[string]]::new([System.StringComparer]::OrdinalIgnoreCase)
+@("MAY", "MUST", "MUST NOT", "OPTIONAL", "RECOMMENDED", "REQUIRED", "SHOULD", "SHOULD NOT") | ForEach-Object { $validRfc2119.Add($_) | Out-Null }
+
 $allEntries = [System.Collections.Generic.List[PSCustomObject]]::new()
 $processedSources = 0
 $totalExtracted = 0
@@ -220,6 +224,17 @@ for ($sIdx = 0; $sIdx -lt $sources.Count; $sIdx++) {
             }
         }
 
+        # Extract RFC 2119 requirement keywords (strictly elements with class="rfc2119")
+        $rfcMatches = [regex]::Matches($secContent, '(?si)<([a-z0-9]+)\b[^>]*class="[^"]*\brfc2119\b[^"]*"[^>]*>(.*?)</\1>')
+        $rfcSet = [System.Collections.Generic.HashSet[string]]::new([System.StringComparer]::OrdinalIgnoreCase)
+        foreach ($rm in $rfcMatches) {
+            $t = (Clean-HtmlText $rm.Groups[2].Value).ToUpper()
+            if ($validRfc2119.Contains($t)) {
+                $rfcSet.Add($t) | Out-Null
+            }
+        }
+        $rfcTerms = @($rfcSet | Sort-Object)
+
         $baseUrl = $src.url.TrimEnd('/')
         $anchorUrl = "$baseUrl/#$secId"
 
@@ -234,6 +249,7 @@ for ($sIdx = 0; $sIdx -lt $sources.Count; $sIdx++) {
             type = $src.type
             publisher = $src.publisher
             keywords = @($keywords)
+            rfc2119 = @($rfcTerms)
             summary = $summary
         }
 

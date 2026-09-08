@@ -305,7 +305,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         if (resultCountEl) resultCountEl.textContent = results.length;
 
         if (parsedQueryPill) {
-            const hasAdvancedSyntax = /["'():*]|(\b(AND|OR|NOT)\b)|(\b(type|pub|publisher|cat|category|title|sec):)|(^[+-]|\s[+-])/.test(query);
+            const hasAdvancedSyntax = /["'():*]|(\b(AND|OR|NOT)\b)|(\b(type|pub|publisher|cat|category|title|sec|section|req|rfc|rfc2119):)|(^[+-]|\s[+-])/.test(query);
             if (hasAdvancedSyntax && query.trim()) {
                 parsedQueryPill.style.display = 'inline-flex';
                 parsedQueryPill.textContent = '⚡ Advanced Syntax Active';
@@ -370,6 +370,19 @@ document.addEventListener('DOMContentLoaded', async () => {
                     ` : ''}
 
                     <p class="card-desc">${highlightedDesc}</p>
+
+                    ${doc.rfc2119 && doc.rfc2119.length > 0 ? `
+                        <div class="card-rfc-container">
+                            <span class="rfc-title" title="Normative RFC 2119 requirement terms">Requirements:</span>
+                            <div class="rfc-badges">
+                                ${doc.rfc2119.map(req => {
+                                    const reqLower = req.toLowerCase();
+                                    const filterVal = reqLower === 'must not' ? '"must not"' : (reqLower === 'should not' ? '"should not"' : reqLower);
+                                    return `<button type="button" class="badge-rfc badge-rfc-${reqLower.replace(/\s+/g, '-')}" title="Click to filter by req:${escapeHtml(filterVal)}" data-req="${escapeHtml(filterVal)}">${escapeHtml(req)}</button>`;
+                                }).join('')}
+                            </div>
+                        </div>
+                    ` : ''}
 
                     ${doc.keywords && doc.keywords.length > 0 ? `
                         <div class="card-keywords">
@@ -483,6 +496,20 @@ document.addEventListener('DOMContentLoaded', async () => {
             }
         });
     });
+
+    // RFC 2119 badge click handler on search results
+    if (resultsContainer) {
+        resultsContainer.addEventListener('click', (e) => {
+            const btn = e.target.closest('.badge-rfc');
+            if (!btn) return;
+            const reqVal = btn.getAttribute('data-req');
+            if (!reqVal) return;
+            searchInput.value = `req:${reqVal}`;
+            if (clearBtn) clearBtn.style.display = 'block';
+            searchInput.focus();
+            render();
+        });
+    }
 
     // Global keyboard shortcuts
     window.addEventListener('keydown', (e) => {

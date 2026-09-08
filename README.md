@@ -8,6 +8,7 @@ The EPUB ecosystem spans multiple specifications, working group notes, community
 
 This application provides a unified, fast, searchable catalog and index across **38 official document sources**, featuring:
 - **Advanced Query Engine**: Full Boolean logic (`AND`, `OR`, `NOT`), shorthand negation (`-term`), exact quoted phrases (`"package document"`), parentheses grouping (`(...)`), and prefix wildcards (`nav*`).
+- **Normative Requirement Indexing (RFC 2119)**: Semantic extraction of official conformance keywords (`class="rfc2119"`) with dedicated query qualifiers (`req:any`, `req:must`, `req:should`, `req:"must not"`), collapsed negation logic, and interactive badge pills.
 - **Field-Specific Filtering**: Targeted search qualifiers such as `type:Recommendation`, `pub:PMWG`, `cat:Authoring`, and `title:spine`.
 - **Interactive Syntax Guide**: In-app modal with one-click demo query chips for instant demonstration.
 - **Syntax-Aware Snippet Highlighting**: Intelligently highlights matched keywords and phrases while excluding syntax operators.

@@ -12,6 +12,9 @@
         "keywords":  [
                          "introduction"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "1. Introduction in official EPUB 3 Overview (3.3)."
     },
     {
@@ -28,6 +31,9 @@
                          "reading",
                          "document"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The EPUB 3 format offers publishers the ability to create advanced reading experiences by leveraging the features and functionality of the Open Web Platform. The ability to use HTML, SVG, CSS, and JavaScript enables not only rich and int..."
     },
     {
@@ -44,6 +50,9 @@
                          "reading",
                          "specifications"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "For those interested in going beyond the general introduction presented in this document, the EPUB 3.3 specification [ epub-33 ] contains all the essential authoring information."
     },
     {
@@ -60,6 +69,9 @@
                          "version",
                          "numbering"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "An initial point of confusion for people new to EPUB is the difference between \"EPUB 3\" the format and the EPUB 3 specification numbering. The current version of EPUB 3 is defined in the EPUB 3.3 specification [ epub-33 ]. The minor numb..."
     },
     {
@@ -76,6 +88,9 @@
                          "epub",
                          "container"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "An EPUB publication is transported and interchanged as a single file (a \"portable document\") that contains the package document(s) , the EPUB content documents , and all other required resources for processing the publication. The single..."
     },
     {
@@ -95,6 +110,9 @@
                          "link",
                          "unique-identifier"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Every EPUB publication is represented by a package document . The package document specifies all the resources required to render that representation of the content. The package document also defines a reading order for linear consumptio..."
     },
     {
@@ -110,6 +128,9 @@
         "keywords":  [
                          "navigation"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "4. Navigation in official EPUB 3 Overview (3.3)."
     },
     {
@@ -126,6 +147,9 @@
                          "reading",
                          "order"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A key concept of EPUB is that an EPUB publication consists of multiple resources that can be completely navigated and consumed by a person or program in some specific order ."
     },
     {
@@ -144,6 +168,9 @@
                          "nav",
                          "hidden"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Each EPUB publication contains a special XHTML content document called the EPUB navigation document . This document uses the [ html ] nav element to define human- and machine-readable navigation information. All reading systems make use ..."
     },
     {
@@ -160,6 +187,9 @@
                          "content",
                          "documents"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Each EPUB publication contains one or more EPUB content documents , as defined in EPUB content documents [ epub-33 ]. These are XHTML or SVG documents that describe the readable content and reference associated media resources (e.g., ima..."
     },
     {
@@ -176,6 +206,9 @@
                          "rendering",
                          "css"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A key concept of EPUB is that content presentation adapts to the user, rather than the user having to adapt to a particular presentation of content. HTML was originally designed to support dynamic rendering of structured content, but ove..."
     },
     {
@@ -193,6 +226,9 @@
                          "audio",
                          "video"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "EPUB 3 supports the embedding of audio and video in XHTML content documents via the [ html ] audio and video elements, inheriting all the functionality and features these elements provide (e.g., built-in start, stop, and volume controls)..."
     },
     {
@@ -208,6 +244,9 @@
         "keywords":  [
                          "fonts"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "EPUB 3 supports two closely related font formats — OpenType [ opentype ] and WOFF [ woff ] [ woff2 ] — to accommodate both traditional publishing workflows and emerging web-based workflows. Word processing programs used to create EPUB pu..."
     },
     {
@@ -223,6 +262,9 @@
         "keywords":  [
                          "scripting"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "EPUB strives to treat content declaratively — as data that can be manipulated, not as programs to be executed — but does support scripting as defined in [ html ] and [ svg ]. This allows publishers to build and add dynamic content such a..."
     },
     {
@@ -240,6 +282,9 @@
                          "enrichment",
                          "script"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "XHTML content documents also include the means of annotating document markup with rich metadata, making them more semantically meaningful and useful both for processing and accessibility purposes. Publishers can use both RDFa [ rdfa-in-h..."
     },
     {
@@ -257,6 +302,9 @@
                          "semantics",
                          "epub:type"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "EPUB 3 also includes the epub:type attribute [ epub-33 ] for adding additional information to any element in an EPUB content document to express its purpose and meaning within the work."
     },
     {
@@ -272,6 +320,9 @@
         "keywords":  [
                          "layouts"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "6. Layouts in official EPUB 3 Overview (3.3)."
     },
     {
@@ -288,6 +339,9 @@
                          "reflowable",
                          "layouts"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "At its core, EPUB is designed for dynamic layout: content is typically intended to be formatted on the fly rather than being typeset in a paginated manner in advance. This core capability is useful for optimizing rendering onto different..."
     },
     {
@@ -304,6 +358,9 @@
                          "fixed",
                          "layouts"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Although EPUB\u0027s history is steeped in enabling reflowable content, not all publications lend themselves easily to reflowing. Page-precise layouts are required to meaningfully represent children\u0027s books, comics and manga, magazines, and m..."
     },
     {
@@ -320,6 +377,9 @@
                          "media",
                          "overlays"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Another key multimedia feature of EPUB 3 is the ability to define media overlays. When pre-recorded narration is available for an EPUB publication , media overlays provide the ability to synchronize the playback of that audio with the te..."
     },
     {
@@ -340,6 +400,9 @@
                          "xml:lang",
                          "page-progression-direction"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "EPUB 3 leverages the features in XHTML, SVG, CSS, or MathML for global language support, and it also relies on [ unicode ] for encoding the content. This means that EPUB content documents have the possibility to use different character s..."
     },
     {
@@ -359,6 +422,9 @@
                          "audio",
                          "video"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A major goal of EPUB is to facilitate content accessibility, and a variety of features in EPUB 3 support this requirement. More specifically, the EPUB Accessibility specification [ epub-a11y-11 ] provides a framework for evaluating the a..."
     },
     {
@@ -376,6 +442,9 @@
                          "experimental",
                          "features"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "EPUB 3 is continuously evolving with the web to adapt new features and technologies. The specification references a number of web standards that automatically becomes valid to use as soon as they change. HTML, for example, is now called ..."
     },
     {
@@ -392,6 +461,9 @@
                          "epub",
                          "documents"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A. EPUB 3 documents in official EPUB 3 Overview (3.3)."
     },
     {
@@ -407,6 +479,9 @@
         "keywords":  [
                          "specifications"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "EPUB 3 is currently defined by the following specifications:"
     },
     {
@@ -422,6 +497,9 @@
         "keywords":  [
                          "notes"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Although the following documents are informative, they provide guidance related to implementing the EPUB 3 specifications as well as define experimental features."
     },
     {
@@ -439,6 +517,9 @@
                          "revision",
                          "history"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "B. EPUB revision history in official EPUB 3 Overview (3.3)."
     },
     {
@@ -458,6 +539,9 @@
                          "1999",
                          "2010"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "EPUB has its roots in the interchange format known as the Open EBook Publication Structure (OEBPS). OEBPS 1.0 was approved in 1999 by the Open eBook Forum, an organization that later became the International Digital Publishing Forum (IDP..."
     },
     {
@@ -474,6 +558,9 @@
                          "epub",
                          "2010"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Work on a major revision of the EPUB specifications began in 2010, with the goal of aligning EPUB more closely with HTML, and in the process bringing new, native multimedia features, sophisticated CSS layout rendering and font embedding,..."
     },
     {
@@ -490,6 +577,9 @@
                          "epub",
                          "2014"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The EPUB 3.0.1 revision was undertaken in 2013-14. Although introducing mostly minor fixes and updates, it did see the integration of Fixed Layout Documents, which give publishers greater control over presentation when a reflowable EPUB ..."
     },
     {
@@ -506,6 +596,9 @@
                          "epub",
                          "2017"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "EPUB 3.1 was the first minor revision of EPUB 3. The goal of this revision was to better align EPUB 3 with current web standards. References to important standards were made undated, meaning that whenever they are updated they are legal ..."
     },
     {
@@ -522,6 +615,9 @@
                          "epub",
                          "2018"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The work on EPUB 3.2 was undertaken shortly after EPUB 3.1 to restore compatibility of content to EPUB 3. The change of version number introduced in EPUB 3.1 meant that publishers, vendors and reading system developers would have to prod..."
     },
     {
@@ -538,6 +634,9 @@
                          "epub",
                          "2022"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The work on EPUB 3.3 [ epub-33 ] was undertaken in 2020-21, and is the first version of the EPUB 3 series published as a W3C Recommendation. EPUB 3.3 does not include any significant technical change to, and is strongly backward compatib..."
     },
     {
@@ -560,6 +659,9 @@
                          "audio",
                          "nav"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "C.1 Terms defined by reference in official EPUB 3 Overview (3.3)."
     },
     {
@@ -575,6 +677,9 @@
         "keywords":  [
                          "acknowledgements"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Specifications, like art, are human creations. No human has done more for EPUB than Garth Conboy, who has been there every step of the way, from the very first OEB 1.0 in 1999 to today\u0027s EPUB 3.3. None of this would have happened without..."
     },
     {
@@ -590,6 +695,9 @@
         "keywords":  [
                          "introduction"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "1. Introduction in official EPUB Accessibility 1.2 Explainer."
     },
     {
@@ -605,6 +713,9 @@
         "keywords":  [
                          "overview"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This document together with EPUB Accessibility Techniques 1.2 [ epub-a11y-tech-12 ] provide informative support for implementing EPUB Accessibility 1.2 [ epub-a11y-12 ]. This document provides general explanation of the \" Accessible publ..."
     },
     {
@@ -620,6 +731,9 @@
         "keywords":  [
                          "scope"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This document is limited in focus to reflowable EPUB publications [ epub-3 ]."
     },
     {
@@ -637,6 +751,9 @@
                          "success",
                          "criteria"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "2. WCAG success criteria in official EPUB Accessibility 1.2 Explainer."
     },
     {
@@ -652,6 +769,9 @@
         "keywords":  [
                          "authentication"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Authentication in official EPUB Accessibility 1.2 Explainer."
     },
     {
@@ -667,6 +787,9 @@
         "keywords":  [
                          "application"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "There are two [ wcag2 ] accessible authentication success criteria — a minimum (3.3.8) and an enhanced (3.3.9) version — as well as a related success criterion for re-authentication (2.2.5) . These have a combined goal of ensuring that u..."
     },
     {
@@ -683,6 +806,9 @@
                          "locating",
                          "\u003cpackage xmlns ="
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Despite the potential drawbacks of adding authentication to EPUB publications, nothing prevents a publisher from using logins. They are much rarer than on the web because a publication belongs to one user and so it does not have to be bl..."
     },
     {
@@ -699,6 +825,9 @@
                          "bypass",
                          "blocks"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Web sites are constructed very differently from EPUB publications. A typical web site wraps the content of each page within a repeating template, for example. This template gives each page a consistent look and feel, but users are rarely..."
     },
     {
@@ -715,6 +844,9 @@
                          "consistent",
                          "help"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The goal of the [ wcag2 ] consistent help success criterion (3.2.6) is to ensure that when a help mechanism is provided across a set of pages, it is consistently located for discovery by users. Consistent placement ensure that, for examp..."
     },
     {
@@ -731,6 +863,9 @@
                          "consistent",
                          "navigation"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Consistent navigation in official EPUB Accessibility 1.2 Explainer."
     },
     {
@@ -746,6 +881,9 @@
         "keywords":  [
                          "application"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The [ wcag2 ] consistent navigation success criterion (3.2.3) has a similar goal to the consistent help success criterion but in this case the objective is to make it easier for users on the web to find and use repeated navigational aids..."
     },
     {
@@ -763,6 +901,9 @@
                          "tables",
                          "contents"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The most common case where the consistent navigation success criterion applies to EPUB publication is when chapters include mini tables of contents at their start. These are most typically found in educational works to provide quick acce..."
     },
     {
@@ -779,6 +920,9 @@
                          "page",
                          "numbering"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Although page numbers provide a form of static navigation aid — indicating to the user where they are in a publication — their consistent placement in reflowable EPUB publications is out of scope for this success criterion. Page break ma..."
     },
     {
@@ -795,6 +939,9 @@
                          "live",
                          "media"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The purpose of the [ wcag2 ] Captions (Live) (1.2.4) and Audio-only (Live) (1.2.9) success criteria is to ensure that users who are deaf or hard of hearing can access real-time presentations over the web. Typical examples of content thes..."
     },
     {
@@ -811,6 +958,9 @@
                          "meaningful",
                          "sequence"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The [ wcag2 ] meaningful sequence success criterion (1.3.2) specifies that each web page have a meaningful order (i.e., that the visual presentation of the content match the underlying markup)."
     },
     {
@@ -827,6 +977,9 @@
                          "multiple",
                          "ways"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The [ wcag2 ] multiple ways success criterion requires that web users are able to locate content within a set of pages on a site. This ensures that there are at least two ways to reach any information."
     },
     {
@@ -842,6 +995,9 @@
         "keywords":  [
                          "contents"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A common question about the EPUB table of contents is what completeness it needs to have with respect to the headings of the publication. Although the obvious answer is to create a simple aggregation of all the headings for all the secti..."
     },
     {
@@ -858,6 +1014,9 @@
                          "redundant",
                          "entry"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The goal of the [ wcag2 ] redundant entry success criterion (3.3.7) is to prevent users from having to enter the same information again when completing a multi-step process on the web. This reduces memory requirements and stress for user..."
     },
     {
@@ -873,6 +1032,9 @@
         "keywords":  [
                          "reflow"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Reflow in official EPUB Accessibility 1.2 Explainer."
     },
     {
@@ -888,6 +1050,9 @@
         "keywords":  [
                          "application"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The [ wcag2 ] reflow success criterion (1.4.10) seeks to ensure that content remains readable for users with low vision as they enlarge it. It requires that there be no loss of information or readability for vertically scrolling content ..."
     },
     {
@@ -906,6 +1071,9 @@
                          "aside",
                          "nav"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The most likely source of failure for the reflow success criterion is going to arise with container elements, such as with the [ html ] aside , div , nav and similar elements used to group content. When these elements are assigned fixed ..."
     },
     {
@@ -922,6 +1090,9 @@
                          "font",
                          "size"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "When testing this success criterion, be aware that app-based reading systems typically do not allow zooming of reflowable content. They are more likely to support font size increases up to 400% of the default, but increasing the font siz..."
     },
     {
@@ -942,6 +1113,9 @@
                          "overflow-wrap",
                          "word-break"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Large words, hyperlinks, code examples, and other strings of contiguous text with no break points can also pose problems for reflow as the viewport reaches 320 CSS pixels, but the text is not required to stay the same font size as the co..."
     },
     {
@@ -958,6 +1132,9 @@
                          "exempt",
                          "content"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Not all content is required to reflow as it is enlarged. The success criterion makes an exception for content that would lose its meaning if it were reflowed. For reflowable publications, the most common content that requires two-dimensi..."
     },
     {
@@ -974,6 +1151,9 @@
                          "fixed",
                          "layouts"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Although the reflow success criterion does not pose a lot of problems for reflowable EPUB publications, it is one of the most problematic to meet for fixed-layout EPUB publications as reading systems do not reflow the content of a fixed-..."
     },
     {
@@ -990,6 +1170,9 @@
                          "epub",
                          "objectives"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "3. EPUB objectives in official EPUB Accessibility 1.2 Explainer."
     },
     {
@@ -1006,6 +1189,9 @@
                          "page",
                          "navigation"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Page navigation in official EPUB Accessibility 1.2 Explainer."
     },
     {
@@ -1022,6 +1208,9 @@
                          "page",
                          "list"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A page list [ epub-a11y ] is a list of links to static page break locations in an EPUB publication . These destinations remain the same across reading systems, device screen sizes, and user text preferences."
     },
     {
@@ -1038,6 +1227,9 @@
                          "page",
                          "breaks"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The ability to identify the current page a user is on, and have that page be consistent across devices and user settings, is another essential feature for users who are trying to coordinate their reading in a mixed print-digital environm..."
     },
     {
@@ -1056,6 +1248,9 @@
                          "media",
                          "overlays"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The page break marker objectives also include a requirement that if the page break numbers are read out in media overlays playback, the markers also have to be identified in the SMIL markup."
     },
     {
@@ -1072,6 +1267,9 @@
                          "page",
                          "source"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "An EPUB publication containing a page list and page break markers cannot be considered fully accessible if users are unable to identify the corresponding source edition. Pagination and content layout frequently vary across different edit..."
     },
     {
@@ -1089,6 +1287,9 @@
                          "text-audio",
                          "playback"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Synchronized text-audio playback in official EPUB Accessibility 1.2 Explainer."
     },
     {
@@ -1105,6 +1306,9 @@
                          "completeness",
                          "par"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The EPUB 3 standard defines how to use media overlays [ epub-3 ] to synchronize text and audio. What it does not do is require any amount of coverage when using the technology. Consequently, an EPUB publication might contain text and aud..."
     },
     {
@@ -1121,6 +1325,9 @@
                          "reading",
                          "order"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Every EPUB publication has a default reading order that allows users to progress through the content. The default reading order consists of two parts: the order of references in the spine provides a high-level progression through the EPU..."
     },
     {
@@ -1137,6 +1344,9 @@
                          "skippability",
                          "par"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Being able to read the primary narrative of a work without interruption is central to reading comprehension. EPUB publications are typically structured to visually represent secondary information such as page break markers, sidebars, and..."
     },
     {
@@ -1152,6 +1362,9 @@
         "keywords":  [
                          "escapability"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "When reading visually, users can easily resume reading the primary narrative once highly structured content such as sidebars, lists, and figures stop being of interest. Visual readers can skim lists and quickly return to the primary narr..."
     },
     {
@@ -1168,6 +1381,9 @@
                          "navigation",
                          "document"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "In addition to body text synchronization, media overlays [ epub-3 ] can be applied to the EPUB navigation document. Including synchronized text-audio playback within the EPUB navigation document enables a reading system to generate audit..."
     },
     {
@@ -1184,6 +1400,9 @@
                          "evaluation",
                          "considerations"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "4. Evaluation considerations in official EPUB Accessibility 1.2 Explainer."
     },
     {
@@ -1201,6 +1420,9 @@
                          "success",
                          "criteria"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Filtering success criteria in official EPUB Accessibility 1.2 Explainer."
     },
     {
@@ -1217,6 +1439,9 @@
                          "introduction",
                          "canvas"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "There are fifty-six success criteria that fall at level A or AA in WCAG 2.2 [ wcag2 ]. They are organized by whether they improve the perceivability, operability, understanding, or robustness of the content."
     },
     {
@@ -1239,6 +1464,9 @@
                          "canvas",
                          "data:"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Before attempting to filter the success criteria it is critical to be sure what content an EPUB publication contains. The traditional way to verify this is through the package document manifest [ epub-3 ]. Each manifest item has to list ..."
     },
     {
@@ -1254,6 +1482,9 @@
         "keywords":  [
                          "filtering"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The following table provides a list of success criteria that can be skipped if an EPUB publication does not contain the specified type of content."
     },
     {
@@ -1272,6 +1503,9 @@
                          "success",
                          "criteria"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "EPUB Accessibility 1.2 [ epub-a11y-12 ] does not define a format for evaluation reports. Evaluators have the flexibility to use a format that best meets personal and/or regional reporting needs. In general, though, it is expected that th..."
     },
     {
@@ -1288,6 +1522,9 @@
                          "terms",
                          "specification"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A.1 Terms defined by this specification in official EPUB Accessibility 1.2 Explainer."
     },
     {
@@ -1310,6 +1547,9 @@
                          "onclick",
                          "HTMLElement"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A.2 Terms defined by reference in official EPUB Accessibility 1.2 Explainer."
     },
     {
@@ -1325,6 +1565,9 @@
         "keywords":  [
                          "introduction"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "1. Introduction in official EPUB 3.4 Core Specification."
     },
     {
@@ -1340,6 +1583,9 @@
         "keywords":  [
                          "overview"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "EPUB 3 has been widely adopted as the format for digital books (ebooks), and this revision continues to increase the format\u0027s capabilities to better support a wider range of publication requirements, including complex layouts, rich media..."
     },
     {
@@ -1359,6 +1605,9 @@
                          "/META-INF",
                          "container.xml"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This section reviews the organization of this specification through the central product it defines: the EPUB publication ."
     },
     {
@@ -1376,6 +1625,9 @@
                          "other",
                          "specifications"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The technologies EPUB 3 builds on are constantly evolving. Some, typically referred to as \"living\" or \"evergreen\" standards, are subject to change daily and their impact on the validity of EPUB publications is immediate. Others are updat..."
     },
     {
@@ -1392,6 +1644,9 @@
                          "relationship",
                          "html"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The [ html ] standard is continuously evolving — there are no longer versioned releases of it. That standard, in turn, references various technologies that also continue to evolve, such as MathML, SVG, CSS, and JavaScript."
     },
     {
@@ -1408,6 +1663,9 @@
                          "relationship",
                          "svg"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This specification does not reference a specific version of [ svg ], but instead uses an undated reference. Whenever there is any ambiguity in this reference, the latest recommended version is the authoritative reference."
     },
     {
@@ -1424,6 +1682,9 @@
                          "relationship",
                          "css"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "EPUB 3 supports CSS as defined by the CSS Working Group Snapshot [ csssnapshot ]."
     },
     {
@@ -1440,6 +1701,9 @@
                          "relationship",
                          "mathml"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "EPUB 3 only supports Presentation Markup [ mathml3 ]. Content Markup is only allowed in structured markup annotations ."
     },
     {
@@ -1456,6 +1720,9 @@
                          "relationship",
                          "smil"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This specification relies on a subset of [ smil3 ], from which the media overlays elements and attributes defined in 9.3.2.2 Media overlay document definition are derived."
     },
     {
@@ -1472,6 +1739,9 @@
                          "relationship",
                          "url"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This specification refers to the [ url ] standard for terminology and processing related to URLs expressed in EPUB publications . It is anticipated that new and revised web formats will adopt this standard, but until then this could put ..."
     },
     {
@@ -1494,6 +1764,9 @@
                          "EPUB conformance checker",
                          "EPUB container"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This specification defines the following terms specific to EPUB 3."
     },
     {
@@ -1509,6 +1782,16 @@
         "keywords":  [
                          "conformance"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "MUST NOT",
+                        "OPTIONAL",
+                        "RECOMMENDED",
+                        "REQUIRED",
+                        "SHOULD",
+                        "SHOULD NOT"
+                    ],
         "summary":  "As well as sections marked as non-normative, all authoring guidelines, diagrams, examples, and notes in this specification are non-normative. Everything else in this specification is normative."
     },
     {
@@ -1527,6 +1810,9 @@
                          "dc:",
                          "epub"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "In package document metadata examples, reserved prefixes are used without declaration."
     },
     {
@@ -1544,6 +1830,10 @@
                          "publication",
                          "conformance"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "SHOULD"
+                    ],
         "summary":  "MUST define at least one rendering of its content as follows:"
     },
     {
@@ -1560,6 +1850,14 @@
                          "conformance",
                          "checking"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "MUST NOT",
+                        "RECOMMENDED",
+                        "REQUIRED",
+                        "SHOULD",
+                        "SHOULD NOT"
+                    ],
         "summary":  "Due to the complexity of this specification and number of technologies used in EPUB publications , it is advised to use an EPUB conformance checker to verify content conformance."
     },
     {
@@ -1576,6 +1874,9 @@
                          "publication",
                          "resources"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "3. Publication resources in official EPUB 3.4 Core Specification."
     },
     {
@@ -1591,6 +1892,9 @@
         "keywords":  [
                          "introduction"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "An EPUB publication is made up of many different categories of resources, not all of which are mutually exclusive. Some resources are publication resources , some are not. Some publication resources are allowed in the spine by default, w..."
     },
     {
@@ -1610,6 +1914,9 @@
                          "link",
                          "item"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The manifest plane defines all the resources of an EPUB publication . It is analogous to the package document manifest , but includes resources not present in that list."
     },
     {
@@ -1628,6 +1935,9 @@
                          "spine plane",
                          "fallback"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The spine plane defines resources used in the default reading order established by the spine , which includes both linear and non-linear content . The spine instructs reading systems on how to load these resources as the user progresses ..."
     },
     {
@@ -1647,6 +1957,9 @@
                          "picture",
                          "link"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The content plane classifies resources that are used when rendering EPUB content documents and foreign content documents . These types of resources include embedded media, CSS style sheets, scripts, and fonts. These resources fall into t..."
     },
     {
@@ -1669,6 +1982,10 @@
                          "image/png",
                          "image/svg+xml"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST"
+                    ],
         "summary":  "Publication resources that conform to the MIME media type [ rfc2046 ] specifications defined in the following table MAY be included in EPUB publications without fallbacks when they are used in EPUB content documents and foreign content d..."
     },
     {
@@ -1685,6 +2002,9 @@
                          "foreign",
                          "resources"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "A foreign resource can be used in an EPUB content document or foreign content document . However, unlike a core media type resource , a foreign resource is not guaranteed reading system support."
     },
     {
@@ -1707,6 +2027,9 @@
                          "source",
                          "itemref"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "An exempt resource shares properties with both foreign resources and core media type resources . It is most similar to a foreign resource in that it is not guaranteed reading system support, but, like a core media type resource, does not..."
     },
     {
@@ -1723,6 +2046,9 @@
                          "resource",
                          "fallbacks"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Resource fallbacks in official EPUB 3.4 Core Specification."
     },
     {
@@ -1743,6 +2069,11 @@
                          "item",
                          "properties"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "MUST NOT"
+                    ],
         "summary":  "Manifest fallbacks are a feature of the package document that create a manifest fallback chain of alternative resources that a reading system can use in place of a top-level content document , allowing it to select a format it can render..."
     },
     {
@@ -1759,6 +2090,9 @@
                          "intrinsic",
                          "fallbacks"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The following sections provide clarifications about the intrinsic fallback requirements of specific elements in [ html ]."
     },
     {
@@ -1778,6 +2112,9 @@
                          "fallbacks",
                          "source"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "[ html ] flow content embedded within audio or video elements does not count as an intrinsic fallback for foreign resources . Only child source elements [ html ] provide intrinsic fallback capabilities."
     },
     {
@@ -1800,6 +2137,10 @@
                          "source",
                          "type"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "MUST NOT"
+                    ],
         "summary":  "To provide alternative format fallbacks, the [ html ] img element can be used as the child of a picture element provided the following are true:"
     },
     {
@@ -1817,6 +2158,9 @@
                          "script",
                          "element"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Although data blocks have a separate MIME media type [ rfc2046 ] from their containing XHTML content document , it is not possible to provide intrinsic fallbacks as no such mechanisms are specified for the [ html ] script element."
     },
     {
@@ -1837,6 +2181,11 @@
                          "audio",
                          "\u003c html"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "RECOMMENDED"
+                    ],
         "summary":  "The following types of publication resources MAY be hosted outside the EPUB container :"
     },
     {
@@ -1859,6 +2208,10 @@
                          "iframe",
                          "area"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "MUST NOT"
+                    ],
         "summary":  "The data: URL scheme [ rfc2397 ] is used to encode resources directly into a URL string. The advantage of this scheme is that it allows a resource to be embedded within another, avoiding the need for an external file."
     },
     {
@@ -1876,6 +2229,9 @@
                          "urls",
                          "file:"
                      ],
+        "rfc2119":  [
+                        "MUST NOT"
+                    ],
         "summary":  "The file: URL scheme is defined in [ rfc8089 ] as \"identifying an object (a \u0027file\u0027) stored in a structured object naming and accessing environment on a host (a \u0027file system\u0027).\" It is typically used to retrieve files from the local operat..."
     },
     {
@@ -1893,6 +2249,12 @@
                          "conformance",
                          "base"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "MUST NOT",
+                        "RECOMMENDED"
+                    ],
         "summary":  "Any publication resource that is an XML-based media type [ rfc2046 ]:"
     },
     {
@@ -1911,6 +2273,9 @@
                          "format",
                          "ocf"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "4. Open Container Format (OCF) in official EPUB 3.4 Core Specification."
     },
     {
@@ -1926,6 +2291,9 @@
         "keywords":  [
                          "introduction"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "OCF is the container technology for EPUB publications . It can play a role in the following workflows:"
     },
     {
@@ -1943,6 +2311,9 @@
                          "abstract",
                          "container"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "OCF abstract container in official EPUB 3.4 Core Specification."
     },
     {
@@ -1965,6 +2336,9 @@
                          "encryption.xml",
                          "metadata.xml"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The OCF abstract container file system model uses a single common root directory . All container resources are located within the directory tree headed by the root directory, but no specific file system structure for them is mandated by ..."
     },
     {
@@ -1984,6 +2358,11 @@
                          "META-INF",
                          "mimetype"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "MUST NOT"
+                    ],
         "summary":  "The virtual file system for the OCF abstract container MUST have a single common root directory for all the contents of the container."
     },
     {
@@ -2006,6 +2385,11 @@
                          "U+002E",
                          "U+003A"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "MUST NOT",
+                        "SHOULD NOT"
+                    ],
         "summary":  "In the context of the OCF abstract container , file paths and file names are scalar value strings [ infra ] (i.e., their values are case sensitive)."
     },
     {
@@ -2026,6 +2410,9 @@
                          "current",
                          "U+002F (/)"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "To derive the file path , given a file or directory file in the OCF abstract container , apply the following steps (expressed using the terminology of [ infra ]):"
     },
     {
@@ -2048,6 +2435,9 @@
                          "https://www.example.org:12345/",
                          "file:///path/to.epub#path=/"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "The container root URL is the URL [ url ] of the root directory . Although the container root URL is implementation-specific, it MUST have the following properties:"
     },
     {
@@ -2065,6 +2455,9 @@
                          "directory",
                          "META-INF"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "META-INF directory in official EPUB 3.4 Core Specification."
     },
     {
@@ -2084,6 +2477,9 @@
                          "container",
                          "META-INF"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "All OCF abstract containers MUST include a directory called META-INF in their root directory ."
     },
     {
@@ -2106,6 +2502,9 @@
                          "base",
                          "META-INF/container.xml"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "To parse a URL string url used in files located in the META-INF directory the URL parser MUST be applied to url , with the container root URL as base ."
     },
     {
@@ -2122,6 +2521,9 @@
                          "reserved",
                          "files"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Reserved files in official EPUB 3.4 Core Specification."
     },
     {
@@ -2141,6 +2543,10 @@
                          "container.xml",
                          "META-INF"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "REQUIRED"
+                    ],
         "summary":  "The REQUIRED container.xml file in the META-INF directory identifies the package documents available in the OCF abstract container ."
     },
     {
@@ -2163,6 +2569,10 @@
                          "rootfiles",
                          "links"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "REQUIRED"
+                    ],
         "summary":  "The container element encapsulates all the information in the container.xml file."
     },
     {
@@ -2181,6 +2591,9 @@
                          "container",
                          "rootfile"
                      ],
+        "rfc2119":  [
+                        "REQUIRED"
+                    ],
         "summary":  "The rootfiles element contains a list of package documents available in the EPUB container ."
     },
     {
@@ -2202,6 +2615,9 @@
                          "media-type",
                          "application/oebps-package+xml"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "Each rootfile element identifies the location of one package document in the EPUB container ."
     },
     {
@@ -2220,6 +2636,9 @@
                          "container",
                          "link"
                      ],
+        "rfc2119":  [
+                        "OPTIONAL"
+                    ],
         "summary":  "The links element identifies resources necessary for the processing of the OCF ZIP container ."
     },
     {
@@ -2242,6 +2661,9 @@
                          "[optional]",
                          "rel"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "As child of the links element. Repeatable."
     },
     {
@@ -2258,6 +2680,9 @@
                          "examples",
                          "\u003c?xml version= \"1.0\""
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Examples in official EPUB 3.4 Core Specification."
     },
     {
@@ -2277,6 +2702,10 @@
                          "encryption.xml",
                          "META-INF"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "OPTIONAL"
+                    ],
         "summary":  "The OPTIONAL encryption.xml file in the META-INF directory holds all encryption information on the contents of the container. If an any resources within the container are encrypted, there MUST be an encryption.xml file to provide informa..."
     },
     {
@@ -2299,6 +2728,12 @@
                          "META-INF/container.xml",
                          "META-INF/encryption.xml"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST NOT",
+                        "REQUIRED",
+                        "SHOULD NOT"
+                    ],
         "summary":  "urn:oasis:names:tc:opendocument:xmlns:container"
     },
     {
@@ -2321,6 +2756,13 @@
                          "[required]",
                          "\u003c encryption"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "OPTIONAL",
+                        "SHOULD",
+                        "SHOULD NOT"
+                    ],
         "summary":  "When stored in an OCF ZIP container , streams of data with non-codec content types SHOULD be compressed before encrypting them. Deflate compression MUST be used. This practice ensures that file entries stored in the ZIP container have a ..."
     },
     {
@@ -2340,6 +2782,9 @@
                          "manifest.xml",
                          "META-INF"
                      ],
+        "rfc2119":  [
+                        "OPTIONAL"
+                    ],
         "summary":  "The OPTIONAL manifest.xml file in the META-INF directory provides a manifest of files in the container."
     },
     {
@@ -2360,6 +2805,11 @@
                          "META-INF",
                          "http://www.idpf.org/2013/metadata"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "OPTIONAL",
+                        "SHOULD"
+                    ],
         "summary":  "The OPTIONAL metadata.xml file in the META-INF directory is only for container-level metadata."
     },
     {
@@ -2380,6 +2830,9 @@
                          "rights.xml",
                          "META-INF"
                      ],
+        "rfc2119":  [
+                        "OPTIONAL"
+                    ],
         "summary":  "This specification reserves the OPTIONAL rights.xml file in the META-INF directory for the trusted exchange of EPUB publications among rights holders, intermediaries, and users."
     },
     {
@@ -2400,6 +2853,9 @@
                          "signatures.xml",
                          "META-INF"
                      ],
+        "rfc2119":  [
+                        "OPTIONAL"
+                    ],
         "summary":  "Adding a digital signature is not a guarantee that a malicious actor cannot tamper with an EPUB publication as reading systems do not have to check signatures."
     },
     {
@@ -2422,6 +2878,11 @@
                          "Reference",
                          "SignatureProperties"
                      ],
+        "rfc2119":  [
+                        "REQUIRED",
+                        "SHOULD",
+                        "SHOULD NOT"
+                    ],
         "summary":  "urn:oasis:names:tc:opendocument:xmlns:container"
     },
     {
@@ -2439,6 +2900,9 @@
                          "zip",
                          "container"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "OCF ZIP container in official EPUB 3.4 Core Specification."
     },
     {
@@ -2454,6 +2918,9 @@
         "keywords":  [
                          "introduction"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "An OCF ZIP container is a physical single-file manifestation of an OCF abstract container . The container allows:"
     },
     {
@@ -2474,6 +2941,12 @@
                          "version needed to extract",
                          "compression"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "MUST NOT",
+                        "SHOULD"
+                    ],
         "summary":  "An OCF ZIP container uses the ZIP format as specified by [ zip ], but with the following constraints and clarifications:"
     },
     {
@@ -2496,6 +2969,10 @@
                          "mimetype",
                          "application/epub+zip"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "MUST NOT"
+                    ],
         "summary":  "The mimetype file MUST be the first file in the OCF ZIP container . In addition:"
     },
     {
@@ -2513,6 +2990,9 @@
                          "document",
                          "http://www.idpf.org/2007/opf"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "All [ xml ] elements defined in this section are in the http://www.idpf.org/2007/opf namespace [ xml-names ] unless otherwise specified."
     },
     {
@@ -2530,6 +3010,9 @@
                          "container.xml",
                          "application/oebps-package+xml"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The package document is an XML document that consists of a set of elements that each encapsulate information about a particular aspect of an EPUB publication . These elements serve to centralize metadata, detail the individual resources,..."
     },
     {
@@ -2550,6 +3033,9 @@
                          "url",
                          "base"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "To parse a URL string url used in the package document , the URL parser [ url ] MUST be applied to url , with the content URL of the package document as base ."
     },
     {
@@ -2567,6 +3053,9 @@
                          "association",
                          "mechanisms"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Vocabulary association mechanisms in official EPUB 3.4 Core Specification."
     },
     {
@@ -2589,6 +3078,9 @@
                          "properties",
                          "cover-image"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The package document allows metadata expressions, and metadata extensibility, through the use of compact URLs . A compact URL is very similar to a CURIE [ rdfa-core ] in how they represent URLs [ url ] — both expressions consist of an op..."
     },
     {
@@ -2611,6 +3103,9 @@
                          "reference",
                          "property"
                      ],
+        "rfc2119":  [
+                        "OPTIONAL"
+                    ],
         "summary":  "The compact URL data type is a compact means of expressing a URL [ url ] and consists of an OPTIONAL prefix separated from a reference by a colon."
     },
     {
@@ -2629,6 +3124,9 @@
                          "default vocabulary",
                          "prefix"
                      ],
+        "rfc2119":  [
+                        "MUST NOT"
+                    ],
         "summary":  "A default vocabulary is one whose terms and properties MUST NOT have a prefix when a compact URL is expected."
     },
     {
@@ -2651,6 +3149,10 @@
                          "http://www.idpf.org/2007/ops",
                          "\u003c html"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "MUST NOT"
+                    ],
         "summary":  "The prefix attribute defines prefix mappings for use in compact URLs ."
     },
     {
@@ -2669,6 +3171,10 @@
                          "prefix",
                          "scheme"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "SHOULD NOT"
+                    ],
         "summary":  "Although reserved prefixes are an authoring convenience, they can cause issues. Vendors, for example, will often reject new prefixes until they update their EPUB conformance checkers . It is advised to declare all prefixes to avoid any i..."
     },
     {
@@ -2685,6 +3191,9 @@
                          "shared",
                          "attributes"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This section provides definitions for shared attributes (i.e., attributes allowed on two or more elements)."
     },
     {
@@ -2707,6 +3216,9 @@
                          "collection",
                          "meta"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The dir attribute currently does not have sufficient implementation experience , as reading systems typically only support a single default directionality for metadata display."
     },
     {
@@ -2727,6 +3239,9 @@
                          "\u003c package",
                          "link"
                      ],
+        "rfc2119":  [
+                        "MUST NOT"
+                    ],
         "summary":  "A valid URL string [ url ] that references a resource."
     },
     {
@@ -2749,6 +3264,9 @@
                          "manifest",
                          "meta"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "The ID [ xml ] of the element, which MUST be unique within the document scope."
     },
     {
@@ -2768,6 +3286,9 @@
                          "item",
                          "link"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A media type [ rfc2046 ] that specifies the type and format of the referenced resource."
     },
     {
@@ -2788,6 +3309,9 @@
                          "itemref",
                          "link"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A space-separated list of compact URLs ."
     },
     {
@@ -2808,6 +3332,12 @@
                          "link",
                          "meta"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "MUST NOT",
+                        "OPTIONAL",
+                        "SHOULD"
+                    ],
         "summary":  "Establishes an association between the current expression and the element or resource identified by its value. The value of the attribute MUST be a path-relative-scheme-less-URL string , optionally followed by U+0023 (#) and a URL-fragme..."
     },
     {
@@ -2828,6 +3358,9 @@
                          "meta",
                          "package"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "Specifies the language of the textual content and attribute values of the carrying element and its descendants, as defined in section 2.12 Language Identification of [ xml ]. The value of each xml:lang attribute MUST be a well-formed lan..."
     },
     {
@@ -2850,6 +3383,10 @@
                          "unique-identifier",
                          "[required]"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "REQUIRED"
+                    ],
         "summary":  "The package element encapsulates all the information expressed in the package document ."
     },
     {
@@ -2865,6 +3402,9 @@
         "keywords":  [
                          "metadata"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Metadata section in official EPUB 3.4 Core Specification."
     },
     {
@@ -2887,6 +3427,11 @@
                          "dc:language",
                          "Dublin Core Optional Elements"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "OPTIONAL",
+                        "REQUIRED"
+                    ],
         "summary":  "The metadata element encapsulates meta information."
     },
     {
@@ -2905,6 +3450,9 @@
                          "meta",
                          "value"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "The Dublin Core elements [ dcterms ] and meta element have mandatory child text content [ dom ]. In the descriptions for these elements, this specification refers to this content as the element\u0027s value ."
     },
     {
@@ -2921,6 +3469,9 @@
                          "dublin",
                          "core"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Dublin Core in official EPUB 3.4 Core Specification."
     },
     {
@@ -2937,6 +3488,9 @@
                          "required",
                          "elements"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Required elements in official EPUB 3.4 Core Specification."
     },
     {
@@ -2959,6 +3513,11 @@
                          "unique-identifier",
                          "\u003c package"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "REQUIRED"
+                    ],
         "summary":  "The dc:identifier element [ dcterms ] contains an identifier such as a UUID , DOI or ISBN ."
     },
     {
@@ -2981,6 +3540,9 @@
                          "xml:lang",
                          "\u003c metadata"
                      ],
+        "rfc2119":  [
+                        "REQUIRED"
+                    ],
         "summary":  "The dc:title element [ dcterms ] represents an instance of a name for the EPUB publication ."
     },
     {
@@ -3001,6 +3563,11 @@
                          "[optional]",
                          "\u003c metadata"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "REQUIRED"
+                    ],
         "summary":  "The dc:language element [ dcterms ] specifies the language of the content of the EPUB publication ."
     },
     {
@@ -3017,6 +3584,9 @@
                          "optional",
                          "elements"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Optional elements in official EPUB 3.4 Core Specification."
     },
     {
@@ -3039,6 +3609,9 @@
                          "dc:coverage",
                          "dc:creator"
                      ],
+        "rfc2119":  [
+                        "OPTIONAL"
+                    ],
         "summary":  "All [ dcterms ] elements except for dc:identifier , dc:language , and dc:title are designated as OPTIONAL . These elements conform to the following generalized definition:"
     },
     {
@@ -3056,6 +3629,9 @@
                          "element",
                          "dc:creator"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The dc:contributor element [ dcterms ] is used to represent the name of a person, organization, etc. that played a secondary role in the creation of the content."
     },
     {
@@ -3078,6 +3654,9 @@
                          "alternate-script",
                          "metadata"
                      ],
+        "rfc2119":  [
+                        "MAY"
+                    ],
         "summary":  "The dc:creator element [ dcterms ] represents the name of a person, organization, etc. responsible for the creation of the content. A role property MAY be associated with the element to indicate the function the creator played."
     },
     {
@@ -3095,6 +3674,10 @@
                          "element",
                          "\u003c metadata"
                      ],
+        "rfc2119":  [
+                        "MUST NOT",
+                        "RECOMMENDED"
+                    ],
         "summary":  "The dc:date element [ dcterms ] defines the publication date of the EPUB publication . The publication date is not the same as the last modified date (the last time the EPUB publication was changed)."
     },
     {
@@ -3114,6 +3697,10 @@
                          "term",
                          "\u003c metadata"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "MUST NOT"
+                    ],
         "summary":  "The dc:subject element [ dcterms ] identifies the subject of the EPUB publication . It is advised to set the value of the element to the human-readable heading or label, but a code value can be used if the subject taxonomy does not provi..."
     },
     {
@@ -3130,6 +3717,9 @@
                          "dc:type",
                          "element"
                      ],
+        "rfc2119":  [
+                        "MAY"
+                    ],
         "summary":  "The dc:type element [ dcterms ] is used to indicate that the EPUB publication is of a specialized type (e.g., annotations or a dictionary packaged in EPUB format)."
     },
     {
@@ -3152,6 +3742,10 @@
                          "[required]",
                          "refines"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST"
+                    ],
         "summary":  "The meta element provides a generic means of including package metadata."
     },
     {
@@ -3174,6 +3768,10 @@
                          "\u003c metadata",
                          "refines"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST"
+                    ],
         "summary":  "The metadata section MUST contain exactly one dcterms:modified property [ dcterms ] containing the last modification date. The value of this property MUST be an [ iso8601-1 ] complete representation of a date and time of day matching the..."
     },
     {
@@ -3196,6 +3794,13 @@
                          "[optional]",
                          "media-type"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "MUST NOT",
+                        "OPTIONAL",
+                        "REQUIRED"
+                    ],
         "summary":  "The link element associates resources with an EPUB publication , such as metadata records."
     },
     {
@@ -3211,6 +3816,9 @@
         "keywords":  [
                          "manifest"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Manifest section in official EPUB 3.4 Core Specification."
     },
     {
@@ -3233,6 +3841,11 @@
                          "[1 or more]",
                          "container.xml"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "MUST NOT",
+                        "REQUIRED"
+                    ],
         "summary":  "The manifest element provides an exhaustive list of publication resources used in the rendering of the content."
     },
     {
@@ -3255,6 +3868,10 @@
                          "[required]",
                          "media-overlay"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST"
+                    ],
         "summary":  "The item element represents a publication resource ."
     },
     {
@@ -3276,6 +3893,11 @@
                          "nav",
                          "cover-image"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "OPTIONAL"
+                    ],
         "summary":  "The properties attribute provides information to reading systems about the content of a resource. This information enables discovery of key resources, such as the cover image and EPUB navigation document . It also allows reading systems ..."
     },
     {
@@ -3296,6 +3918,9 @@
                          "XHTML",
                          "audio"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The following example shows the manifest fallback chain allowing a foreign content document (JPEG) to be listed in the spine with fallback to an SVG content document."
     },
     {
@@ -3311,6 +3936,9 @@
         "keywords":  [
                          "spine"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Spine section in official EPUB 3.4 Core Specification."
     },
     {
@@ -3333,6 +3961,11 @@
                          "page-progression-direction",
                          "toc"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "REQUIRED"
+                    ],
         "summary":  "The spine element defines an ordered list of manifest item references that represent the default reading order."
     },
     {
@@ -3355,6 +3988,11 @@
                          "linear",
                          "properties"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "MUST NOT"
+                    ],
         "summary":  "The itemref element identifies an EPUB content document or foreign content document in the default reading order."
     },
     {
@@ -3370,6 +4008,9 @@
         "keywords":  [
                          "layouts"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "6. Layouts in official EPUB 3.4 Core Specification."
     },
     {
@@ -3385,6 +4026,9 @@
         "keywords":  [
                          "introduction"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Not all rendering information can be expressed through the underlying technologies that EPUB 3 is built upon. For example, although HTML with CSS provides powerful layout capabilities, those capabilities are limited to the scope of the d..."
     },
     {
@@ -3407,6 +4051,9 @@
                          "properties",
                          "itemref"
                      ],
+        "rfc2119":  [
+                        "MAY"
+                    ],
         "summary":  "A reflowable layout is one where the contents of EPUB content documents are reflowed to fit the available space in the reading system viewport. A reading system can then dynamically paginate the content or provide it in a scrolled manner..."
     },
     {
@@ -3423,6 +4070,9 @@
                          "fixed",
                          "layouts"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "EPUB 3 offers two types of fixed layout using fixed-layout documents . The first, pre-paginated , provides a reading experience much like a traditional print book, with each fixed-layout document representing one page of content. Pre-pag..."
     },
     {
@@ -3445,6 +4095,9 @@
                          "properties",
                          "viewport meta"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "In a pre-paginated fixed layout, each fixed-layout document referenced by a spine itemref represents one page of content. Reading systems are expected to scale the document to fit the viewport or synthetic spread."
     },
     {
@@ -3467,6 +4120,9 @@
                          "rendition:page-spread-right",
                          "\u003c package"
                      ],
+        "rfc2119":  [
+                        "MAY"
+                    ],
         "summary":  "By default for pre-paginated layouts, a reading system will present each fixed-layout document separately in the viewport , and replace the document with the next fixed-layout document in spine order."
     },
     {
@@ -3485,6 +4141,9 @@
                          "meta",
                          "itemref"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "When the rendition:layout property is declared in a meta element with the value roll , it indicates that the content is a roll (i.e., reading systems fit the width of each spine itemref to the viewport and display them in a continuous ro..."
     },
     {
@@ -3502,6 +4161,9 @@
                          "content",
                          "documents"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "7. EPUB content documents in official EPUB 3.4 Core Specification."
     },
     {
@@ -3519,6 +4181,9 @@
                          "content",
                          "documents"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "XHTML content documents in official EPUB 3.4 Core Specification."
     },
     {
@@ -3536,6 +4201,9 @@
                          "spine",
                          "template"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "An XHTML content document is an instance of an XML document expressed using the XML syntax of the HTML Standard [ html ]."
     },
     {
@@ -3552,6 +4220,10 @@
                          "xhtml",
                          "requirements"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST"
+                    ],
         "summary":  "MUST conform to the conformance criteria for all document constructs defined by [ html ] unless explicitly overridden in 7.1.4 HTML deviations and constraints ."
     },
     {
@@ -3568,6 +4240,9 @@
                          "html",
                          "extensions"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This section defines EPUB 3 XHTML content document extensions to the underlying [ html ] document model."
     },
     {
@@ -3586,6 +4261,10 @@
                          "epub:type",
                          "head"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST NOT"
+                    ],
         "summary":  "The epub:type attribute MAY be used in XHTML content documents to express structural semantics ."
     },
     {
@@ -3601,6 +4280,10 @@
         "keywords":  [
                          "rdfa"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST"
+                    ],
         "summary":  "The [ html-rdfa ] specification defines a set of attributes that MAY be used in XHTML content documents to semantically enrich the content. The use of these attributes MUST conform to the requirements defined in [ html-rdfa ]."
     },
     {
@@ -3620,6 +4303,10 @@
                          "its",
                          "link"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST"
+                    ],
         "summary":  "The [ its20 ] specification defines a set of attributes that MAY be used in XHTML content documents to add support for internationalization, translation, and localization."
     },
     {
@@ -3638,6 +4325,10 @@
                          "w3.org",
                          "idpf.org"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST"
+                    ],
         "summary":  "XHTML content documents MAY contain custom attributes, which are prefixed [ xml-names ] attributes whose namespace URL does not include either of the following strings in its domain [ url ]:"
     },
     {
@@ -3655,6 +4346,9 @@
                          "deviations",
                          "constraints"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This section defines deviations from, and constraints on, the underlying [ html ] document model applicable to EPUB 3 XHTML content documents ."
     },
     {
@@ -3677,6 +4371,10 @@
                          "MathML-Content",
                          "application/mathml-content+xml"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST"
+                    ],
         "summary":  "XHTML content documents support embedded [ mathml3 ]. Occurrences of MathML markup MUST conform to the constraints expressed in the MathML specification [ mathml3 ], with the following additional restrictions:"
     },
     {
@@ -3696,6 +4394,9 @@
                          "object",
                          "item"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "XHTML content documents support the embedding of SVG:"
     },
     {
@@ -3712,6 +4413,9 @@
                          "discouraged",
                          "constructs"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Discouraged constructs in official EPUB 3.4 Core Specification."
     },
     {
@@ -3728,6 +4432,9 @@
                          "base",
                          "element"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The [ html ] base element can be used to specify the document base URL for the purposes of parsing URLs. When using it in an EPUB publication , the interpretation of the base element could inadvertently result in references to remote res..."
     },
     {
@@ -3744,6 +4451,9 @@
                          "element",
                          "ruby"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The [ html ] rp element is intended to provide a fallback for older reading systems that do not recognize ruby markup (i.e., a parenthesis display around ruby markup). As EPUB 3 reading systems are ruby-aware, and can provide fallbacks, ..."
     },
     {
@@ -3761,6 +4471,9 @@
                          "element",
                          "object"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Since the [ html ] embed element element does not include intrinsic fallback facilities for reading systems that do not support scripting, using the element with scripted resources is discouraged. The [ html ] object element is a better ..."
     },
     {
@@ -3778,6 +4491,9 @@
                          "content",
                          "documents"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "SVG content documents in official EPUB 3.4 Core Specification."
     },
     {
@@ -3793,6 +4509,9 @@
         "keywords":  [
                          "introduction"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The Scalable Vector Graphics (SVG) specification [ svg ] defines a format for representing final-form vector graphics and text."
     },
     {
@@ -3809,6 +4528,9 @@
                          "svg",
                          "requirements"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "An SVG content document MUST be a conforming SVG stand-alone file [ svg ] and conform to all content conformance constraints expressed in 7.2.3 Restrictions on SVG ."
     },
     {
@@ -3831,6 +4553,9 @@
                          "epub:prefix",
                          "prefix"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "This specification restricts the content model of SVG content documents and SVG embedded by inclusion in XHTML content documents as follows:"
     },
     {
@@ -3847,6 +4572,9 @@
                          "fixed-layout",
                          "documents"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Fixed-layout documents in official EPUB 3.4 Core Specification."
     },
     {
@@ -3863,6 +4591,9 @@
                          "introduction",
                          "reflowable"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "EPUB publications , unlike print books or PDF files, are designed to change. The content flows, or reflows, to fit the screen and to fit the needs of the user. As noted in Rendering and CSS \"content presentation adapts to the user, rathe..."
     },
     {
@@ -3885,6 +4616,11 @@
                          "device-height",
                          "device-width"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "MUST NOT",
+                        "REQUIRED"
+                    ],
         "summary":  "This section defines rules for the expression and interpretation of dimensional properties of fixed-layout documents ."
     },
     {
@@ -3902,6 +4638,9 @@
                          "resource",
                          "requirements"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This section defines requirements for technologies usable in both XHTML and SVG content documents ."
     },
     {
@@ -3920,6 +4659,9 @@
                          "sheets",
                          "css"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Cascading Style Sheets (CSS) in official EPUB 3.4 Core Specification."
     },
     {
@@ -3935,6 +4677,9 @@
         "keywords":  [
                          "introduction"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "CSS is an integral part of the Open Web Platform. Readers, publishers, and document authors expect CSS to \"just work,\" as they expect HTML to just work."
     },
     {
@@ -3955,6 +4700,12 @@
                          "dir",
                          "bdo"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "MUST NOT",
+                        "RECOMMENDED"
+                    ],
         "summary":  "MAY include any CSS properties, with the following exceptions:"
     },
     {
@@ -3974,6 +4725,9 @@
                          "considerations",
                          "style"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Support for the following CSS features are known to be particularly problematic in EPUB reading systems :"
     },
     {
@@ -3989,6 +4743,9 @@
         "keywords":  [
                          "scripting"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Scripting in official EPUB 3.4 Core Specification."
     },
     {
@@ -4008,6 +4765,9 @@
                          "scripted",
                          "item"
                      ],
+        "rfc2119":  [
+                        "MAY"
+                    ],
         "summary":  "EPUB content documents MAY contain scripting using the facilities defined for this in the respective underlying specifications ([ html ] and [ svg ]). When an EPUB content document contains scripting, this specification refers to it as a..."
     },
     {
@@ -4028,6 +4788,9 @@
                          "script",
                          "src"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "EPUB 3 defines two contexts for script execution:"
     },
     {
@@ -4046,6 +4809,9 @@
                          "script",
                          "iframe"
                      ],
+        "rfc2119":  [
+                        "MUST NOT"
+                    ],
         "summary":  "A container-constrained script is either of the following:"
     },
     {
@@ -4063,6 +4829,9 @@
                          "scripts",
                          "script"
                      ],
+        "rfc2119":  [
+                        "SHOULD"
+                    ],
         "summary":  "A spine-level script is an instance of the [ html ] script or [ svg ] script element contained in a top-level content document ."
     },
     {
@@ -4079,6 +4848,9 @@
                          "event",
                          "model"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The wide variety of possible reading system implementations need to be considered when adding scripting functionality to EPUB publications (e.g., not all devices have physical keyboards, and in many cases a soft keyboard is activated onl..."
     },
     {
@@ -4095,6 +4867,9 @@
                          "scripting",
                          "accessibility"
                      ],
+        "rfc2119":  [
+                        "SHOULD"
+                    ],
         "summary":  "EPUB content documents that contain scripting SHOULD employ relevant [ wai-aria ] accessibility techniques to ensure that the content remains consumable by all users."
     },
     {
@@ -4113,6 +4888,10 @@
                          "object",
                          "canvas"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST"
+                    ],
         "summary":  "EPUB content documents that contain scripting MAY provide fallbacks for such content, either by using intrinsic fallback mechanisms (such as those available for the [ html ] object and canvas elements) or, when an intrinsic fallback is n..."
     },
     {
@@ -4129,6 +4908,9 @@
                          "epub:type",
                          "attribute"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The epub:type attribute in official EPUB 3.4 Core Specification."
     },
     {
@@ -4147,6 +4929,9 @@
                          "epub:type",
                          "role"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Structural semantics add additional meaning about the specific structural purpose an element plays. The epub:type attribute is used to express domain-specific semantics in EPUB content documents , with the structural information it carri..."
     },
     {
@@ -4166,6 +4951,9 @@
                          "role",
                          "\u003c html"
                      ],
+        "rfc2119":  [
+                        "MAY"
+                    ],
         "summary":  "Refer to the requirements for XHTML , SVG , and media overlays ."
     },
     {
@@ -4183,6 +4971,9 @@
                          "navigation",
                          "document"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "8. EPUB navigation document in official EPUB 3.4 Core Specification."
     },
     {
@@ -4199,6 +4990,9 @@
                          "introduction",
                          "hidden"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The EPUB navigation document is a mandatory component of an EPUB publication . It allows the inclusion of a human- and machine-readable global navigation layer, thereby ensuring increased usability and accessibility for the user."
     },
     {
@@ -4220,6 +5014,10 @@
                          "page-list nav",
                          "landmarks nav"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST"
+                    ],
         "summary":  "MUST conform to the content conformance constraints for XHTML content documents defined in 7.1.2 XHTML requirements ;"
     },
     {
@@ -4242,6 +5040,10 @@
                          "[exactly 1]",
                          "[1 or more]"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST"
+                    ],
         "summary":  "When a nav element carries the epub:type attribute in an EPUB navigation document , this specification restricts the content model of the element and its descendants as follows:"
     },
     {
@@ -4259,6 +5061,9 @@
                          "element:",
                          "types"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The nav element: types in official EPUB 3.4 Core Specification."
     },
     {
@@ -4280,6 +5085,9 @@
                          "page-list",
                          "landmarks"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The nav elements defined in an EPUB navigation document are distinguished semantically by the value of their epub:type attribute."
     },
     {
@@ -4300,6 +5108,9 @@
                          "epub:type",
                          "\u003c nav"
                      ],
+        "rfc2119":  [
+                        "SHOULD"
+                    ],
         "summary":  "The primary navigational hierarchy of an EPUB publication is defined in a nav element [ html ] whose epub:type attribute set to the value \" toc \" [ epub-ssv-11 ] (i.e., the toc nav element). This element conceptually corresponds to a tab..."
     },
     {
@@ -4322,6 +5133,9 @@
                          "chapter01.html",
                          "role"
                      ],
+        "rfc2119":  [
+                        "SHOULD"
+                    ],
         "summary":  "The page list provides navigation to static page boundaries in the content. These boundaries either correspond to a statically paginated source such as print or are exclusively for the EPUB publication ."
     },
     {
@@ -4344,6 +5158,11 @@
                          "bodymatter",
                          "toc"
                      ],
+        "rfc2119":  [
+                        "MUST NOT",
+                        "REQUIRED",
+                        "SHOULD"
+                    ],
         "summary":  "Landmarks identify fundamental structural components of the content to enable reading systems to provide the user efficient access to them (e.g., through a dedicated button in the user interface)."
     },
     {
@@ -4364,6 +5183,10 @@
                          "lot",
                          "\u003c nav"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST"
+                    ],
         "summary":  "If additional nav elements are needed in the EPUB navigation document for reading system processing, they:"
     },
     {
@@ -4383,6 +5206,9 @@
                          "nav",
                          "\u003c nav"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "As a conforming XHTML content document , the EPUB navigation document can be included in the spine ."
     },
     {
@@ -4399,6 +5225,9 @@
                          "aural",
                          "rendering"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "9. Aural rendering in official EPUB 3.4 Core Specification."
     },
     {
@@ -4414,6 +5243,9 @@
         "keywords":  [
                          "introduction"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Although EPUB 3 is primarily considered a visual reading format, EPUB publications are designed to enable their aural rendering. There are two primary ways this is done:"
     },
     {
@@ -4429,6 +5261,9 @@
         "keywords":  [
                          "text-to-speech"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "There are currently no broadly supported technologies for improving the quality of text-to-speech playback. The original design for EPUB 3 was to make use of three technologies:"
     },
     {
@@ -4445,6 +5280,9 @@
                          "media",
                          "overlays"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Media overlays in official EPUB 3.4 Core Specification."
     },
     {
@@ -4460,6 +5298,9 @@
         "keywords":  [
                          "introduction"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Mainstream ebooks, educational tools and ebooks formatted for persons with print disabilities are some examples of works that contain synchronized audio narration. In EPUB 3, these types of books can be created using media overlay docume..."
     },
     {
@@ -4477,6 +5318,9 @@
                          "overlay",
                          "documents"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Media overlay documents in official EPUB 3.4 Core Specification."
     },
     {
@@ -4495,6 +5339,11 @@
                          "document",
                          "requirements"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "MUST NOT"
+                    ],
         "summary":  "MUST be valid to the media overlays schema as defined in F.3 Media overlays schema and conform to all content conformance constraints expressed in 9.3.2.2 Media overlay document definition ."
     },
     {
@@ -4514,6 +5363,9 @@
                          "definition",
                          "http://www.w3.org/ns/SMIL"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "All elements [ xml ] defined in this section are in the http://www.w3.org/ns/SMIL namespace [ xml-names ] unless otherwise specified."
     },
     {
@@ -4536,6 +5388,10 @@
                          "epub:prefix",
                          "head"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "REQUIRED"
+                    ],
         "summary":  "The smil element encapsulates all the information in an media overlay document ."
     },
     {
@@ -4555,6 +5411,9 @@
                          "metadata",
                          "[0 or 1]"
                      ],
+        "rfc2119":  [
+                        "OPTIONAL"
+                    ],
         "summary":  "The head element is the container for metadata in the media overlay document ."
     },
     {
@@ -4573,6 +5432,9 @@
                          "head",
                          "[0 or more]"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The metadata element represents metadata for the media overlay document . The metadata element is an extension point that allows the inclusion of metadata from any metainformation structuring language."
     },
     {
@@ -4595,6 +5457,10 @@
                          "epub:type",
                          "[optional]"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "REQUIRED"
+                    ],
         "summary":  "The body element is the starting point for the presentation contained in the media overlay document . It contains the main sequence of par and seq elements."
     },
     {
@@ -4617,6 +5483,10 @@
                          "[required]",
                          "U+0023 (#)"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST"
+                    ],
         "summary":  "The seq element is a sequential time container for media objects and/or child time containers."
     },
     {
@@ -4639,6 +5509,10 @@
                          "text",
                          "[exactly 1]"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST"
+                    ],
         "summary":  "The par element is a parallel time container for media objects."
     },
     {
@@ -4661,6 +5535,10 @@
                          "U+0023 (#)",
                          "[optional]"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "REQUIRED"
+                    ],
         "summary":  "The text element references an element in an EPUB content document . A text element typically refers to a textual element but can also refer to other EPUB content document media elements. In the absence of a sibling audio element, a read..."
     },
     {
@@ -4683,6 +5561,11 @@
                          "audio/mpeg",
                          "clipBegin"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "OPTIONAL",
+                        "SHOULD NOT"
+                    ],
         "summary":  "The audio element represents a clip of audio media."
     },
     {
@@ -4700,6 +5583,9 @@
                          "media",
                          "overlays"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Creating media overlays in official EPUB 3.4 Core Specification."
     },
     {
@@ -4722,6 +5608,9 @@
                          "src",
                          "clipBegin"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A pre-recorded narration of a publication can be represented as a series of audio clips, each corresponding to part of an EPUB content document . A single audio clip, for example, typically represents a single phrase or paragraph, but in..."
     },
     {
@@ -4740,6 +5629,9 @@
                          "content",
                          "document"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "In this section, the EPUB content document is assumed to be an XHTML content document . While media overlays can be used with SVG content documents , playback behavior might not be consistent and therefore interoperability is not guarant..."
     },
     {
@@ -4762,6 +5654,9 @@
                          "audio",
                          "epub:textref"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "The body of a media overlay document consists of two elements: the par element and the seq element. The ordering of these elements represents how reading systems render the content in the corresponding EPUB content documents during playb..."
     },
     {
@@ -4782,6 +5677,10 @@
                          "text",
                          "src"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "SHOULD"
+                    ],
         "summary":  "Both the epub:textref attribute and the text element\u0027s src attribute can contain a URL-fragment string that references a specific part (e.g., an element via its ID) of the associated EPUB content document ."
     },
     {
@@ -4802,6 +5701,9 @@
                          "seq",
                          "epub:textref"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The granularity level of the media overlay depends on how the EPUB content document is marked up and the type of fragment identifier used in the text elements\u0027 src attributes and the seq elements\u0027 epub:textref attributes. For example, wh..."
     },
     {
@@ -4821,6 +5723,9 @@
                          "audio",
                          "text"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This specification allows the use of text-to-speech (TTS) — the rendering of the textual content of an EPUB publication as artificial human speech using a synthesized voice — in addition to pre-recorded audio clips."
     },
     {
@@ -4843,6 +5748,9 @@
                          "body",
                          "\u003c smil"
                      ],
+        "rfc2119":  [
+                        "MAY"
+                    ],
         "summary":  "To express structural semantics in media overlay documents , the epub:type attribute MAY be specified on par , seq , and body elements."
     },
     {
@@ -4865,6 +5773,11 @@
                          "\u003c package",
                          "/* emphasize the active element */"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "MUST NOT"
+                    ],
         "summary":  "Visual rendering information for the currently playing EPUB content document element MAY be expressed in a CSS Style Sheet using author-defined classes."
     },
     {
@@ -4882,6 +5795,9 @@
                          "overlays",
                          "packaging"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Media overlays packaging in official EPUB 3.4 Core Specification."
     },
     {
@@ -4903,6 +5819,9 @@
                          "application/smil+xml",
                          "\u003cpackage …\u003e … \u003cmanifest\u003e \u003citem id ="
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "If an EPUB content document is wholly or partially referenced by a media overlay document , then its manifest item element MUST specify a media-overlay attribute. The attribute MUST reference the ID [ xml ] of the manifest item for the c..."
     },
     {
@@ -4925,6 +5844,11 @@
                          "item",
                          "narrator"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "SHOULD"
+                    ],
         "summary":  "The duration of the entire EPUB publication MUST be specified in the package document using a meta element with the duration property ."
     },
     {
@@ -4941,6 +5865,9 @@
                          "skippability",
                          "escapability"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Skippability and escapability in official EPUB 3.4 Core Specification."
     },
     {
@@ -4962,6 +5889,9 @@
                          "\u003c smil",
                          "\u003c html"
                      ],
+        "rfc2119":  [
+                        "MAY"
+                    ],
         "summary":  "While reading, users might want to turn on or off certain features of the content, such as footnotes, page numbers, or other types of secondary content. This feature is called skippability. Reading systems use the semantic information pr..."
     },
     {
@@ -4981,6 +5911,9 @@
                          "aside",
                          "\u003c smil"
                      ],
+        "rfc2119":  [
+                        "MAY"
+                    ],
         "summary":  "Escapable items are nested structures, such as tables and lists, that users might wish to skip over, continuing to read from the point immediately after the nested structure. The escapability feature differs from the skippability feature..."
     },
     {
@@ -4998,6 +5931,9 @@
                          "document",
                          "overlays"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "As the EPUB navigation document is an XHTML content document , a media overlay document can be associated with it. Unlike traditional XHTML content documents, however, reading systems have to present the EPUB navigation document to users..."
     },
     {
@@ -5013,6 +5949,9 @@
         "keywords":  [
                          "accessibility"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "EPUB 3 builds upon the Open Web Platform expressly so that it can leverage the structure, semantics and, by extension, accessibility built into its underlying technologies."
     },
     {
@@ -5029,6 +5968,9 @@
                          "security",
                          "privacy"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "11. Security and privacy in official EPUB 3.4 Core Specification."
     },
     {
@@ -5044,6 +5986,9 @@
         "keywords":  [
                          "overview"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The particularity of an EPUB publication is its structure. The EPUB format provides a means of representing, packaging, and encoding structured and semantically enhanced web content — including HTML, CSS, SVG, JavaScript, and other resou..."
     },
     {
@@ -5062,6 +6007,9 @@
                          "Content-Security-Policy",
                          "X-Frame-Options"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "EPUB publications pose a variety of privacy and security threats to unsuspecting users. Many of these threats intersect with web content, but EPUB also introduces its own unique methods of attack that can be used to trick users into acce..."
     },
     {
@@ -5079,6 +6027,9 @@
                          "features",
                          "epubReadingSystem"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "EPUB 3 tries to avoid extending the underlying technologies it builds on, but it has introduced some new features. The restricted scope of these features limits the threats they might pose, however:"
     },
     {
@@ -5094,6 +6045,10 @@
         "keywords":  [
                          "recommendations"
                      ],
+        "rfc2119":  [
+                        "SHOULD",
+                        "SHOULD NOT"
+                    ],
         "summary":  "Although it is not possible to prevent every method of exploiting users, responsibility for the secure construction of the content lies with its creator. That requires taking precautions to limit the exposure of EPUB publications to the ..."
     },
     {
@@ -5110,6 +6065,9 @@
                          "detailed",
                          "examples"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A. Detailed examples in official EPUB 3.4 Core Specification."
     },
     {
@@ -5132,6 +6090,9 @@
                          "font/font-file.otf",
                          "font/font-file.cff"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Consider the following extracts of a package document and an XHTML content document :"
     },
     {
@@ -5154,6 +6115,9 @@
                          "head",
                          "iframe"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Consider the following example package document :"
     },
     {
@@ -5176,6 +6140,9 @@
                          "\u003c?xml version= \"1.0\"",
                          "META-INF/signatures.xml"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This example demonstrates the use of the OCF format to contain a signed and encrypted EPUB publication within an OCF ZIP container ."
     },
     {
@@ -5198,6 +6165,9 @@
                          "09:58",
                          "00:56.78"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The following are examples of allowed clock values:"
     },
     {
@@ -5220,6 +6190,9 @@
                          "-// W3C //DTD MathML 3.0//EN",
                          "application/x-dtbncx+xml"
                      ],
+        "rfc2119":  [
+                        "MAY"
+                    ],
         "summary":  "The following table lists the public and system identifiers [ xml ] allowed in document type declarations . [ xml ]"
     },
     {
@@ -5238,6 +6211,9 @@
                          "tag",
                          "viewport meta"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "C. The viewport meta tag in official EPUB 3.4 Core Specification."
     },
     {
@@ -5254,6 +6230,9 @@
                          "introduction",
                          "viewport meta"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "As the Safari HTML definition of the viewport meta tag, that was used in earlier versions of EPUB 3, is not an officially recognized standard, this specification defines a basic syntax to allow width and height dimensions to be expressed..."
     },
     {
@@ -5276,6 +6255,11 @@
                          "width",
                          "viewport meta"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "MUST NOT"
+                    ],
         "summary":  "For XHTML fixed-layout documents , a viewport meta tag [ html ] MUST have name and content attributes that conform to the following definition:"
     },
     {
@@ -5291,6 +6275,9 @@
         "keywords":  [
                          "vocabularies"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This appendix defines a general set of mechanisms by which attributes in this specification can reference terms from vocabularies. It also defines EPUB-specific vocabularies for use with the attributes."
     },
     {
@@ -5310,6 +6297,11 @@
                          "xsd:",
                          "properties"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "REQUIRED"
+                    ],
         "summary":  "The fields in the vocabulary definition tables have the following implicit requirements:"
     },
     {
@@ -5329,6 +6321,9 @@
                          "property",
                          "refines"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "The properties in this vocabulary are usable in the meta element\u0027s property attribute."
     },
     {
@@ -5349,6 +6344,9 @@
                          "zero or more",
                          "\u003c metadata"
                      ],
+        "rfc2119":  [
+                        "MUST NOT"
+                    ],
         "summary":  "The alternate-script property provides an alternate expression of the associated property value in a different language and/or script. The language tags of the alternate-script property and its associated property — as expressed by their..."
     },
     {
@@ -5368,6 +6366,9 @@
                          "dc:subject",
                          "\u003c metadata"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The authority property identifies the system or scheme the referenced element\u0027s value is drawn from."
     },
     {
@@ -5390,6 +6391,10 @@
                          "zero or more",
                          "\u003c metadata"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "SHOULD"
+                    ],
         "summary":  "The belongs-to-collection property identifies the name of a collection to which the EPUB publication belongs. An EPUB publication MAY belong to one or more collections."
     },
     {
@@ -5412,6 +6417,9 @@
                          "belongs-to-collection",
                          "\u003c metadata"
                      ],
+        "rfc2119":  [
+                        "SHOULD"
+                    ],
         "summary":  "The collection-type property indicates the form or nature of a collection."
     },
     {
@@ -5429,6 +6437,9 @@
                          "xsd:unsignedInt",
                          "zero or one"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The display-seq property indicates the numeric position in which to display the current property relative to identical metadata properties."
     },
     {
@@ -5447,6 +6458,9 @@
                          "zero or one",
                          "\u003c metadata"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "D.2.6 file-as in official EPUB 3.4 Core Specification."
     },
     {
@@ -5467,6 +6481,9 @@
                          "zero or one",
                          "\u003c metadata"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The group-position property indicates the numeric position in which the EPUB publication is ordered relative to other works belonging to the same group (whether all EPUB publications or not)."
     },
     {
@@ -5489,6 +6506,9 @@
                          "dc:source",
                          "\u003c metadata"
                      ],
+        "rfc2119":  [
+                        "SHOULD"
+                    ],
         "summary":  "The identifier-type property indicates the form or nature of an identifier ."
     },
     {
@@ -5509,6 +6529,9 @@
                          "\u003c meta",
                          "\u003cmeta property"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "Provides a unique identifier for the source of the page break markers in an EPUB publication ."
     },
     {
@@ -5531,6 +6554,9 @@
                          "xsd:string",
                          "zero or more"
                      ],
+        "rfc2119":  [
+                        "SHOULD"
+                    ],
         "summary":  "The role property describes the role of a creator , contributor or publisher in the creation of an EPUB publication."
     },
     {
@@ -5547,6 +6573,9 @@
                          "source-of",
                          "pageBreakSource"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "It is no longer advised to use the source-of property in EPUB publications. To indicate the source of pagination for an EPUB publication, refer to the pageBreakSource property definition ."
     },
     {
@@ -5566,6 +6595,9 @@
                          "dc:subject",
                          "\u003c metadata"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The term property provides a subject code."
     },
     {
@@ -5588,6 +6620,9 @@
                          "collection",
                          "edition"
                      ],
+        "rfc2119":  [
+                        "SHOULD"
+                    ],
         "summary":  "The title-type property indicates the form or nature of a title ."
     },
     {
@@ -5604,6 +6639,9 @@
                          "examples",
                          "\u003c metadata"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "D.2.14 Examples in official EPUB 3.4 Core Specification."
     },
     {
@@ -5623,6 +6661,9 @@
                          "rel",
                          "properties"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The properties in this vocabulary are usable in the metadata link element\u0027s rel and properties attributes."
     },
     {
@@ -5641,6 +6682,9 @@
                          "rel",
                          "href"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The following values can be used in the link element rel attribute to establish the relationship of the resource referenced in the href attribute ."
     },
     {
@@ -5660,6 +6704,9 @@
                          "Zero or more",
                          "refines"
                      ],
+        "rfc2119":  [
+                        "MUST NOT"
+                    ],
         "summary":  "The alternate keyword is a subset of the HTML alternate keyword for links. It differs as follows:"
     },
     {
@@ -5679,6 +6726,10 @@
                          "Zero or more",
                          "refines"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "MUST NOT"
+                    ],
         "summary":  "Indicates that the referenced resource is a metadata record."
     },
     {
@@ -5697,6 +6748,9 @@
                          "Zero or more",
                          "refines"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "Indicates that the referenced audio file provides an aural representation of the expression or resource (typically, the title or creator) specified by the refines attribute."
     },
     {
@@ -5713,6 +6767,9 @@
                          "link",
                          "properties"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The following values can be used in the link element\u0027s properties attribute to establish the type of record a referenced resource represents. These values are provided for record formats that cannot be uniquely identified by their media ..."
     },
     {
@@ -5728,6 +6785,9 @@
         "keywords":  [
                          "onix"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "D.3.2.1 onix in official EPUB 3.4 Core Specification."
     },
     {
@@ -5746,6 +6806,9 @@
                          "vocabulary",
                          "rendition:"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The prefix URL for referencing these properties is http://www.idpf.org/vocab/rendition/# ."
     },
     {
@@ -5762,6 +6825,9 @@
                          "layout",
                          "control"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "D.4.1 Layout control in official EPUB 3.4 Core Specification."
     },
     {
@@ -5780,6 +6846,11 @@
                          "zero or one",
                          "refines"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "MUST NOT"
+                    ],
         "summary":  "The rendition:layout property specifies whether the EPUB publication is reflowable, pre-paginated or a roll."
     },
     {
@@ -5796,6 +6867,9 @@
                          "layout",
                          "overrides"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "D.4.1.2 Layout overrides in official EPUB 3.4 Core Specification."
     },
     {
@@ -5813,6 +6887,10 @@
                          "item",
                          "itemref"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST NOT"
+                    ],
         "summary":  "The rendition:layout-pre-paginated property indicates the resource in the associated item element is intended to be rendered in a pre-paginated layout ."
     },
     {
@@ -5830,6 +6908,10 @@
                          "item",
                          "itemref"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST NOT"
+                    ],
         "summary":  "The rendition:layout-reflowable property indicates the resource in the associated item element is intended to be rendered in a reflowable layout ."
     },
     {
@@ -5847,6 +6929,9 @@
                          "spread",
                          "placement"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "D.4.2 Synthetic spread placement in official EPUB 3.4 Core Specification."
     },
     {
@@ -5863,6 +6948,10 @@
                          "rendition:page-spread-center",
                          "itemref"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST NOT"
+                    ],
         "summary":  "The rendition:page-spread-center property is used to disable a spread and center the spine item."
     },
     {
@@ -5880,6 +6969,10 @@
                          "page-spread-left",
                          "itemref"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST NOT"
+                    ],
         "summary":  "The rendition:page-spread-left property is an alias of the page-spread-left property for placing a spine item in the left-hand slot of a two-page spread."
     },
     {
@@ -5897,6 +6990,10 @@
                          "page-spread-right",
                          "itemref"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST NOT"
+                    ],
         "summary":  "The rendition:page-spread-right property is an alias of the page-spread-right property for placing a spine item in the right-hand slot of a two-page spread."
     },
     {
@@ -5915,6 +7012,9 @@
                          "properties",
                          "rendition:"
                      ],
+        "rfc2119":  [
+                        "MUST NOT"
+                    ],
         "summary":  "Custom properties and spine overrides can be included in the package document to address rendering issues specific to particular reading systems , as defined by the developers of those reading systems."
     },
     {
@@ -5933,6 +7033,9 @@
                          "vocabulary",
                          "item"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The properties in this vocabulary are usable in the manifest item element\u0027s properties attribute ."
     },
     {
@@ -5949,6 +7052,9 @@
                          "cover-image",
                          "Zero or one"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "D.6.1 cover-image in official EPUB 3.4 Core Specification."
     },
     {
@@ -5965,6 +7071,9 @@
                          "mathml",
                          "Zero or more"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "D.6.2 mathml in official EPUB 3.4 Core Specification."
     },
     {
@@ -5981,6 +7090,9 @@
                          "nav",
                          "Exactly one"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "D.6.3 nav in official EPUB 3.4 Core Specification."
     },
     {
@@ -5997,6 +7109,9 @@
                          "remote-resources",
                          "Zero or more"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The remote-resources property indicates that the described publication resource contains one or more internal references to other publication resources that are located outside of the EPUB container ."
     },
     {
@@ -6014,6 +7129,9 @@
                          "form",
                          "Zero or more"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "D.6.5 scripted in official EPUB 3.4 Core Specification."
     },
     {
@@ -6033,6 +7151,10 @@
                          "iframe",
                          "Zero or more"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST"
+                    ],
         "summary":  "The svg property indicates that the described publication resource embeds one or more instances of SVG markup."
     },
     {
@@ -6050,6 +7172,9 @@
                          "epub:switch",
                          "Zero or more"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The switch property indicates that the described publication resource contains one or more instances of the deprecated epub:switch element ."
     },
     {
@@ -6068,6 +7193,9 @@
                          "vocabulary",
                          "itemref"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The properties in this vocabulary are usable in the spine itemref element\u0027s properties attribute ."
     },
     {
@@ -6085,6 +7213,9 @@
                          "item",
                          "rendition:page-spread-left"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The page-spread-left property indicates that the first page of the associated item element\u0027s EPUB content document represents the left-hand side of a two-page spread."
     },
     {
@@ -6102,6 +7233,9 @@
                          "item",
                          "rendition:page-spread-right"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The page-spread-right property indicates that the first page of the associated item element\u0027s EPUB content document represents the right-hand side of a two-page spread."
     },
     {
@@ -6117,6 +7251,9 @@
         "keywords":  [
                          "examples"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "D.7.3 Examples in official EPUB 3.4 Core Specification."
     },
     {
@@ -6137,6 +7274,9 @@
                          "property",
                          "media:"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The properties in this vocabulary are usable in the meta element\u0027s property attribute."
     },
     {
@@ -6154,6 +7294,9 @@
                          "xsd:string",
                          "Zero or one"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "D.8.1 active-class in official EPUB 3.4 Core Specification."
     },
     {
@@ -6169,6 +7312,9 @@
         "keywords":  [
                          "duration"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "D.8.2 duration in official EPUB 3.4 Core Specification."
     },
     {
@@ -6186,6 +7332,9 @@
                          "xsd:string",
                          "Zero or more"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "D.8.3 narrator in official EPUB 3.4 Core Specification."
     },
     {
@@ -6203,6 +7352,9 @@
                          "xsd:string",
                          "Zero or one"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "D.8.4 playback-active-class in official EPUB 3.4 Core Specification."
     },
     {
@@ -6219,6 +7371,9 @@
                          "obsolete",
                          "features"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "E. Obsolete features in official EPUB 3.4 Core Specification."
     },
     {
@@ -6241,6 +7396,10 @@
                          "rendition:orientation",
                          "rendition:spread"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST"
+                    ],
         "summary":  "An outdated feature is one that is not deprecated but that is also either not designed for use in EPUB 3 reading systems or that would ideally be deprecated except that it would invalidate a significant base of existing EPUB publications ."
     },
     {
@@ -6263,6 +7422,10 @@
                          "msv",
                          "prism"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "SHOULD NOT"
+                    ],
         "summary":  "A deprecated feature is one that has limited or no support in reading systems and/or usage in EPUB publications ."
     },
     {
@@ -6278,6 +7441,9 @@
         "keywords":  [
                          "schemas"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "F. Schemas in official EPUB 3.4 Core Specification."
     },
     {
@@ -6295,6 +7461,9 @@
                          "document",
                          "schema"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A schema for package documents is available at https://github.com/w3c/epubcheck/tree/master/src/main/resources/com/adobe/epubcheck/schema/30/package-30.nvdl ."
     },
     {
@@ -6311,6 +7480,9 @@
                          "ocf",
                          "schemas"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "F.2 OCF schemas in official EPUB 3.4 Core Specification."
     },
     {
@@ -6329,6 +7501,9 @@
                          "xml",
                          "container.xml"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A schema for container.xml files is available at https://github.com/w3c/epubcheck/tree/master/src/main/resources/com/adobe/epubcheck/schema/30/ocf-container-30.nvdl ."
     },
     {
@@ -6347,6 +7522,9 @@
                          "xml",
                          "encryption.xml"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The schema for encryption.xml files is included in [ xmlsec-rngschema-20130411 ]."
     },
     {
@@ -6365,6 +7543,9 @@
                          "xml",
                          "signatures.xml"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The schema for signatures.xml files is included in [ xmlsec-rngschema-20130411 ]."
     },
     {
@@ -6382,6 +7563,9 @@
                          "overlays",
                          "schema"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A schema for media overlay documents is available at https://github.com/w3c/epubcheck/tree/main/src/master/resources/com/adobe/epubcheck/schema/30/media-overlay-30.nvdl ."
     },
     {
@@ -6399,6 +7583,9 @@
                          "type",
                          "registrations"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "G. Media type registrations in official EPUB 3.4 Core Specification."
     },
     {
@@ -6421,6 +7608,9 @@
                          "oebps-package+xml",
                          "application/oepbs-package+xml"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This appendix registers the media type application/oebps-package+xml for the EPUB package document. This registration supersedes RFC4839 (see https://www.rfc-editor.org/rfc/rfc4839 )."
     },
     {
@@ -6443,6 +7633,9 @@
                          "epub+zip",
                          "application/zip"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This appendix registers the media type application/epub+zip for the EPUB Open Container Format (OCF)."
     },
     {
@@ -6465,6 +7658,9 @@
                          "dc:contributor",
                          "dc:creator"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "H.1 Terms defined by this specification in official EPUB 3.4 Core Specification."
     },
     {
@@ -6487,6 +7683,9 @@
                          "content",
                          "meta"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "H.2 Terms defined by reference in official EPUB 3.4 Core Specification."
     },
     {
@@ -6502,6 +7701,9 @@
         "keywords":  [
                          "acknowledgements"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The Publishing Maintenance Working Group would like to make a special acknowledgment to notable contributors, and friends, we have lost along the way. In particular, EPUB, not just EPUB 3, would not be what is today without the vision, k..."
     },
     {
@@ -6517,6 +7719,9 @@
         "keywords":  [
                          "introduction"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "1. Introduction in official EPUB Accessibility 1.2."
     },
     {
@@ -6532,6 +7737,9 @@
         "keywords":  [
                          "overview"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This specification, EPUB Accessibility, addresses two key needs in the EPUB ecosystem:"
     },
     {
@@ -6548,6 +7756,9 @@
                          "supporting",
                          "documents"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The following supporting documents provide informative guidance that helps with understanding and implementing this standard:"
     },
     {
@@ -6563,6 +7774,9 @@
         "keywords":  [
                          "internationalization"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This specification is designed to address the accessibility needs of users independent of what languages they read. The same is true for the principles and success criteria defined in [ wcag2 ]. The goal is to ensure that users can fully..."
     },
     {
@@ -6582,6 +7796,9 @@
                          "epub",
                          "refines"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This specification is applicable to any EPUB publication , regardless of what version of EPUB it conforms to."
     },
     {
@@ -6598,6 +7815,9 @@
                          "terminology",
                          "assistive technology"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This specification uses terminology defined in EPUB 3 [ epub-3 ]."
     },
     {
@@ -6613,6 +7833,16 @@
         "keywords":  [
                          "conformance"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "MUST NOT",
+                        "OPTIONAL",
+                        "RECOMMENDED",
+                        "REQUIRED",
+                        "SHOULD",
+                        "SHOULD NOT"
+                    ],
         "summary":  "As well as sections marked as non-normative, all authoring guidelines, diagrams, examples, and notes in this specification are non-normative. Everything else in this specification is normative."
     },
     {
@@ -6628,6 +7858,9 @@
         "keywords":  [
                          "discoverability"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "2. Discoverability in official EPUB Accessibility 1.2."
     },
     {
@@ -6643,6 +7876,9 @@
         "keywords":  [
                          "introduction"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Unlike web pages, EPUB publications are distributed through many channels for personal consumption — a model that has made EPUB a successful format for ebooks and other types of digital publications. A consequence of this model, however,..."
     },
     {
@@ -6659,6 +7895,11 @@
                          "package",
                          "metadata"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "SHOULD"
+                    ],
         "summary":  "All EPUB publications MUST include [ schema-org ] accessibility metadata in the package document that exposes their accessible properties, regardless of whether the publications also meet the accessibility or optimization requirements."
     },
     {
@@ -6677,6 +7918,9 @@
                          "records",
                          "link"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Accessibility metadata can also be included in linked records [ epub-3 ] (i.e., metadata records referenced from link elements), but the inclusion of such metadata solely in a linked record does not satisfy the discoverability requiremen..."
     },
     {
@@ -6693,6 +7937,9 @@
                          "accessible",
                          "publications"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "3. Accessible publications in official EPUB Accessibility 1.2."
     },
     {
@@ -6708,6 +7955,9 @@
         "keywords":  [
                          "introduction"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "EPUB builds on the Open Web Platform, with HTML, CSS, JavaScript, and SVG the core technologies used for content authoring. Leveraging these technologies allows the authoring of EPUB publications with a high degree of accessibility throu..."
     },
     {
@@ -6724,6 +7974,9 @@
                          "relationship",
                          "wcag"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "WCAG [ wcag2 ] and its associated techniques provide extensive coverage of issues and solutions for web content accessibility, covering everything from multimedia to interactive content to structured markup and more. They represent the f..."
     },
     {
@@ -6740,6 +7993,9 @@
                          "wcag",
                          "conformance"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "WCAG conformance in official EPUB Accessibility 1.2."
     },
     {
@@ -6757,6 +8013,10 @@
                          "conformance",
                          "requirements"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "RECOMMENDED"
+                    ],
         "summary":  "To conform to this specification, an EPUB publication :"
     },
     {
@@ -6774,6 +8034,9 @@
                          "wcag",
                          "conformance"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Evaluating WCAG conformance in official EPUB Accessibility 1.2."
     },
     {
@@ -6790,6 +8053,9 @@
                          "page",
                          "publication"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "The WCAG principles [ wcag2 ] focus on the evaluation of individual web pages, but an EPUB publication more closely resembles what WCAG refers to as a set of web pages : \"[a] collection of web pages that share a common purpose\" [ wcag2 ]."
     },
     {
@@ -6808,6 +8074,10 @@
                          "criteria",
                          "epub:switch"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "MUST NOT"
+                    ],
         "summary":  "When evaluating an EPUB publication , the WCAG conformance criteria [ wcag2 ] are applied as follows:"
     },
     {
@@ -6824,6 +8094,9 @@
                          "epub",
                          "requirements"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "EPUB requirements in official EPUB Accessibility 1.2."
     },
     {
@@ -6840,6 +8113,9 @@
                          "page",
                          "navigation"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Page navigation in official EPUB Accessibility 1.2."
     },
     {
@@ -6855,6 +8131,9 @@
         "keywords":  [
                          "overview"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Statically paginated content is still ubiquitous, as print continues to be the most consumed medium for books both among the general reading public and in educational settings. Print is not the only source of static pagination, either: s..."
     },
     {
@@ -6870,6 +8149,10 @@
         "keywords":  [
                          "applicability"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "SHOULD"
+                    ],
         "summary":  "An EPUB publication SHOULD include page navigation whenever any of the following cases is true:"
     },
     {
@@ -6885,6 +8168,9 @@
         "keywords":  [
                          "objectives"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Objectives in official EPUB Accessibility 1.2."
     },
     {
@@ -6901,6 +8187,10 @@
                          "pagination",
                          "source"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "MUST NOT"
+                    ],
         "summary":  "Identify the source of static page break locations."
     },
     {
@@ -6917,6 +8207,10 @@
                          "page",
                          "list"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "SHOULD"
+                    ],
         "summary":  "Provide navigation to static page break locations."
     },
     {
@@ -6934,6 +8228,11 @@
                          "breaks",
                          "epub:type"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "OPTIONAL",
+                        "SHOULD"
+                    ],
         "summary":  "Provide static page break locations."
     },
     {
@@ -6951,6 +8250,9 @@
                          "text-audio",
                          "playback"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Synchronized text-audio playback in official EPUB Accessibility 1.2."
     },
     {
@@ -6966,6 +8268,9 @@
         "keywords":  [
                          "overview"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The provision of synchronized text-audio playback helps address various user needs. It not only enables a seamless visual and auditory reading experience from beginning to end of an EPUB publication , but is useful to users who only requ..."
     },
     {
@@ -6981,6 +8286,10 @@
         "keywords":  [
                          "applicability"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "OPTIONAL"
+                    ],
         "summary":  "EPUB publications with synchronized text-audio playback MUST conform to all requirements in [ epub-3 ]. It is not necessary to meet any additional requirements beyond those defined in [ epub-3 ] to be conformant with this specification."
     },
     {
@@ -6996,6 +8305,9 @@
         "keywords":  [
                          "objectives"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Objectives in official EPUB Accessibility 1.2."
     },
     {
@@ -7011,6 +8323,9 @@
         "keywords":  [
                          "completeness"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "Ensure that all text content is available in audio."
     },
     {
@@ -7027,6 +8342,10 @@
                          "reading",
                          "order"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "SHOULD"
+                    ],
         "summary":  "Ensure synchronized text-audio playback matches logical reading order."
     },
     {
@@ -7042,6 +8361,9 @@
         "keywords":  [
                          "skippability"
                      ],
+        "rfc2119":  [
+                        "SHOULD"
+                    ],
         "summary":  "Enable users to automatically skip over content."
     },
     {
@@ -7057,6 +8379,9 @@
         "keywords":  [
                          "escapability"
                      ],
+        "rfc2119":  [
+                        "SHOULD"
+                    ],
         "summary":  "Enable users to automatically escape from structured content."
     },
     {
@@ -7073,6 +8398,9 @@
                          "navigation",
                          "document"
                      ],
+        "rfc2119":  [
+                        "SHOULD"
+                    ],
         "summary":  "Ensure auditory playback is possible for the navigation aids in the EPUB navigation document when presented by reading systems ."
     },
     {
@@ -7089,6 +8417,9 @@
                          "conformance",
                          "reporting"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Conformance reporting in official EPUB Accessibility 1.2."
     },
     {
@@ -7104,6 +8435,9 @@
         "keywords":  [
                          "introduction"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Evaluators report the accessibility conformance of an EPUB publication through the expression of metadata properties in the package document ."
     },
     {
@@ -7125,6 +8459,9 @@
                          "2.0",
                          "\u003c package"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "To indicate conformance to the accessibility requirements of this specification, an EPUB publication [ epub-3 ] MUST specify in its metadata section a conformsTo property [ dcterms ] whose value, after whitespace normalization [ xml ], e..."
     },
     {
@@ -7144,6 +8481,9 @@
                          "dcterms:conformsTo",
                          "exemption"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The requirement to include a dcterms:conformsTo identifier does not prevent EPUB publications from conforming to other standards, including other accessibility standards and guidelines (e.g., a specification that covers specific natural ..."
     },
     {
@@ -7160,6 +8500,9 @@
                          "evaluator",
                          "information"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Evaluator information in official EPUB Accessibility 1.2."
     },
     {
@@ -7181,6 +8524,9 @@
                          "\u003c metadata",
                          "refines"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "How to add the evaluator information to an EPUB publication depends on the number of conformance claims that are made."
     },
     {
@@ -7200,6 +8546,9 @@
                          "\u003c metadata",
                          "refines"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "The package document metadata MUST include an a11y:certifiedBy property that specifies the name of the party that evaluated the EPUB publication ."
     },
     {
@@ -7219,6 +8568,9 @@
                          "\u003c metadata",
                          "refines"
                      ],
+        "rfc2119":  [
+                        "REQUIRED"
+                    ],
         "summary":  "If the date the evaluation was performed on is known, include that information in a dcterms:date property [ dcterms ]."
     },
     {
@@ -7238,6 +8590,9 @@
                          "\u003c metadata",
                          "refines"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "If the evaluator has credentials or badges that establish their authority to evaluate content, include that information in an a11y:certifierCredential properties associated with [ epub-3 ] the evaluator ."
     },
     {
@@ -7258,6 +8613,9 @@
                          "refines",
                          "\u003cmetadata …\u003e … \u003cmeta property ="
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "If the evaluator provides a publicly-readable report of its assessment, provide a link to the assessment in an a11y:certifierReport property ."
     },
     {
@@ -7274,6 +8632,9 @@
                          "re-evaluating",
                          "conformance"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The following guidance is provided only to help determine when a new evaluation is necessary. It is not a conformance requirement of this specification."
     },
     {
@@ -7290,6 +8651,9 @@
                          "targeted",
                          "accessibility"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Although WCAG [ wcag2 ] provides a general set of guidelines for making content broadly accessible, conformant content is not always optimal for specific user groups. Conversely, content optimized for a specific need or reading modality ..."
     },
     {
@@ -7307,6 +8671,10 @@
                          "a11y:contactEmail",
                          "\u003c meta"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "SHOULD NOT"
+                    ],
         "summary":  "While it is expected that publications will be assessed prior to certifying them accessible, due to the sheer volumes of content produced and the complexity of checking all the markup it is sometimes the case that issues will slip throug..."
     },
     {
@@ -7324,6 +8692,9 @@
                          "resources",
                          "epub:type"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The following documents provide additional information on how to author accessible EPUB publications :"
     },
     {
@@ -7339,6 +8710,9 @@
         "keywords":  [
                          "distribution"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Although EPUB publications do not have to meet the recommendations in this section to conform to this specification, some jurisdictions require EPUB publications to follow similar practices. Directive 2019/882 , for example, includes sim..."
     },
     {
@@ -7359,6 +8733,9 @@
                          "conformsTo",
                          "\u003c metadata"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "An optimized EPUB publication is one that has been created to address a specific accessibility need, as discussed in 3.6 Targeted accessibility ."
     },
     {
@@ -7376,6 +8753,9 @@
                          "accessibility",
                          "vocabulary"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "B. EPUB accessibility vocabulary in official EPUB Accessibility 1.2."
     },
     {
@@ -7391,6 +8771,9 @@
         "keywords":  [
                          "overview"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "B.1 Overview in official EPUB Accessibility 1.2."
     },
     {
@@ -7406,6 +8789,9 @@
         "keywords":  [
                          "vocabulary"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This vocabulary defines properties for describing the accessibility of EPUB publications in the package document metadata."
     },
     {
@@ -7422,6 +8808,9 @@
                          "referencing",
                          "a11y:"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The base URL for referencing this vocabulary is http://idpf.org/epub/vocab/package/a11y/# ."
     },
     {
@@ -7438,6 +8827,9 @@
                          "certifier",
                          "properties"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "B.2 Certifier properties in official EPUB Accessibility 1.2."
     },
     {
@@ -7457,6 +8849,9 @@
                          "dcterms:conformsTo",
                          "\u003c meta"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "B.2.1 certifiedBy in official EPUB Accessibility 1.2."
     },
     {
@@ -7477,6 +8872,9 @@
                          "a11y:certifiedBy",
                          "\u003cmeta property ="
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "B.2.2 certifierCredential in official EPUB Accessibility 1.2."
     },
     {
@@ -7496,6 +8894,9 @@
                          "xsd:anyURI",
                          "\u003clink rel ="
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "B.2.3 certifierReport in official EPUB Accessibility 1.2."
     },
     {
@@ -7512,6 +8913,9 @@
                          "general",
                          "properties"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "B.3 General properties in official EPUB Accessibility 1.2."
     },
     {
@@ -7530,6 +8934,10 @@
                          "refines",
                          "\u003c meta"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "MUST NOT"
+                    ],
         "summary":  "B.3.1 contactEmail in official EPUB Accessibility 1.2."
     },
     {
@@ -7546,6 +8954,9 @@
                          "terms",
                          "specification"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "C.1 Terms defined by this specification in official EPUB Accessibility 1.2."
     },
     {
@@ -7562,6 +8973,9 @@
                          "terms",
                          "reference"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "C.2 Terms defined by reference in official EPUB Accessibility 1.2."
     },
     {
@@ -7577,6 +8991,9 @@
         "keywords":  [
                          "acknowledgements"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The Publishing Maintenance Working Group would like to make a special acknowledgment to notable contributors, and friends, we have lost along the way. In particular, EPUB, not just EPUB 3, would not be what is today without the vision, k..."
     },
     {
@@ -7592,6 +9009,9 @@
         "keywords":  [
                          "introduction"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "1. Introduction in official EPUB Accessibility Techniques 1.2."
     },
     {
@@ -7607,6 +9027,9 @@
         "keywords":  [
                          "overview"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This document, EPUB Accessibility Techniques, provides informative guidance on how to apply the accessibility requirements defined in the EPUB Accessibility 1.2 specification [ epub-a11y-12 ] that are unique to EPUB publications ."
     },
     {
@@ -7622,6 +9045,9 @@
         "keywords":  [
                          "terminology"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This document uses terminology defined in EPUB 3.3 [ epub-3 ] and EPUB Accessibility 1.2 [ epub-a11y-12 ]:"
     },
     {
@@ -7637,6 +9063,9 @@
         "keywords":  [
                          "techniques"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The accessibility techniques described in this document are advisory in nature. They are intended to help create EPUB publications that conform to the requirements in [ epub-a11y-12 ], but they are not all applicable in all situations an..."
     },
     {
@@ -7653,6 +9082,9 @@
                          "wcag",
                          "techniques"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "3. WCAG techniques in official EPUB Accessibility Techniques 1.2."
     },
     {
@@ -7669,6 +9101,9 @@
                          "general",
                          "guidance"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Techniques for meeting the requirements of the [ wcag2 ] are defined in Techniques for WCAG . This document does not repeat those techniques."
     },
     {
@@ -7685,6 +9120,9 @@
                          "helpful",
                          "resources"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Anyone unfamiliar with [ wcag2 ] might find the number of techniques daunting, as they are intended to provide broad coverage of possible solutions."
     },
     {
@@ -7701,6 +9139,9 @@
                          "content",
                          "access"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Content access in official EPUB Accessibility Techniques 1.2."
     },
     {
@@ -7723,6 +9164,9 @@
                          "nav",
                          "spine"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The table of contents provides users more than just links into the content. It is also a means to understand the structure and ordering of an EPUB publication . Consequently, users might have difficulty locating where they are in a publi..."
     },
     {
@@ -7743,6 +9187,9 @@
                          "\u003c nav",
                          "\u003cguide\u003e \u003creference type ="
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "[ wai-aria ] landmarks are similar in nature to EPUB landmarks [ epub-3 ]: both are designed to provide users with quick access to the major structures of a document, such as chapters, glossaries and indexes."
     },
     {
@@ -7759,6 +9206,9 @@
                          "helpful",
                          "resources"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The following resources explain EPUB and ARIA landmarks in more detail."
     },
     {
@@ -7775,6 +9225,9 @@
                          "titles",
                          "headings"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Titles and headings in official EPUB Accessibility Techniques 1.2."
     },
     {
@@ -7795,6 +9248,9 @@
                          "title",
                          "\u003c html"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Success Criterion 2.4.2 [ wcag2 ] requires that each web page include a title. EPUB has a similar requirement for EPUB publications : publications require a [ dcterms ] title element in the package document metadata. The [ wcag2 ] requir..."
     },
     {
@@ -7816,6 +9272,9 @@
                          "hierarchy",
                          "\u003c html"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "To a user, an EPUB publication appears as a single document that they read from beginning to end, even though the content is often split across numerous EPUB content documents . As a result, their natural expectation is that the headings..."
     },
     {
@@ -7833,6 +9292,9 @@
                          "topic",
                          "purpose"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Success Criterion 2.4.6 [ wcag2 ] currently states that all headings have to describe their topic or purpose. The implication of this wording is that all chapters in a novel, for example, have a topic or purpose and that the topic or pur..."
     },
     {
@@ -7848,6 +9310,9 @@
         "keywords":  [
                          "descriptions"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Descriptions in official EPUB Accessibility Techniques 1.2."
     },
     {
@@ -7866,6 +9331,9 @@
                          "text",
                          "descriptions"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The first version of these techniques only required alternative text for images regardless of their complexity. This exception is no longer valid."
     },
     {
@@ -7882,6 +9350,9 @@
                          "helpful",
                          "resources"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The following documents provide guidance on including extended descriptions:"
     },
     {
@@ -7897,6 +9368,9 @@
         "keywords":  [
                          "language"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Language in official EPUB Accessibility Techniques 1.2."
     },
     {
@@ -7916,6 +9390,9 @@
                          "xml:lang",
                          "\u003c package"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Success Criterions 3.1.1 and 3.1.2 [ wcag2 ] deal with the language of a page and changes of language with in, respectively."
     },
     {
@@ -7935,6 +9412,9 @@
                          "dc:language",
                          "\u003c package"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "In addition to being able to express the language of text content, the package document also allows the identification of the languages of the EPUB publication in dc:language elements [ epub-3 ]."
     },
     {
@@ -7950,6 +9430,9 @@
         "keywords":  [
                          "text"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Text in official EPUB Accessibility Techniques 1.2."
     },
     {
@@ -7968,6 +9451,9 @@
                          "text",
                          "content"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Success Criterion 1.1.1 [ wcag2 ] requires that text equivalents be provided for all non-text content to meet Level A . In some regions (e.g., Asia), it is not uncommon to find images of individual text characters, despite the availabili..."
     },
     {
@@ -7984,6 +9470,9 @@
                          "accessible",
                          "alternatives"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "As EPUB publications can be composed of more than one rendition, it is possible that different versions of the content will have different levels of accessibility. For example, an image-based version of the content that lacks alternative..."
     },
     {
@@ -8000,6 +9489,9 @@
                          "epub",
                          "techniques"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "4. EPUB Techniques in official EPUB Accessibility Techniques 1.2."
     },
     {
@@ -8016,6 +9508,9 @@
                          "page",
                          "navigation"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Page navigation in official EPUB Accessibility Techniques 1.2."
     },
     {
@@ -8038,6 +9533,9 @@
                          "\u003c span",
                          "title"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Both the EPUB Structural Semantics Vocabulary [ epub-ssv ] and Digital Publishing WAI-ARIA 1.0 Module [ dpub-aria-1.1 ] include a semantic for static page breaks: pagebreak and doc-pagebreak , respectively."
     },
     {
@@ -8060,6 +9558,9 @@
                          "par",
                          "\u003c smil"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Readers rarely stop reading to review each new page number, so when page numbers are read aloud in the audio playback of a publication it is not only distracting, but can be confusing, as well (e.g., the number could be read out in the m..."
     },
     {
@@ -8082,6 +9583,9 @@
                          "accessibilityFeature",
                          "pageNavigation"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A page list — a list of hyperlinks to the static page break locations — is the most effective way for users to find static page locations. Without a page list, the user would have to navigate each page marker in the text, provided they a..."
     },
     {
@@ -8104,6 +9608,9 @@
                          "meta",
                          "\u003c metadata"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Users typically want to know the source of the page break markers included in an EPUB publication when they are derived from a static media. Considerations like which printing, by which publisher or imprint, and whether the pagination co..."
     },
     {
@@ -8121,6 +9628,9 @@
                          "text-audio",
                          "playback"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Synchronized text-audio playback in official EPUB Accessibility Techniques 1.2."
     },
     {
@@ -8143,6 +9653,9 @@
                          "alt",
                          "aria-describedby"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Ensuring the complete text of an EPUB publication is synchronized with audio is key to allowing users who require full synchronized playback, or even audio-only playback, have access to the same information as users who do not require sy..."
     },
     {
@@ -8162,6 +9675,9 @@
                          "seq",
                          "par"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The default reading order typically represents the order in which reading systems render content to users during synchronized text-audio playback. For EPUB publications , this is a combination of the sequence of EPUB content documents in..."
     },
     {
@@ -8184,6 +9700,9 @@
                          "endnotes",
                          "endnote"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Some content elements are not critical to read when following the primary narrative of a work, and that would interrupt a user\u0027s concentration if they had to stop and listen to. Footnotes and endnotes are examples of such content, as use..."
     },
     {
@@ -8206,6 +9725,9 @@
                          "figure",
                          "list"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Some content elements are containers for expressing complex information. A table, for example, has data arranged in rows and cells. Lists similarly can contain many items. While users might be interested in some of the information in the..."
     },
     {
@@ -8223,6 +9745,9 @@
                          "navigation",
                          "document"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A media overlay document can be provided for the EPUB navigation document even when the navigation document is not included in the spine . Doing so allow reading systems to announce the link labels regardless of how they present the navi..."
     },
     {
@@ -8239,6 +9764,9 @@
                          "distribution",
                          "techniques"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "5. Distribution techniques in official EPUB Accessibility Techniques 1.2."
     },
     {
@@ -8259,6 +9787,9 @@
                          "rights",
                          "management"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "EPUB publications typically require preservation of the publisher\u0027s and author\u0027s intellectual property when distributed (e.g., so that they can be made available for individual sale through online bookstores or distributed through librar..."
     },
     {
@@ -8279,6 +9810,9 @@
                          "records",
                          "\u003c ONIXMessage"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "When an EPUB publication is ingested into a distribution system, such as a bookstore or library, a metadata record is often provided separately to the distributor. In these scenarios, the metadata used to enable discovery of the publicat..."
     },
     {
@@ -8295,6 +9829,9 @@
                          "helpful",
                          "resources"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "See the following resources for more information about including accessibility metadata in distribution records:"
     },
     {
@@ -8310,6 +9847,9 @@
         "keywords":  [
                          "introduction"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "1. Introduction in official EPUB Reading Systems 3.4."
     },
     {
@@ -8325,6 +9865,9 @@
         "keywords":  [
                          "overview"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The EPUB 3 standard is separated into two distinct concerns: the authoring of EPUB publications is defined in the core specification [ epub-34 ], while this specification details the rendering requirements for them in EPUB reading system ."
     },
     {
@@ -8341,6 +9884,9 @@
                          "terminology",
                          "content display area"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This specification uses terminology defined in EPUB 3.4 [ epub-34 ]."
     },
     {
@@ -8356,6 +9902,15 @@
         "keywords":  [
                          "conformance"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "MUST NOT",
+                        "OPTIONAL",
+                        "RECOMMENDED",
+                        "SHOULD",
+                        "SHOULD NOT"
+                    ],
         "summary":  "As well as sections marked as non-normative, all authoring guidelines, diagrams, examples, and notes in this specification are non-normative. Everything else in this specification is normative."
     },
     {
@@ -8373,6 +9928,9 @@
                          "other",
                          "specifications"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Relationship to other specifications in official EPUB Reading Systems 3.4."
     },
     {
@@ -8389,6 +9947,9 @@
                          "relationship",
                          "html"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The [ html ] standard is continuously evolving — there are no longer versioned releases of it. That standard, in turn, references various technologies that continue to evolve, such as MathML, SVG, CSS, and JavaScript."
     },
     {
@@ -8405,6 +9966,9 @@
                          "relationship",
                          "svg"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This specification does not reference a specific version of [ svg ], but instead uses an undated reference. Whenever there is any ambiguity in this reference, the latest recommended specification is the authoritative reference."
     },
     {
@@ -8422,6 +9986,9 @@
                          "system",
                          "conformance"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "2. Reading system conformance in official EPUB Reading Systems 3.4."
     },
     {
@@ -8438,6 +10005,9 @@
                          "requirements",
                          "itemref"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "Whether a reading system has to support a feature is mentioned at the beginning of its section. To be conformant with this specification, reading systems MUST support all required features as well as all applicable conditionally-required..."
     },
     {
@@ -8454,6 +10024,9 @@
                          "error",
                          "handling"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Reading systems do not have to load EPUB publications , or resources within them, when they violate content authoring or processing requirements."
     },
     {
@@ -8470,6 +10043,9 @@
                          "error",
                          "reporting"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Although reading systems do not have to report errors encountered while processing and rendering EPUB publications (e.g., if the dimensions of a fixed-layout document have been inferred), they are strongly encouraged to provide a means o..."
     },
     {
@@ -8487,6 +10063,9 @@
                          "resource",
                          "processing"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "Reading systems MUST process publication resources [ epub-34 ]."
     },
     {
@@ -8504,6 +10083,9 @@
                          "media",
                          "types"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "If a reading system has a viewport , it MUST support the image core media type resources [ epub-34 ]."
     },
     {
@@ -8520,6 +10102,9 @@
                          "foreign",
                          "resources"
                      ],
+        "rfc2119":  [
+                        "MAY"
+                    ],
         "summary":  "Reading systems MAY support an arbitrary set of foreign resource types."
     },
     {
@@ -8537,6 +10122,11 @@
                          "fallbacks",
                          "properties"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "SHOULD"
+                    ],
         "summary":  "For foreign content documents , if a reading system does not support the resource\u0027s MIME media type, it MUST traverse the resource\u0027s manifest fallback chain [ epub-34 ] until it identifies a supported publication resource to use in place..."
     },
     {
@@ -8553,6 +10143,9 @@
                          "resource",
                          "locations"
                      ],
+        "rfc2119":  [
+                        "SHOULD"
+                    ],
         "summary":  "Reading systems SHOULD support remote resources , as defined in Resource locations [ epub-34 ]."
     },
     {
@@ -8569,6 +10162,9 @@
                          "data",
                          "urls"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "Reading systems MUST prevent data URLs [ rfc2397 ] from opening in top-level browsing contexts [ html ], except when initiated through a reading system affordance such as a context menu. If a reading system does not use a top-level brows..."
     },
     {
@@ -8585,6 +10181,9 @@
                          "file",
                          "urls"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "Reading Systems MUST prevent access to resources referenced via file URLs [ rfc8089 ]."
     },
     {
@@ -8601,6 +10200,9 @@
                          "xml",
                          "processing"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "A reading system MUST use a non-validating XML processor [ xml ] that:"
     },
     {
@@ -8621,6 +10223,10 @@
                          "link",
                          "dc:language"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "MUST NOT"
+                    ],
         "summary":  "As part of processing publication resources , a reading system has to process the attributes to set the language and the base directions in XHTML content documents or SVG content documents , as well as the xml:lang attribute for all XML ..."
     },
     {
@@ -8637,6 +10243,10 @@
                          "network",
                          "access"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "RECOMMENDED"
+                    ],
         "summary":  "Reading systems MAY support network access to retrieve remote resources and to allow scripted content documents to communicate with web-hosted APIs and retrieve resources ."
     },
     {
@@ -8653,6 +10263,9 @@
                          "external",
                          "links"
                      ],
+        "rfc2119":  [
+                        "SHOULD"
+                    ],
         "summary":  "When a link has an http or https scheme [ url ], reading systems:"
     },
     {
@@ -8672,6 +10285,9 @@
                          "ocf",
                          "processing"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "Reading systems MUST process the EPUB container [ epub-34 ]."
     },
     {
@@ -8689,6 +10305,9 @@
                          "abstract",
                          "container"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "OCF abstract container in official EPUB Reading Systems 3.4."
     },
     {
@@ -8711,6 +10330,9 @@
                          "http://localhost:49152/",
                          "EPUB/package.opf"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "Reading systems MUST assign a URL [ url ] to the root directory of the OCF abstract container . This URL is called the container root URL . It is implementation specific, but the implementation MUST have the following properties:"
     },
     {
@@ -8727,6 +10349,9 @@
                          "file",
                          "names"
                      ],
+        "rfc2119":  [
+                        "SHOULD"
+                    ],
         "summary":  "Although [ epub-34 ] defines file name and file path restrictions for maximum interoperability, reading systems SHOULD attempt to process file names and paths that do not adhere to these requirements. Invalid file names and paths might o..."
     },
     {
@@ -8749,6 +10374,12 @@
                          "manifest.xml",
                          "signatures.xml"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "MUST NOT",
+                        "SHOULD"
+                    ],
         "summary":  "A reading system MUST , by default, use the package document referenced the from first rootfile element [ epub-34 ] to render the EPUB publication . If the reading system recognizes a means of selecting from the other available options, ..."
     },
     {
@@ -8770,6 +10401,10 @@
                          "Archive decryption header",
                          "Archive extra data record"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST"
+                    ],
         "summary":  "MUST treat any OCF ZIP container that splits the content into segments [ zip ] as in error."
     },
     {
@@ -8786,6 +10421,9 @@
                          "font",
                          "obfuscation"
                      ],
+        "rfc2119":  [
+                        "SHOULD"
+                    ],
         "summary":  "NIST is advising that use of the SHA-1 algorithm [ fips-180-4 ] be phased out by the end of 2030. The Publishing Maintenance Working Group does not intend to support font obfuscation in EPUB publications past that date due to its relianc..."
     },
     {
@@ -8803,6 +10441,9 @@
                          "document",
                          "processing"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "Reading systems MUST process the package document [ epub-34 ]."
     },
     {
@@ -8823,6 +10464,9 @@
                          "rtl",
                          "auto"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "If the dir attribute [ epub-34 ] is set and indicates a base direction of ltr or rtl , reading systems MUST override the bidi algorithm per the higher-level protocols defined in [ bidi ], setting the paragraph embedding level to 0 if the..."
     },
     {
@@ -8839,6 +10483,9 @@
                          "unique",
                          "identifier"
                      ],
+        "rfc2119":  [
+                        "SHOULD NOT"
+                    ],
         "summary":  "Reading systems SHOULD NOT depend on the unique identifier being unique to one and only one EPUB publication . Determining whether two EPUB publications with the same unique identifier represent different versions of the same publication..."
     },
     {
@@ -8861,6 +10508,12 @@
                          "dc:creator",
                          "creator"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "MUST NOT",
+                        "OPTIONAL",
+                        "SHOULD"
+                    ],
         "summary":  "Reading systems MUST strip and collapse ASCII whitespace [ infra ] from Dublin Core [ dcterms ] and meta element values [ epub-34 ] before processing."
     },
     {
@@ -8877,6 +10530,10 @@
                          "manifest",
                          "properties"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "SHOULD NOT"
+                    ],
         "summary":  "Reading systems MUST ignore values of the properties attribute [ epub-34 ] they do not recognize."
     },
     {
@@ -8897,6 +10554,11 @@
                          "pre-paginated",
                          "properties"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "MUST NOT"
+                    ],
         "summary":  "Reading systems MUST provide a means of rendering an EPUB publication in the order defined in the spine element [ epub-34 ], which includes:"
     },
     {
@@ -8917,6 +10579,9 @@
                          "layout-pre-paginated",
                          "pre-paginated"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "When a spine itemref element\u0027s properties attribute overrides a global rendering property [ epub-34 ], reading systems MUST follow the requirements for the override\u0027s global value to display that spine item."
     },
     {
@@ -8933,6 +10598,10 @@
                          "collections",
                          "collection"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "OPTIONAL"
+                    ],
         "summary":  "In the context of this specification, support for collections [ epub-34 ] in reading systems is OPTIONAL . Reading systems MUST ignore collection elements that define unrecognized roles."
     },
     {
@@ -8949,6 +10618,9 @@
                          "legacy",
                          "features"
                      ],
+        "rfc2119":  [
+                        "MUST NOT"
+                    ],
         "summary":  "Reading systems MUST NOT support legacy features in content that conforms to this version of EPUB [ epub-34 ]."
     },
     {
@@ -8965,6 +10637,9 @@
                          "layout",
                          "processing"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "6. Layout processing in official EPUB Reading Systems 3.4."
     },
     {
@@ -8981,6 +10656,9 @@
                          "layout",
                          "types"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Layout types in official EPUB Reading Systems 3.4."
     },
     {
@@ -8999,6 +10677,10 @@
                          "meta",
                          "rendition:layout"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST"
+                    ],
         "summary":  "Reading systems MUST support reflowable layouts."
     },
     {
@@ -9015,6 +10697,9 @@
                          "fixed",
                          "layouts"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Fixed layouts in official EPUB Reading Systems 3.4."
     },
     {
@@ -9032,6 +10717,12 @@
                          "layouts",
                          "itemref"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "MUST NOT",
+                        "SHOULD",
+                        "SHOULD NOT"
+                    ],
         "summary":  "Reading systems MUST support pre-paginated layouts."
     },
     {
@@ -9054,6 +10745,10 @@
                          "page-spread-right",
                          "rendition:page-spread-center"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "SHOULD"
+                    ],
         "summary":  "The spread placement spine overrides are interpreted as follows:"
     },
     {
@@ -9073,6 +10768,10 @@
                          "rendition:flow",
                          "scrolled-continuous"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "SHOULD"
+                    ],
         "summary":  "Reading systems SHOULD support the rendering of roll layouts."
     },
     {
@@ -9089,6 +10788,9 @@
                          "custom",
                          "properties"
                      ],
+        "rfc2119":  [
+                        "MAY"
+                    ],
         "summary":  "Reading systems MAY support custom properties provided they do not introduce expressions that conflict behaviorally with the properties defined in the Package rendering vocabulary [ epub-34 ]."
     },
     {
@@ -9107,6 +10809,9 @@
                          "document",
                          "processing"
                      ],
+        "rfc2119":  [
+                        "MAY"
+                    ],
         "summary":  "The definition of EPUB content documents [ epub-34 ] includes various authoring restrictions to optimize the cross-compatibility of content (e.g., prohibiting CSS for setting language and direction [ epub-34 ]). Unless stated otherwise i..."
     },
     {
@@ -9124,6 +10829,9 @@
                          "content",
                          "documents"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "Reading systems MUST process XHTML content documents [ epub-34 ]."
     },
     {
@@ -9140,6 +10848,9 @@
                          "html",
                          "extensions"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "HTML extensions in official EPUB Reading Systems 3.4."
     },
     {
@@ -9155,6 +10866,9 @@
         "keywords":  [
                          "rdfa"
                      ],
+        "rfc2119":  [
+                        "OPTIONAL"
+                    ],
         "summary":  "Reading system support for the attribute processing model [ rdfa-core ] is OPTIONAL ."
     },
     {
@@ -9173,6 +10887,9 @@
                          "set",
                          "its"
                      ],
+        "rfc2119":  [
+                        "OPTIONAL"
+                    ],
         "summary":  "Reading system support for processing ITS markup [ its20 ] is OPTIONAL ."
     },
     {
@@ -9189,6 +10906,9 @@
                          "custom",
                          "attributes"
                      ],
+        "rfc2119":  [
+                        "MAY"
+                    ],
         "summary":  "Reading systems MAY support custom attributes provided the attributes do not modify the requirements of this specification."
     },
     {
@@ -9206,6 +10926,9 @@
                          "deviations",
                          "constraints"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "HTML deviations and constraints in official EPUB Reading Systems 3.4."
     },
     {
@@ -9221,6 +10944,9 @@
         "keywords":  [
                          "microdata"
                      ],
+        "rfc2119":  [
+                        "OPTIONAL"
+                    ],
         "summary":  "Reading system support for the attribute processing model is OPTIONAL , as is the conversion to JSON [ html ]."
     },
     {
@@ -9237,6 +10963,10 @@
                          "mathml",
                          "annotation-xml"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST"
+                    ],
         "summary":  "To support MathML [ mathml3 ] embedded in XHTML content documents , a reading system:"
     },
     {
@@ -9253,6 +10983,9 @@
                          "embedded",
                          "svg"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "Reading systems MUST process SVG embedded in XHTML content documents as defined in 7.2 SVG content documents ."
     },
     {
@@ -9271,6 +11004,10 @@
                          "css",
                          "object"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "MUST NOT"
+                    ],
         "summary":  "For the purposes of styling SVG embedded in XHTML content documents by reference , reading systems MUST NOT apply CSS style rules of the containing document to the referenced SVG document."
     },
     {
@@ -9287,6 +11024,9 @@
                          "form",
                          "submission"
                      ],
+        "rfc2119":  [
+                        "OPTIONAL"
+                    ],
         "summary":  "Reading system support for the submission of [ html ] form elements is OPTIONAL . A reading system might, for example, prevent form submissions by limiting access to networking."
     },
     {
@@ -9304,6 +11044,10 @@
                          "content",
                          "documents"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "SHOULD"
+                    ],
         "summary":  "Reading systems MUST process SVG content documents [ epub-34 ]."
     },
     {
@@ -9322,6 +11066,10 @@
                          "pre-paginated",
                          "roll"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST"
+                    ],
         "summary":  "Reading systems MUST support the rendering of EPUB content documents in spine items whose layout is designated as pre-paginated or roll . They MAY support the rendering of image foreign resources in spine items whose layout is designated..."
     },
     {
@@ -9344,6 +11092,11 @@
                          "height",
                          "device-width"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "SHOULD"
+                    ],
         "summary":  "Reading systems MUST create the initial containing block (ICB) using the width and height expressions declared in the viewport meta tag for XHTML content documents , as defined in Expressing in HTML [ epub-34 ]. They MUST clip content po..."
     },
     {
@@ -9362,6 +11115,9 @@
                          "tag",
                          "viewport meta"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "Except when obtaining the initial containing block dimensions for XHTML fixed-layout documents , reading systems MUST ignore rendering instructions in viewport meta declarations ."
     },
     {
@@ -9381,6 +11137,10 @@
                          "css",
                          "@font-face"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "SHOULD"
+                    ],
         "summary":  "If a reading system has a viewport , it MUST support the visual rendering of XHTML content documents via CSS [ epub-34 ]."
     },
     {
@@ -9398,6 +11158,9 @@
                          "styling",
                          "overrides"
                      ],
+        "rfc2119":  [
+                        "MAY"
+                    ],
         "summary":  "A reading system MAY override parts of an EPUB publication\u0027s styling (e.g., for ergonomic or user interface reasons). Morevoer, they MAY allow users to set default themes and style preferences (e.g., for more accessible reading) that fur..."
     },
     {
@@ -9416,6 +11179,12 @@
                          "dom-manipulation",
                          "layout-change"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "MUST NOT",
+                        "SHOULD"
+                    ],
         "summary":  "Reading systems SHOULD support scripting [ epub-34 ]."
     },
     {
@@ -9432,6 +11201,10 @@
                          "local",
                          "storage"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "SHOULD"
+                    ],
         "summary":  "Reading systems MAY block scripts from saving persistent data through cookies and web storage [ html ]."
     },
     {
@@ -9448,6 +11221,9 @@
                          "event",
                          "model"
                      ],
+        "rfc2119":  [
+                        "SHOULD"
+                    ],
         "summary":  "Reading systems SHOULD follow the DOM Event model as per [ html ] and pass UI events to the scripting environment before performing any default action associated with these events."
     },
     {
@@ -9464,6 +11240,9 @@
                          "security",
                          "considerations"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Reading system developers who also support scripting need to be aware of the security issues that arise when reading systems execute scripted content. As the underlying scripting model employed by reading systems and browsers is the same..."
     },
     {
@@ -9486,6 +11265,12 @@
                          "page-list nav",
                          "landmarks nav"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "MUST NOT",
+                        "SHOULD"
+                    ],
         "summary":  "Reading systems MUST process EPUB navigation documents [ epub-34 ]."
     },
     {
@@ -9502,6 +11287,9 @@
                          "aural",
                          "rendering"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "9. Aural rendering in official EPUB Reading Systems 3.4."
     },
     {
@@ -9518,6 +11306,10 @@
                          "text-to-speech",
                          "body"
                      ],
+        "rfc2119":  [
+                        "OPTIONAL",
+                        "SHOULD"
+                    ],
         "summary":  "Reading system support for text-to-speech playback is OPTIONAL ."
     },
     {
@@ -9539,6 +11331,10 @@
                          "media-type",
                          "application/smil+xml"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "SHOULD"
+                    ],
         "summary":  "Reading systems with the capability to render prerecorded audio SHOULD support media overlays [ epub-34 ]."
     },
     {
@@ -9558,6 +11354,11 @@
                          "item",
                          "media-overlay"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "SHOULD"
+                    ],
         "summary":  "When a reading system loads a package document , it MUST refer to the manifest item elements\u0027 [ epub-34 ] media-overlay attributes to discover the corresponding media overlays for EPUB content documents ."
     },
     {
@@ -9574,6 +11375,9 @@
                          "basic",
                          "playback"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Basic playback in official EPUB Reading Systems 3.4."
     },
     {
@@ -9593,6 +11397,9 @@
                          "seq",
                          "par"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "Reading systems MUST render immediate children of the body element [ epub-34 ] in a sequence. A seq element\u0027s [ epub-34 ] children MUST be rendered in sequence, and playback completes when the last child finishes playing. Reading system ..."
     },
     {
@@ -9612,6 +11419,10 @@
                          "clipBegin",
                          "clipEnd"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "SHOULD"
+                    ],
         "summary":  "When presented with a media overlay audio element [ EPUB-34 ], reading systems MUST play the audio resource referenced by the src attribute, starting at the clip offset time given by the clipBegin attribute and ending at the clip offset ..."
     },
     {
@@ -9632,6 +11443,9 @@
                          "par",
                          "duration"
                      ],
+        "rfc2119":  [
+                        "SHOULD"
+                    ],
         "summary":  "When a media overlay text element with no audio [ epub-34 ] sibling element references text within the target EPUB content document , reading systems capable of text-to-speech (TTS) playback SHOULD render the referenced text using TTS."
     },
     {
@@ -9654,6 +11468,11 @@
                          "src",
                          "active-class"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "OPTIONAL",
+                        "SHOULD"
+                    ],
         "summary":  "When presented with a media overlay text element [ epub-34 ] whose src attribute contains a URL-fragment string referencing a specific part of an EPUB content document, reading systems SHOULD ensure the referenced portion is visible in t..."
     },
     {
@@ -9673,6 +11492,9 @@
                          "content",
                          "documents"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "Because the media overlay is closely linked to the EPUB content document , it is very easy for reading systems to locate a position in the EPUB content document based on the current position in the media overlay playback. If the user pau..."
     },
     {
@@ -9689,6 +11511,9 @@
                          "skippability",
                          "escapability"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Skippability and escapability in official EPUB Reading Systems 3.4."
     },
     {
@@ -9707,6 +11532,10 @@
                          "par",
                          "seq"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "SHOULD"
+                    ],
         "summary":  "Reading systems SHOULD use the semantic information provided by media overlay elements\u0027 epub:type attribute to offer users the option of skipping content."
     },
     {
@@ -9723,6 +11552,10 @@
                          "escapability",
                          "epub:type"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "SHOULD"
+                    ],
         "summary":  "While playing media overlays, reading systems SHOULD offer users the option to leave (\"escape\") escapable structures [ epub-34 ], which are determined by the presence of an epub:type attribute [ epub-34 ] with a value from the escapable ..."
     },
     {
@@ -9741,6 +11574,10 @@
                          "semantics",
                          "epub:type"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST"
+                    ],
         "summary":  "Reading systems MAY support structural semantics [ epub-34 ] in EPUB content documents ."
     },
     {
@@ -9763,6 +11600,9 @@
                          "doc",
                          "obtain an expanded URL"
                      ],
+        "rfc2119":  [
+                        "MAY"
+                    ],
         "summary":  "Reading systems MAY support the vocabulary association mechanisms for processing compact URLs [ epub-34 ]."
     },
     {
@@ -9781,6 +11621,10 @@
                          "version",
                          "3.0"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "SHOULD"
+                    ],
         "summary":  "Reading systems MUST attempt to process an EPUB publication whose package document version attribute [ epub-34 ] is less than \" 3.0 \"."
     },
     {
@@ -9799,6 +11643,9 @@
                          "version",
                          "3.0"
                      ],
+        "rfc2119":  [
+                        "SHOULD"
+                    ],
         "summary":  "Reading systems SHOULD attempt to process an EPUB publication whose package document version attribute [ epub-34 ] is greater than \" 3.0 \"."
     },
     {
@@ -9814,6 +11661,9 @@
         "keywords":  [
                          "accessibility"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Although the primary focus of this specification is on how to process and render EPUB publications , it does not mandate specific user interfaces that all reading systems have to offer. This does not mean that there are not common access..."
     },
     {
@@ -9830,6 +11680,9 @@
                          "security",
                          "privacy"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "15. Security and privacy in official EPUB Reading Systems 3.4."
     },
     {
@@ -9845,6 +11698,9 @@
         "keywords":  [
                          "overview"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The particularity of an EPUB publication is its structure. The EPUB format provides a means of representing, packaging, and encoding structured and semantically enhanced web content — including HTML, CSS, SVG, and other resources — for d..."
     },
     {
@@ -9865,6 +11721,9 @@
                          "application/oebps-package+xml",
                          "application/epub+zip"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The greatest threats to users come from the content they read [ epub-34 ], and the first line of defense against these attacks is the reading systems they use. Users expect that reading systems act as safeguards against malicious content..."
     },
     {
@@ -9880,6 +11739,11 @@
         "keywords":  [
                          "recommendations"
                      ],
+        "rfc2119":  [
+                        "RECOMMENDED",
+                        "SHOULD",
+                        "SHOULD NOT"
+                    ],
         "summary":  "The strongest measure that reading system developers can take for privacy is to specify the data they intend to collect and use about the user and/or their reading behavior and seek the consent of users to obtain it. They SHOULD also all..."
     },
     {
@@ -9896,6 +11760,9 @@
                          "obsolete",
                          "features"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A. Obsolete features in official EPUB Reading Systems 3.4."
     },
     {
@@ -9912,6 +11779,10 @@
                          "outdated",
                          "features"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST"
+                    ],
         "summary":  "Reading systems MAY support outdated features [ epub-34 ] with the exception of the legacy features ."
     },
     {
@@ -9932,6 +11803,9 @@
                          "name",
                          "version"
                      ],
+        "rfc2119":  [
+                        "MAY"
+                    ],
         "summary":  "Reading systems MAY support deprecated authoring features [ epub-34 ]."
     },
     {
@@ -9949,6 +11823,9 @@
                          "object",
                          "epubReadingSystem"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Reading systems act as the core rendering engines of EPUB publications and provide a scripting environment based on the [ dom ] specification. So, although this interface definition uses the [ webidl ] notation for implementation by read..."
     },
     {
@@ -9971,6 +11848,9 @@
                          "epubReadingSystem",
                          "WorkerNavigator"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This specification extends the Navigator object [ html ] as follows."
     },
     {
@@ -9990,6 +11870,9 @@
                          "navigator",
                          "DOMContentLoaded"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "The Navigator.epubReadingSystem object provides an interface through which a scripted content document can query information about a user\u0027s reading system."
     },
     {
@@ -10005,6 +11888,9 @@
         "keywords":  [
                          "methods"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "B.3 Methods in official EPUB Reading Systems 3.4."
     },
     {
@@ -10020,6 +11906,9 @@
         "keywords":  [
                          "hasfeature"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "B.3.1 hasFeature in official EPUB Reading Systems 3.4."
     },
     {
@@ -10040,6 +11929,9 @@
                          "version",
                          "var"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "The hasFeature method indicates whether a reading system supports the specified feature. If no version is supplied with the named feature, the result indicates whether any version of the feature is supported."
     },
     {
@@ -10062,6 +11954,10 @@
                          "keyboard-events",
                          "spine-scripting"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST"
+                    ],
         "summary":  "The following table lists the set of features that reading systems that support the epubReadingSystem object MUST recognize."
     },
     {
@@ -10082,6 +11978,9 @@
                          "Navigator.epubReadingSystem",
                          "Navigator"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "C.1 Terms defined by this specification in official EPUB Reading Systems 3.4."
     },
     {
@@ -10104,6 +12003,9 @@
                          "dc:language",
                          "dc:title"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "C.2 Terms defined by reference in official EPUB Reading Systems 3.4."
     },
     {
@@ -10119,6 +12021,9 @@
         "keywords":  [
                          "acknowledgements"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The Publishing Maintenance Working Group would like to make a special acknowledgment to notable contributors, and friends, we have lost along the way. In particular, EPUB, not just EPUB 3, would not be what is today without the vision, k..."
     },
     {
@@ -10136,6 +12041,9 @@
                          "epub:type",
                          "role"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Structural semantics add additional meaning about the specific structural purpose an HTML (or SVG) element plays. The epub:type attribute [ epub-33 ] is used to express domain-specific semantics in EPUB content documents and media overla..."
     },
     {
@@ -10154,6 +12062,9 @@
                          "epub:type",
                          "body"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "While the EPUB Structural Semantics vocabulary is generally host language agnostic, it has been constructed primarily to enable semantic inflection of elements in the HTML vocabulary."
     },
     {
@@ -10170,6 +12081,9 @@
                          "document",
                          "partitions"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Ancillary material occurring after the main content of a publication, such as indices, appendices, etc."
     },
     {
@@ -10186,6 +12100,9 @@
                          "document",
                          "divisions"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A major thematic section of content in a work."
     },
     {
@@ -10203,6 +12120,9 @@
                          "sections",
                          "components"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Sections and components that typically occur in the publication bodymatter."
     },
     {
@@ -10221,6 +12141,9 @@
                          "landmarks nav",
                          "toc nav"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A collection of references to well-known/recurring components within the publication"
     },
     {
@@ -10238,6 +12161,9 @@
                          "reference",
                          "sections"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A section of supplemental information located after the primary content that informs the content but is not central to it."
     },
     {
@@ -10253,6 +12179,9 @@
         "keywords":  [
                          "bibliographies"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A list of external references cited in the work, which may be to print or digital sources."
     },
     {
@@ -10268,6 +12197,9 @@
         "keywords":  [
                          "dictionaries"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A group of terms, each having an opposite or nearly opposite meaning from a headword or idiom."
     },
     {
@@ -10283,6 +12215,9 @@
         "keywords":  [
                          "glossaries"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A brief dictionary of new, uncommon, or specialized terms used in the content."
     },
     {
@@ -10298,6 +12233,9 @@
         "keywords":  [
                          "indexes"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A navigational aid that provides a detailed list of links to key subjects, names and other important topics covered in the work."
     },
     {
@@ -10315,6 +12253,9 @@
                          "sections",
                          "components"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Preliminary sections and components, typically occurring in the publication frontmatter."
     },
     {
@@ -10331,6 +12272,9 @@
                          "complementary",
                          "content"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Notifies the user of consequences that might arise from an action or event. Examples include warnings, cautions and dangers."
     },
     {
@@ -10347,6 +12291,9 @@
                          "titles",
                          "headings"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The title of the work as displayed on the work\u0027s cover."
     },
     {
@@ -10363,6 +12310,9 @@
                          "educational",
                          "content"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "10. Educational content in official EPUB Structural Semantics Vocabulary 1.1."
     },
     {
@@ -10379,6 +12329,9 @@
                          "learning",
                          "objectives"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "An explicit designation or description of a learning objective or a reference to an explicit learning objective."
     },
     {
@@ -10394,6 +12347,9 @@
         "keywords":  [
                          "testing"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A test, quiz, or other activity that helps measure a student\u0027s understanding of what is being taught."
     },
     {
@@ -10409,6 +12365,9 @@
         "keywords":  [
                          "comics"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "An area in a comic panel that contains the words, spoken or thought, of a character."
     },
     {
@@ -10425,6 +12384,9 @@
                          "notes",
                          "annotations"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A collection of notes at the end of a work or a section within it."
     },
     {
@@ -10440,6 +12402,9 @@
         "keywords":  [
                          "references"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A link that allows the user to return to a related location in the content (e.g., from a footnote to its reference or from a glossary definition to where a term is used)."
     },
     {
@@ -10456,6 +12421,9 @@
                          "document",
                          "text"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Terms for describing components at the phrasing level."
     },
     {
@@ -10472,6 +12440,9 @@
                          "pagination",
                          "page-list nav"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A navigational aid that provides a list of links to the pagebreaks in the content."
     },
     {
@@ -10489,6 +12460,9 @@
                          "seq",
                          "par"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A structure containing data or content laid out in tabular form."
     },
     {
@@ -10506,6 +12480,9 @@
                          "seq",
                          "par"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A structure that contains an enumeration of related content items."
     },
     {
@@ -10523,6 +12500,9 @@
                          "seq",
                          "par"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "An illustration, diagram, photo, code listing or similar, referenced from the text of a work, and typically annotated with a title, caption and/or credits."
     },
     {
@@ -10540,6 +12520,9 @@
                          "seq",
                          "par"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Media overlays usage context: Identifies a seq or par as an escapable or skippable aside."
     },
     {
@@ -10557,6 +12540,9 @@
                          "terms",
                          "aside"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Although use of the following terms remains valid, they are no longer recommended for use in EPUB publications . Each term links to its last full definition."
     },
     {
@@ -10572,6 +12558,13 @@
         "keywords":  [
                          "conformance"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "MUST NOT",
+                        "RECOMMENDED",
+                        "SHOULD"
+                    ],
         "summary":  "As well as sections marked as non-normative, all authoring guidelines, diagrams, examples, and notes in this specification are non-normative. Everything else in this specification is normative."
     },
     {
@@ -10587,6 +12580,10 @@
         "keywords":  [
                          "introduction"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST"
+                    ],
         "summary":  "This section defines a profile of the Web Annotation Data Model [ annotation-model ], as used for EPUB Annotations."
     },
     {
@@ -10603,6 +12600,9 @@
                          "relationship",
                          "url"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "To be consistent with EPUB 3.4 , this specification refers to the [ url ] standard for terminology and processing related to URLs expressed in EPUB publications and in Annotations Objects . The additional constraints expressed in EPUB 3...."
     },
     {
@@ -10618,6 +12618,9 @@
         "keywords":  [
                          "annotation"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "3. Annotation in official EPUB Annotations 1.0."
     },
     {
@@ -10640,6 +12643,10 @@
                          "modified",
                          "creator"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "RECOMMENDED"
+                    ],
         "summary":  "The Annotation object retains the following annotation properties from the Web Annotation object [ annotation-model ]:"
     },
     {
@@ -10658,6 +12665,9 @@
                          "type",
                          "name"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "The Creator object of an annotation is a person, an organization or a software agent."
     },
     {
@@ -10677,6 +12687,9 @@
                          "selector",
                          "meta"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The Target object of an annotation associates the annotation with a specific segment of a resource in the current publication."
     },
     {
@@ -10695,6 +12708,9 @@
                          "manifest",
                          "{ \"@context\""
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "The target resource MUST be identified by the URL of an existing resource in the EPUB package. It MUST be one of the item/@href values of the manifest element as defined in [ epub-34 ]."
     },
     {
@@ -10710,6 +12726,9 @@
         "keywords":  [
                          "selector"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "An annotation refers to a segment of a resource, which is identified by one or more Selectors . The nature of the Selectors and methods to describe segments depend on the resource type. Providing more than one Selector allows an annotati..."
     },
     {
@@ -10732,6 +12751,11 @@
                          "namedSection",
                          "xywh=50,50,640,480"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "MUST NOT",
+                        "SHOULD"
+                    ],
         "summary":  "The Fragment Selector object uses the fragment part of an URL defined by the representation\u0027s media type. This object is identical in structure to the Fragment Selector defined by Web Annotation Data Model , except that it restricts the ..."
     },
     {
@@ -10751,6 +12775,9 @@
                          "type",
                          "value"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "One of the most common ways to select elements in the HTML Document Object Model is to use CSS Selectors [ CSS3-selectors ]. This specification reuses the CssSelector , as defined in the Web Annotation Data Model specification, but lists..."
     },
     {
@@ -10773,6 +12800,9 @@
                          "end",
                          "innerText"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This Selector describes a range of text by recording the start and end positions of the selection in the stream. Position 0 would be immediately before the first character, position 1 would be immediately before the second character, and..."
     },
     {
@@ -10791,6 +12821,10 @@
                          "refinedBy",
                          "\u003c div"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "SHOULD"
+                    ],
         "summary":  "It may be easier, more reliable, or more accurate to specify the segment of interest of a resource as a selection of a selection, rather than as a selection of the complete resource. This is accomplished by having selectors chained toget..."
     },
     {
@@ -10807,6 +12841,9 @@
                          "meta",
                          "Meta object"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The Meta object (ie, class) is currently undefined..."
     },
     {
@@ -10829,6 +12866,9 @@
                          "highlight",
                          "tags"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The Body object of an annotation contains either plain text and style information, or a reference to an external audiovisual resource. It can also include optional tags."
     },
     {
@@ -10851,6 +12891,10 @@
                          "Generator",
                          "generated"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "RECOMMENDED"
+                    ],
         "summary":  "An Annotation Set is an unordered collection of annotations."
     },
     {
@@ -10870,6 +12914,9 @@
                          "name",
                          "homepage"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "The Generator object contains information relative to the software from which the serialized annotation has been produced."
     },
     {
@@ -10891,6 +12938,9 @@
                          "dc:creator",
                          "dc:date"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The About object contains information relative to the publication. Such metadata is intended to help associate an annotation set with a publication:"
     },
     {
@@ -10908,6 +12958,9 @@
                          "annotationset",
                          "{ \"@context\""
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Following the Web Annotation Data Model [ annotation-model ] specification, EPUB Annotations are expressed as JSON-LD [ json-ld11 ] (a variant of JSON [ ecma-404 ] for linked data). The model is informally defined through a JSON Schema [..."
     },
     {
@@ -10926,6 +12979,10 @@
                          ".annotations",
                          "annotations.json"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST"
+                    ],
         "summary":  "An AnnotationSet can be shared as a detached file, or embedded in an EPUB package. The advantage of detached annotations is that they can be shared independently of the publication, and that they can be associated with a publication with..."
     },
     {
@@ -10943,6 +13000,10 @@
                          "detached",
                          "annotations"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "SHOULD"
+                    ],
         "summary":  "When a reading system imports detached annotations, it SHOULD check whether those annotations are indeed for the publication being rendered. Because there are no universally accepted identifiers for EPUB publications, this process involv..."
     },
     {
@@ -10961,6 +13022,10 @@
                          "epub",
                          "annotations.json"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST"
+                    ],
         "summary":  "The AnnotationSet is stored in the META-INF directory as annotations.json . Audiovisual notes, if present, MAY be in any location descendant from the META-INF directory, or in the META-INF directory itself. Annotation bodies within the A..."
     },
     {
@@ -10979,6 +13044,9 @@
                          "reading",
                          "systems"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "6. Best Practices for Reading Systems in official EPUB Annotations 1.0."
     },
     {
@@ -10996,6 +13064,9 @@
                          "filtered",
                          "annotations"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "It is recommended that Reading systems enable filtering by motivation, creator, style and tags. For instance, a user can display \"blue\" colored annotations only, or \"typo\" tagged annotations only. Filtering on multiple criteria is a plus."
     },
     {
@@ -11012,6 +13083,9 @@
                          "multiple",
                          "selectors"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "It is recommended that Reading Systems export multiple selectors, including at least one precise selector (e.g. CssSelector + TextPositionSelector), and one selector resistant to content modifications (e.g., based on text fragments)."
     },
     {
@@ -11030,6 +13104,9 @@
                          "detached",
                          "file"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "When a user decides to export an annotation set from a reading system, it is good to propose them to filter annotations by motivation, creator, style and tags. The advantage of this practice is that, for instance, a user can export perso..."
     },
     {
@@ -11048,6 +13125,9 @@
                          "embedded",
                          "epub"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "When a user decides to export a publication from the Reading System, it is good to propose them to embed the annotations associated with the publication."
     },
     {
@@ -11064,6 +13144,9 @@
                          "importing",
                          "annotations"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "To simplify associating annotations with a publication, a Reading System has to offer a way to select a publication before selecting an annotation set. An automatic association of an annotation set with a publication (e.g. via drag and d..."
     },
     {
@@ -11081,6 +13164,9 @@
                          "audiovisual",
                          "notes"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This specification provides mechanisms for handling audiovisual notes."
     },
     {
@@ -11097,6 +13183,9 @@
                          "dealing",
                          "colors"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This document specifies a closed set of six colors chosen because of their extensive support in well-known reading systems. However, most existing reading apps offer a smaller set to their users."
     },
     {
@@ -11113,6 +13202,9 @@
                          "json",
                          "schema"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "7. JSON Schema in official EPUB Annotations 1.0."
     },
     {
@@ -11129,6 +13221,9 @@
                          "internationalization",
                          "considerations"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "8. Internationalization Considerations in official EPUB Annotations 1.0."
     },
     {
@@ -11151,6 +13246,9 @@
                          "\"rtl\"",
                          "{ \"@context\""
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The EPUB Annotation model inherits the string internationalization features defined by JSON-LD 1.1 . These may be used for values that are defined as localizable texts . To set the right language metadata, the value is a separate object ..."
     },
     {
@@ -11173,6 +13271,9 @@
                          "@language",
                          "@direction"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The default values for language and direction may be set as part of the context declaration of the Annotation Set. The value of the top-level @context must be extended with an extra context object (using the JSON array notation) containi..."
     },
     {
@@ -11195,6 +13296,9 @@
                          "creator",
                          "generator"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A.1 Terms defined by this specification in official EPUB Annotations 1.0."
     },
     {
@@ -11212,6 +13316,9 @@
                          "reference",
                          "manifest"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A.2 Terms defined by reference in official EPUB Annotations 1.0."
     },
     {
@@ -11228,6 +13335,9 @@
                          "issue",
                          "summary"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "B. Issue summary in official EPUB Annotations 1.0."
     },
     {
@@ -11244,6 +13354,9 @@
                          "introduction",
                          "@context"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This document defines the EPUB Annotations Vocabulary 1.0, an RDFS [ rdf-schema ] vocabulary formalizing the terms defined in the EPUB Annotations 1.0 specification. The vocabulary is a \"profile\" of the W3C Web Annotation Vocabulary ."
     },
     {
@@ -11266,6 +13379,9 @@
                          "http://purl.org/dc/dcmitype/",
                          "http://purl.org/dc/terms/"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This specification makes use of the following namespaces:"
     },
     {
@@ -11282,6 +13398,9 @@
                          "term",
                          "definitions"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "3. Term definitions in official EPUB Annotations Vocabulary 1.0."
     },
     {
@@ -11298,6 +13417,9 @@
                          "class",
                          "definitions"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The following are class definitions in the ea namespace."
     },
     {
@@ -11313,6 +13435,9 @@
         "keywords":  [
                          "@context"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Information about the EPUB publication"
     },
     {
@@ -11335,6 +13460,9 @@
                          "target",
                          "@context"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "See the formal definition of the term ."
     },
     {
@@ -11354,6 +13482,9 @@
                          "items",
                          "@context"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "See the formal definition of the term ."
     },
     {
@@ -11373,6 +13504,9 @@
                          "dctypes:Sound",
                          "@context"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Audio in official EPUB Annotations Vocabulary 1.0."
     },
     {
@@ -11395,6 +13529,9 @@
                          "color",
                          "highlight"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "See the formal definition of the term ."
     },
     {
@@ -11417,6 +13554,9 @@
                          "foaf:Organization",
                          "as:Application"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "See the formal definition of the term ."
     },
     {
@@ -11436,6 +13576,9 @@
                          "conformsTo",
                          "@context"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "See the formal definition of the term ."
     },
     {
@@ -11455,6 +13598,9 @@
                          "name",
                          "@context"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "See the formal definition of the term ."
     },
     {
@@ -11472,6 +13618,9 @@
                          "Meta",
                          "@context"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "See the formal definition of the term ."
     },
     {
@@ -11493,6 +13642,9 @@
                          "refinedBy",
                          "@context"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "See the formal definition of the term ."
     },
     {
@@ -11513,6 +13665,9 @@
                          "source",
                          "@context"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "See the formal definition of the term ."
     },
     {
@@ -11529,6 +13684,9 @@
                          "property",
                          "definitions"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The following are property definitions in the ea namespace."
     },
     {
@@ -11546,6 +13704,9 @@
                          "Body",
                          "@context"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "See the formal definition of the term ."
     },
     {
@@ -11568,6 +13729,9 @@
                          "https://www.w3.org/TR/SVG/",
                          "@context"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "See the formal definition of the term ."
     },
     {
@@ -11585,6 +13749,9 @@
                          "Body",
                          "@context"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "See the formal definition of the term ."
     },
     {
@@ -11603,6 +13770,9 @@
                          "Generator",
                          "@context"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Homepage of the tool generating the annotations"
     },
     {
@@ -11621,6 +13791,9 @@
                          "Annotation",
                          "@context"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "See the formal definition of the term ."
     },
     {
@@ -11643,6 +13816,9 @@
                          "oa:highlighting",
                          "@context"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Provides the motivation for an annotation"
     },
     {
@@ -11665,6 +13841,9 @@
                          "rdf:dirLangString",
                          "@context"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "See the formal definition of the term ."
     },
     {
@@ -11684,6 +13863,9 @@
                          "Selector",
                          "@context"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "See the formal definition of the term ."
     },
     {
@@ -11702,6 +13884,9 @@
                          "Target",
                          "@context"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Designates the source resource for the target"
     },
     {
@@ -11720,6 +13905,9 @@
                          "xsd:string",
                          "@context"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "See the formal definition of the term ."
     },
     {
@@ -11736,6 +13924,9 @@
                          "definitions",
                          "individuals"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The following are definitions for individuals in the ea namespace."
     },
     {
@@ -11752,6 +13943,9 @@
                          "pink",
                          "@context"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "See the formal definition of the term ."
     },
     {
@@ -11768,6 +13962,9 @@
                          "orange",
                          "@context"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "See the formal definition of the term ."
     },
     {
@@ -11784,6 +13981,9 @@
                          "yellow",
                          "@context"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "See the formal definition of the term ."
     },
     {
@@ -11800,6 +14000,9 @@
                          "green",
                          "@context"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "See the formal definition of the term ."
     },
     {
@@ -11816,6 +14019,9 @@
                          "blue",
                          "@context"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "See the formal definition of the term ."
     },
     {
@@ -11832,6 +14038,9 @@
                          "purple",
                          "@context"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "See the formal definition of the term ."
     },
     {
@@ -11848,6 +14057,9 @@
                          "solid",
                          "@context"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "See the formal definition of the term ."
     },
     {
@@ -11864,6 +14076,9 @@
                          "underline",
                          "@context"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "See the formal definition of the term ."
     },
     {
@@ -11880,6 +14095,9 @@
                          "strikethrough",
                          "@context"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "See the formal definition of the term ."
     },
     {
@@ -11896,6 +14114,9 @@
                          "outline",
                          "@context"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "See the formal definition of the term ."
     },
     {
@@ -11911,6 +14132,9 @@
         "keywords":  [
                          "introduction"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "1. Introduction in official EPUB Fixed Layout Accessibility."
     },
     {
@@ -11926,6 +14150,9 @@
         "keywords":  [
                          "overview"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "EPUB fixed layout publications, or publications where the print layout is preserved in the digital edition, have been around since before EPUB 3.0.1. These publications span a number of genres and types, from comic books, cook books, chi..."
     },
     {
@@ -11941,6 +14168,9 @@
         "keywords":  [
                          "scope"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This document provides guidance and best practices for meeting the requirements of EPUB Accessibility 1.1 [ epub-a11y-11 ] for fixed layout publications, in particular with respect to meeting WCAG 2 success criteria [ wcag2 ]. It is not ..."
     },
     {
@@ -11959,6 +14189,9 @@
                          "layout",
                          "accessibility"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The Publishing Maintenance Working Group recognizes that making fully accessible fixed layouts presents unique challenges, and may not be possible in many cases. That should not be used as an excuse not to make fixed layout publications ..."
     },
     {
@@ -11977,6 +14210,9 @@
                          "fixed",
                          "layout"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "WCAG [ wcag2 ] is structured around four main principles: Perceivable, Operable, Understandable, and Robust. These principles are the foundation of web accessibility and a helpful way to group and understand the guidelines and success cr..."
     },
     {
@@ -11992,6 +14228,9 @@
         "keywords":  [
                          "perceivable"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Content must be presented and built in a way that allows it to be perceivable to different senses. This principle requires fixed layout content be built in a way that supports multiple reading methods - visual, audible, and tactile. This..."
     },
     {
@@ -12007,6 +14246,9 @@
         "keywords":  [
                          "operable"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Content and navigation must be operable, built in a way that makes it usable for all users. This principle, when applied to fixed layout content, is achieved through consistent navigation and content structure."
     },
     {
@@ -12022,6 +14264,9 @@
         "keywords":  [
                          "understandable"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Content must be understandable. This principle has limited application to fixed layout content aside from the importance of proper language labelling."
     },
     {
@@ -12037,6 +14282,9 @@
         "keywords":  [
                          "robust"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Content must be robust enough to be interpreted by a variety of user agents, reading systems, and assistive technologies. For fixed layout content, achieving this principle requires the EPUB file to be well-formed and all content must us..."
     },
     {
@@ -12053,6 +14301,9 @@
                          "content",
                          "accessibility"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "2. Content accessibility in official EPUB Fixed Layout Accessibility."
     },
     {
@@ -12072,6 +14323,9 @@
                          "content",
                          "development"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "EPUB 3.3 [ epub-33 ] supports multiple methods for content development, particularly for fixed layout content. The two primary methods are to use XHTML and SVG for building EPUB content documents. A third method used in many EPUB fixed l..."
     },
     {
@@ -12089,6 +14343,9 @@
                          "order",
                          "spine"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Reading order in EPUB refers to the order of content documents in the spine section of the package document . However, the concept of reading order is also an important consideration for accessibility and refers to the visual and program..."
     },
     {
@@ -12106,6 +14363,9 @@
                          "reading",
                          "order"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "EPUB authors need to be mindful of how the reading order of a page is presented both visually and programmatically to readers. The DOM order, or programmatic order, refers to the order of elements in the source code for a content documen..."
     },
     {
@@ -12124,6 +14384,9 @@
                          "reading",
                          "order"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "There may be cases when text appears on the page but is unnecessary, duplicated or otherwise confusing for it to be added to the programmatic reading order, e.g. page numbers, running headers and footers, or text used for visual effects."
     },
     {
@@ -12142,6 +14405,9 @@
                          "across",
                          "fold"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Fixed layout documents can be presented as synthetic spreads where two pages are arranged side-by-side. As each page of the fixed layout document is a separate XHTML document, it is expected that the reading order of the EPUB flows from ..."
     },
     {
@@ -12159,6 +14425,9 @@
                          "fixed",
                          "layout"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Images in fixed layout in official EPUB Fixed Layout Accessibility."
     },
     {
@@ -12174,6 +14443,9 @@
         "keywords":  [
                          "overview"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Images are often an integral part of fixed layout publications. Fixed layout publications sometimes consist entirely of images, in the case of comics, or images may be used as backgrounds to a story, as in children\u0027s books. Fixed layout ..."
     },
     {
@@ -12192,6 +14464,9 @@
                          "image",
                          "descriptions"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Describing images within a fixed layout book will somewhat depend on the type of book these images are within. For example describing a childrens picture book will be quite different than if this is a fixed layout graphic novel such as a..."
     },
     {
@@ -12209,6 +14484,9 @@
                          "image",
                          "descriptions"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Depending on the complexity of the image this may require complex description with one of the following formats:"
     },
     {
@@ -12227,6 +14505,9 @@
                          "image",
                          "descriptions"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Useful resources for image descriptions in official EPUB Fixed Layout Accessibility."
     },
     {
@@ -12243,6 +14524,9 @@
                          "image-only",
                          "publications"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Some fixed layout publications are constructed exclusively from image files in the spine. While this is not a recommended method in EPUB 3.3, some markets do use this format. Another method is to put image files into XHTML documents, but..."
     },
     {
@@ -12258,6 +14542,9 @@
         "keywords":  [
                          "navigation"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Effective navigation of fixed layout EPUB can be as important for accessibility as it is for reflowable EPUB. Many of the EPUB accessibility features found in reflowable EPUB can still be used in fixed layout."
     },
     {
@@ -12275,6 +14562,9 @@
                          "navigation",
                          "document"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "EPUB navigation document in official EPUB Fixed Layout Accessibility."
     },
     {
@@ -12290,6 +14580,9 @@
         "keywords":  [
                          "contents"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Longer and more complex visual publications often have a table of contents spanning several EPUB pages, and must have an additional table of contents for the navigation."
     },
     {
@@ -12306,6 +14599,9 @@
                          "page",
                          "lists"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Because each page of a fixed layout EPUB is a separate HTML document, a page list can be generated relatively easily and will be created automatically from commonly used fixed layout creation applications. See EPUB 3.3 Section 7.4.3 The ..."
     },
     {
@@ -12321,6 +14617,9 @@
         "keywords":  [
                          "landmarks"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The navigation of fixed layout EPUB can be further increased by adding section markers and landmarks to identify major sections of the publication, e.g. cover image, table of contents, and the start of the main body matter. See EPUB 3.3 ..."
     },
     {
@@ -12338,6 +14637,9 @@
                          "visual",
                          "presentation"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The legibility, or readability, of fixed layout content is an important contributing factor to its accessibility, particularly for users with low vision, cognitive, or learning disabilities. As text in a fixed layout document is unaltera..."
     },
     {
@@ -12354,6 +14656,9 @@
                          "visual",
                          "adjustments"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Due to the formatting constraints presented by fixed layout content, some success criteria relating to the presentation of content can be challenging or impossible to meet."
     },
     {
@@ -12372,6 +14677,9 @@
                          "\u003ch1\u003e",
                          "\u003cp\u003e"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Many of the Success Criteria mentioned previously focus on the content being programmatically available to the user (accessible to assistive technology), but the same principles that are communicated programmatically can also be communic..."
     },
     {
@@ -12390,6 +14698,9 @@
                          "through",
                          "placement"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Success Criteria 1.3.1, 1.3.2, 2.4.6, and 3.2.4 all cover ensuring content is programmatically related and identifiable as it is presented visually. That visual presentation is essential for all kinds of content, but for fixed layout EPU..."
     },
     {
@@ -12406,6 +14717,9 @@
                          "use",
                          "color"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Color is an important part of visual design, and can be benficial to legibility and understanding, when used properly. Success Criteria 1.4.1 and 1.4.3 require that color be used appropriately and be of sufficient contrast."
     },
     {
@@ -12424,6 +14738,9 @@
                          "images",
                          "text"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Non-text content like images, videos, visualizations, or graphs can be an essential part of understanding the book content. For some readers, non-text content can increase their ability to comprehend or synthesize the text content or sub..."
     },
     {
@@ -12440,6 +14757,9 @@
                          "font",
                          "selection"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "There is no single font that meets the legibility needs of all users, but considering certain font characteristics to increase legibility is possible. When planning font selections in fixed layout publications, consider the following:"
     },
     {
@@ -12457,6 +14777,9 @@
                          "sizing",
                          "rem"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "There is no font size guideline in WCAG [ wcag2 ] stating a specific font size, and the standard default font size in most desktop and mobile browsers is 16px for body text (i.e. in a p element). This size is sufficient for most content,..."
     },
     {
@@ -12473,6 +14796,9 @@
                          "font",
                          "weight"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Depending on the chosen font, it might be necessary to consider the weight of the font to make it more legible. A font weight of 400 is considered normal or regular, but depending on the font face, may be too light. A font that is too li..."
     },
     {
@@ -12489,6 +14815,9 @@
                          "font",
                          "face"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Selecting a font face for your content can depend on a number of factors. When choosing a font for fixed layout content it is important for content creators to consider readability because a user will not be able to alter the font face t..."
     },
     {
@@ -12506,6 +14835,9 @@
                          "fixed",
                          "layout"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Media content such as audio, video, and interactive elements present both an opportunity and a challenge for fixed layout content. When media content is implemented with accessibility in mind, it can greatly improve the reading experienc..."
     },
     {
@@ -12522,6 +14854,9 @@
                          "media",
                          "overlays"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Media overlays allow EPUB creators to create an enhanced textual reading experience by synchronizing text and pre-recorded audio content. Media overlays in EPUB (reflowable or fixed layout) are not equivalent to audiobooks. Media overlay..."
     },
     {
@@ -12539,6 +14874,9 @@
                          "media",
                          "track"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Accessible alternatives must be provided for all prerecorded audio and video content in an EPUB, with the exception of audio synchronized to the text through a method like media overlays."
     },
     {
@@ -12554,6 +14892,9 @@
         "keywords":  [
                          "animations"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "If an EPUB creator is considering including animations and motion-based content, they should consider the following success criteria:"
     },
     {
@@ -12571,6 +14912,9 @@
                          "figure",
                          "details"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The best way to create an accessible table is to present it as tabular data. This is already documented in the DAISY Knowledge Base with directions on creating semantic tagging for tables ."
     },
     {
@@ -12591,6 +14935,9 @@
                          "aria-describedby",
                          "detail"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Provide an extended description for a table using either aria-describedby or aria-details ."
     },
     {
@@ -12613,6 +14960,9 @@
                          "auto",
                          "rendition:spread"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The package metadata used in the EPUB is the primary method for a reading system to determine whether content is fixed layout or reflowable. In addition to identifying the pagination mode with rendition:layout , package metadata can also..."
     },
     {
@@ -12633,6 +14983,9 @@
                          "reading",
                          "systems"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "4. Fixed layout accessibility guidance for reading systems in official EPUB Fixed Layout Accessibility."
     },
     {
@@ -12648,6 +15001,9 @@
         "keywords":  [
                          "introduction"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "An EPUB reading system can take many forms. It might have a small or big visual display area for visually rendering the content to users, or it might only provide audio playback or tactile display. It can be dedicated to the EPUB format ..."
     },
     {
@@ -12668,6 +15024,9 @@
                          "layout",
                          "content"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "As fixed layout files are not fully supported by all reading systems but may be displayed without rendering the content as specified, information about what features are supported should be given to the user. This precaution is important..."
     },
     {
@@ -12686,6 +15045,9 @@
                          "accessibility",
                          "requirements"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Any reading system must take into consideration the recommendations listed in the Accessibility section of the EPUB Reading Systems 3.3 document [ epub-rs-33 ]."
     },
     {
@@ -12703,6 +15065,9 @@
                          "accessibility",
                          "metadata"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A reading system should provide information on accessibility metadata provided by the EPUB file in the OPF. Guidance for key information and proposed wordings are provided by the W3C Publishing Community Group Accessibility taskforce rep..."
     },
     {
@@ -12721,6 +15086,9 @@
                          "assistive",
                          "technologies"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Assistive technologies are user agents that help users with specific needs to get access and interact with the content. They are often used in combination with a reading system and an operating system, therefore particular attention must..."
     },
     {
@@ -12738,6 +15106,9 @@
                          "epub",
                          "navigation"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Navigation within a file provides the reader with the ability to reach portions and points of a document. It is important for every user and becomes crucial when one cannot depend on visual styling to figure out the divisions of a docume..."
     },
     {
@@ -12755,6 +15126,9 @@
                          "resizing",
                          "page"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "As the purpose of fixed layout is often the representation of the printed page, with constraints on viewport and display, a reading system with an accessible fixed layout reading experience must enable zooming of the page. This must be p..."
     },
     {
@@ -12773,6 +15147,9 @@
                          "image",
                          "display"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Fixed Layout pages generally include one or more images, therefore it should be possible to view each of them fullscreen."
     },
     {
@@ -12795,6 +15172,9 @@
                          "alt",
                          "details"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Alternative text is usually hidden from visual reading and exposed to assistive technologies and non-visual reading methods like text to speech. The addition of visual display for those contents should be considered carefully as, in comp..."
     },
     {
@@ -12813,6 +15193,9 @@
                          "media",
                          "overlays"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Often used in educational or children\u0027s literature context, fixed layout EPUBs can contain synchronized audio narration as defined in EPUB 3.3 Section 9 . Supporting this feature is highly recommended for reading systems."
     },
     {
@@ -12832,6 +15215,9 @@
                          "protection",
                          "methods"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Despite all efforts provided to ensure that a reading system offers rich accessibility features for fixed layout content, a file may become inaccessible due to content protection restrictions blocking access to accessibility APIs. Readin..."
     },
     {
@@ -12848,6 +15234,9 @@
                          "support",
                          "fallbacks"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "In cases where the EPUB creator has included fallbacks for potentially unsupported content (e.g. MathML, audio, video), the reading system should support fallbacks. EPUB creators should follow the guidance provided in the EPUB 3.3 Manife..."
     },
     {
@@ -12866,6 +15255,9 @@
                          "methods",
                          "dcterms:conformsTo"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Alternative rendering methods for ebook content are methods of rendering beyond the visual, specifically auditory and tactile rendering (i.e., screen reader output or braille). While fixed layout formatting is often used to represent hig..."
     },
     {
@@ -12883,6 +15275,9 @@
                          "rendering",
                          "content"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Not all reading systems are built on an operating system providing assistive technology and not all readers with specific needs related to reading impairments are comfortable with using complex assistive technologies. Therefore text to s..."
     },
     {
@@ -12898,6 +15293,9 @@
         "keywords":  [
                          "acknowledgements"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This document was a group effort, with many people generously contributing their time, expertise, and insight into its development. Special thanks must also be given to those that contributed sections of this document, including Gautier ..."
     },
     {
@@ -12913,6 +15311,9 @@
         "keywords":  [
                          "introduction"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "1. Introduction in official EPUB 3.4 Overview."
     },
     {
@@ -12929,6 +15330,9 @@
                          "reading",
                          "document"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The EPUB 3 format offers publishers the ability to create advanced reading experiences by leveraging the features and functionalities of the Open Web Platform. The ability to use HTML, SVG, CSS, and JavaScript enables not only rich and i..."
     },
     {
@@ -12945,6 +15349,9 @@
                          "reading",
                          "specifications"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "For those interested in going beyond the general introduction presented in this document, the EPUB 3.4 specification [ epub-34 ] contains all the essential authoring information."
     },
     {
@@ -12961,6 +15368,9 @@
                          "version",
                          "numbering"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "An initial point of confusion for people new to EPUB is the difference between \"EPUB 3\" the format and the EPUB 3 specification numbering. The current version of EPUB 3 is defined in the EPUB 3.4 specification [ epub-34 ]. The minor numb..."
     },
     {
@@ -12977,6 +15387,9 @@
                          "epub",
                          "container"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "An EPUB publication is transported and interchanged as a single file (a \"portable document\") that contains the package document , the EPUB content documents , and all other required resources for processing the publication. The single-fi..."
     },
     {
@@ -12996,6 +15409,9 @@
                          "link",
                          "unique-identifier"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Every EPUB publication is represented by a package document . The package document specifies all the resources required to render that representation of the content. The package document also defines a reading order for linear consumptio..."
     },
     {
@@ -13012,6 +15428,9 @@
                          "reading",
                          "order"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A key concept of EPUB is that an EPUB publication consists of multiple resources that can be completely navigated and consumed by a person or program in some specific order ."
     },
     {
@@ -13030,6 +15449,9 @@
                          "nav",
                          "hidden"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Each EPUB publication contains a special XHTML content document called the EPUB navigation document . This document uses the [ html ] nav element to define human- and machine-readable navigation information. All reading systems make use ..."
     },
     {
@@ -13048,6 +15470,9 @@
                          "audio",
                          "video"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Each EPUB publication contains one or more EPUB content documents , as defined in [ epub-34 ]. These are HTML or SVG documents that describe the readable content and reference associated media resources (e.g., images, audio, and video cl..."
     },
     {
@@ -13064,6 +15489,9 @@
                          "rendering",
                          "css"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A key concept of EPUB is that content presentation adapts to the user, rather than the user having to adapt to a particular presentation of content. HTML was originally designed to support dynamic rendering of structured content, but ove..."
     },
     {
@@ -13081,6 +15509,9 @@
                          "audio",
                          "video"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "EPUB 3 supports the embedding of audio and video in XHTML content documents via the [ html ] audio and video elements, inheriting all the functionality and features these elements provide (e.g., built-in start, stop, and volume controls)..."
     },
     {
@@ -13096,6 +15527,9 @@
         "keywords":  [
                          "fonts"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "EPUB 3 supports two closely related font formats — OpenType [ opentype ] and WOFF [ woff ] [ woff2 ] — to accommodate both traditional publishing workflows and emerging web-based workflows. Word processing programs used to create EPUB pu..."
     },
     {
@@ -13111,6 +15545,9 @@
         "keywords":  [
                          "scripting"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "EPUB strives to treat content declaratively — as data that can be manipulated, not as programs to be executed — but does support scripting as defined in [ html ] and [ svg ]. This allows publishers to build and add dynamic content such a..."
     },
     {
@@ -13128,6 +15565,9 @@
                          "enrichment",
                          "script"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "XHTML content documents also include the means of adding rich metadata to document markup, making them more semantically meaningful and useful both for processing and accessibility purposes. Publishers can use both RDFa [ rdfa-in-html ] ..."
     },
     {
@@ -13145,6 +15585,9 @@
                          "semantics",
                          "epub:type"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "EPUB 3 also includes the epub:type attribute [ epub-34 ] for adding additional information to any element in an EPUB content document to express its purpose and meaning within the work."
     },
     {
@@ -13160,6 +15603,9 @@
         "keywords":  [
                          "layouts"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "7. Layouts in official EPUB 3.4 Overview."
     },
     {
@@ -13176,6 +15622,9 @@
                          "reflowable",
                          "layouts"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "At its core, EPUB is designed for dynamic layout: content is typically intended to be formatted on the fly rather than being typeset in a paginated manner in advance. This core capability is useful for optimizing rendering onto different..."
     },
     {
@@ -13192,6 +15641,9 @@
                          "fixed",
                          "layouts"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Although EPUB\u0027s history is steeped in enabling reflowable content, not all publications lend themselves easily to reflowing. Page-precise layouts are required to meaningfully represent children\u0027s books, comics and manga, magazines, and m..."
     },
     {
@@ -13208,6 +15660,9 @@
                          "aural",
                          "rendering"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Although EPUB 3 is primarily considered a visual reading format, EPUB publications are designed to enable their aural rendering as well. There are two primary ways this can done:"
     },
     {
@@ -13223,6 +15678,9 @@
         "keywords":  [
                          "text-to-speech"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Unfortunately, there are currently no broadly supported technologies for text-to-speech, which also means that the EPUB specification cannot normatively refer any specific approach. Nevertheless, there exist a number of specifications th..."
     },
     {
@@ -13239,6 +15697,9 @@
                          "media",
                          "overlays"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A key multimedia feature of EPUB 3 is the ability to define media overlays. When pre-recorded narration is available for an EPUB publication , media overlays provide the ability to synchronize the playback of that audio with the text of ..."
     },
     {
@@ -13259,6 +15720,9 @@
                          "xml:lang",
                          "page-progression-direction"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "EPUB 3 leverages the features in XHTML, SVG, CSS, or MathML for global language support. Publishers may use the Internationalization Tag Set (ITS) [ its20 ] to facilitate translations and multilingual publications. EPUB 3 also relies on ..."
     },
     {
@@ -13278,6 +15742,9 @@
                          "audio",
                          "video"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A major goal of EPUB is to facilitate content accessibility. To achieve this goal, the EPUB Accessibility specification [ epub-a11y-12 ] provides a framework for evaluating the accessibility of EPUB publications . It leverages the extens..."
     },
     {
@@ -13293,6 +15760,9 @@
         "keywords":  [
                          "annotations"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Most reading systems include the possibility to add annotations to their content. These are usually anchored to a specific position in a way that the anchor remains valid even if the content is repaginated or changed. The annotation itse..."
     },
     {
@@ -13310,6 +15780,9 @@
                          "experimental",
                          "features"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "EPUB 3 is continuously evolving with the web to adapt new features and technologies. The specification references a number of web standards that automatically becomes valid to use as soon as they change. HTML, for example, is now called ..."
     },
     {
@@ -13326,6 +15799,9 @@
                          "epub",
                          "documents"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A. EPUB 3 documents in official EPUB 3.4 Overview."
     },
     {
@@ -13341,6 +15817,9 @@
         "keywords":  [
                          "specifications"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "EPUB 3 is currently defined by the following specifications:"
     },
     {
@@ -13357,6 +15836,9 @@
                          "notes",
                          "exemption"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Although the following documents are informative, they provide guidance related to implementing the EPUB 3 specifications as well as define experimental features."
     },
     {
@@ -13374,6 +15856,9 @@
                          "revision",
                          "history"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "B. EPUB revision history in official EPUB 3.4 Overview."
     },
     {
@@ -13393,6 +15878,9 @@
                          "1999",
                          "2010"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "EPUB has its roots in the interchange format known as the Open EBook Publication Structure (OEBPS). OEBPS 1.0 was approved in 1999 by the Open eBook Forum, an organization that later became the International Digital Publishing Forum (IDP..."
     },
     {
@@ -13409,6 +15897,9 @@
                          "epub",
                          "2010"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Work on a major revision of the EPUB specifications began in 2010, with the goal of aligning EPUB more closely with HTML. As part of that alignment, the reference to HTML was changed: while EPUB 2.0 referred to XHTML 1.1 [ xhtml11 ], EPU..."
     },
     {
@@ -13425,6 +15916,9 @@
                          "epub",
                          "2014"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The EPUB 3.0.1 revision was undertaken in 2013-14. Although introducing mostly minor fixes and updates, it did see the integration of fixed layout documents to provide greater control over the presentation of EPUB publications. See [ epu..."
     },
     {
@@ -13441,6 +15935,9 @@
                          "epub",
                          "2017"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "EPUB 3.1 was the first minor revision of EPUB 3. The goal of that revision was to better align EPUB 3 with web standards of the time. References to important standards were made undated, meaning that whenever they are updated they are le..."
     },
     {
@@ -13457,6 +15954,9 @@
                          "epub",
                          "2018"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The work on EPUB 3.2 was undertaken shortly after EPUB 3.1 to restore compatibility of content to EPUB 3. The change of version number introduced in EPUB 3.1 meant that publishers, vendors and reading system developers would have had to ..."
     },
     {
@@ -13473,6 +15973,9 @@
                          "epub",
                          "2022"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The work on EPUB 3.3 [ epub-33 ] was undertaken in 2020-21, and was the first version of the EPUB 3 series published as a W3C Recommendation. EPUB 3.3 did not include any significant technical change to, and is strongly backward compatib..."
     },
     {
@@ -13489,6 +15992,9 @@
                          "epub",
                          "2027"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Part of the work on EPUB 3.4, which started in 2025, was simplification: a number of attributes, primarily related to layout, were removed from the specification. These attributes were usually ignored by reading systems, due to the way t..."
     },
     {
@@ -13511,6 +16017,9 @@
                          "audio",
                          "nav"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "C.1 Terms defined by reference in official EPUB 3.4 Overview."
     },
     {
@@ -13526,6 +16035,9 @@
         "keywords":  [
                          "annotating"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "1. Annotating in official EPUB Annotations Use Cases and Requirements."
     },
     {
@@ -13542,6 +16054,9 @@
                          "annotating",
                          "textual"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A user decides to annotate a textual section of an EPUB publication. They select the section, trigger the annotation affordance, optionally enter a note, select a highlight mode and color. They then save the annotation. The selected sect..."
     },
     {
@@ -13558,6 +16073,9 @@
                          "annotating",
                          "image"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A user annotates an image included in an EPUB publication. They select the image and trigger the annotation affordance. The annotation feature is then identical to the one associated with a textual selection."
     },
     {
@@ -13575,6 +16093,9 @@
                          "parts",
                          "image"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A user consults an EPUB publication that includes detailed diagrams (e.g., in SVG) and images (e.g., in JPG or PNG) visualizing a research data set. They analyze the data by annotating parts of the diagrams and/or images by selecting rec..."
     },
     {
@@ -13593,6 +16114,9 @@
                          "audio",
                          "clip"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A user consults an EPUB publication that includes an audio clip (e.g., in mp3 format). Thanks to the audio player offering the proper API, they select a time segment in the audio clip. The annotation feature is then identical to the one ..."
     },
     {
@@ -13611,6 +16135,9 @@
                          "reading",
                          "traces"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "2. Managing other reading traces in official EPUB Annotations Use Cases and Requirements."
     },
     {
@@ -13626,6 +16153,9 @@
         "keywords":  [
                          "bookmarking"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A user decides to bookmark a location in a reflowable EPUB publication. The cursor is located where the user clicks on the screen, or at a default location (often the top-left corner of the screen, for left-to-right content). The user tr..."
     },
     {
@@ -13645,6 +16175,9 @@
                          "reading",
                          "position"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A user stops reading and closes the EPUB publication. They export the EPUB publication with their notes, bookmarks, and last reading position. They then import the EPUB publication into another reading system that supports this specifica..."
     },
     {
@@ -13661,6 +16194,9 @@
                          "creating",
                          "notes"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "3. Creating notes in official EPUB Annotations Use Cases and Requirements."
     },
     {
@@ -13679,6 +16215,9 @@
                          "textual",
                          "notes"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A user adds an annotation to an EPUB publication after selecting an audio segment in an audio clip. They add a textual note with rich text formatting: emphasize, italic, underline, and subtitles."
     },
     {
@@ -13696,6 +16235,9 @@
                          "audio",
                          "notes"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A user adds an annotation to an EPUB publication after selecting an image. They add an audio note by recording their voice; the audio clip is attached to the annotation."
     },
     {
@@ -13713,6 +16255,9 @@
                          "image",
                          "notes"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A user adds an annotation to an EPUB publication after highlighting some text. They add an image note by drawing a sketch on their screen with their digital pen and attaching it to the annotation."
     },
     {
@@ -13731,6 +16276,9 @@
                          "highlight",
                          "type"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A user adds an annotation to an EPUB publication after highlighting some text. They select a color for the highlight and a type (e.g. solid background,underline, strikethrough, outline)."
     },
     {
@@ -13748,6 +16296,9 @@
                          "keywords",
                          "tags"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A user adds an annotation to an EPUB publication. They enter one or more keywords that will help categorizing the annotation."
     },
     {
@@ -13765,6 +16316,9 @@
                          "threads",
                          "annotations"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A user responds to an annotation by creating a new annotation that points to the first one, creating a thread of annotations."
     },
     {
@@ -13783,6 +16337,9 @@
                          "annotations",
                          "bookmarks"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "5. Exporting \u0026 importing annotations and bookmarks in official EPUB Annotations Use Cases and Requirements."
     },
     {
@@ -13800,6 +16357,9 @@
                          "book",
                          "annotations"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A famous author annotates a book they have just written, and deals with their publisher a specific edition of the EPUB version of the book which includes these annotations. Readers buy this highly marketed edition, open it with a reading..."
     },
     {
@@ -13817,6 +16377,9 @@
                          "book",
                          "annotations"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A user exports from a reading system an EPUB publication they have previously annotated. They decide to save their notes and bookmarks in the EPUB package. If they import the ebook into another reading system that supports this specifica..."
     },
     {
@@ -13834,6 +16397,9 @@
                          "publishing",
                          "workflow"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A copy-editor verifies an EPUB publication before release. They open the EPUB publication in a reading system that supports this specification, annotate text containing typos and images with missing descriptions. They export their set of..."
     },
     {
@@ -13850,6 +16416,9 @@
                          "automated",
                          "reports"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A machine agent, such as a conformance checker or evaluation tool, analyzes a publication and produces a structured set of annotations that identify errors, warnings, relevant specification references, and proposed corrections or enhance..."
     },
     {
@@ -13866,6 +16435,9 @@
                          "annotation",
                          "classroom"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A teacher reads an ebook and prepares some annotations. They add a keyword to each annotation so that students can group them easily; examples of keywords include “clarification”, “question”. They export an annotation file and share this..."
     },
     {
@@ -13882,6 +16454,9 @@
                          "generating",
                          "citations"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A student had temporary access to an EPUB publication via an academic subscription bundle. They have annotated the ebook while they had access to it and exported their set of annotations. They no longer have access to the ebook. These an..."
     },
     {
@@ -13898,6 +16473,9 @@
                          "synchronizing",
                          "annotations"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "7. Synchronizing annotations in official EPUB Annotations Use Cases and Requirements."
     },
     {
@@ -13916,6 +16494,9 @@
                          "among",
                          "devices"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A user annotates an EPUB publication. They synchronize their notes and bookmarks with their other personal devices via a standardized Cloud mechanism supported by each of these systems."
     },
     {
@@ -13934,6 +16515,9 @@
                          "among",
                          "readers"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Participants in a book club read the same EPUB publication ebook during a period of time, in a reading system that supports this specification. Each participant adds notes to the ebook, and these annotations are shared via a standardized..."
     },
     {
@@ -13952,6 +16536,9 @@
                          "publication",
                          "versioning"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A user has annotated a textual section of an EPUB publication and closed the ebook. Today, they load a new version of the EPUB publication in their reading system. The spine item in which the annotations were created has been modified, a..."
     },
     {
@@ -13968,6 +16555,9 @@
                          "list",
                          "requirements"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "In this section, we will list all requirements the EPUB Annotations specification must respect to fulfill the use cases listed in the previous sections. Not all requirements will be adopted during the implementation phase, and some aspec..."
     },
     {
@@ -13984,6 +16574,9 @@
                          "annotation",
                          "intents"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Annotation Intents in official EPUB Annotations Use Cases and Requirements."
     },
     {
@@ -14000,6 +16593,9 @@
                          "types",
                          "notes"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Types of notes in official EPUB Annotations Use Cases and Requirements."
     },
     {
@@ -14016,6 +16612,9 @@
                          "annotation",
                          "parameters"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Annotation parameters in official EPUB Annotations Use Cases and Requirements."
     },
     {
@@ -14032,6 +16631,9 @@
                          "selector",
                          "types"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Selector Types in official EPUB Annotations Use Cases and Requirements."
     },
     {
@@ -14048,6 +16650,9 @@
                          "threaded",
                          "discussions"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Threaded Discussions in official EPUB Annotations Use Cases and Requirements."
     },
     {
@@ -14064,6 +16669,9 @@
                          "export",
                          "import"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Export and Import in official EPUB Annotations Use Cases and Requirements."
     },
     {
@@ -14080,6 +16688,9 @@
                          "version",
                          "resilience"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Version Resilience in official EPUB Annotations Use Cases and Requirements."
     },
     {
@@ -14095,6 +16706,9 @@
         "keywords":  [
                          "introduction"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "1. Introduction in official EPUB Accessibility Conformance and Exemptions."
     },
     {
@@ -14111,6 +16725,9 @@
                          "overview",
                          "exemption"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Some jurisdictions provide exemptions for meeting accessibility requirements. For example, the European Accessibility Act [ directive-2019/882 ] provides three exemptions to meeting its requirements: to microenterprises that employ fewer..."
     },
     {
@@ -14126,6 +16743,9 @@
         "keywords":  [
                          "terminology"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This document uses terminology defined in EPUB 3.3 [ epub-33 ]."
     },
     {
@@ -14141,6 +16761,11 @@
         "keywords":  [
                          "conformance"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST NOT",
+                        "SHOULD"
+                    ],
         "summary":  "As well as sections marked as non-normative, all authoring guidelines, diagrams, examples, and notes in this specification are non-normative. Everything else in this specification is normative."
     },
     {
@@ -14160,6 +16785,9 @@
                          "exemption",
                          "\u003c meta"
                      ],
+        "rfc2119":  [
+                        "MAY"
+                    ],
         "summary":  "When a jurisdiction provides exemptions for EPUB publications that do not meet its minimum legal accessibility requirements, the exemption property can be used, when applicable, to indicate a publication falls under one of the provisions."
     },
     {
@@ -14177,6 +16805,9 @@
                          "property",
                          "a11y:"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The EPUB Accessibility standard [ epub-a11y ] reserves the prefix \" a11y: \" for use with properties in the http://idpf.org/epub/vocab/package/a11y/# namespace. The prefix does not have to be declared in the package document ."
     },
     {
@@ -14195,6 +16826,10 @@
                          "xsd:string",
                          "\u003c meta"
                      ],
+        "rfc2119":  [
+                        "MUST NOT",
+                        "SHOULD"
+                    ],
         "summary":  "Identifies the accessibility exemption the EPUB publication falls under."
     },
     {
@@ -14214,6 +16849,9 @@
                          "eaa-fundamental-alteration",
                          "eaa-microenterprise"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "It is strongly advised to seek legal guidance when unsure whether an EPUB publication meets the legal requirements for these exemptions."
     },
     {
@@ -14229,6 +16867,9 @@
         "keywords":  [
                          "introduction"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "1. Introduction in official EPUB Multiple-Rendition Publications 1.1."
     },
     {
@@ -14246,6 +16887,9 @@
                          "META-INF/metadata.xml",
                          "rootfile"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The need to include more than one rendition of an EPUB publication has grown as reading systems have evolved and become more sophisticated. While some measure of content adaptation has always been possible at the style sheet level, it is..."
     },
     {
@@ -14263,6 +16907,9 @@
                          "rootfile",
                          "container.xml"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The notion of including multiple renditions of an EPUB publication has existed for as long as the EPUB standard, but the specification has never fully addressed what these renditions are for and how to access them. As a result, the EPUB ..."
     },
     {
@@ -14283,6 +16930,10 @@
                          "container.xml",
                          "rendition:layout"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "RECOMMENDED"
+                    ],
         "summary":  "The method defined in this specification for including multiple renditions within an EPUB container is not required for all EPUB publications . Multiple renditions MAY be included in a container without adhering to this specification, as..."
     },
     {
@@ -14305,6 +16956,9 @@
                          "multiple-rendition publication",
                          "rendition"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This specification uses terminology defined in EPUB 3 [ epub-33 ]."
     },
     {
@@ -14320,6 +16974,14 @@
         "keywords":  [
                          "conformance"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "MUST NOT",
+                        "OPTIONAL",
+                        "RECOMMENDED",
+                        "SHOULD"
+                    ],
         "summary":  "As well as sections marked as non-normative, all authoring guidelines, diagrams, examples, and notes in this specification are non-normative. Everything else in this specification is normative."
     },
     {
@@ -14342,6 +17004,11 @@
                          "Rendition2",
                          "Shared"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "SHOULD"
+                    ],
         "summary":  "Each rendition of an EPUB publication MUST meet the requirements for EPUB publications [ epub-33 ]."
     },
     {
@@ -14358,6 +17025,9 @@
                          "expressing",
                          "metadata"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "3. Expressing metadata in official EPUB Multiple-Rendition Publications 1.1."
     },
     {
@@ -14374,6 +17044,9 @@
                          "rendition",
                          "metadata"
                      ],
+        "rfc2119":  [
+                        "MAY"
+                    ],
         "summary":  "Metadata expressed at the rendition level MAY change from instance to instance. For example, renditions in different languages will have different primary languages and language-specific metadata such as titles will be expressed differen..."
     },
     {
@@ -14390,6 +17063,9 @@
                          "publication",
                          "metadata"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Publication metadata in official EPUB Multiple-Rendition Publications 1.1."
     },
     {
@@ -14412,6 +17088,10 @@
                          "dcterms:modified",
                          "refines"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "OPTIONAL"
+                    ],
         "summary":  "To ensure consistency of metadata at the Publication and rendition levels, this specification defines the content model of the root metadata element in the metadata.xml file [ epub-33 ] to be the same as the package document metadata ele..."
     },
     {
@@ -14428,6 +17108,9 @@
                          "resource",
                          "obfuscation"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "The resource obfuscation algorithm [ epub-33 ] depends on creating an obfuscation key [ epub-33 ] from the unique identifier for the EPUB publication."
     },
     {
@@ -14447,6 +17130,9 @@
                          "prefix",
                          "metadata"
                      ],
+        "rfc2119":  [
+                        "MAY"
+                    ],
         "summary":  "This specification inherits the mechanisms for associating vocabularies defined in Vocabulary Association Mechanisms [ epub-33 ] as they relate to the package document metadata, with only the following modification: the prefix attribute ..."
     },
     {
@@ -14463,6 +17149,9 @@
                          "rendition",
                          "selection"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "4. Rendition selection in official EPUB Multiple-Rendition Publications 1.1."
     },
     {
@@ -14479,6 +17168,9 @@
                          "introduction",
                          "rootfile"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Although each EPUB publication represents a single work, it is possible to optimize the rendering of that work in any number of different ways. An issue of a magazine, for example, could include a fixed layout version (print replica) for..."
     },
     {
@@ -14497,6 +17189,12 @@
                          "container.xml",
                          "rootfile"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "OPTIONAL",
+                        "SHOULD"
+                    ],
         "summary":  "Content conformance in official EPUB Multiple-Rendition Publications 1.1."
     },
     {
@@ -14514,6 +17212,9 @@
                          "system",
                          "conformance"
                      ],
+        "rfc2119":  [
+                        "SHOULD"
+                    ],
         "summary":  "An EPUB reading system SHOULD determine the rendition to present to a user as defined in 4.5 Processing model ."
     },
     {
@@ -14532,6 +17233,9 @@
                          "attributes",
                          "container.xml"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The use of the rendition selection attributes in the container.xml file [ epub-33 ] is also defined informally through an XML schema. See A.2 Container.xml schema for further details."
     },
     {
@@ -14553,6 +17257,11 @@
                          "all",
                          "\u003c container"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "SHOULD"
+                    ],
         "summary":  "The rendition:media attribute identifies the media features of a reading system the given rendition is best suitable for rendering on."
     },
     {
@@ -14575,6 +17284,11 @@
                          "pre-paginated",
                          "\u003c container"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "SHOULD"
+                    ],
         "summary":  "The rendition:layout attribute indicates whether the given rendition is reflowable or pre-paginated."
     },
     {
@@ -14596,6 +17310,11 @@
                          "dc:language",
                          "\u003c container"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "SHOULD"
+                    ],
         "summary":  "The rendition:language attribute indicates that the given rendition is optimized for the specified language."
     },
     {
@@ -14618,6 +17337,11 @@
                          "auditory",
                          "tactile"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "SHOULD"
+                    ],
         "summary":  "The rendition:accessMode attribute identifies the way in which intellectual content is communicated in a rendition , and is based on the [ iso24751-3 ] \"Access Mode\" property."
     },
     {
@@ -14639,6 +17363,9 @@
                          "xml:lang",
                          "\u003c container"
                      ],
+        "rfc2119":  [
+                        "MAY"
+                    ],
         "summary":  "The rendition:label attribute allows each rootfile element [ epub-33 ] to be annotated with a human-readable name."
     },
     {
@@ -14657,6 +17384,10 @@
                          "rootfile",
                          "rendition:label"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "SHOULD"
+                    ],
         "summary":  "This section describes the method by which reading systems locate the optimal rendition to present to a user."
     },
     {
@@ -14673,6 +17404,9 @@
                          "rendition",
                          "mapping"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "5. Rendition mapping in official EPUB Multiple-Rendition Publications 1.1."
     },
     {
@@ -14690,6 +17424,9 @@
                          "nav",
                          "body"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The rendition mapping document identifies related content locations across the renditions in a multiple-rendition publication , allowing reading systems to switch between renditions while keeping the user\u0027s place."
     },
     {
@@ -14706,6 +17443,11 @@
                          "content",
                          "conformance"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "MUST NOT"
+                    ],
         "summary":  "An EPUB publication MAY include a rendition mapping document ."
     },
     {
@@ -14723,6 +17465,10 @@
                          "system",
                          "conformance"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "SHOULD"
+                    ],
         "summary":  "Reading systems SHOULD support the use of rendition mapping documents to switch between content."
     },
     {
@@ -14742,6 +17488,9 @@
                          "document",
                          "definition"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The content of this file is also defined informally through an XML schema. See A.3 Mapping document schema for further details."
     },
     {
@@ -14764,6 +17513,10 @@
                          "body",
                          "xmlns"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST"
+                    ],
         "summary":  "The rendition mapping document is a compliant XHTML content document, but with the following restrictions on the [ html ] content model:"
     },
     {
@@ -14785,6 +17538,10 @@
                          "href",
                          "epub:rendition"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST"
+                    ],
         "summary":  "This specification restricts the content model of nav elements and their descendants in the rendition mapping document as follows:"
     },
     {
@@ -14806,6 +17563,10 @@
                          "epub:rendition",
                          "\u003c html"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST"
+                    ],
         "summary":  "Each ul element in the rendition mapping document resource-map nav element identifies a content location, listing in its child li elements where that location is found in each of the available renditions. Consequently, each ul element MU..."
     },
     {
@@ -14828,6 +17589,10 @@
                          "media-type",
                          "application/xhtml+xml"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "MUST NOT"
+                    ],
         "summary":  "The location of the rendition mapping document is identified in the container document using a link element [ epub-33 ], where:"
     },
     {
@@ -14844,6 +17609,9 @@
                          "processing",
                          "model"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This section provides a non-normative model by which the rendition mapping document could be processed by a reading system. It does not address how or when a reading system should switch renditions."
     },
     {
@@ -14859,6 +17627,9 @@
         "keywords":  [
                          "schemas"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Validation using the schemas in this appendix requires a processor that supports [ relaxng-schema ] and [ xmlschema11-2 ]."
     },
     {
@@ -14877,6 +17648,9 @@
                          "schema",
                          "metadata.xml"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The schema for including metadata in the metadata.xml file, as described in 3.2 Publication metadata , is available at https://github.com/w3c/epubcheck/blob/main/src/main/resources/com/adobe/epubcheck/schema/30/ocf-metadata-30.rnc ."
     },
     {
@@ -14895,6 +17669,9 @@
                          "schema",
                          "container.xml"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The schema for including rendition selection attributes in the container.xml file, as described in 4. Rendition selection , is available at https://github.com/w3c/epubcheck/blob/main/src/main/resources/com/adobe/epubcheck/schema/30/multi..."
     },
     {
@@ -14912,6 +17689,9 @@
                          "document",
                          "schema"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The schema for Mapping Documents, as described in 5. Rendition mapping , is available at https://github.com/w3c/epubcheck/blob/main/src/main/resources/com/adobe/epubcheck/schema/30/multiple-renditions/mapping.rnc ."
     },
     {
@@ -14927,6 +17707,9 @@
         "keywords":  [
                          "introduction"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "1. Introduction in official EPUB 3.3 Core Specification."
     },
     {
@@ -14942,6 +17725,9 @@
         "keywords":  [
                          "overview"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "EPUB 3 has been widely adopted as the format for digital books (ebooks), and this revision continues to increase the format\u0027s capabilities to better support a wider range of publication requirements, including complex layouts, rich media..."
     },
     {
@@ -14961,6 +17747,9 @@
                          "/META-INF",
                          "container.xml"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This section reviews the organization of this specification through the central product it defines: the EPUB publication ."
     },
     {
@@ -14978,6 +17767,9 @@
                          "other",
                          "specifications"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The technologies EPUB 3 builds on are constantly evolving. Some, typically referred to as \"living\" or \"evergreen\" standards, are subject to change daily and their impact on the validity of EPUB publications is immediate. Others are updat..."
     },
     {
@@ -14994,6 +17786,9 @@
                          "relationship",
                          "html"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The [ html ] standard is continuously evolving — there are no longer versioned releases of it. That standard, in turn, references various technologies that continue to evolve, such as MathML, SVG, CSS, and JavaScript."
     },
     {
@@ -15010,6 +17805,9 @@
                          "relationship",
                          "svg"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This specification does not reference a specific version of [ svg ], but instead uses an undated reference. Whenever there is any ambiguity in this reference, the latest recommended specification is the authoritative reference."
     },
     {
@@ -15026,6 +17824,9 @@
                          "relationship",
                          "css"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "EPUB 3 supports CSS as defined by the CSS Working Group Snapshot [ csssnapshot ]. EPUB 3 also maintains some prefixed CSS properties, to ensure consistent support for global languages."
     },
     {
@@ -15042,6 +17843,9 @@
                          "relationship",
                          "mathml"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "EPUB 3 only supports Presentation Markup [ mathml3 ]. Content Markup is only allowed in structured markup annotations ."
     },
     {
@@ -15058,6 +17862,9 @@
                          "relationship",
                          "smil"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This specification relies on a subset of [ smil3 ], from which the media overlays elements and attributes defined in 9.2.2 Media overlay document definition are derived."
     },
     {
@@ -15074,6 +17881,9 @@
                          "relationship",
                          "url"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This specification refers to the [ url ] standard for terminology and processing related to URLs expressed in EPUB publications . It is anticipated that new and revised web formats will adopt this standard, but until then this may put th..."
     },
     {
@@ -15096,6 +17906,9 @@
                          "EPUB conformance checker",
                          "EPUB container"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This specification defines the following terms specific to EPUB 3."
     },
     {
@@ -15111,6 +17924,16 @@
         "keywords":  [
                          "conformance"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "MUST NOT",
+                        "OPTIONAL",
+                        "RECOMMENDED",
+                        "REQUIRED",
+                        "SHOULD",
+                        "SHOULD NOT"
+                    ],
         "summary":  "As well as sections marked as non-normative, all authoring guidelines, diagrams, examples, and notes in this specification are non-normative. Everything else in this specification is normative."
     },
     {
@@ -15129,6 +17952,9 @@
                          "dc:",
                          "epub"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "In package document metadata examples, reserved prefixes are used without declaration."
     },
     {
@@ -15146,6 +17972,10 @@
                          "publication",
                          "conformance"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "SHOULD"
+                    ],
         "summary":  "MUST define at least one rendering of its content as follows:"
     },
     {
@@ -15162,6 +17992,14 @@
                          "conformance",
                          "checking"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "MUST NOT",
+                        "RECOMMENDED",
+                        "REQUIRED",
+                        "SHOULD",
+                        "SHOULD NOT"
+                    ],
         "summary":  "Due to the complexity of this specification and number of technologies used in EPUB publications , EPUB creators are advised to use an EPUB conformance checker to verify the conformance of their content."
     },
     {
@@ -15178,6 +18016,9 @@
                          "publication",
                          "resources"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "3. Publication resources in official EPUB 3.3 Core Specification."
     },
     {
@@ -15193,6 +18034,9 @@
         "keywords":  [
                          "introduction"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "An EPUB publication is made up of many different categories of resources, not all of which are mutually exclusive. Some resources are publication resources , some are not. Some publication resources are allowed in the spine by default, w..."
     },
     {
@@ -15212,6 +18056,9 @@
                          "link",
                          "item"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "To manifest plane defines all the resources of an EPUB publication . It is analogous to the package document manifest , but includes resources not present in that list."
     },
     {
@@ -15230,6 +18077,9 @@
                          "spine plane",
                          "fallback"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The spine plane defines resources used in the default reading order established by the spine , which includes both linear and non-linear content . The spine instructs reading systems on how to load these resources as the user progresses ..."
     },
     {
@@ -15249,6 +18099,9 @@
                          "picture",
                          "link"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The content plane classifies resources that are used when rendering EPUB content documents and foreign content documents . These types of resources include embedded media, CSS style sheets, scripts, and fonts. These resources fall into t..."
     },
     {
@@ -15271,6 +18124,10 @@
                          "image/svg+xml",
                          "image/webp"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST"
+                    ],
         "summary":  "EPUB creators MAY include publication resources that conform to the MIME media type [ rfc2046 ] specifications defined in the following table without fallbacks when they are used in EPUB content documents and foreign content documents . ..."
     },
     {
@@ -15288,6 +18145,9 @@
                          "resources",
                          "item"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "A foreign resource , unlike a core media type resource is one which is not guaranteed reading system support when used in an EPUB content document or foreign content document ."
     },
     {
@@ -15310,6 +18170,9 @@
                          "itemref",
                          "image"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "An exempt resource shares properties with both foreign resources and core media type resources . It is most similar to a foreign resource in that it is not guaranteed reading system support, but, like a core media type resource, does not..."
     },
     {
@@ -15326,6 +18189,9 @@
                          "resource",
                          "fallbacks"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Resource fallbacks in official EPUB 3.3 Core Specification."
     },
     {
@@ -15347,6 +18213,11 @@
                          "properties",
                          "img"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "MUST NOT"
+                    ],
         "summary":  "Manifest fallbacks are a feature of the package document that create a manifest fallback chain for a publication resource , allowing reading systems to select an alternative format they can render."
     },
     {
@@ -15363,6 +18234,9 @@
                          "intrinsic",
                          "fallbacks"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The following sections provide additional clarifications about the intrinsic fallback requirements of specific elements."
     },
     {
@@ -15382,6 +18256,9 @@
                          "fallbacks",
                          "source"
                      ],
+        "rfc2119":  [
+                        "MUST NOT"
+                    ],
         "summary":  "EPUB creators MUST NOT use embedded [ html ] flow content within a media element (i.e, audio or video ) as an intrinsic fallback for audio foreign resources . Only child source elements [ html ] provide intrinsic fallback capabilities."
     },
     {
@@ -15404,6 +18281,10 @@
                          "source",
                          "type"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST"
+                    ],
         "summary":  "Due to the variety of sources that EPUB creators can specify in the [ html ] img element, the following fallback conditions apply to its use:"
     },
     {
@@ -15421,6 +18302,9 @@
                          "script",
                          "element"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Although data blocks have a separate MIME media type [ rfc2046 ] from their containing XHTML content document , it is not possible to provide intrinsic fallbacks as no such mechanisms are specified for the [ html ] script element. It is ..."
     },
     {
@@ -15441,6 +18325,11 @@
                          "audio",
                          "\u003c html"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "RECOMMENDED"
+                    ],
         "summary":  "EPUB creators MAY host the following types of publication resources outside the EPUB container :"
     },
     {
@@ -15463,6 +18352,10 @@
                          "iframe",
                          "area"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "MUST NOT"
+                    ],
         "summary":  "The data: URL scheme [ rfc2397 ] is used to encode resources directly into a URL string. The advantage of this scheme is that it allows EPUB creators to embed a resource within another, avoiding the need for an external file."
     },
     {
@@ -15480,6 +18373,9 @@
                          "urls",
                          "file:"
                      ],
+        "rfc2119":  [
+                        "MUST NOT"
+                    ],
         "summary":  "The file: URL scheme is defined in [ rfc8089 ] as \"identifying an object (a \u0027file\u0027) stored in a structured object naming and accessing environment on a host (a \u0027file system\u0027).\" It is typically used to retrieve files from the local operat..."
     },
     {
@@ -15497,6 +18393,12 @@
                          "conformance",
                          "base"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "MUST NOT",
+                        "RECOMMENDED"
+                    ],
         "summary":  "Any publication resource that is an XML-based media type [ rfc2046 ]:"
     },
     {
@@ -15515,6 +18417,9 @@
                          "format",
                          "ocf"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "4. Open Container Format (OCF) in official EPUB 3.3 Core Specification."
     },
     {
@@ -15530,6 +18435,9 @@
         "keywords":  [
                          "introduction"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "OCF is the required container technology for EPUB publications . OCF may play a role in the following workflows:"
     },
     {
@@ -15547,6 +18455,9 @@
                          "abstract",
                          "container"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "OCF abstract container in official EPUB 3.3 Core Specification."
     },
     {
@@ -15569,6 +18480,9 @@
                          "encryption.xml",
                          "metadata.xml"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The OCF abstract container file system model uses a single common root directory . All container resources are located within the directory tree headed by the root directory, but no specific file system structure for them is mandated by ..."
     },
     {
@@ -15588,6 +18502,11 @@
                          "META-INF",
                          "mimetype"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "MUST NOT"
+                    ],
         "summary":  "The virtual file system for the OCF abstract container MUST have a single common root directory for all the contents of the container."
     },
     {
@@ -15610,6 +18529,11 @@
                          "U+002E",
                          "U+003A"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "MUST NOT",
+                        "SHOULD NOT"
+                    ],
         "summary":  "In the context of the OCF abstract container , file paths and file names are scalar value strings [ infra ] (i.e., their values are case sensitive)."
     },
     {
@@ -15630,6 +18554,9 @@
                          "current",
                          "U+002F (/)"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "To derive the file path , given a file or directory file in the OCF abstract container , apply the following steps (expressed using the terminology of [ infra ]):"
     },
     {
@@ -15652,6 +18579,9 @@
                          "https://www.example.org:12345/",
                          "file:///path/to.epub#path=/"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "The container root URL is the URL [ url ] of the root directory . It is implementation-specific, but EPUB creators MUST assume it has the following properties:"
     },
     {
@@ -15669,6 +18599,9 @@
                          "directory",
                          "META-INF"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "META-INF directory in official EPUB 3.3 Core Specification."
     },
     {
@@ -15688,6 +18621,9 @@
                          "container",
                          "META-INF"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "All OCF abstract containers MUST include a directory called META-INF in their root directory ."
     },
     {
@@ -15710,6 +18646,9 @@
                          "base",
                          "META-INF/container.xml"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "To parse a URL string url used in files located in the META-INF directory the URL parser MUST be applied to url , with the container root URL as base ."
     },
     {
@@ -15726,6 +18665,9 @@
                          "reserved",
                          "files"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Reserved files in official EPUB 3.3 Core Specification."
     },
     {
@@ -15745,6 +18687,10 @@
                          "container.xml",
                          "META-INF"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "REQUIRED"
+                    ],
         "summary":  "The REQUIRED container.xml file in the META-INF directory identifies the package documents available in the OCF abstract container ."
     },
     {
@@ -15767,6 +18713,10 @@
                          "rootfiles",
                          "links"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "REQUIRED"
+                    ],
         "summary":  "The container element encapsulates all the information in the container.xml file."
     },
     {
@@ -15785,6 +18735,9 @@
                          "container",
                          "rootfile"
                      ],
+        "rfc2119":  [
+                        "REQUIRED"
+                    ],
         "summary":  "The rootfiles element contains a list of package documents available in the EPUB container ."
     },
     {
@@ -15806,6 +18759,9 @@
                          "media-type",
                          "application/oebps-package+xml"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "Each rootfile element identifies the location of one package document in the EPUB container ."
     },
     {
@@ -15824,6 +18780,9 @@
                          "container",
                          "link"
                      ],
+        "rfc2119":  [
+                        "OPTIONAL"
+                    ],
         "summary":  "The links element identifies resources necessary for the processing of the OCF ZIP container ."
     },
     {
@@ -15846,6 +18805,9 @@
                          "[optional]",
                          "rel"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "As child of the links element. Repeatable."
     },
     {
@@ -15862,6 +18824,9 @@
                          "examples",
                          "\u003c?xml version= \"1.0\""
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Examples in official EPUB 3.3 Core Specification."
     },
     {
@@ -15881,6 +18846,10 @@
                          "encryption.xml",
                          "META-INF"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "OPTIONAL"
+                    ],
         "summary":  "The OPTIONAL encryption.xml file in the META-INF directory holds all encryption information on the contents of the container. If an EPUB creator encrypts any resources within the container, they MUST include an encryption.xml file to pro..."
     },
     {
@@ -15903,6 +18872,12 @@
                          "mimetype",
                          "META-INF/container.xml"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST NOT",
+                        "REQUIRED",
+                        "SHOULD"
+                    ],
         "summary":  "urn:oasis:names:tc:opendocument:xmlns:container"
     },
     {
@@ -15925,6 +18900,13 @@
                          "[required]",
                          "\u003c encryption"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "OPTIONAL",
+                        "SHOULD",
+                        "SHOULD NOT"
+                    ],
         "summary":  "When stored in an OCF ZIP container , EPUB creators SHOULD compress streams of data with non-codec content types before encrypting them. EPUB creators MUST use Deflate compression. This practice ensures that file entries stored in the ZI..."
     },
     {
@@ -15944,6 +18926,9 @@
                          "manifest.xml",
                          "META-INF"
                      ],
+        "rfc2119":  [
+                        "OPTIONAL"
+                    ],
         "summary":  "The OPTIONAL manifest.xml file in the META-INF directory provides a manifest of files in the container."
     },
     {
@@ -15964,6 +18949,11 @@
                          "META-INF",
                          "http://www.idpf.org/2013/metadata"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "OPTIONAL",
+                        "SHOULD"
+                    ],
         "summary":  "The OPTIONAL metadata.xml file in the META-INF directory is only for container-level metadata."
     },
     {
@@ -15984,6 +18974,9 @@
                          "rights.xml",
                          "META-INF"
                      ],
+        "rfc2119":  [
+                        "OPTIONAL"
+                    ],
         "summary":  "This specification reserves the OPTIONAL rights.xml file in the META-INF directory for the trusted exchange of EPUB publications among rights holders, intermediaries, and users."
     },
     {
@@ -16004,6 +18997,9 @@
                          "signatures.xml",
                          "META-INF"
                      ],
+        "rfc2119":  [
+                        "OPTIONAL"
+                    ],
         "summary":  "Adding a digital signature is not a guarantee that a malicious actor cannot tamper with an EPUB publication as reading systems do not have to check signatures."
     },
     {
@@ -16026,6 +19022,11 @@
                          "Manifest",
                          "Reference"
                      ],
+        "rfc2119":  [
+                        "REQUIRED",
+                        "SHOULD",
+                        "SHOULD NOT"
+                    ],
         "summary":  "urn:oasis:names:tc:opendocument:xmlns:container"
     },
     {
@@ -16043,6 +19044,9 @@
                          "zip",
                          "container"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "OCF ZIP container in official EPUB 3.3 Core Specification."
     },
     {
@@ -16058,6 +19062,9 @@
         "keywords":  [
                          "introduction"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "An OCF ZIP container is a physical single-file manifestation of an OCF abstract container . The container allows:"
     },
     {
@@ -16078,6 +19085,12 @@
                          "version needed to extract",
                          "compression"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "MUST NOT",
+                        "SHOULD"
+                    ],
         "summary":  "An OCF ZIP container uses the ZIP format as specified by [ zip ], but with the following constraints and clarifications:"
     },
     {
@@ -16100,6 +19113,10 @@
                          "mimetype",
                          "application/epub+zip"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "MUST NOT"
+                    ],
         "summary":  "EPUB creators MUST include the mimetype file as the first file in the OCF ZIP container . In addition:"
     },
     {
@@ -16116,6 +19133,9 @@
                          "font",
                          "obfuscation"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Better methods of protecting fonts exist. Both [ woff ] and [ woff2 ] fonts, for example, allow the embedding of licensing information and provide some protection through font table compression. The use of remotely hosted fonts also allo..."
     },
     {
@@ -16131,6 +19151,9 @@
         "keywords":  [
                          "introduction"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Since an OCF ZIP container is fundamentally a ZIP file, commonly available ZIP tools can be used to extract any unencrypted content stream from the package. Moreover, the nature of ZIP files means that their contents might appear like an..."
     },
     {
@@ -16146,6 +19169,9 @@
         "keywords":  [
                          "limitations"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This specification does not claim that obfuscation constitutes encryption, nor does it guarantee that the resource will be secure from copyright infringement. The hope is only that this algorithm will meet the requirements of vendors who..."
     },
     {
@@ -16166,6 +19192,9 @@
                          "U+000D",
                          "U+000A"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "EPUB creators MUST derive the key used in the obfuscation algorithm from the unique identifier ."
     },
     {
@@ -16188,6 +19217,9 @@
                          "keyData",
                          "outer"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "The algorithm employed to obfuscate fonts consists of modifying the first 1040 bytes (~1KB) of the font file. (In the unlikely event that the font file is less than 1040 bytes, this process will modify the entire file.)"
     },
     {
@@ -16210,6 +19242,10 @@
                          "Algorithm",
                          "http://www.idpf.org/2008/embedding"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "MUST NOT"
+                    ],
         "summary":  "Although not technically encrypted data, all obfuscated fonts MUST have an entry in the encryption.xml file accompanying the EPUB publication (see 4.2.6.3.2 Encryption file ( encryption.xml ) )."
     },
     {
@@ -16227,6 +19263,9 @@
                          "document",
                          "http://www.idpf.org/2007/opf"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "All [ xml ] elements defined in this section are in the http://www.idpf.org/2007/opf namespace [ xml-names ] unless otherwise specified."
     },
     {
@@ -16244,6 +19283,9 @@
                          "container.xml",
                          "application/oebps-package+xml"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The package document is an XML document that consists of a set of elements that each encapsulate information about a particular aspect of an EPUB publication . These elements serve to centralize metadata, detail the individual resources,..."
     },
     {
@@ -16264,6 +19306,9 @@
                          "url",
                          "base"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "To parse a URL string url used in the package document , the URL parser [ url ] MUST be applied to url , with the content URL of the package document as base ."
     },
     {
@@ -16280,6 +19325,9 @@
                          "shared",
                          "attributes"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This section provides definitions for shared attributes (i.e., attributes allowed on two or more elements)."
     },
     {
@@ -16302,6 +19350,9 @@
                          "\u003c package",
                          "collection"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The dir attribute is marked under-implemented as reading systems often only support a single default directionality for text display. EPUB creators are still strongly encouraged to set the proper directionality of text values in the pack..."
     },
     {
@@ -16322,6 +19373,9 @@
                          "\u003c package",
                          "link"
                      ],
+        "rfc2119":  [
+                        "MUST NOT"
+                    ],
         "summary":  "A valid URL string [ url ] that references a resource."
     },
     {
@@ -16344,6 +19398,9 @@
                          "manifest",
                          "meta"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "The ID [ xml ] of the element, which MUST be unique within the document scope."
     },
     {
@@ -16363,6 +19420,9 @@
                          "item",
                          "link"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A media type [ rfc2046 ] that specifies the type and format of the referenced resource."
     },
     {
@@ -16383,6 +19443,9 @@
                          "itemref",
                          "link"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A space-separated list of property values."
     },
     {
@@ -16403,6 +19466,12 @@
                          "link",
                          "meta"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "MUST NOT",
+                        "OPTIONAL",
+                        "SHOULD"
+                    ],
         "summary":  "Establishes an association between the current expression and the element or resource identified by its value. EPUB creators MUST use as the value a path-relative-scheme-less-URL string , optionally followed by U+0023 (#) and a URL-fragm..."
     },
     {
@@ -16423,6 +19492,9 @@
                          "meta",
                          "package"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "Specifies the language of the textual content and attribute values of the carrying element and its descendants, as defined in section 2.12 Language Identification of [ xml ]. The value of each xml:lang attribute MUST be a well-formed lan..."
     },
     {
@@ -16445,6 +19517,10 @@
                          "unique-identifier",
                          "[required]"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "REQUIRED"
+                    ],
         "summary":  "The package element encapsulates all the information expressed in the package document ."
     },
     {
@@ -16460,6 +19536,9 @@
         "keywords":  [
                          "metadata"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Metadata section in official EPUB 3.3 Core Specification."
     },
     {
@@ -16482,6 +19561,12 @@
                          "dc:language",
                          "Dublin Core Optional Elements"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "OPTIONAL",
+                        "REQUIRED"
+                    ],
         "summary":  "The metadata element encapsulates meta information."
     },
     {
@@ -16500,6 +19585,9 @@
                          "meta",
                          "value"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "The Dublin Core elements [ dcterms ] and meta element have mandatory child text content [ dom ]. In the descriptions for these elements, this specification refers to this content as the element\u0027s value ."
     },
     {
@@ -16516,6 +19604,9 @@
                          "dublin",
                          "core"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Dublin Core in official EPUB 3.3 Core Specification."
     },
     {
@@ -16532,6 +19623,9 @@
                          "required",
                          "elements"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Required elements in official EPUB 3.3 Core Specification."
     },
     {
@@ -16554,6 +19648,11 @@
                          "unique-identifier",
                          "\u003c package"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "REQUIRED"
+                    ],
         "summary":  "The dc:identifier element [ dcterms ] contains an identifier such as a UUID , DOI or ISBN ."
     },
     {
@@ -16576,6 +19675,9 @@
                          "xml:lang",
                          "\u003c metadata"
                      ],
+        "rfc2119":  [
+                        "REQUIRED"
+                    ],
         "summary":  "The dc:title element [ dcterms ] represents an instance of a name for the EPUB publication ."
     },
     {
@@ -16596,6 +19698,11 @@
                          "[optional]",
                          "\u003c metadata"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "REQUIRED"
+                    ],
         "summary":  "The dc:language element [ dcterms ] specifies the language of the content of the EPUB publication ."
     },
     {
@@ -16612,6 +19719,9 @@
                          "optional",
                          "elements"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Optional elements in official EPUB 3.3 Core Specification."
     },
     {
@@ -16634,6 +19744,9 @@
                          "dc:coverage",
                          "dc:creator"
                      ],
+        "rfc2119":  [
+                        "OPTIONAL"
+                    ],
         "summary":  "All [ dcterms ] elements except for dc:identifier , dc:language , and dc:title are designated as OPTIONAL . These elements conform to the following generalized definition:"
     },
     {
@@ -16651,6 +19764,9 @@
                          "element",
                          "dc:creator"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The dc:contributor element [ dcterms ] is used to represent the name of a person, organization, etc. that played a secondary role in the creation of the content."
     },
     {
@@ -16673,6 +19789,9 @@
                          "alternate-script",
                          "metadata"
                      ],
+        "rfc2119":  [
+                        "MAY"
+                    ],
         "summary":  "The dc:creator element [ dcterms ] represents the name of a person, organization, etc. responsible for the creation of the content. EPUB creators MAY associate a role property with the element to indicate the function the creator played."
     },
     {
@@ -16690,6 +19809,10 @@
                          "element",
                          "\u003c metadata"
                      ],
+        "rfc2119":  [
+                        "MUST NOT",
+                        "RECOMMENDED"
+                    ],
         "summary":  "The dc:date element [ dcterms ] defines the publication date of the EPUB publication . The publication date is not the same as the last modified date (the last time the EPUB creator changed the EPUB publication)."
     },
     {
@@ -16709,6 +19832,11 @@
                          "term",
                          "\u003c metadata"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "MUST NOT"
+                    ],
         "summary":  "The dc:subject element [ dcterms ] identifies the subject of the EPUB publication . EPUB creators should set the value of the element to the human-readable heading or label, but may use a code value if the subject taxonomy does not provi..."
     },
     {
@@ -16725,6 +19853,9 @@
                          "dc:type",
                          "element"
                      ],
+        "rfc2119":  [
+                        "MAY"
+                    ],
         "summary":  "The dc:type element [ dcterms ] is used to indicate that the EPUB publication is of a specialized type (e.g., annotations or a dictionary packaged in EPUB format)."
     },
     {
@@ -16747,6 +19878,10 @@
                          "[required]",
                          "refines"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST"
+                    ],
         "summary":  "The meta element provides a generic means of including package metadata."
     },
     {
@@ -16769,6 +19904,10 @@
                          "\u003c metadata",
                          "refines"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST"
+                    ],
         "summary":  "The metadata section MUST contain exactly one dcterms:modified property [ dcterms ] containing the last modification date. The value of this property MUST be an [ iso8601-1 ] complete representation of a date and time of day matching the..."
     },
     {
@@ -16791,6 +19930,13 @@
                          "[optional]",
                          "media-type"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "MUST NOT",
+                        "OPTIONAL",
+                        "REQUIRED"
+                    ],
         "summary":  "The link element associates resources with an EPUB publication , such as metadata records."
     },
     {
@@ -16806,6 +19952,9 @@
         "keywords":  [
                          "manifest"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Manifest section in official EPUB 3.3 Core Specification."
     },
     {
@@ -16828,6 +19977,11 @@
                          "[1 or more]",
                          "container.xml"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "MUST NOT",
+                        "REQUIRED"
+                    ],
         "summary":  "The manifest element provides an exhaustive list of publication resources used in the rendering of the content."
     },
     {
@@ -16850,6 +20004,10 @@
                          "[required]",
                          "media-overlay"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST"
+                    ],
         "summary":  "The item element represents a publication resource ."
     },
     {
@@ -16871,6 +20029,11 @@
                          "nav",
                          "cover-image"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "OPTIONAL"
+                    ],
         "summary":  "The properties attribute provides information to reading systems about the content of a resource. This information enables discovery of key resources, such as the cover image and EPUB navigation document . It also allows reading systems ..."
     },
     {
@@ -16891,6 +20054,9 @@
                          "XHTML",
                          "audio"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The following example shows the manifest fallback chain allowing a foreign content document (JPEG) to be listed in the spine with fallback to an SVG content document."
     },
     {
@@ -16908,6 +20074,9 @@
                          "element",
                          "deprecated"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The bindings element defines a set of custom handlers for media types not supported by this specification."
     },
     {
@@ -16923,6 +20092,9 @@
         "keywords":  [
                          "spine"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Spine section in official EPUB 3.3 Core Specification."
     },
     {
@@ -16945,6 +20117,11 @@
                          "page-progression-direction",
                          "toc"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "REQUIRED"
+                    ],
         "summary":  "The spine element defines an ordered list of manifest item references that represent the default reading order."
     },
     {
@@ -16967,6 +20144,11 @@
                          "linear",
                          "properties"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "MUST NOT"
+                    ],
         "summary":  "The itemref element identifies an EPUB content document or foreign content document in the default reading order."
     },
     {
@@ -16982,6 +20164,9 @@
         "keywords":  [
                          "collections"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Collections in official EPUB 3.3 Core Specification."
     },
     {
@@ -17004,6 +20189,10 @@
                          "[required]",
                          "xml:lang"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "OPTIONAL"
+                    ],
         "summary":  "The collection element defines a related group of resources."
     },
     {
@@ -17022,6 +20211,9 @@
                          "types",
                          "deprecated"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The creation of new collection element roles is now deprecated ."
     },
     {
@@ -17038,6 +20230,9 @@
                          "legacy",
                          "features"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Legacy features in official EPUB 3.3 Core Specification."
     },
     {
@@ -17053,6 +20248,9 @@
         "keywords":  [
                          "introduction"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The package document legacy features are retained from EPUB 2 only to allow EPUB creators to author content that can function, to some degree, in reading systems that only support EPUB 2 publications."
     },
     {
@@ -17068,6 +20266,9 @@
         "keywords":  [
                          "support"
                      ],
+        "rfc2119":  [
+                        "MAY"
+                    ],
         "summary":  "EPUB creators MAY include the legacy features defined in this section for compatibility purposes with EPUB 2 reading systems."
     },
     {
@@ -17086,6 +20287,9 @@
                          "cover-image",
                          "item"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The meta element [ opf-201 ] provides a means of including generic metadata for EPUB 2 reading systems ."
     },
     {
@@ -17102,6 +20306,9 @@
                          "guide",
                          "element"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The guide element [ opf-201 ] provides machine-processable navigation to key structures in EPUB 2 reading systems ."
     },
     {
@@ -17117,6 +20324,9 @@
         "keywords":  [
                          "ncx"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The NCX [ opf-201 ] provides a table of contents for EPUB 2 reading systems ."
     },
     {
@@ -17134,6 +20344,9 @@
                          "content",
                          "documents"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "6. EPUB content documents in official EPUB 3.3 Core Specification."
     },
     {
@@ -17151,6 +20364,9 @@
                          "content",
                          "documents"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "XHTML content documents in official EPUB 3.3 Core Specification."
     },
     {
@@ -17166,6 +20382,9 @@
         "keywords":  [
                          "introduction"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This section defines a profile of [ html ] for creating XHTML content documents . An instance of an XML document that conforms to this profile is a core media type resource and is referred to in this specification as an XHTML content doc..."
     },
     {
@@ -17182,6 +20401,10 @@
                          "xhtml",
                          "requirements"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST"
+                    ],
         "summary":  "MUST be an [ html ] document that conforms to the XML syntax."
     },
     {
@@ -17198,6 +20421,9 @@
                          "html",
                          "extensions"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This section defines EPUB 3 XHTML content document extensions to the underlying [ html ] document model."
     },
     {
@@ -17216,6 +20442,10 @@
                          "epub:type",
                          "head"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST NOT"
+                    ],
         "summary":  "EPUB creators MAY use the epub:type attribute in XHTML content documents to express structural semantics ."
     },
     {
@@ -17231,6 +20461,10 @@
         "keywords":  [
                          "rdfa"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST"
+                    ],
         "summary":  "The [ html-rdfa ] specification defines a set of attributes that EPUB creators MAY use in XHTML content documents to semantically enrich the content. The use of these attributes MUST conform to the requirements defined in [ html-rdfa ]."
     },
     {
@@ -17249,6 +20483,9 @@
                          "deprecated",
                          "switch"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The switch element provides a simple mechanism through which EPUB creators can tailor the content displayed to users, one that is not dependent on the scripting capabilities of the EPUB reading system ."
     },
     {
@@ -17267,6 +20504,9 @@
                          "deprecated",
                          "trigger"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The trigger element enables the creation of markup-defined user interfaces for controlling multimedia objects, such as audio and video playback, in both scripted and non-scripted contexts."
     },
     {
@@ -17285,6 +20525,10 @@
                          "w3.org",
                          "idpf.org"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST"
+                    ],
         "summary":  "XHTML content documents MAY contain custom attributes, which are prefixed [ xml-names ] attributes whose namespace URL does not include either of the following strings in its domain [ url ]:"
     },
     {
@@ -17302,6 +20546,9 @@
                          "deviations",
                          "constraints"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This section defines deviations from, and constraints on, the underlying [ html ] document model applicable to EPUB 3 XHTML content documents ."
     },
     {
@@ -17324,6 +20571,10 @@
                          "MathML-Content",
                          "application/mathml-content+xml"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST"
+                    ],
         "summary":  "XHTML content documents support embedded [ mathml3 ]. Occurrences of MathML markup MUST conform to the constraints expressed in the MathML specification [ mathml3 ], with the following additional restrictions:"
     },
     {
@@ -17343,6 +20594,9 @@
                          "object",
                          "item"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "XHTML content documents support the embedding of SVG:"
     },
     {
@@ -17359,6 +20613,9 @@
                          "discouraged",
                          "constructs"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Discouraged constructs in official EPUB 3.3 Core Specification."
     },
     {
@@ -17375,6 +20632,9 @@
                          "base",
                          "element"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The [ html ] base element can be used to specify the document base URL for the purposes of parsing URLs. When using it in an EPUB publication , the interpretation of the base element may inadvertently result in references to remote resou..."
     },
     {
@@ -17391,6 +20651,9 @@
                          "element",
                          "ruby"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The [ html ] rp element is intended to provide a fallback for older reading systems that do not recognize ruby markup (i.e., a parenthesis display around ruby markup). As EPUB 3 reading systems are ruby-aware, and can provide fallbacks, ..."
     },
     {
@@ -17408,6 +20671,9 @@
                          "element",
                          "object"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Since the [ html ] embed element element does not include intrinsic facilities to provide fallback content for reading systems that do not support scripting, EPUB creators are discouraged from using the element when the referenced resour..."
     },
     {
@@ -17425,6 +20691,9 @@
                          "content",
                          "documents"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Reading systems may not support all the features of [ svg ] or support them across all platforms that reading systems run on. When utilizing such features, EPUB creators should consider the inherent risks on interoperability and document..."
     },
     {
@@ -17440,6 +20709,9 @@
         "keywords":  [
                          "introduction"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The Scalable Vector Graphics (SVG) specification [ svg ] defines a format for representing final-form vector graphics and text."
     },
     {
@@ -17456,6 +20728,9 @@
                          "svg",
                          "requirements"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "An SVG content document MUST be a conforming SVG stand-alone file [ svg ] and conform to all content conformance constraints expressed in 6.2.3 Restrictions on SVG ."
     },
     {
@@ -17478,6 +20753,9 @@
                          "epub:prefix",
                          "prefix"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "This specification restricts the content model of SVG content documents and SVG embedded by inclusion in XHTML content documents as follows:"
     },
     {
@@ -17495,6 +20773,9 @@
                          "resource",
                          "requirements"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This section defines requirements for technologies usable in both XHTML and SVG content documents ."
     },
     {
@@ -17513,6 +20794,9 @@
                          "sheets",
                          "css"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Cascading Style Sheets (CSS) in official EPUB 3.3 Core Specification."
     },
     {
@@ -17528,6 +20812,9 @@
         "keywords":  [
                          "introduction"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "CSS is an integral part of the Open Web Platform. Readers, publishers, and document authors expect CSS to \"just work,\" as they expect HTML to just work."
     },
     {
@@ -17548,6 +20835,12 @@
                          "dir",
                          "bdo"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "MUST NOT",
+                        "RECOMMENDED"
+                    ],
         "summary":  "MAY include any CSS properties, with the following exceptions:"
     },
     {
@@ -17564,6 +20857,9 @@
                          "prefixed",
                          "properties"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Earlier version of EPUB included prefixed CSS properties, as many CSS features related to world languages were not yet mature. To ensure backwards compatibility for content authored using these prefixes, they have been retained in this s..."
     },
     {
@@ -17579,6 +20875,9 @@
         "keywords":  [
                          "scripting"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Scripting in official EPUB 3.3 Core Specification."
     },
     {
@@ -17598,6 +20897,9 @@
                          "scripted",
                          "item"
                      ],
+        "rfc2119":  [
+                        "MAY"
+                    ],
         "summary":  "EPUB content documents MAY contain scripting using the facilities defined for this in the respective underlying specifications ([ html ] and [ svg ]). When an EPUB content document contains scripting, this specification refers to it as a..."
     },
     {
@@ -17618,6 +20920,9 @@
                          "script",
                          "src"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "EPUB 3 defines two contexts for script execution:"
     },
     {
@@ -17636,6 +20941,9 @@
                          "script",
                          "iframe"
                      ],
+        "rfc2119":  [
+                        "MUST NOT"
+                    ],
         "summary":  "A container-constrained script is either of the following:"
     },
     {
@@ -17653,6 +20961,9 @@
                          "scripts",
                          "script"
                      ],
+        "rfc2119":  [
+                        "SHOULD"
+                    ],
         "summary":  "A spine-level script is an instance of the [ html ] script or [ svg ] script element contained in a top-level content document ."
     },
     {
@@ -17669,6 +20980,9 @@
                          "event",
                          "model"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "EPUB creators should consider the wide variety of possible reading system implementations when adding scripting functionality to their EPUB publications (e.g., not all devices have physical keyboards, and in many cases a soft keyboard is..."
     },
     {
@@ -17685,6 +20999,9 @@
                          "scripting",
                          "accessibility"
                      ],
+        "rfc2119":  [
+                        "SHOULD"
+                    ],
         "summary":  "EPUB content documents that contain scripting SHOULD employ relevant [ wai-aria ] accessibility techniques to ensure that the content remains consumable by all users."
     },
     {
@@ -17703,6 +21020,10 @@
                          "object",
                          "canvas"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST"
+                    ],
         "summary":  "EPUB content documents that contain scripting MAY provide fallbacks for such content, either by using intrinsic fallback mechanisms (such as those available for the [ html ] object and canvas elements) or, when an intrinsic fallback is n..."
     },
     {
@@ -17720,6 +21041,9 @@
                          "navigation",
                          "document"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "7. EPUB navigation document in official EPUB 3.3 Core Specification."
     },
     {
@@ -17736,6 +21060,9 @@
                          "introduction",
                          "hidden"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The EPUB navigation document is a mandatory component of an EPUB publication . It allows EPUB creators to include a human- and machine-readable global navigation layer, thereby ensuring increased usability and accessibility for the user."
     },
     {
@@ -17755,6 +21082,9 @@
                          "nav",
                          "toc nav"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "MUST conform to the content conformance constraints for XHTML content documents defined in 6.1.2 XHTML requirements ;"
     },
     {
@@ -17777,6 +21107,10 @@
                          "[exactly 1]",
                          "[1 or more]"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST"
+                    ],
         "summary":  "When a nav element carries the epub:type attribute in an EPUB navigation document , this specification restricts the content model of the element and its descendants as follows:"
     },
     {
@@ -17794,6 +21128,9 @@
                          "element:",
                          "types"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The nav element: types in official EPUB 3.3 Core Specification."
     },
     {
@@ -17815,6 +21152,9 @@
                          "page-list",
                          "landmarks"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The nav elements defined in an EPUB navigation document are distinguished semantically by the value of their epub:type attribute."
     },
     {
@@ -17834,6 +21174,9 @@
                          "toc nav",
                          "epub:type"
                      ],
+        "rfc2119":  [
+                        "SHOULD"
+                    ],
         "summary":  "The primary navigational hierarchy of an EPUB publication is defined in a nav element [ html ] whose epub:type attribute set to the value \" toc \" [ epub-ssv-11 ] (i.e., the toc nav element). This element conceptually corresponds to a tab..."
     },
     {
@@ -17854,6 +21197,12 @@
                          "epub:type",
                          "pagebreak"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST NOT",
+                        "OPTIONAL",
+                        "SHOULD"
+                    ],
         "summary":  "The page list provides navigation to static page boundaries in the content. These boundaries may correspond to a statically paginated source such as print or may be defined exclusively for the EPUB publication ."
     },
     {
@@ -17876,6 +21225,12 @@
                          "bodymatter",
                          "toc"
                      ],
+        "rfc2119":  [
+                        "MUST NOT",
+                        "OPTIONAL",
+                        "REQUIRED",
+                        "SHOULD"
+                    ],
         "summary":  "Landmarks identify fundamental structural components of the content to enable reading systems to provide the user efficient access to them (e.g., through a dedicated button in the user interface)."
     },
     {
@@ -17898,6 +21253,10 @@
                          "epub:type",
                          "lot"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST"
+                    ],
         "summary":  "EPUB navigation documents MAY contain one or more nav elements in addition to the toc , page-list , and landmarks nav elements defined in the preceding sections. If these nav elements are intended for reading system processing, they MUST..."
     },
     {
@@ -17917,6 +21276,9 @@
                          "nav",
                          "\u003c nav"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Although it is possible to reuse the EPUB navigation document in the spine , it is often the case that not all of the navigation structures, or branches within them, are needed. EPUB creators will often want to hide the page list and lan..."
     },
     {
@@ -17934,6 +21296,9 @@
                          "rendering",
                          "control"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "8. Layout rendering control in official EPUB 3.3 Core Specification."
     },
     {
@@ -17949,6 +21314,9 @@
         "keywords":  [
                          "introduction"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Not all rendering information can be expressed through the underlying technologies that EPUB is built upon. For example, although HTML with CSS provides powerful layout capabilities, those capabilities are limited to the scope of the doc..."
     },
     {
@@ -17965,6 +21333,9 @@
                          "fixed",
                          "layouts"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Fixed layouts in official EPUB 3.3 Core Specification."
     },
     {
@@ -17980,6 +21351,9 @@
         "keywords":  [
                          "introduction"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "EPUB publications , unlike print books or PDF files, are designed to change. The content flows, or reflows, to fit the screen and to fit the needs of the user. As noted in Rendering and CSS \"content presentation adapts to the user, rathe..."
     },
     {
@@ -17997,6 +21371,9 @@
                          "package",
                          "settings"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Fixed-layout package settings in official EPUB 3.3 Core Specification."
     },
     {
@@ -18019,6 +21396,10 @@
                          "viewport meta",
                          "\u003c package"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "MUST NOT"
+                    ],
         "summary":  "The rendition:layout property specifies whether the content is reflowable or pre-paginated."
     },
     {
@@ -18036,6 +21417,10 @@
                          "overrides",
                          "itemref"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST NOT"
+                    ],
         "summary":  "EPUB creators MAY specify the following properties locally on spine itemref elements to override the global value for the given spine item:"
     },
     {
@@ -18055,6 +21440,10 @@
                          "refines",
                          "\u003c package"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "MUST NOT"
+                    ],
         "summary":  "The rendition:orientation property specifies which orientation the EPUB creator intends the content to be rendered in."
     },
     {
@@ -18072,6 +21461,10 @@
                          "overrides",
                          "itemref"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST NOT"
+                    ],
         "summary":  "EPUB creators MAY specify the following properties locally on spine itemref elements to override the global value for the given spine item:"
     },
     {
@@ -18094,6 +21487,10 @@
                          "viewport meta",
                          "viewBox"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "MUST NOT"
+                    ],
         "summary":  "The rendition:spread property specifies the intended reading system synthetic spread behavior."
     },
     {
@@ -18114,6 +21511,10 @@
                          "rendition:spread-portrait",
                          "spread-portrait"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST NOT"
+                    ],
         "summary":  "EPUB creators MAY specify the following properties locally on spine itemref elements to override the global value for the given spine item:"
     },
     {
@@ -18136,6 +21537,11 @@
                          "page-spread-left",
                          "rendition:page-spread-right"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST NOT",
+                        "SHOULD"
+                    ],
         "summary":  "When a reading system renders a synthetic spread , the default behavior is to populate the spread by rendering the next EPUB content document in the next available unpopulated viewport , where the next available viewport is determined by..."
     },
     {
@@ -18156,6 +21562,9 @@
                          "rendition:layout",
                          "pre-paginated"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The rendition:viewport property allows EPUB creators to express the CSS initial containing block (ICB) [ css2 ] for XHTML and SVG content documents whose rendition:layout property has been set to pre-paginated ."
     },
     {
@@ -18178,6 +21587,11 @@
                          "device-height",
                          "device-width"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "MUST NOT",
+                        "REQUIRED"
+                    ],
         "summary":  "This section defines rules for the expression and interpretation of dimensional properties of fixed-layout documents ."
     },
     {
@@ -18194,6 +21608,9 @@
                          "reflowable",
                          "layouts"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Although control over the rendering of EPUB content documents to create fixed layouts is an obvious need not handled by other technologies, there are also considerations for reflowable content that are unique to EPUB publications (e.g., ..."
     },
     {
@@ -18216,6 +21633,12 @@
                          "refines",
                          "paginated"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "MUST NOT",
+                        "SHOULD NOT"
+                    ],
         "summary":  "The rendition:flow property specifies the EPUB creator preference for how reading systems should handle content overflow."
     },
     {
@@ -18234,6 +21657,10 @@
                          "itemref",
                          "\u003c package"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST NOT"
+                    ],
         "summary":  "EPUB creators MAY specify the following properties locally on spine itemref elements to override the global value for the given spine item:"
     },
     {
@@ -18254,6 +21681,9 @@
                          "itemref",
                          "properties"
                      ],
+        "rfc2119":  [
+                        "MUST NOT"
+                    ],
         "summary":  "The rendition:align-x-center property specifies that the given spine item should be centered horizontally in the viewport or spread."
     },
     {
@@ -18270,6 +21700,9 @@
                          "media",
                          "overlays"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "9. Media overlays in official EPUB 3.3 Core Specification."
     },
     {
@@ -18285,6 +21718,9 @@
         "keywords":  [
                          "introduction"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Mainstream ebooks, educational tools and ebooks formatted for persons with print disabilities are some examples of works that contain synchronized audio narration. In EPUB 3, EPUB creators can create these types of books using media over..."
     },
     {
@@ -18302,6 +21738,9 @@
                          "overlay",
                          "documents"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Media overlay documents in official EPUB 3.3 Core Specification."
     },
     {
@@ -18320,6 +21759,11 @@
                          "document",
                          "requirements"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "MUST NOT"
+                    ],
         "summary":  "MUST be valid to the media overlays schema as defined in G.3 Media overlays schema and conform to all content conformance constraints expressed in 9.2.2 Media overlay document definition ."
     },
     {
@@ -18339,6 +21783,9 @@
                          "definition",
                          "https://www.w3.org/ns/SMIL"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "All elements [ xml ] defined in this section are in the https://www.w3.org/ns/SMIL namespace [ xml-names ] unless otherwise specified."
     },
     {
@@ -18361,6 +21808,10 @@
                          "epub:prefix",
                          "head"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "REQUIRED"
+                    ],
         "summary":  "The smil element encapsulates all the information in an media overlay document ."
     },
     {
@@ -18380,6 +21831,9 @@
                          "metadata",
                          "[0 or 1]"
                      ],
+        "rfc2119":  [
+                        "OPTIONAL"
+                    ],
         "summary":  "The head element is the container for metadata in the media overlay document ."
     },
     {
@@ -18398,6 +21852,9 @@
                          "head",
                          "[0 or more]"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The metadata element represents metadata for the media overlay document . The metadata element is an extension point that allows the inclusion of metadata from any metainformation structuring language."
     },
     {
@@ -18420,6 +21877,10 @@
                          "epub:type",
                          "[optional]"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "REQUIRED"
+                    ],
         "summary":  "The body element is the starting point for the presentation contained in the media overlay document . It contains the main sequence of par and seq elements."
     },
     {
@@ -18442,6 +21903,10 @@
                          "[required]",
                          "U+0023 (#)"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST"
+                    ],
         "summary":  "The seq element is a sequential time container for media objects and/or child time containers."
     },
     {
@@ -18464,6 +21929,10 @@
                          "text",
                          "[exactly 1]"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST"
+                    ],
         "summary":  "The par element is a parallel time container for media objects."
     },
     {
@@ -18486,6 +21955,10 @@
                          "U+0023 (#)",
                          "[optional]"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "REQUIRED"
+                    ],
         "summary":  "The text element references an element in an EPUB content document . A text element typically refers to a textual element but can also refer to other EPUB content document media elements. In the absence of a sibling audio element, textua..."
     },
     {
@@ -18508,6 +21981,10 @@
                          "clipBegin",
                          "clipEnd"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "OPTIONAL"
+                    ],
         "summary":  "The audio element represents a clip of audio media."
     },
     {
@@ -18525,6 +22002,9 @@
                          "media",
                          "overlays"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Creating media overlays in official EPUB 3.3 Core Specification."
     },
     {
@@ -18547,6 +22027,9 @@
                          "src",
                          "clipBegin"
                      ],
+        "rfc2119":  [
+                        "OPTIONAL"
+                    ],
         "summary":  "EPUB creators can represent a pre-recorded narration of a publication as a series of audio clips, each corresponding to part of an EPUB content document . A single audio clip, for example, typically represents a single phrase or paragrap..."
     },
     {
@@ -18565,6 +22048,9 @@
                          "content",
                          "document"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "In this section, the EPUB content document is assumed to be an XHTML content document . While EPUB creators may use media overlays with SVG content documents , playback behavior might not be consistent and therefore interoperability is n..."
     },
     {
@@ -18587,6 +22073,9 @@
                          "audio",
                          "epub:textref"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "The body of a media overlay document consists of two elements: the par element and the seq element. The ordering of these elements represents how reading systems render the content in the corresponding EPUB content documents during playb..."
     },
     {
@@ -18607,6 +22096,10 @@
                          "text",
                          "src"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "SHOULD"
+                    ],
         "summary":  "Both the epub:textref attribute and the text element\u0027s src attribute may contain a URL-fragment string that references a specific part (e.g., an element via its ID) of the associated EPUB content document ."
     },
     {
@@ -18627,6 +22120,9 @@
                          "seq",
                          "epub:textref"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The granularity level of the media overlay depends on how EPUB creators mark up the EPUB content document and the type of fragment identifier they use in the text elements\u0027 src attributes and the seq elements\u0027 epub:textref attributes. Fo..."
     },
     {
@@ -18646,6 +22142,9 @@
                          "audio",
                          "text"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This specification allows the use of text-to-speech (TTS) — the rendering of the textual content of an EPUB publication as artificial human speech using a synthesized voice — in addition to pre-recorded audio clips."
     },
     {
@@ -18668,6 +22167,9 @@
                          "body",
                          "\u003c smil"
                      ],
+        "rfc2119":  [
+                        "MAY"
+                    ],
         "summary":  "To express structural semantics in media overlay documents , EPUB creators MAY specify the epub:type attribute on par , seq , and body elements."
     },
     {
@@ -18690,6 +22192,11 @@
                          "\u003c package",
                          "/* emphasize the active element */"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "MUST NOT"
+                    ],
         "summary":  "EPUB creators MAY express visual rendering information for the currently playing EPUB content document element in a CSS Style Sheet using author-defined classes."
     },
     {
@@ -18707,6 +22214,9 @@
                          "overlays",
                          "packaging"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Media overlays packaging in official EPUB 3.3 Core Specification."
     },
     {
@@ -18728,6 +22238,9 @@
                          "application/smil+xml",
                          "\u003cpackage …\u003e … \u003cmanifest\u003e \u003citem id ="
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "If an EPUB content document is wholly or partially referenced by a media overlay document , then its manifest item element MUST specify a media-overlay attribute. The attribute MUST reference the ID [ xml ] of the manifest item for the c..."
     },
     {
@@ -18750,6 +22263,11 @@
                          "item",
                          "narrator"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "SHOULD"
+                    ],
         "summary":  "EPUB creators MUST specify the duration of the entire EPUB publication in the package document using a meta element with the duration property ."
     },
     {
@@ -18766,6 +22284,9 @@
                          "skippability",
                          "escapability"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Skippability and escapability in official EPUB 3.3 Core Specification."
     },
     {
@@ -18787,6 +22308,9 @@
                          "\u003c smil",
                          "\u003c html"
                      ],
+        "rfc2119":  [
+                        "MAY"
+                    ],
         "summary":  "While reading, users may want to turn on or off certain features of the content, such as footnotes, page numbers, or other types of secondary content. This feature is called skippability. Reading systems use the semantic information prov..."
     },
     {
@@ -18806,6 +22330,9 @@
                          "aside",
                          "\u003c smil"
                      ],
+        "rfc2119":  [
+                        "MAY"
+                    ],
         "summary":  "Escapable items are nested structures, such as tables and lists, that users might wish to skip over, continuing to read from the point immediately after the nested structure. The escapability feature differs from the skippability feature..."
     },
     {
@@ -18823,6 +22350,9 @@
                          "document",
                          "overlays"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "As the EPUB navigation document is an XHTML content document , EPUB creators may associate a media overlay document with it. Unlike traditional XHTML content documents, however, reading systems must present the EPUB navigation document t..."
     },
     {
@@ -18838,6 +22368,9 @@
         "keywords":  [
                          "accessibility"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "EPUB 3 builds upon the Open Web Platform expressly so that it can leverage the structure, semantics and, by extension, accessibility built into its underlying technologies."
     },
     {
@@ -18854,6 +22387,9 @@
                          "security",
                          "privacy"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "11. Security and privacy in official EPUB 3.3 Core Specification."
     },
     {
@@ -18869,6 +22405,9 @@
         "keywords":  [
                          "overview"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The particularity of an EPUB publication is its structure. The EPUB format provides a means of representing, packaging, and encoding structured and semantically enhanced web content — including HTML, CSS, SVG, JavaScript, and other resou..."
     },
     {
@@ -18887,6 +22426,9 @@
                          "Content-Security-Policy",
                          "X-Frame-Options"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "EPUB publications pose a variety of privacy and security threats to unsuspecting users. Many of these threats intersect with web content, but EPUB also introduces its own unique methods of attack that can be used to trick users into acce..."
     },
     {
@@ -18904,6 +22446,9 @@
                          "features",
                          "epubReadingSystem"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "EPUB 3 tries to avoid extending the underlying technologies it builds on, but it has introduced some new features. The restricted scope of these features limits the threats they might pose, however:"
     },
     {
@@ -18919,6 +22464,10 @@
         "keywords":  [
                          "recommendations"
                      ],
+        "rfc2119":  [
+                        "SHOULD",
+                        "SHOULD NOT"
+                    ],
         "summary":  "Although EPUB creators cannot prevent every method of exploiting users, they are ultimately responsible for the secure construction of their content. That means that they need to take precautions to limit the exposure of their EPUB publi..."
     },
     {
@@ -18935,6 +22484,9 @@
                          "unsupported",
                          "features"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This specification contains certain features that are not yet fully supported in reading systems , that the Working Group no longer recommends for use, or that are only retained for interoperability with EPUB 2 reading systems. This sect..."
     },
     {
@@ -18951,6 +22503,9 @@
                          "under-implemented",
                          "features"
                      ],
+        "rfc2119":  [
+                        "MAY"
+                    ],
         "summary":  "A under-implemented feature is a feature introduced prior to EPUB 3.3 for which the Working Group has not been able to establish enough implementation experience ."
     },
     {
@@ -18967,6 +22522,9 @@
                          "deprecated",
                          "features"
                      ],
+        "rfc2119":  [
+                        "SHOULD NOT"
+                    ],
         "summary":  "A deprecated feature is one the Working Group no longer recommends for use in this version of the specification. Deprecated features typically have limited or no support in reading systems and/or usage in EPUB publications ."
     },
     {
@@ -18989,6 +22547,9 @@
                          "-// W3C //DTD MathML 3.0//EN",
                          "application/x-dtbncx+xml"
                      ],
+        "rfc2119":  [
+                        "MAY"
+                    ],
         "summary":  "The following table lists the public and system identifiers [ xml ] allowed in document type declarations . [ xml ]"
     },
     {
@@ -19006,6 +22567,9 @@
                          "structural",
                          "semantics"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "C. Expressing structural semantics in official EPUB 3.3 Core Specification."
     },
     {
@@ -19023,6 +22587,9 @@
                          "epub:type",
                          "role"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Structural semantics add additional meaning about the specific structural purpose an element plays. The epub:type attribute is used to express domain-specific semantics in EPUB content documents and media overlay documents , with the str..."
     },
     {
@@ -19042,6 +22609,9 @@
                          "role",
                          "\u003c html"
                      ],
+        "rfc2119":  [
+                        "MAY"
+                    ],
         "summary":  "Refer to the requirements for XHTML , SVG , and media overlays ."
     },
     {
@@ -19057,6 +22627,9 @@
         "keywords":  [
                          "vocabularies"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This appendix defines a general set of mechanisms by which attributes in this specification can reference terms from vocabularies. It also defines EPUB-specific vocabularies for use with the attributes."
     },
     {
@@ -19074,6 +22647,9 @@
                          "association",
                          "mechanisms"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "D.1 Vocabulary association mechanisms in official EPUB 3.3 Core Specification."
     },
     {
@@ -19092,6 +22668,9 @@
                          "epub:type",
                          "rel"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "EPUB defines a formal method of referencing terms and properties defined in metadata and semantic vocabularies using the property data type . The epub:type attribute uses this data type in EPUB content documents and media overlay documen..."
     },
     {
@@ -19114,6 +22693,9 @@
                          "\u003c meta",
                          "dcterms:"
                      ],
+        "rfc2119":  [
+                        "OPTIONAL"
+                    ],
         "summary":  "The property data type is a compact means of expressing a URL [ url ] and consists of an OPTIONAL prefix separated from a reference by a colon."
     },
     {
@@ -19132,6 +22714,9 @@
                          "property",
                          "prefix"
                      ],
+        "rfc2119":  [
+                        "MUST NOT"
+                    ],
         "summary":  "A default vocabulary is one that EPUB creators do not have to declare a prefix for in order to use its terms and properties where a property value is expected. EPUB creators MUST NOT add a prefix to terms and properties from a default vo..."
     },
     {
@@ -19154,6 +22739,10 @@
                          "http://www.idpf.org/2007/ops",
                          "\u003c html"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "MUST NOT"
+                    ],
         "summary":  "The prefix attribute defines prefix mappings for use in property values ."
     },
     {
@@ -19173,6 +22762,10 @@
                          "prefix",
                          "epub:type"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "SHOULD NOT"
+                    ],
         "summary":  "Although reserved prefixes are an authoring convenience, EPUB creators should avoid relying on them as they may cause interoperability issues. EPUB conformance checkers will often reject new prefixes until their developers update the too..."
     },
     {
@@ -19191,6 +22784,11 @@
                          "definitions",
                          "properties"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "REQUIRED"
+                    ],
         "summary":  "The fields in the vocabulary definition tables have the following implicit requirements:"
     },
     {
@@ -19210,6 +22808,9 @@
                          "property",
                          "refines"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "The properties in this vocabulary are usable in the meta element\u0027s property attribute."
     },
     {
@@ -19230,6 +22831,9 @@
                          "zero or more",
                          "\u003c metadata"
                      ],
+        "rfc2119":  [
+                        "MUST NOT"
+                    ],
         "summary":  "The alternate-script property provides an alternate expression of the associated property value in a different language and/or script. The language tags of the alternate-script property and its associated property — as expressed by their..."
     },
     {
@@ -19249,6 +22853,9 @@
                          "dc:subject",
                          "\u003c metadata"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The authority property identifies the system or scheme the referenced element\u0027s value is drawn from."
     },
     {
@@ -19271,6 +22878,10 @@
                          "zero or more",
                          "\u003c metadata"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "SHOULD"
+                    ],
         "summary":  "The belongs-to-collection property identifies the name of a collection to which the EPUB publication belongs. An EPUB publication MAY belong to one or more collections."
     },
     {
@@ -19293,6 +22904,9 @@
                          "belongs-to-collection",
                          "\u003c metadata"
                      ],
+        "rfc2119":  [
+                        "SHOULD"
+                    ],
         "summary":  "The collection-type property indicates the form or nature of a collection."
     },
     {
@@ -19310,6 +22924,9 @@
                          "xsd:unsignedInt",
                          "zero or one"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The display-seq property indicates the numeric position in which to display the current property relative to identical metadata properties."
     },
     {
@@ -19328,6 +22945,9 @@
                          "zero or one",
                          "\u003c metadata"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "D.3.6 file-as in official EPUB 3.3 Core Specification."
     },
     {
@@ -19348,6 +22968,9 @@
                          "zero or one",
                          "\u003c metadata"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The group-position property indicates the numeric position in which the EPUB publication is ordered relative to other works belonging to the same group (whether all EPUB publications or not)."
     },
     {
@@ -19370,6 +22993,9 @@
                          "dc:source",
                          "\u003c metadata"
                      ],
+        "rfc2119":  [
+                        "SHOULD"
+                    ],
         "summary":  "The identifier-type property indicates the form or nature of an identifier ."
     },
     {
@@ -19386,6 +23012,9 @@
                          "meta-auth",
                          "deprecated"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Use of this property is deprecated ."
     },
     {
@@ -19408,6 +23037,9 @@
                          "xsd:string",
                          "zero or more"
                      ],
+        "rfc2119":  [
+                        "SHOULD"
+                    ],
         "summary":  "The role property describes the role of a creator , contributor or publisher in the creation of an EPUB publication."
     },
     {
@@ -19428,6 +23060,9 @@
                          "zero or one",
                          "\u003c metadata"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The source-of property indicates a unique aspect of an adapted source resource that has been retained in the EPUB publication ."
     },
     {
@@ -19447,6 +23082,9 @@
                          "dc:subject",
                          "\u003c metadata"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The term property provides a subject code."
     },
     {
@@ -19469,6 +23107,9 @@
                          "collection",
                          "edition"
                      ],
+        "rfc2119":  [
+                        "SHOULD"
+                    ],
         "summary":  "The title-type property indicates the form or nature of a title ."
     },
     {
@@ -19485,6 +23126,9 @@
                          "examples",
                          "\u003c metadata"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "D.3.14 Examples in official EPUB 3.3 Core Specification."
     },
     {
@@ -19504,6 +23148,9 @@
                          "rel",
                          "properties"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The properties in this vocabulary are usable in the metadata link element\u0027s rel and properties attributes."
     },
     {
@@ -19522,6 +23169,9 @@
                          "rel",
                          "href"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The following values can be used in the link element rel attribute to establish the relationship of the resource referenced in the href attribute ."
     },
     {
@@ -19541,6 +23191,9 @@
                          "Zero or more",
                          "refines"
                      ],
+        "rfc2119":  [
+                        "MUST NOT"
+                    ],
         "summary":  "The alternate keyword is a subset of the HTML alternate keyword for links. It differs as follows:"
     },
     {
@@ -19560,6 +23213,9 @@
                          "media-type",
                          "application/marcxml+xml"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Use of the marc21xml-record keyword is deprecated . It is replaced by the record keyword with the media-type attribute value \" application/marcxml+xml \"."
     },
     {
@@ -19579,6 +23235,9 @@
                          "media-type",
                          "application/mods+xml"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Use of the mods-record keyword is deprecated . It is replaced by the record keyword with the media-type attribute value \" application/mods+xml \"."
     },
     {
@@ -19597,6 +23256,9 @@
                          "record",
                          "onix"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Use of the onix-record keyword is deprecated . It is replaced by the record keyword with the properties attribute value onix ."
     },
     {
@@ -19616,6 +23278,10 @@
                          "Zero or more",
                          "refines"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "MUST NOT"
+                    ],
         "summary":  "Indicates that the referenced resource is a metadata record."
     },
     {
@@ -19634,6 +23300,9 @@
                          "Zero or more",
                          "refines"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "Indicates that the referenced audio file provides an aural representation of the expression or resource (typically, the title or creator) specified by the refines attribute."
     },
     {
@@ -19650,6 +23319,9 @@
                          "xml-signature",
                          "deprecated"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Use of the xml-signature keyword is deprecated . It is not replaced by another linking method."
     },
     {
@@ -19666,6 +23338,9 @@
                          "xmp-record",
                          "deprecated"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Use of the xmp-record keyword is deprecated ."
     },
     {
@@ -19682,6 +23357,9 @@
                          "link",
                          "properties"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The following values can be used in the link element\u0027s properties attribute to establish the type of record a referenced resource represents. These values are provided for record formats that cannot be uniquely identified by their media ..."
     },
     {
@@ -19697,6 +23375,9 @@
         "keywords":  [
                          "onix"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "D.4.2.1 onix in official EPUB 3.3 Core Specification."
     },
     {
@@ -19719,6 +23400,9 @@
                          "rendition:layout",
                          "rendition:layout-pre-paginated"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The prefix URL for referencing these properties is http://www.idpf.org/vocab/rendition/# ."
     },
     {
@@ -19737,6 +23421,9 @@
                          "properties",
                          "rendition:"
                      ],
+        "rfc2119":  [
+                        "MAY"
+                    ],
         "summary":  "Reading system developers may introduce functionality not defined in this specification to address reading system-specific issues rendering EPUB content documents ."
     },
     {
@@ -19755,6 +23442,9 @@
                          "vocabulary",
                          "item"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The properties in this vocabulary are usable in the manifest item element\u0027s properties attribute ."
     },
     {
@@ -19771,6 +23461,9 @@
                          "cover-image",
                          "Zero or one"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "D.6.1 cover-image in official EPUB 3.3 Core Specification."
     },
     {
@@ -19787,6 +23480,9 @@
                          "mathml",
                          "Zero or more"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "D.6.2 mathml in official EPUB 3.3 Core Specification."
     },
     {
@@ -19803,6 +23499,9 @@
                          "nav",
                          "Exactly one"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "D.6.3 nav in official EPUB 3.3 Core Specification."
     },
     {
@@ -19819,6 +23518,9 @@
                          "remote-resources",
                          "Zero or more"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The remote-resources property indicates that the described publication resource contains one or more internal references to other publication resources that are located outside of the EPUB container ."
     },
     {
@@ -19836,6 +23538,9 @@
                          "form",
                          "Zero or more"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "D.6.5 scripted in official EPUB 3.3 Core Specification."
     },
     {
@@ -19855,6 +23560,10 @@
                          "iframe",
                          "Zero or more"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST"
+                    ],
         "summary":  "The svg property indicates that the described publication resource embeds one or more instances of SVG markup."
     },
     {
@@ -19872,6 +23581,9 @@
                          "epub:switch",
                          "Zero or more"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The switch property indicates that the described publication resource contains one or more instances of the deprecated epub:switch element ."
     },
     {
@@ -19890,6 +23602,9 @@
                          "vocabulary",
                          "itemref"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The properties in this vocabulary are usable in the spine itemref element\u0027s properties attribute ."
     },
     {
@@ -19907,6 +23622,9 @@
                          "item",
                          "rendition:page-spread-left"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The page-spread-left property indicates that the first page of the associated item element\u0027s EPUB content document represents the left-hand side of a two-page spread."
     },
     {
@@ -19924,6 +23642,9 @@
                          "item",
                          "rendition:page-spread-right"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The page-spread-right property indicates that the first page of the associated item element\u0027s EPUB content document represents the right-hand side of a two-page spread."
     },
     {
@@ -19939,6 +23660,9 @@
         "keywords":  [
                          "examples"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "D.7.3 Examples in official EPUB 3.3 Core Specification."
     },
     {
@@ -19959,6 +23683,9 @@
                          "property",
                          "media:"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The properties in this vocabulary are usable in the meta element\u0027s property attribute."
     },
     {
@@ -19976,6 +23703,9 @@
                          "xsd:string",
                          "Zero or one"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "D.8.1 active-class in official EPUB 3.3 Core Specification."
     },
     {
@@ -19991,6 +23721,9 @@
         "keywords":  [
                          "duration"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "D.8.2 duration in official EPUB 3.3 Core Specification."
     },
     {
@@ -20008,6 +23741,9 @@
                          "xsd:string",
                          "Zero or more"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "D.8.3 narrator in official EPUB 3.3 Core Specification."
     },
     {
@@ -20025,6 +23761,9 @@
                          "xsd:string",
                          "Zero or one"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "D.8.4 playback-active-class in official EPUB 3.3 Core Specification."
     },
     {
@@ -20042,6 +23781,9 @@
                          "css",
                          "properties"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This appendix describes the prefixed CSS properties supported by EPUB."
     },
     {
@@ -20060,6 +23802,9 @@
                          "modes",
                          "-epub-"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This section describes the -epub- prefixed properties for [ css-writing-modes-3 ]."
     },
     {
@@ -20082,6 +23827,9 @@
                          "mixed",
                          "sideways"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This property is a prefixed version of the text-orientation property [ css-writing-modes-3 ]."
     },
     {
@@ -20099,6 +23847,9 @@
                          "property",
                          "writing-mode"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This property is a prefixed version of the writing-mode property [ css-writing-modes-3 ], with the same syntax and behavior."
     },
     {
@@ -20121,6 +23872,9 @@
                          "-epub-text-combine-horizontal: all",
                          "text-combine-upright: all"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "These properties are prefixed versions of the text-combine-upright property [ css-writing-modes-3 ], although -epub-text-combine is deprecated."
     },
     {
@@ -20139,6 +23893,9 @@
                          "level",
                          "-epub-"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This section describes the -epub- prefixed properties (and one prefixed value) for [ css-text-3 ]."
     },
     {
@@ -20157,6 +23914,9 @@
                          "hyphens",
                          "all"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This property is a prefixed version of the hyphens property [ css-text-3 ]."
     },
     {
@@ -20174,6 +23934,9 @@
                          "property",
                          "line-break"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This property is a prefixed version of the line-break property [ css-text-3 ]."
     },
     {
@@ -20191,6 +23954,9 @@
                          "property",
                          "text-align-last"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This property is a prefixed version of the text-align-last property [ css-text-3 ]."
     },
     {
@@ -20208,6 +23974,9 @@
                          "property",
                          "word-break"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This property is a prefixed version of the word-break property [ css-text-3 ]."
     },
     {
@@ -20226,6 +23995,9 @@
                          "-epub-fullwidth",
                          "text-transform: full-width"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This property is a prefixed value for the text-transform property [ css-text-3 ]."
     },
     {
@@ -20245,6 +24017,9 @@
                          "level",
                          "-epub-"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This section describes the -epub- prefixed properties for [ css-text-decor-3 ]."
     },
     {
@@ -20262,6 +24037,9 @@
                          "property",
                          "text-emphasis-color"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This property is a prefixed version of the text-emphasis-color property [ css-text-decor-3 ]."
     },
     {
@@ -20279,6 +24057,9 @@
                          "property",
                          "text-emphasis-position"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This property is a prefixed version of the text-emphasis-position property [ css-text-decor-3 ]."
     },
     {
@@ -20296,6 +24077,9 @@
                          "property",
                          "text-emphasis-style"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This property is a prefixed version of the text-emphasis-style property [ css-text-decor-3 ]."
     },
     {
@@ -20315,6 +24099,9 @@
                          "alphabetic",
                          "text-underline-position: auto"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This property is a prefixed version of the text-underline-position property [ css-text-decor-3 ]."
     },
     {
@@ -20333,6 +24120,9 @@
                          "tag",
                          "viewport meta"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "F. The viewport meta tag in official EPUB 3.3 Core Specification."
     },
     {
@@ -20349,6 +24139,9 @@
                          "introduction",
                          "viewport meta"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "As the Safari HTML definition of the viewport meta tag, that was used in earlier versions of EPUB 3, is not an officially recognized standard, this specification defines a basic syntax in order to allow EPUB creators to express width and..."
     },
     {
@@ -20371,6 +24164,11 @@
                          "width",
                          "viewport meta"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "MUST NOT"
+                    ],
         "summary":  "For fixed-layout documents , a viewport meta tag [ html ] MUST have name and content attributes that conform to the following definition:"
     },
     {
@@ -20386,6 +24184,9 @@
         "keywords":  [
                          "schemas"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "G. Schemas in official EPUB 3.3 Core Specification."
     },
     {
@@ -20403,6 +24204,9 @@
                          "document",
                          "schema"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A schema for package documents is available at https://github.com/w3c/epubcheck/tree/master/src/main/resources/com/adobe/epubcheck/schema/30/package-30.nvdl ."
     },
     {
@@ -20419,6 +24223,9 @@
                          "ocf",
                          "schemas"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "G.2 OCF schemas in official EPUB 3.3 Core Specification."
     },
     {
@@ -20437,6 +24244,9 @@
                          "xml",
                          "container.xml"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A schema for container.xml files is available at https://github.com/w3c/epubcheck/tree/master/src/main/resources/com/adobe/epubcheck/schema/30/ocf-container-30.nvdl ."
     },
     {
@@ -20455,6 +24265,9 @@
                          "xml",
                          "encryption.xml"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The schema for encryption.xml files is included in [ xmlsec-rngschema-20130411 ]."
     },
     {
@@ -20473,6 +24286,9 @@
                          "xml",
                          "signatures.xml"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The schema for signatures.xml files is included in [ xmlsec-rngschema-20130411 ]."
     },
     {
@@ -20490,6 +24306,9 @@
                          "overlays",
                          "schema"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A schema for media overlay documents is available at https://github.com/w3c/epubcheck/tree/main/src/master/resources/com/adobe/epubcheck/schema/30/media-overlay-30.nvdl ."
     },
     {
@@ -20506,6 +24325,9 @@
                          "detailed",
                          "examples"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "H. Detailed examples in official EPUB 3.3 Core Specification."
     },
     {
@@ -20528,6 +24350,9 @@
                          "font/font-file.otf",
                          "font/font-file.cff"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Consider the following extracts of a package document and an XHTML content document :"
     },
     {
@@ -20550,6 +24375,9 @@
                          "head",
                          "iframe"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Consider the following example package document :"
     },
     {
@@ -20572,6 +24400,9 @@
                          "\u003c?xml version= \"1.0\"",
                          "META-INF/signatures.xml"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This example demonstrates the use of the OCF format to contain a signed and encrypted EPUB publication within an OCF ZIP container ."
     },
     {
@@ -20594,6 +24425,9 @@
                          "09:58",
                          "00:56.78"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The following are examples of allowed clock values:"
     },
     {
@@ -20611,6 +24445,9 @@
                          "type",
                          "registrations"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "I. Media type registrations in official EPUB 3.3 Core Specification."
     },
     {
@@ -20633,6 +24470,9 @@
                          "oebps-package+xml",
                          "application/oepbs-package+xml"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This appendix registers the media type application/oebps-package+xml for the EPUB package document. This registration supersedes RFC4839 (see https://www.rfc-editor.org/rfc/rfc4839 )."
     },
     {
@@ -20655,6 +24495,9 @@
                          "epub+zip",
                          "application/zip"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This appendix registers the media type application/epub+zip for the EPUB Open Container Format (OCF)."
     },
     {
@@ -20677,6 +24520,9 @@
                          "container",
                          "dc:contributor"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "J.1 Terms defined by this specification in official EPUB 3.3 Core Specification."
     },
     {
@@ -20699,6 +24545,9 @@
                          "content",
                          "meta"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "J.2 Terms defined by reference in official EPUB 3.3 Core Specification."
     },
     {
@@ -20714,6 +24563,9 @@
         "keywords":  [
                          "acknowledgements"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Specifications, like art, are human creations. No human has done more for EPUB than Garth Conboy, who has been there every step of the way, from the very first OEB 1.0 in 1999 to today\u0027s EPUB 3.3. None of this would have happened without..."
     },
     {
@@ -20729,6 +24581,9 @@
         "keywords":  [
                          "introduction"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "1. Introduction in official EPUB Text-to-Speech (TTS) 1.0."
     },
     {
@@ -20744,6 +24599,9 @@
         "keywords":  [
                          "overview"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The need for clear and accurate Text-to-Speech (TTS) rendering of publications is imperative for their readability and comprehension. Unfortunately, the complexities of voicing natural languages and the limitations of built-in vocabulari..."
     },
     {
@@ -20759,6 +24617,9 @@
         "keywords":  [
                          "background"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The EPUB Working Group of the International Digital Publishing Forum (IDPF) first defined a means of integrating the Synthetic Speech Markup Language [ ssml ] and pronunciation lexicons [ pronunciation-lexicon ] in EPUB 3.0 [ epubcontent..."
     },
     {
@@ -20775,6 +24636,9 @@
                          "terminology",
                          "text-to-speech"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This specification uses terminology defined in EPUB 3.3 [ epub-33 ]."
     },
     {
@@ -20790,6 +24654,13 @@
         "keywords":  [
                          "conformance"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "MUST NOT",
+                        "SHOULD",
+                        "SHOULD NOT"
+                    ],
         "summary":  "As well as sections marked as non-normative, all authoring guidelines, diagrams, examples, and notes in this specification are non-normative. Everything else in this specification is normative."
     },
     {
@@ -20806,6 +24677,9 @@
                          "ssml",
                          "attributes"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "2. SSML attributes in official EPUB Text-to-Speech (TTS) 1.0."
     },
     {
@@ -20824,6 +24698,9 @@
                          "ssml:ph",
                          "ssml:alphabet"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The W3C Speech Synthesis Markup Language [ ssml ] is a language used for assisting Text-to-Speech (TTS) engines in generating synthetic speech. Although SSML is designed as a standalone document type, it also defines semantics suitable f..."
     },
     {
@@ -20846,6 +24723,11 @@
                          "aria-hidden",
                          "\u003c html"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST NOT",
+                        "SHOULD NOT"
+                    ],
         "summary":  "The ssml:ph attribute specifies a phonemic/phonetic pronunciation of the text represented by its carrying element."
     },
     {
@@ -20868,6 +24750,10 @@
                          "\u003c html",
                          "svg"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "SHOULD"
+                    ],
         "summary":  "The ssml:alphabet attribute specifies which phonemic/phonetic pronunciation alphabet is used in the value of the ssml:ph attribute."
     },
     {
@@ -20884,6 +24770,9 @@
                          "pronunciation",
                          "lexicons"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "3. Pronunciation lexicons in official EPUB Text-to-Speech (TTS) 1.0."
     },
     {
@@ -20900,6 +24789,9 @@
                          "introduction",
                          "link"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The W3C Pronunciation Lexicon Specification (PLS) [ pronunciation-lexicon ] defines syntax and semantics for XML-based pronunciation lexicons to be used by Automatic Speech Recognition and Text-to-Speech (TTS) engines."
     },
     {
@@ -20917,6 +24809,9 @@
                          "conformance",
                          "\u003c lexicon"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "MUST meet the conformance constraints for XML documents defined in XML Conformance [ epub-33 ]."
     },
     {
@@ -20939,6 +24834,11 @@
                          "pronunciation",
                          "type"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "SHOULD"
+                    ],
         "summary":  "EPUB creators MAY associate zero or more pronunciation lexicons [ pronunciation-lexicon ] with an EPUB content document ."
     },
     {
@@ -20955,6 +24855,9 @@
                          "css",
                          "speech"
                      ],
+        "rfc2119":  [
+                        "MAY"
+                    ],
         "summary":  "The CSS Speech [ css-speech-1 ] module defines properties that allow EPUB creators to declaratively control the aural rendering of EPUB content documents . It includes properties for specifying the preferred Text-to-Speech voice, the vol..."
     },
     {
@@ -20972,6 +24875,9 @@
                          "system",
                          "support"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "5. reading system support in official EPUB Text-to-Speech (TTS) 1.0."
     },
     {
@@ -20987,6 +24893,9 @@
         "keywords":  [
                          "introduction"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Reading systems may implement Text-to-Speech playback in different ways depending on the type of engine they use — one might only feed the text content of the document to the engine, for example, while another could support full markup. ..."
     },
     {
@@ -21007,6 +24916,10 @@
                          "alphabet",
                          "grapheme"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "SHOULD"
+                    ],
         "summary":  "Reading systems with Text-to-Speech (TTS) capabilities SHOULD support SSML attributes , pronunciation lexicons and CSS Speech as follows:"
     },
     {
@@ -21027,6 +24940,9 @@
                          "eaa",
                          "requirements"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "EPUB is the standard format for the creation and distribution of digital publications, including e-books."
     },
     {
@@ -21045,6 +24961,9 @@
                          "accessibility",
                          "wcag"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "EPUB Accessibility 1.1 defines the requirements necessary to make an EPUB publication fully accessible, including the requirements defined by the Web Content Accessibility Guidelines (WCAG). It further adds requirements solely related to..."
     },
     {
@@ -21060,6 +24979,9 @@
         "keywords":  [
                          "mappings"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This section of the document maps the requirements defined of the European Accessibility Act to the EPUB Accessibility technical standard."
     },
     {
@@ -21079,6 +25001,9 @@
                          "products",
                          "services"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Annex I – Accessibility requirements for products and services in official EPUB Accessibility European Accessibility Act (EAA) Mapping."
     },
     {
@@ -21104,6 +25029,9 @@
                          "accordance",
                          "article"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "General accessibility requirements related to all services covered by this Directive in accordance with Article 2(2)"
     },
     {
@@ -21119,6 +25047,9 @@
         "keywords":  [
 
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Ensuring the accessibility of the products used in the provision of the service, in accordance with Section I of this Annex and, where applicable, Section II thereof"
     },
     {
@@ -21134,6 +25065,9 @@
         "keywords":  [
 
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Providing information about the functioning of the service, and where products are used in the provision of the service, its link to these products as well as information about their accessibility characteristics and interoperability wit..."
     },
     {
@@ -21149,6 +25083,9 @@
         "keywords":  [
 
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Making the information available via more than one sensory channel"
     },
     {
@@ -21164,6 +25101,9 @@
         "keywords":  [
 
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Presenting the information in an understandable way"
     },
     {
@@ -21179,6 +25119,9 @@
         "keywords":  [
                          "iii"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Presenting the information to users in ways they can perceive"
     },
     {
@@ -21194,6 +25137,9 @@
         "keywords":  [
 
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Allowing alternative renditions of the content and its interoperability with a variety of assistive technologies, in such a way that it is perceivable, understandable, operable and robust"
     },
     {
@@ -21209,6 +25155,9 @@
         "keywords":  [
 
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Presenting in fonts of adequate size and suitable shape, taking into account foreseeable conditions of use and using sufficient contrast, as well as adjustable spacing between letters, lines and paragraphs"
     },
     {
@@ -21224,6 +25173,9 @@
         "keywords":  [
 
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Supplementing any non-textual content with an alternative presentation of that content"
     },
     {
@@ -21239,6 +25191,9 @@
         "keywords":  [
                          "vii"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Providing electronic information needed in the provision of the service in a consistent and adequate way by making it perceivable, operable, understandable and robust"
     },
     {
@@ -21254,6 +25209,9 @@
         "keywords":  [
 
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Making websites, including the related online applications, and mobile device-based services, including mobile applications, accessible in a consistent and adequate way by making them perceivable, operable, understandable and robust"
     },
     {
@@ -21269,6 +25227,9 @@
         "keywords":  [
 
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Where available, support services (help desks, call centres, technical support, relay services and training services) providing information on the accessibility of the service and its compatibility with assistive technologies, in accessi..."
     },
     {
@@ -21290,6 +25251,9 @@
                          "specific",
                          "services"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Section IV: Additional accessibility requirements related to specific services in official EPUB Accessibility European Accessibility Act (EAA) Mapping."
     },
     {
@@ -21305,6 +25269,9 @@
         "keywords":  [
                          "e-books"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "(f) E-books in official EPUB Accessibility European Accessibility Act (EAA) Mapping."
     },
     {
@@ -21320,6 +25287,9 @@
         "keywords":  [
 
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Ensuring that, when an e-book contains audio in addition to text, it then provides synchronised text and audio"
     },
     {
@@ -21335,6 +25305,9 @@
         "keywords":  [
 
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Ensuring that e-book digital files do not prevent assistive technology from operating properly"
     },
     {
@@ -21350,6 +25323,9 @@
         "keywords":  [
                          "iii"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Ensuring access to the content, the navigation of the file content and layout including dynamic layout, the provision of the structure, flexibility and choice in the presentation of the content"
     },
     {
@@ -21365,6 +25341,9 @@
         "keywords":  [
 
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Allowing alternative renditions of the content and its interoperability with a variety of assistive technologies, in such a way that it is perceivable, understandable, operable and robust"
     },
     {
@@ -21380,6 +25359,9 @@
         "keywords":  [
 
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Making them discoverable by providing information through metadata about their accessibility features"
     },
     {
@@ -21395,6 +25377,9 @@
         "keywords":  [
 
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Ensuring that digital rights management measures do not block accessibility features"
     },
     {
@@ -21410,6 +25395,9 @@
         "keywords":  [
                          "introduction"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "1. Introduction in official EPUB Accessibility Techniques 1.1."
     },
     {
@@ -21425,6 +25413,9 @@
         "keywords":  [
                          "overview"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This document, EPUB Accessibility Techniques, provides informative guidance on how to understand and apply the discovery and accessibility requirements defined in the EPUB Accessibility 1.1 specification [ epub-a11y-11 ] that are unique ..."
     },
     {
@@ -21440,6 +25431,9 @@
         "keywords":  [
                          "terminology"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This document uses terminology defined in EPUB 3.3 [ epub-3 ] and EPUB Accessibility 1.1 [ epub-a11y-11 ]:"
     },
     {
@@ -21455,6 +25449,9 @@
         "keywords":  [
                          "techniques"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The accessibility techniques described in this document are advisory in nature. They are intended to help EPUB creators create EPUB publications that conform to the requirements in [ epub-a11y-11 ], but they are not all applicable in all..."
     },
     {
@@ -21472,6 +25469,9 @@
                          "metadata",
                          "techniques"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "3. Discovery metadata techniques in official EPUB Accessibility Techniques 1.1."
     },
     {
@@ -21493,6 +25493,9 @@
                          "\u003c meta",
                          "alt"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "An access mode is defined as a \"human sense perceptual system or cognitive faculty through which a user may process or perceive the content of a digital resource.\" [ iso24751-3 ] For example, if an EPUB publication contains images and vi..."
     },
     {
@@ -21515,6 +25518,9 @@
                          "auditory",
                          "schema:accessMode"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The access modes sufficient to consume an EPUB publication express a broader picture of the potential usability than do the basic access modes . Where the basic access modes identify the default nature of the media used in the publicatio..."
     },
     {
@@ -21537,6 +25543,9 @@
                          "\u003c meta",
                          "schema:accessModeSufficient"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Setting the correct access modes and sufficient access modes for EPUB 3 publications that contain synchronized text-audio playback requires evaluating whether playback is essential to reading the publication or an additional feature."
     },
     {
@@ -21557,6 +25566,9 @@
                          "\u003c meta",
                          "unknown"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Identifying all the accessibility features and adaptations included in an EPUB publication allows users to determine whether the content is usable at a more fine-grained level than the access modes do."
     },
     {
@@ -21579,6 +25591,9 @@
                          "noMotionSimulationHazard",
                          "noSoundHazard"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "There are three widely recognized hazards that can affect readers of digital content:"
     },
     {
@@ -21601,6 +25616,9 @@
                          "accessibilitySummary",
                          "xml:lang"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "An accessibility summary provides a brief, human-readable description of the accessibility characteristics of an EPUB publication that cannot be expressed through the other discovery metadata."
     },
     {
@@ -21619,6 +25637,9 @@
                          "conformance",
                          "schema:accesibilityAPI"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The use of the schema:accesibilityAPI property is no longer necessary for EPUB publications . EPUB creators are not responsible for the interaction between reading systems and the underlying platform APIs."
     },
     {
@@ -21638,6 +25659,9 @@
                          "methods",
                          "schema:accesibilityControl"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The use of the schema:accesibilityControl property is no longer necessary for EPUB publications . This property does not differentiate issues arising from the reading system interface from those in the underlying content, which has led t..."
     },
     {
@@ -21654,6 +25678,9 @@
                          "examples",
                          "\u003c package"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The following examples show the metadata that would be added to an EPUB publication that has textual and visual access modes, is sufficient for reading by text, contains alternative text and MathML markup, and has a flashing hazard."
     },
     {
@@ -21670,6 +25697,9 @@
                          "wcag",
                          "techniques"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "4. WCAG techniques in official EPUB Accessibility Techniques 1.1."
     },
     {
@@ -21686,6 +25716,9 @@
                          "general",
                          "guidance"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Techniques for meeting the requirements of the [ wcag2 ] are defined in Techniques for WCAG . This document does not repeat those techniques."
     },
     {
@@ -21702,6 +25735,9 @@
                          "helpful",
                          "resources"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "EPUB creators not familiar with [ wcag2 ] may find the number of techniques daunting, as they are intended to provide broad coverage of possible solutions."
     },
     {
@@ -21718,6 +25754,9 @@
                          "content",
                          "access"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Content access in official EPUB Accessibility Techniques 1.1."
     },
     {
@@ -21738,6 +25777,9 @@
                          "across",
                          "spreads"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Success Criterion 1.3.2 [ wcag2 ] specifies that each web page have a meaningful order (i.e., that the visual presentation of the content match the underlying markup)."
     },
     {
@@ -21757,6 +25799,9 @@
                          "access",
                          "content"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Success Criterion 2.4.5 [ wcag2 ] requires there be more than one way to locate a web page within a set of web pages. By default, EPUB publications meet this WCAG requirement so long as EPUB creators follow the EPUB requirements to inclu..."
     },
     {
@@ -21772,6 +25817,9 @@
         "keywords":  [
                          "contents"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A common question about the EPUB table of contents is what completeness it needs to have with respect to the headings of the publication. Although the obvious answer seems like it should be a simple aggregation of all headings for all se..."
     },
     {
@@ -21792,6 +25840,9 @@
                          "matches",
                          "linear"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The table of contents provides users more than just links into the content. It is also a means to understand the structure and ordering of an EPUB publication . Consequently, users may have difficulty locating where they are in a publica..."
     },
     {
@@ -21809,6 +25860,9 @@
                          "blocks",
                          "necessary"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Web sites are constructed very differently from EPUB publications. A typical web site wraps the content of each page within a repeating template, for example. This template gives each page a consistent look and feel, but users are rarely..."
     },
     {
@@ -21824,6 +25878,9 @@
         "keywords":  [
                          "roles"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Roles in official EPUB Accessibility Techniques 1.1."
     },
     {
@@ -21844,6 +25901,9 @@
                          "role",
                          "body"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The following guidance is only for EPUB content documents . The type attribute is the only means of adding structural information to media overlay documents so that features like lists and tables can be navigated more efficiently. It is ..."
     },
     {
@@ -21866,6 +25926,9 @@
                          "aria-labelledby",
                          "aria-label"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Although EPUB publications appear as single contiguous documents to users when read, they are typically composed of many individual EPUB content documents . This practice keeps the amount of markup that has to be rendered small to reduce..."
     },
     {
@@ -21886,6 +25949,9 @@
                          "\u003c nav",
                          "\u003cguide\u003e \u003creference type ="
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "[ wai-aria ] landmarks are similar in nature to EPUB landmarks [ epub-3 ]: both are designed to provide users with quick access to the major structures of a document, such as chapters, glossaries and indexes. ARIA landmarks are compiled ..."
     },
     {
@@ -21902,6 +25968,9 @@
                          "helpful",
                          "resources"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The following resources explain EPUB and ARIA landmarks in more detail."
     },
     {
@@ -21918,6 +25987,9 @@
                          "titles",
                          "headings"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Titles and headings in official EPUB Accessibility Techniques 1.1."
     },
     {
@@ -21938,6 +26010,9 @@
                          "title",
                          "\u003c html"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Success Criterion 2.4.2 [ wcag2 ] requires that each web page include a title. EPUB has a similar requirement for EPUB publications : publications require a [ dcterms ] title element in the package document metadata. The [ wcag2 ] requir..."
     },
     {
@@ -21959,6 +26034,9 @@
                          "hierarchy",
                          "\u003c html"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "To a user, an EPUB publication appears as a single document that they read from beginning to end, even though the content is often split across numerous EPUB content documents . As a result, their natural expectation is that the headings..."
     },
     {
@@ -21976,6 +26054,9 @@
                          "topic",
                          "purpose"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Success Criterion 2.4.6 [ wcag2 ] currently states that all headings must describe their topic or purpose. The implication of this wording is that all chapters in a novel, for example, have a topic or purpose and that the topic or purpos..."
     },
     {
@@ -21991,6 +26072,9 @@
         "keywords":  [
                          "descriptions"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Descriptions in official EPUB Accessibility Techniques 1.1."
     },
     {
@@ -22009,6 +26093,9 @@
                          "text",
                          "descriptions"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The first version of these techniques only required alternative text for images regardless of their complexity. This exception is no longer valid."
     },
     {
@@ -22025,6 +26112,9 @@
                          "helpful",
                          "resources"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The following documents provide guidance on including extended descriptions:"
     },
     {
@@ -22040,6 +26130,9 @@
         "keywords":  [
                          "language"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Language in official EPUB Accessibility Techniques 1.1."
     },
     {
@@ -22059,6 +26152,9 @@
                          "xml:lang",
                          "\u003c package"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Success Criterions 3.1.1 and 3.1.2 [ wcag2 ] deal with the language of a page and changes of language with in, respectively."
     },
     {
@@ -22078,6 +26174,9 @@
                          "dc:language",
                          "\u003c package"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "In addition to being able to express the language of text content, the package document also allows EPUB creators to identify the languages of the EPUB publication in dc:language elements [ epub-3 ]."
     },
     {
@@ -22093,6 +26192,9 @@
         "keywords":  [
                          "text"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Text in official EPUB Accessibility Techniques 1.1."
     },
     {
@@ -22111,6 +26213,9 @@
                          "text",
                          "content"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Success Criterion 1.1.1 [ wcag2 ] requires that text equivalents be provided for all non-text content to meet Level A . In some regions (e.g., Asia), it is not uncommon to find images of individual text characters, despite the availabili..."
     },
     {
@@ -22127,6 +26232,9 @@
                          "accessible",
                          "alternatives"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "As EPUB publications can be composed of more than one rendition, it is possible that different versions of the content will have different levels of accessibility. For example, an image-based version of the content that lacks alternative..."
     },
     {
@@ -22143,6 +26251,9 @@
                          "epub",
                          "techniques"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "5. EPUB Techniques in official EPUB Accessibility Techniques 1.1."
     },
     {
@@ -22159,6 +26270,9 @@
                          "page",
                          "navigation"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Page navigation in official EPUB Accessibility Techniques 1.1."
     },
     {
@@ -22181,6 +26295,9 @@
                          "\u003c span",
                          "title"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Both the EPUB Structural Semantics Vocabulary [ epub-ssv ] and Digital Publishing WAI-ARIA 1.0 Module [ dpub-aria-1.0 ] include a semantic for static page breaks: pagebreak and doc-pagebreak , respectively."
     },
     {
@@ -22203,6 +26320,9 @@
                          "par",
                          "\u003c smil"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Readers rarely stop reading to review each new page number, so when page numbers are read aloud in the audio playback of a publication it is not only distracting, but can be confusing, as well (e.g., the number could be read out in the m..."
     },
     {
@@ -22225,6 +26345,9 @@
                          "accessibilityFeature",
                          "pageNavigation"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A page list — a list of hyperlinks to the static page break locations — is the most effective way for users to find static page locations. Without a page list, the user would have to navigate each page marker in the text, provided they a..."
     },
     {
@@ -22247,6 +26370,9 @@
                          "meta",
                          "\u003c metadata"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Users typically want to know the source of the page break markers included in an EPUB publication when they are derived from a static media. Considerations like which printing, by which publisher or imprint, and whether the pagination co..."
     },
     {
@@ -22264,6 +26390,9 @@
                          "text-audio",
                          "playback"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Synchronized text-audio playback in official EPUB Accessibility Techniques 1.1."
     },
     {
@@ -22286,6 +26415,9 @@
                          "alt",
                          "aria-describedby"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Ensuring the complete text of an EPUB publication is synchronized with audio is key to allowing users who require full synchronized playback, or even audio-only playback, have access to the same information as users who do not require sy..."
     },
     {
@@ -22305,6 +26437,9 @@
                          "seq",
                          "par"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The default reading order should typically represent the order in which reading systems render content to users during synchronized text-audio playback. For EPUB publications , this is a combination of the sequence of EPUB content docume..."
     },
     {
@@ -22327,6 +26462,9 @@
                          "endnotes",
                          "endnote"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Some content elements are not critical to read when following the primary narrative of a work, and that would interrupt a user\u0027s concentration if they had to stop and listen to. Footnotes and endnotes are examples of such content, as use..."
     },
     {
@@ -22349,6 +26487,9 @@
                          "figure",
                          "list"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Some content elements are containers for expressing complex information. A table, for example, has data arranged in rows and cells. Lists similarly may contain many items. While users may be interested in some of the information in these..."
     },
     {
@@ -22366,6 +26507,9 @@
                          "navigation",
                          "document"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "EPUB creators can add a media overlay document for the EPUB navigation document even when it is not included in the spine . Doing so allow reading systems to announce the link labels regardless of how they present the navigation elements..."
     },
     {
@@ -22382,6 +26526,9 @@
                          "distribution",
                          "techniques"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "6. Distribution techniques in official EPUB Accessibility Techniques 1.1."
     },
     {
@@ -22402,6 +26549,9 @@
                          "rights",
                          "management"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "EPUB publications typically require preservation of the publisher\u0027s and author\u0027s intellectual property when distributed (e.g., so that they can be made available for individual sale through online bookstores or distributed through librar..."
     },
     {
@@ -22422,6 +26572,9 @@
                          "records",
                          "\u003c ONIXMessage"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "When an EPUB publication is ingested into a distribution system, such as a bookstore or library, a metadata record is often provided separately to the distributor. In these scenarios, the metadata used to enable discovery of the publicat..."
     },
     {
@@ -22438,6 +26591,9 @@
                          "helpful",
                          "resources"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "See the following resources for more information about including accessibility metadata in distribution records:"
     },
     {
@@ -22453,6 +26609,9 @@
         "keywords":  [
                          "acknowledgements"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The following members of the EPUB 3 Working Group contributed to the development of this specification:"
     },
     {
@@ -22468,6 +26627,9 @@
         "keywords":  [
                          "introduction"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "1. Introduction in official EPUB Accessibility 1.1."
     },
     {
@@ -22483,6 +26645,9 @@
         "keywords":  [
                          "overview"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This specification, EPUB Accessibility, addresses two key needs in the EPUB ecosystem:"
     },
     {
@@ -22499,6 +26664,9 @@
                          "success",
                          "techniques"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This specification takes an abstract approach to the accessibility requirements for EPUB publications , similar to how WCAG [ wcag2 ] separates its accessibility guidelines from the techniques to achieve them. This approach allows the gu..."
     },
     {
@@ -22514,6 +26682,9 @@
         "keywords":  [
                          "internationalization"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This specification is also designed to address the accessibility needs of users independent of what languages they read. The same is true for the principles and success criteria defined in [ wcag2 ]. The goal is to ensure that users can ..."
     },
     {
@@ -22532,6 +26703,9 @@
                          "versions",
                          "refines"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This specification is applicable to any EPUB publication , even if the content conforms to an older version of EPUB that does not refer to this specification (e.g., EPUB 2 [ opf-201 ])."
     },
     {
@@ -22548,6 +26722,9 @@
                          "terminology",
                          "assistive technology"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This specification uses terminology defined in EPUB 3 [ epub-3 ]."
     },
     {
@@ -22563,6 +26740,14 @@
         "keywords":  [
                          "conformance"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "MUST NOT",
+                        "OPTIONAL",
+                        "SHOULD",
+                        "SHOULD NOT"
+                    ],
         "summary":  "As well as sections marked as non-normative, all authoring guidelines, diagrams, examples, and notes in this specification are non-normative. Everything else in this specification is normative."
     },
     {
@@ -22578,6 +26763,9 @@
         "keywords":  [
                          "discoverability"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "2. Discoverability in official EPUB Accessibility 1.1."
     },
     {
@@ -22593,6 +26781,9 @@
         "keywords":  [
                          "introduction"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Unlike web pages, EPUB creators distribute EPUB publications through many channels for personal consumption — a model that has made EPUB a successful format for ebooks and other types of digital publications. A consequence of this model,..."
     },
     {
@@ -22609,6 +26800,11 @@
                          "package",
                          "metadata"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "SHOULD"
+                    ],
         "summary":  "All EPUB publications MUST include [ schema-org ] accessibility metadata in the package document that exposes their accessible properties, regardless of whether the publications also meet the accessibility or optimization requirements."
     },
     {
@@ -22627,6 +26823,9 @@
                          "records",
                          "link"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Accessibility metadata can also be included in linked records [ epub-3 ] (i.e., metadata records referenced from link elements), but the inclusion of such metadata solely in a linked record does not satisfy the discoverability requiremen..."
     },
     {
@@ -22643,6 +26842,9 @@
                          "accessible",
                          "publications"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "3. Accessible publications in official EPUB Accessibility 1.1."
     },
     {
@@ -22658,6 +26860,9 @@
         "keywords":  [
                          "introduction"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "EPUB builds on the Open Web Platform, with HTML, CSS, JavaScript, and SVG the core technologies used for content authoring. Leveraging these technologies allows EPUB creators to author EPUB publications with a high degree of accessibilit..."
     },
     {
@@ -22674,6 +26879,9 @@
                          "relationship",
                          "wcag"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "WCAG [ wcag2 ] and its associated techniques provide extensive coverage of issues and solutions for web content accessibility, covering everything from multimedia to interactive content to structured markup and more. They represent the f..."
     },
     {
@@ -22690,6 +26898,9 @@
                          "wcag",
                          "conformance"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "WCAG conformance in official EPUB Accessibility 1.1."
     },
     {
@@ -22707,6 +26918,9 @@
                          "conformance",
                          "requirements"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "To conform to this specification, an EPUB publication :"
     },
     {
@@ -22724,6 +26938,9 @@
                          "wcag",
                          "conformance"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Evaluating WCAG conformance in official EPUB Accessibility 1.1."
     },
     {
@@ -22740,6 +26957,9 @@
                          "page",
                          "publication"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "The WCAG principles [ wcag2 ] focus on the evaluation of individual web pages, but an EPUB publication more closely resembles what WCAG refers to as a set of web pages : \"[a] collection of web pages that share a common purpose\" [ wcag2 ]."
     },
     {
@@ -22758,6 +26978,10 @@
                          "criteria",
                          "epub:switch"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "MUST NOT"
+                    ],
         "summary":  "When evaluating an EPUB publication , the WCAG conformance criteria [ wcag2 ] are applied as follows:"
     },
     {
@@ -22774,6 +26998,9 @@
                          "epub",
                          "requirements"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "EPUB requirements in official EPUB Accessibility 1.1."
     },
     {
@@ -22790,6 +27017,9 @@
                          "page",
                          "navigation"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Page navigation in official EPUB Accessibility 1.1."
     },
     {
@@ -22805,6 +27035,9 @@
         "keywords":  [
                          "overview"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Statically paginated content is still ubiquitous, as print continues to be the most consumed medium for books both among the general reading public and in educational settings. Print is not the only source of static pagination, either: s..."
     },
     {
@@ -22820,6 +27053,10 @@
         "keywords":  [
                          "applicability"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "SHOULD"
+                    ],
         "summary":  "An EPUB publication SHOULD include page navigation whenever any of the following cases is true:"
     },
     {
@@ -22835,6 +27072,9 @@
         "keywords":  [
                          "objectives"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Objectives in official EPUB Accessibility 1.1."
     },
     {
@@ -22851,6 +27091,9 @@
                          "pagination",
                          "source"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "Identify the source of static page break locations."
     },
     {
@@ -22867,6 +27110,10 @@
                          "page",
                          "list"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "SHOULD"
+                    ],
         "summary":  "Provide navigation to static page break locations."
     },
     {
@@ -22883,6 +27130,11 @@
                          "page",
                          "breaks"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "OPTIONAL",
+                        "SHOULD"
+                    ],
         "summary":  "Provide static page break locations."
     },
     {
@@ -22900,6 +27152,9 @@
                          "text-audio",
                          "playback"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Synchronized text-audio playback in official EPUB Accessibility 1.1."
     },
     {
@@ -22915,6 +27170,9 @@
         "keywords":  [
                          "overview"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The provision of synchronized text-audio playback helps address various user needs. It not only enables a seamless visual and auditory reading experience from beginning to end of an EPUB publication , but is useful to users who only requ..."
     },
     {
@@ -22930,6 +27188,10 @@
         "keywords":  [
                          "applicability"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "OPTIONAL"
+                    ],
         "summary":  "EPUB publications with synchronized text-audio playback MUST conform to all requirements in [ epub-3 ]. It is not necessary to meet any additional requirements beyond those defined in [ epub-3 ] to be conformant with this specification."
     },
     {
@@ -22945,6 +27207,9 @@
         "keywords":  [
                          "objectives"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Objectives in official EPUB Accessibility 1.1."
     },
     {
@@ -22960,6 +27225,9 @@
         "keywords":  [
                          "completeness"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "Ensure that all text content is available in audio."
     },
     {
@@ -22976,6 +27244,10 @@
                          "reading",
                          "order"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "SHOULD"
+                    ],
         "summary":  "Ensure synchronized text-audio playback matches logical reading order."
     },
     {
@@ -22991,6 +27263,9 @@
         "keywords":  [
                          "skippability"
                      ],
+        "rfc2119":  [
+                        "SHOULD"
+                    ],
         "summary":  "Enable users to automatically skip over content."
     },
     {
@@ -23006,6 +27281,9 @@
         "keywords":  [
                          "escapability"
                      ],
+        "rfc2119":  [
+                        "SHOULD"
+                    ],
         "summary":  "Enable users to automatically escape from structured content."
     },
     {
@@ -23022,6 +27300,9 @@
                          "navigation",
                          "document"
                      ],
+        "rfc2119":  [
+                        "SHOULD"
+                    ],
         "summary":  "Ensure auditory playback is possible for the navigation aids in the EPUB navigation document when presented by reading systems ."
     },
     {
@@ -23038,6 +27319,9 @@
                          "conformance",
                          "reporting"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Conformance reporting in official EPUB Accessibility 1.1."
     },
     {
@@ -23053,6 +27337,9 @@
         "keywords":  [
                          "introduction"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Evaluators report the accessibility conformance of an EPUB publication through the expression of metadata properties in the package document ."
     },
     {
@@ -23075,6 +27362,9 @@
                          "1.1",
                          "2.0"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "To indicate conformance to the accessibility requirements of this specification, an EPUB publication [ epub-3 ] MUST specify in its metadata section a conformsTo property [ dcterms ] whose value, after whitespace normalization [ xml ], e..."
     },
     {
@@ -23094,6 +27384,9 @@
                          "dcterms:conformsTo",
                          "exemption"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The requirement to include a dcterms:conformsTo identifier does not prevent EPUB publications from conforming to other standards, including other accessibility standards and guidelines (e.g., a specification that covers specific natural ..."
     },
     {
@@ -23110,6 +27403,9 @@
                          "evaluator",
                          "information"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Evaluator information in official EPUB Accessibility 1.1."
     },
     {
@@ -23130,6 +27426,9 @@
                          "\u003c metadata",
                          "dc:creator"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "The package document metadata MUST include an a11y:certifiedBy property that specifies the name of the party that evaluated the EPUB publication ."
     },
     {
@@ -23148,6 +27447,9 @@
                          "dcterms:date",
                          "\u003c metadata"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "If the date the evaluation was performed on is known, include that information in a dcterms:date property [ dcterms ] associated with [ epub-3 ] the evaluator\u0027s name ."
     },
     {
@@ -23167,6 +27469,9 @@
                          "refines",
                          "\u003c metadata"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "If the evaluator has credentials or badges that establish their authority to evaluate content, include that information in an a11y:certifierCredential properties associated with [ epub-3 ] the evaluator\u0027s name ."
     },
     {
@@ -23185,6 +27490,9 @@
                          "a11y:certifierReport",
                          "\u003cmetadata …\u003e \u003cmeta property ="
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "If the evaluator provides a publicly-readable report of its assessment, provide a link to the assessment in an a11y:certifierReport property associated with [ epub-3 ] the evaluator\u0027s name ."
     },
     {
@@ -23201,6 +27509,9 @@
                          "re-evaluating",
                          "conformance"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The following guidance is provided only to help EPUB creators determine when a new evaluation is necessary. It is not a conformance requirement of this specification."
     },
     {
@@ -23219,6 +27530,9 @@
                          "conformsTo",
                          "\u003c metadata"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Although WCAG [ wcag2 ] provides a general set of guidelines for making content broadly accessible, conformant content is not always optimal for specific user groups. Conversely, content optimized for a specific need or reading modality ..."
     },
     {
@@ -23234,6 +27548,9 @@
         "keywords":  [
                          "distribution"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Although EPUB creators do not have to follow the recommendations in this section to conform to this specification, some jurisdictions require EPUB creators to follow similar practices. Directive 2019/882 , for example, includes similar r..."
     },
     {
@@ -23251,6 +27568,9 @@
                          "accessibility",
                          "vocabulary"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A. EPUB accessibility vocabulary in official EPUB Accessibility 1.1."
     },
     {
@@ -23266,6 +27586,9 @@
         "keywords":  [
                          "overview"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A.1 Overview in official EPUB Accessibility 1.1."
     },
     {
@@ -23281,6 +27604,9 @@
         "keywords":  [
                          "vocabulary"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This vocabulary defines properties for describing the accessibility of EPUB publications in the package document metadata."
     },
     {
@@ -23297,6 +27623,9 @@
                          "referencing",
                          "a11y:"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The base URL for referencing this vocabulary is http://idpf.org/epub/vocab/package/a11y/# ."
     },
     {
@@ -23313,6 +27642,9 @@
                          "certifier",
                          "properties"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A.1.3 Certifier properties in official EPUB Accessibility 1.1."
     },
     {
@@ -23331,6 +27663,9 @@
                          "xsd:string",
                          "\u003c meta"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A.1.3.1 certifiedBy in official EPUB Accessibility 1.1."
     },
     {
@@ -23351,6 +27686,9 @@
                          "a11y:certifiedBy",
                          "\u003cmeta property ="
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A.1.3.2 certifierCredential in official EPUB Accessibility 1.1."
     },
     {
@@ -23370,6 +27708,9 @@
                          "xsd:anyURI",
                          "\u003cmeta property ="
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A.1.3.3 certifierReport in official EPUB Accessibility 1.1."
     },
     {
@@ -23386,6 +27727,9 @@
                          "terms",
                          "specification"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "B.1 Terms defined by this specification in official EPUB Accessibility 1.1."
     },
     {
@@ -23402,6 +27746,9 @@
                          "terms",
                          "reference"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "B.2 Terms defined by reference in official EPUB Accessibility 1.1."
     },
     {
@@ -23417,6 +27764,9 @@
         "keywords":  [
                          "acknowledgements"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The journey to make publications accessible for all can sometimes feels like a long and winding road. It takes a special kind of person with strong dedication to the goal and an abundance of perseverance to keep going even when it seems ..."
     },
     {
@@ -23432,6 +27782,9 @@
         "keywords":  [
                          "introduction"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "1. Introduction in official EPUB Reading Systems 3.3."
     },
     {
@@ -23447,6 +27800,9 @@
         "keywords":  [
                          "overview"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The EPUB 3 standard is separated into two distinct concerns: the authoring of EPUB publications is defined in the core specification [ epub-33 ], while this specification details the rendering requirements for them in EPUB reading system ."
     },
     {
@@ -23463,6 +27819,9 @@
                          "terminology",
                          "content display area"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This specification uses terminology defined in EPUB 3.3 [ epub-33 ]."
     },
     {
@@ -23478,6 +27837,15 @@
         "keywords":  [
                          "conformance"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "MUST NOT",
+                        "OPTIONAL",
+                        "RECOMMENDED",
+                        "SHOULD",
+                        "SHOULD NOT"
+                    ],
         "summary":  "As well as sections marked as non-normative, all authoring guidelines, diagrams, examples, and notes in this specification are non-normative. Everything else in this specification is normative."
     },
     {
@@ -23495,6 +27863,9 @@
                          "other",
                          "specifications"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Relationship to other specifications in official EPUB Reading Systems 3.3."
     },
     {
@@ -23511,6 +27882,9 @@
                          "relationship",
                          "html"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The [ html ] standard is continuously evolving — there are no longer versioned releases of it. That standard, in turn, references various technologies that continue to evolve, such as MathML, SVG, CSS, and JavaScript."
     },
     {
@@ -23527,6 +27901,9 @@
                          "relationship",
                          "svg"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This specification does not reference a specific version of [ svg ], but instead uses an undated reference. Whenever there is any ambiguity in this reference, the latest recommended specification is the authoritative reference."
     },
     {
@@ -23544,6 +27921,9 @@
                          "system",
                          "conformance"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "2. Reading system conformance in official EPUB Reading Systems 3.3."
     },
     {
@@ -23560,6 +27940,9 @@
                          "requirements",
                          "itemref"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "Whether a reading system has to support a feature is mentioned at the beginning of its section. To be conformant with this specification, reading systems MUST support all required features as well as all applicable conditionally-required..."
     },
     {
@@ -23576,6 +27959,9 @@
                          "error",
                          "handling"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Reading systems are not required to load EPUB publications , or resources within them, when they violate content authoring or processing requirements."
     },
     {
@@ -23592,6 +27978,9 @@
                          "error",
                          "reporting"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Although reading systems are not required to report errors encountered while processing and rendering EPUB publications (e.g., if the dimensions of a fixed-layout document have been inferred), they are strongly encouraged to provide a me..."
     },
     {
@@ -23609,6 +27998,9 @@
                          "resource",
                          "processing"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "Reading systems MUST process publication resources [ epub-33 ]."
     },
     {
@@ -23626,6 +28018,9 @@
                          "media",
                          "types"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "If a reading system has a viewport , it MUST support the image core media type resources [ epub-33 ]."
     },
     {
@@ -23642,6 +28037,10 @@
                          "foreign",
                          "resources"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST"
+                    ],
         "summary":  "Reading systems MAY support an arbitrary set of foreign resource types, and if a foreign resource is not supported, MUST process fallbacks as defined in foreign resources [ epub-33 ]."
     },
     {
@@ -23658,6 +28057,9 @@
                          "resource",
                          "locations"
                      ],
+        "rfc2119":  [
+                        "SHOULD"
+                    ],
         "summary":  "Reading systems SHOULD support remote resources , as defined in Resource locations [ epub-33 ]."
     },
     {
@@ -23674,6 +28076,9 @@
                          "data",
                          "urls"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "Reading systems MUST prevent data URLs [ rfc2397 ] from opening in top-level browsing contexts [ html ], except when initiated through a reading system affordance such as a context menu. If a reading system does not use a top-level brows..."
     },
     {
@@ -23690,6 +28095,9 @@
                          "file",
                          "urls"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "Reading Systems MUST prevent access to resources referenced via file URLs [ rfc8089 ]."
     },
     {
@@ -23706,6 +28114,9 @@
                          "xml",
                          "processing"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "A reading system MUST use a non-validating XML processor [ xml ] that:"
     },
     {
@@ -23726,6 +28137,10 @@
                          "link",
                          "dc:language"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "MUST NOT"
+                    ],
         "summary":  "As part of processing publication resources , a reading system is required to process the attributes to set the language and the base directions in XHTML content documents or SVG content documents , as well as the xml:lang attribute for ..."
     },
     {
@@ -23742,6 +28157,10 @@
                          "network",
                          "access"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "RECOMMENDED"
+                    ],
         "summary":  "Reading systems MAY support network access to retrieve remote resources and to allow scripted content documents to communicate with web-hosted APIs and retrieve resources ."
     },
     {
@@ -23758,6 +28177,9 @@
                          "external",
                          "links"
                      ],
+        "rfc2119":  [
+                        "SHOULD"
+                    ],
         "summary":  "When a link has an http or https scheme [ url ], reading systems:"
     },
     {
@@ -23777,6 +28199,9 @@
                          "ocf",
                          "processing"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "Reading systems MUST process the EPUB container [ epub-33 ]."
     },
     {
@@ -23794,6 +28219,9 @@
                          "abstract",
                          "container"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "OCF abstract container in official EPUB Reading Systems 3.3."
     },
     {
@@ -23816,6 +28244,9 @@
                          "http://localhost:49152/",
                          "EPUB/package.opf"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "Reading systems MUST assign a URL [ url ] to the root directory of the OCF abstract container . This URL is called the container root URL . It is implementation specific, but the implementation MUST have the following properties:"
     },
     {
@@ -23832,6 +28263,9 @@
                          "file",
                          "names"
                      ],
+        "rfc2119":  [
+                        "SHOULD"
+                    ],
         "summary":  "Although EPUB creators are required to follow various file name and file path restrictions [ epub-33 ] for maximum interoperability, reading systems SHOULD attempt to process file names and paths that do not adhere to these requirements...."
     },
     {
@@ -23854,6 +28288,12 @@
                          "manifest.xml",
                          "signatures.xml"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "MUST NOT",
+                        "SHOULD"
+                    ],
         "summary":  "A reading system MUST , by default, use the package document referenced the from first rootfile element [ epub-33 ] to render the EPUB publication . If the reading system recognizes a means of selecting from the other available options, ..."
     },
     {
@@ -23875,6 +28315,10 @@
                          "Archive decryption header",
                          "Archive extra data record"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST"
+                    ],
         "summary":  "MUST treat any OCF ZIP container that splits the content into segments [ zip ] as in error."
     },
     {
@@ -23891,6 +28335,9 @@
                          "font",
                          "obfuscation"
                      ],
+        "rfc2119":  [
+                        "SHOULD"
+                    ],
         "summary":  "Reading systems SHOULD support deobfuscation of fonts as defined in Font obfuscation [ epub-33 ]."
     },
     {
@@ -23908,6 +28355,9 @@
                          "document",
                          "processing"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "Reading systems MUST process the package document [ epub-33 ]."
     },
     {
@@ -23928,6 +28378,9 @@
                          "rtl",
                          "auto"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "If the dir attribute [ epub-33 ] is set and indicates a base direction of ltr or rtl , reading systems MUST override the bidi algorithm per the higher-level protocols defined in [ bidi ], setting the paragraph embedding level to 0 if the..."
     },
     {
@@ -23944,6 +28397,9 @@
                          "unique",
                          "identifier"
                      ],
+        "rfc2119":  [
+                        "SHOULD NOT"
+                    ],
         "summary":  "Reading systems SHOULD NOT depend on the unique identifier being unique to one and only one EPUB publication . Determining whether two EPUB publications with the same unique identifier represent different versions of the same publication..."
     },
     {
@@ -23966,6 +28422,12 @@
                          "dc:creator",
                          "creator"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "MUST NOT",
+                        "OPTIONAL",
+                        "SHOULD"
+                    ],
         "summary":  "Reading systems MUST strip and collapse ASCII whitespace [ infra ] from Dublin Core [ dcterms ] and meta element values [ epub-33 ] before processing."
     },
     {
@@ -23982,6 +28444,12 @@
                          "manifest",
                          "properties"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "SHOULD",
+                        "SHOULD NOT"
+                    ],
         "summary":  "Reading systems MUST ignore values of the properties attribute [ epub-33 ] they do not recognize."
     },
     {
@@ -24002,6 +28470,11 @@
                          "pre-paginated",
                          "properties"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "MUST NOT"
+                    ],
         "summary":  "Reading systems MUST provide a means of rendering an EPUB publication in the order defined in the spine element [ epub-33 ], which includes:"
     },
     {
@@ -24022,6 +28495,9 @@
                          "layout-pre-paginated",
                          "pre-paginated"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "When a spine itemref element\u0027s properties attribute overrides a global rendering property [ epub-33 ], reading systems MUST follow the requirements for the override\u0027s global value to display that spine item."
     },
     {
@@ -24038,6 +28514,10 @@
                          "collections",
                          "collection"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "OPTIONAL"
+                    ],
         "summary":  "In the context of this specification, support for collections [ epub-33 ] in reading systems is OPTIONAL . Reading systems MUST ignore collection elements that define unrecognized roles."
     },
     {
@@ -24054,6 +28534,9 @@
                          "legacy",
                          "features"
                      ],
+        "rfc2119":  [
+                        "MUST NOT"
+                    ],
         "summary":  "Reading systems MUST NOT support legacy features in content that conforms to this version of EPUB [ epub-33 ]."
     },
     {
@@ -24072,6 +28555,9 @@
                          "document",
                          "processing"
                      ],
+        "rfc2119":  [
+                        "MAY"
+                    ],
         "summary":  "The definition of EPUB content documents [ epub-33 ] includes various authoring restrictions to optimize the cross-compatibility of content (e.g., prohibiting CSS for setting language and direction [ epub-33 ]). Unless stated otherwise i..."
     },
     {
@@ -24089,6 +28575,9 @@
                          "content",
                          "documents"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "Reading systems MUST process XHTML content documents [ epub-33 ]."
     },
     {
@@ -24105,6 +28594,9 @@
                          "html",
                          "extensions"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "HTML extensions in official EPUB Reading Systems 3.3."
     },
     {
@@ -24120,6 +28612,9 @@
         "keywords":  [
                          "rdfa"
                      ],
+        "rfc2119":  [
+                        "OPTIONAL"
+                    ],
         "summary":  "Reading system support for the attribute processing model [ rdfa-core ] is OPTIONAL ."
     },
     {
@@ -24138,6 +28633,9 @@
                          "deprecated",
                          "switch"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Use of the switch element is deprecated [ epub-33 ]. Refer to its definition in [ epubcontentdocs-301 ] for implementation information."
     },
     {
@@ -24156,6 +28654,9 @@
                          "deprecated",
                          "trigger"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Use of the trigger element is deprecated [ epub-33 ]. Refer to its definition in [ epubcontentdocs-301 ] for implementation information."
     },
     {
@@ -24172,6 +28673,9 @@
                          "custom",
                          "attributes"
                      ],
+        "rfc2119":  [
+                        "MAY"
+                    ],
         "summary":  "Reading systems MAY support custom attributes provided the attributes do not modify the requirements of this specification."
     },
     {
@@ -24189,6 +28693,9 @@
                          "deviations",
                          "constraints"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "HTML deviations and constraints in official EPUB Reading Systems 3.3."
     },
     {
@@ -24204,6 +28711,9 @@
         "keywords":  [
                          "microdata"
                      ],
+        "rfc2119":  [
+                        "OPTIONAL"
+                    ],
         "summary":  "Reading system support for the attribute processing model is OPTIONAL , as is the conversion to JSON [ html ]."
     },
     {
@@ -24220,6 +28730,10 @@
                          "mathml",
                          "annotation-xml"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST"
+                    ],
         "summary":  "To support MathML [ mathml3 ] embedded in XHTML content documents , a reading system:"
     },
     {
@@ -24236,6 +28750,9 @@
                          "embedded",
                          "svg"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "Reading systems MUST process SVG embedded in XHTML content documents as defined in 6.2 SVG content documents ."
     },
     {
@@ -24254,6 +28771,10 @@
                          "css",
                          "object"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "MUST NOT"
+                    ],
         "summary":  "For the purposes of styling SVG embedded in XHTML content documents by reference , reading systems MUST NOT apply CSS style rules of the containing document to the referenced SVG document."
     },
     {
@@ -24270,6 +28791,9 @@
                          "form",
                          "submission"
                      ],
+        "rfc2119":  [
+                        "OPTIONAL"
+                    ],
         "summary":  "Reading system support for the submission of [ html ] form elements is OPTIONAL . A reading system might, for example, prevent form submissions by limiting access to networking."
     },
     {
@@ -24287,6 +28811,10 @@
                          "content",
                          "documents"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "SHOULD"
+                    ],
         "summary":  "Reading systems MUST process SVG content documents [ epub-33 ]."
     },
     {
@@ -24306,6 +28834,12 @@
                          "css",
                          "@font-face"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "SHOULD",
+                        "SHOULD NOT"
+                    ],
         "summary":  "If a reading system has a viewport , it MUST support the visual rendering of XHTML content documents via CSS [ epub-33 ]."
     },
     {
@@ -24327,6 +28861,12 @@
                          "dom-manipulation",
                          "layout-change"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "MUST NOT",
+                        "SHOULD"
+                    ],
         "summary":  "Reading systems SHOULD support scripting [ epub-33 ]."
     },
     {
@@ -24343,6 +28883,10 @@
                          "local",
                          "storage"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "SHOULD"
+                    ],
         "summary":  "Reading systems MAY block scripts from saving persistent data through cookies and web storage [ html ]."
     },
     {
@@ -24359,6 +28903,9 @@
                          "event",
                          "model"
                      ],
+        "rfc2119":  [
+                        "SHOULD"
+                    ],
         "summary":  "Reading systems SHOULD follow the DOM Event model as per [ html ] and pass UI events to the scripting environment before performing any default action associated with these events."
     },
     {
@@ -24375,6 +28922,9 @@
                          "security",
                          "considerations"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Reading system developers who also support scripting must be aware of the security issues that arise when reading systems execute scripted content. As the underlying scripting model employed by reading systems and browsers is the same, d..."
     },
     {
@@ -24397,6 +28947,12 @@
                          "page-list nav",
                          "landmarks nav"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "MUST NOT",
+                        "SHOULD"
+                    ],
         "summary":  "Reading systems MUST process EPUB navigation documents [ epub-33 ]."
     },
     {
@@ -24415,6 +28971,9 @@
                          "control",
                          "processing"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "8. Layout rendering control processing in official EPUB Reading Systems 3.3."
     },
     {
@@ -24431,6 +28990,9 @@
                          "fixed-layout",
                          "documents"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "Reading systems MUST support the rendering of fixed-layout documents [ epub-33 ]."
     },
     {
@@ -24447,6 +29009,9 @@
                          "fixed-layout",
                          "properties"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Fixed-layout properties in official EPUB Reading Systems 3.3."
     },
     {
@@ -24467,6 +29032,11 @@
                          "pre-paginated",
                          "itemref"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "MUST NOT"
+                    ],
         "summary":  "The default value reflowable MUST be assumed by EPUB reading systems as the global value if no meta element carrying the rendition:layout property occurs in the package document metadata [ epub-33 ]."
     },
     {
@@ -24485,6 +29055,10 @@
                          "auto",
                          "meta"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "SHOULD"
+                    ],
         "summary":  "The default value auto MUST be assumed by EPUB reading systems as the global value if no meta element carrying the rendition:orientation property occurs in the package document metadata [ epub-33 ]."
     },
     {
@@ -24505,6 +29079,11 @@
                          "portrait",
                          "both"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST NOT",
+                        "SHOULD"
+                    ],
         "summary":  "Reading Systems MUSt assume the default value auto as the global value if no meta element carrying the rendition:spread property occurs in the package document metadata [ epub-33 ]."
     },
     {
@@ -24526,6 +29105,10 @@
                          "page-break-before",
                          "page-progression-direction"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "SHOULD"
+                    ],
         "summary":  "The rendition:page-spread-left property [ epub-33 ] indicates that the given spine item SHOULD be rendered in the left-hand slot of a spread. The rendition:page-spread-right property [ epub-33 ] indicates that the given spine item SHOULD..."
     },
     {
@@ -24548,6 +29131,11 @@
                          "height",
                          "device-width"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "SHOULD"
+                    ],
         "summary":  "Reading systems MUST create the initial containing block (ICB) using the width and height expressions declared in the viewport meta tag for XHTML content documents , as defined in Expressing in HTML [ epub-33 ]. They MUST clip content po..."
     },
     {
@@ -24564,6 +29152,10 @@
                          "viewport",
                          "rendering"
                      ],
+        "rfc2119":  [
+                        "SHOULD",
+                        "SHOULD NOT"
+                    ],
         "summary":  "When rendering fixed-layout documents , the default intent is that the content display area SHOULD occupy as much of the available viewport area as possible. Reading systems SHOULD NOT inject additional content such as border, margins, h..."
     },
     {
@@ -24580,6 +29172,9 @@
                          "reflowable",
                          "layouts"
                      ],
+        "rfc2119":  [
+                        "SHOULD"
+                    ],
         "summary":  "Reading systems SHOULD process the reflowable layout properties [ epub-33 ]."
     },
     {
@@ -24602,6 +29197,11 @@
                          "itemref",
                          "scrolled-continuous"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "SHOULD"
+                    ],
         "summary":  "If a reading system supports the specified rendering, it SHOULD use that method to handle overflow content, but MAY provide the option for users to override the requested rendering."
     },
     {
@@ -24618,6 +29218,11 @@
                          "rendition:align-x-center",
                          "property"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "SHOULD"
+                    ],
         "summary":  "When the rendition:align-x-center property is set on a spine item, reading systems SHOULD render the content centered horizontally within the viewport or spread, as applicable. This property does not affect the rendering of the spine ite..."
     },
     {
@@ -24636,6 +29241,9 @@
                          "tag",
                          "viewport meta"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "Except when obtaining the initial containing block dimensions for fixed-layout documents , reading systems MUST ignore rendering instructions in viewport meta declarations ."
     },
     {
@@ -24652,6 +29260,9 @@
                          "custom",
                          "properties"
                      ],
+        "rfc2119":  [
+                        "MAY"
+                    ],
         "summary":  "Reading systems MAY support custom properties provided they do not introduce expressions that conflict behaviorally with the properties defined in the Package rendering vocabulary [ epub-33 ]."
     },
     {
@@ -24673,6 +29284,10 @@
                          "media-type",
                          "application/smil+xml"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "SHOULD"
+                    ],
         "summary":  "Reading systems with the capability to render prerecorded audio SHOULD support media overlays [ epub-33 ]."
     },
     {
@@ -24692,6 +29307,11 @@
                          "item",
                          "media-overlay"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "SHOULD"
+                    ],
         "summary":  "When a reading system loads a package document , it MUST refer to the manifest item elements\u0027 [ epub-33 ] media-overlay attributes to discover the corresponding media overlays for EPUB content documents ."
     },
     {
@@ -24708,6 +29328,9 @@
                          "basic",
                          "playback"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Basic playback in official EPUB Reading Systems 3.3."
     },
     {
@@ -24727,6 +29350,9 @@
                          "seq",
                          "par"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "Reading systems MUST render immediate children of the body element [ epub-33 ] in a sequence. A seq element\u0027s [ epub-33 ] children MUST be rendered in sequence, and playback completes when the last child finishes playing. Reading system ..."
     },
     {
@@ -24746,6 +29372,10 @@
                          "clipBegin",
                          "clipEnd"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "SHOULD"
+                    ],
         "summary":  "When presented with a media overlay audio element [ EPUB-33 ], reading systems MUST play the audio resource referenced by the src attribute, starting at the clip offset time given by the clipBegin attribute and ending at the clip offset ..."
     },
     {
@@ -24768,6 +29398,11 @@
                          "src",
                          "active-class"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "OPTIONAL",
+                        "SHOULD"
+                    ],
         "summary":  "When presented with a media overlay text element [ epub-33 ] whose src attribute contains a URL-fragment string referencing a specific part of an EPUB content document, reading systems SHOULD ensure the referenced portion is visible in t..."
     },
     {
@@ -24786,6 +29421,9 @@
                          "content",
                          "document"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Earlier versions of this specification included some information about embedded audio and video [ epubmediaoverlays-32 ]. This feature has been deprecated."
     },
     {
@@ -24801,6 +29439,9 @@
         "keywords":  [
                          "navigation"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "Because the media overlay is closely linked to the EPUB content document , it is very easy for reading systems to locate a position in the EPUB content document based on the current position in the media overlay playback. If the user pau..."
     },
     {
@@ -24819,6 +29460,9 @@
                          "video",
                          "deprecated"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Guidance for automatic playback of embedded audio and video is now deprecated ."
     },
     {
@@ -24838,6 +29482,9 @@
                          "par",
                          "duration"
                      ],
+        "rfc2119":  [
+                        "SHOULD"
+                    ],
         "summary":  "When a media overlay text element with no audio [ epub-33 ] sibling element references text within the target EPUB content document , reading systems capable of text-to-speech (TTS) playback SHOULD render the referenced text using TTS."
     },
     {
@@ -24854,6 +29501,9 @@
                          "skippability",
                          "escapability"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Skippability and escapability in official EPUB Reading Systems 3.3."
     },
     {
@@ -24872,6 +29522,10 @@
                          "par",
                          "seq"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "SHOULD"
+                    ],
         "summary":  "Reading systems SHOULD use the semantic information provided by media overlay elements\u0027 epub:type attribute to offer users the option of skipping content."
     },
     {
@@ -24888,6 +29542,10 @@
                          "escapability",
                          "epub:type"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "SHOULD"
+                    ],
         "summary":  "While playing media overlays, reading systems SHOULD offer users the option to leave (\"escape\") escapable structures [ epub-33 ], which are determined by the presence of an epub:type attribute [ epub-33 ] with a value from the escapable ..."
     },
     {
@@ -24906,6 +29564,10 @@
                          "semantics",
                          "epub:type"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST"
+                    ],
         "summary":  "Reading systems MAY support structural semantics [ epub-33 ] in EPUB content documents ."
     },
     {
@@ -24928,6 +29590,9 @@
                          "doc",
                          "obtain an expanded URL"
                      ],
+        "rfc2119":  [
+                        "MAY"
+                    ],
         "summary":  "Reading systems MAY support the vocabulary association mechanisms for processing property data type values [ epub-33 ]."
     },
     {
@@ -24946,6 +29611,10 @@
                          "version",
                          "3.0"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "SHOULD"
+                    ],
         "summary":  "Reading systems MUST attempt to process an EPUB publication whose package document version attribute [ epub-33 ] is less than \" 3.0 \"."
     },
     {
@@ -24964,6 +29633,9 @@
                          "version",
                          "3.0"
                      ],
+        "rfc2119":  [
+                        "SHOULD"
+                    ],
         "summary":  "Reading systems SHOULD attempt to process an EPUB publication whose package document version attribute [ epub-33 ] is greater than \" 3.0 \"."
     },
     {
@@ -24979,6 +29651,9 @@
         "keywords":  [
                          "accessibility"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Although the primary focus of this specification is on how to process and render EPUB publications , it does not mandate specific user interfaces that all reading systems must offer. This does not mean that there are not common accessibi..."
     },
     {
@@ -24995,6 +29670,9 @@
                          "security",
                          "privacy"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "15. Security and privacy in official EPUB Reading Systems 3.3."
     },
     {
@@ -25010,6 +29688,9 @@
         "keywords":  [
                          "overview"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The particularity of an EPUB publication is its structure. The EPUB format provides a means of representing, packaging, and encoding structured and semantically enhanced web content — including HTML, CSS, SVG, and other resources — for d..."
     },
     {
@@ -25030,6 +29711,9 @@
                          "application/oebps-package+xml",
                          "application/epub+zip"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The greatest threats to users come from the content they read [ epub-33 ], and the first line of defense against these attacks is the reading systems they use. Users expect that reading systems act as safeguards against malicious content..."
     },
     {
@@ -25045,6 +29729,11 @@
         "keywords":  [
                          "recommendations"
                      ],
+        "rfc2119":  [
+                        "RECOMMENDED",
+                        "SHOULD",
+                        "SHOULD NOT"
+                    ],
         "summary":  "The strongest measure that reading system developers can take for privacy is to specify the data they intend to collect and use about the user and/or their reading behavior and seek the consent of users to obtain it. They SHOULD also all..."
     },
     {
@@ -25061,6 +29750,9 @@
                          "unsupported",
                          "features"
                      ],
+        "rfc2119":  [
+                        "MAY"
+                    ],
         "summary":  "reading systems MAY support deprecated features [ epub-33 ]."
     },
     {
@@ -25078,6 +29770,9 @@
                          "object",
                          "epubReadingSystem"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Reading systems act as the core rendering engines of EPUB publications and provide a scripting environment based on the [ dom ] specification. So, although this interface definition uses the [ webidl ] notation for implementation by read..."
     },
     {
@@ -25100,6 +29795,9 @@
                          "epubReadingSystem",
                          "WorkerNavigator"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This specification extends the Navigator object [ html ] as follows."
     },
     {
@@ -25119,6 +29817,9 @@
                          "navigator",
                          "DOMContentLoaded"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "The Navigator.epubReadingSystem object provides an interface through which a scripted content document can query information about a user\u0027s reading system."
     },
     {
@@ -25137,6 +29838,9 @@
                          "version",
                          "layoutStyle"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This specification used to define the name , version , and the layoutStyle properties, but these are now deprecated [ epub-33 ]. For more information refer to their definitions in [ epubcontentdocs-32 ] (for name and version ) and in [ e..."
     },
     {
@@ -25152,6 +29856,9 @@
         "keywords":  [
                          "methods"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "B.4 Methods in official EPUB Reading Systems 3.3."
     },
     {
@@ -25167,6 +29874,9 @@
         "keywords":  [
                          "hasfeature"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "B.4.1 hasFeature in official EPUB Reading Systems 3.3."
     },
     {
@@ -25186,6 +29896,9 @@
                          "version",
                          "var"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "The hasFeature method returns a boolean value indicating whether the reading system supports any version of the specified feature, or undefined if the reading system does not recognize the specified feature."
     },
     {
@@ -25208,6 +29921,10 @@
                          "mouse-events",
                          "keyboard-events"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST"
+                    ],
         "summary":  "The following table lists the set of features that reading systems that support the epubReadingSystem object MUST recognize. When the features are queried from the hasFeature method, reading systems MUST return a boolean value indicating..."
     },
     {
@@ -25228,6 +29945,9 @@
                          "Navigator.epubReadingSystem",
                          "Navigator"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "C.1 Terms defined by this specification in official EPUB Reading Systems 3.3."
     },
     {
@@ -25250,6 +29970,9 @@
                          "dc:language",
                          "dc:title"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "C.2 Terms defined by reference in official EPUB Reading Systems 3.3."
     },
     {
@@ -25265,6 +29988,9 @@
         "keywords":  [
                          "acknowledgements"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Specifications, like art, are human creations. No human has done more for EPUB than Garth Conboy, who has been there every step of the way, from the very first OEB 1.0 in 1999 to today\u0027s EPUB 3.3. None of this would have happened without..."
     },
     {
@@ -25282,6 +30008,9 @@
                          "epub:type",
                          "role"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "It is important to understand the differences between the epub:type attribute [ epub-3 ] and the role attribute [ wai-aria ] to ensure that they are properly applied for their intended purposes and audiences."
     },
     {
@@ -25304,6 +30033,9 @@
                          "aside",
                          "footer"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "ARIA roles are more restricted in where you can use them than EPUB\u0027s structural semantics. Although there are elements that accept any role, you need to take care to ensure that roles are only used where they will make sense to users of ..."
     },
     {
@@ -25319,6 +30051,9 @@
         "keywords":  [
                          "guidelines"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "3. Guidelines in official EPUB-ARIA Authoring Guide 1.1."
     },
     {
@@ -25338,6 +30073,9 @@
                          "\u003c section",
                          "epub:type"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Only use one digital publishing role per role attribute [ wai-aria ]."
     },
     {
@@ -25356,6 +30094,9 @@
                          "repetition",
                          "doc-part"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Do not reapply a semantic just because your content has been chunked into separate files."
     },
     {
@@ -25378,6 +30119,9 @@
                          "\u003c section",
                          "aria-label"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "If a landmark role (e.g., doc-chapter , doc-part , doc-index [ dpub-aria ]) does not include a label, assistive technologies will only announce the generic name of the role in the landmarks."
     },
     {
@@ -25397,6 +30141,9 @@
                          "epub:type",
                          "document"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The epub:type attribute [ epub-3 ] may be used to inflect sectioning semantics on the [ html ] body element (e.g., to indicate front matter, or to avoid using sectioning elements), but this practice is both invalid and harmful with ARIA ..."
     },
     {
@@ -25419,6 +30166,9 @@
                          "doc-bibliography",
                          "doc-endnotes"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Assigning a role to an element overrides its default nature, so use care when applying roles to lists and list items."
     },
     {
@@ -25441,6 +30191,9 @@
                          "aria-label",
                          "aria-labelledby"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Although the doc-cover role [ dpub-aria ] seems like it should be the same as the cover semantic [ epub-ssv-11 ], it is actually related to the cover-image semantic [ epub-3 ] used to identify cover images in the EPUB package document. T..."
     },
     {
@@ -25456,6 +30209,9 @@
         "keywords":  [
                          "foreword"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Accessibility metadata can be provided in different ways:"
     },
     {
@@ -25472,6 +30228,9 @@
                          "information",
                          "references:"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "2. Information and references: in official Crosswalk for Accessibility Metadata (2026)."
     },
     {
@@ -25489,6 +30248,9 @@
                          "resources",
                          "conformsTo"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Schema definitions are found here: https://www.w3.org/2021/a11y-discov-vocab/latest/"
     },
     {
@@ -25507,6 +30269,9 @@
                          "ProductFormFeature",
                          "accessibilityFeature=\"none\""
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "ONIX is an XML-based standard for rich book metadata, providing a consistent way for publishers, retailers and their supply chain partners to communicate a wide range of information about their products."
     },
     {
@@ -25524,6 +30289,9 @@
                          "resources",
                          "certifierReport"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Fixed length fields (fixed fields) and variable length fields (very brief summary – fuller details)"
     },
     {
@@ -25540,6 +30308,9 @@
                          "unimarc",
                          "resources"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "UNIMARC 231i (pdf file) offers a easy mapping to ONIX 196. Some references may be best described by other UNIMARC codes."
     },
     {
@@ -25556,6 +30327,9 @@
                          "rwpm",
                          "resources"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Readium Web Publication Manifest (RWPM) is a JSON-based document meant to represent and distribute publications over HTTPS. It is the primary exchange format used in the Readium Architecture and serves as the main building block for OPDS..."
     },
     {
@@ -25573,6 +30347,9 @@
                          "dublin",
                          "core"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "3. Properties from Dublin Core in official Crosswalk for Accessibility Metadata (2026)."
     },
     {
@@ -25590,6 +30367,9 @@
                          "declarations",
                          "dcterms:conformsTo"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The following table provides a crosswalk between the properties defined in the EPUB Accessibility specification [ epub-a11y ] and the equivalents defined metadata standards [ onix ], MARC 21."
     },
     {
@@ -25606,6 +30386,9 @@
                          "properties",
                          "epub"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The following tables provides a crosswalk between the properties defined in the EPUB Accessibility specification [ epub-a11y ] and the equivalents defined metadata standards [ onix ], MARC 21."
     },
     {
@@ -25624,6 +30407,9 @@
                          "declarations",
                          "ProductFormFeatureDescription"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "List 196; Code 90 : Compliance certification by ProductFormFeatureDescription carries the name of the organization responsible for compliance testing and certification of the product. Only for use in ONIX 3.0 or later."
     },
     {
@@ -25645,6 +30431,9 @@
                          "eaa-disproportionate-burden",
                          "eaa-fundamental-alteration"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "a11y:exemption with the text string eaa-microenterprise"
     },
     {
@@ -25663,6 +30452,9 @@
                          "declarations",
                          "pageBreakSource"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Provides a unique identifier for the source of the page break markers in an EPUB publication."
     },
     {
@@ -25680,6 +30472,9 @@
                          "schema",
                          "org"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The following table provides a crosswalk between the Schema.org metadata and [ onix ], MARC 21."
     },
     {
@@ -25702,6 +30497,9 @@
                          "MathML-chemistry",
                          "pageBreakMarkers"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "ONIX: List 196 (specific codes follow)"
     },
     {
@@ -25720,6 +30518,9 @@
                          "unknownMotionSimulationHazard",
                          "unknownSoundHazard"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "List 143; Code 13 : WARNING - Flashing hazard"
     },
     {
@@ -25735,6 +30536,9 @@
         "keywords":  [
                          "accessmode"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Use the most relevant ones and use 01 if unsure"
     },
     {
@@ -25750,6 +30554,9 @@
         "keywords":  [
                          "accessmodesufficient"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "ONIX crosswalks are for instances where accessModeSufficient includes this vocabulary entry alone; combinations may occur but are more difficult to crosswalk"
     },
     {
@@ -25765,6 +30572,9 @@
         "keywords":  [
                          "accessibilitysummary"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "List 196; Code 00 : Accessibility Summary - contains a short explanatory summary of the accessibility of the product. Used when the summary includes information also conveyed using other ONIX codes."
     },
     {
@@ -25780,6 +30590,9 @@
         "keywords":  [
                          "accessibilityapi"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The metadata field accessibilityAPI does not apply to digital publications directly but rather to reading system software. We do not include it in this crosswalk."
     },
     {
@@ -25795,6 +30608,9 @@
         "keywords":  [
                          "accessibilitycontrol"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The metadata field accessibilityControl does not apply to digital publications directly but rather to reading system software. We do not include it in this crosswalk."
     },
     {
@@ -25810,6 +30626,9 @@
         "keywords":  [
                          "introduction"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "1. Introduction in official ONIX Accessibility Techniques."
     },
     {
@@ -25826,6 +30645,9 @@
                          "onix",
                          "metadata"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "ONIX messages describe products for the global book supply chain and will be sent from publisher or creator of the EPUB or digital books with full audio to those who will make the products available for sale, lending or subscription. The..."
     },
     {
@@ -25842,6 +30664,9 @@
                          "implementation",
                          "conventions"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Implementation conventions in official ONIX Accessibility Techniques."
     },
     {
@@ -25864,6 +30689,9 @@
                          "\" Hazards \"",
                          "\" Accessibility summary \""
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The algorithms defined in this document do not include instructions for outputting their respective headings because if a given technique does not result in any information (i.e., would output a statement that no information is available..."
     },
     {
@@ -25880,6 +30708,9 @@
                          "coding",
                          "conventions"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The code conventions used in the provided code snippet follow a structure commonly found in programming languages like Python, Java, or C++. Here\u0027s an explanation of the conventions:"
     },
     {
@@ -25896,6 +30727,9 @@
                          "node",
                          "selectors"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "These techniques use XPath 1.0 expressions [ xpath-10 ] to verify the presence of accessibility metadata in an ONIX record and to select information from it. Some of the selectors can be optimized for processors that support newer versio..."
     },
     {
@@ -25912,6 +30746,9 @@
                          "output",
                          "statements"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The outputs provided in this document demonstrate the compact strings to display. For every text string, however, both a compact and descriptive option is available. These strings are provided in a JSON structure, as shown in the followi..."
     },
     {
@@ -25928,6 +30765,9 @@
                          "common",
                          "functions"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "In this section we define the functions common to all techniques, which are called by them during execution."
     },
     {
@@ -25946,6 +30786,9 @@
                          "record",
                          "onix"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Before working directly with the metadata we must read the ONIX record. This is a common starting point for all techniques that allows us to query the record directly."
     },
     {
@@ -25964,6 +30807,9 @@
                          "onix",
                          "path"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Many of the techniques rely on checking for the presence or absence of metadata in the ONIX record."
     },
     {
@@ -25979,6 +30825,9 @@
         "keywords":  [
                          "techniques"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "3. Techniques in official ONIX Accessibility Techniques."
     },
     {
@@ -25996,6 +30845,9 @@
                          "reading",
                          "onix_record_as_text"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This technique relates to the Ways of reading accessibility display field ."
     },
     {
@@ -26012,6 +30864,9 @@
                          "visual",
                          "adjustments"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This technique relates to the Visual adjustments accessibility display field ."
     },
     {
@@ -26030,6 +30885,9 @@
                          "all_textual_content_can_be_modified",
                          "is_fixed_layout"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "If true, it indicates that code 36 of codelist 196 (All textual content can be modified) is present in the ONIX record."
     },
     {
@@ -26050,6 +30908,9 @@
                          "all_textual_content_can_be_modified",
                          "is_fixed_layout"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Variables setup in official ONIX Accessibility Techniques."
     },
     {
@@ -26069,6 +30930,9 @@
                          "is_fixed_layout",
                          "\"Appearance cannot be modified\""
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Instructions in official ONIX Accessibility Techniques."
     },
     {
@@ -26086,6 +30950,9 @@
                          "nonvisual",
                          "reading"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This technique relates to the Supports nonvisual reading accessibility display field ."
     },
     {
@@ -26106,6 +30973,9 @@
                          "real_text",
                          "textual_alternatives"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "If true, it indicates that code 52 of codelist 196 (All non-decorative content supports reading without sight) is present in the ONIX record."
     },
     {
@@ -26128,6 +30998,9 @@
                          "real_text",
                          "textual_alternatives"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Variables setup in official ONIX Accessibility Techniques."
     },
     {
@@ -26148,6 +31021,9 @@
                          "audio_only_content",
                          "\"Has alternative text\""
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This statement may appear when code 10 of codelist 81 (Text) is present without other accessibility metadata. This reflects that text-based digital publications are partially usable with assistive technologies, even without explicit acce..."
     },
     {
@@ -26164,6 +31040,9 @@
                          "prerecorded",
                          "audio"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This technique relates to the Pre-recorded audio accessibility display field ."
     },
     {
@@ -26186,6 +31065,9 @@
                          "non_textual_content_audio_in_video",
                          "synchronised_pre_recorded_audio"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "If true, it indicates that code 39 of codelist 196 (Supplementary material to an audiobook is accessible) is present in the ONIX record."
     },
     {
@@ -26208,6 +31090,9 @@
                          "audiobook",
                          "non_textual_content_audio"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Variables setup in official ONIX Accessibility Techniques."
     },
     {
@@ -26230,6 +31115,9 @@
                          "non_textual_content_audio_in_video",
                          "all_content_pre_recorded"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Instructions in official ONIX Accessibility Techniques."
     },
     {
@@ -26246,6 +31134,9 @@
                          "conformance",
                          "onix_record_as_text"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This technique relates to the Conformance accessibility display field ."
     },
     {
@@ -26268,6 +31159,9 @@
                          "epub_accessibility_10",
                          "epub_accessibility_11"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Returns the description of code 90 of codelist 196 (Compliance certification by (name)) if present in the ONIX record."
     },
     {
@@ -26290,6 +31184,9 @@
                          "certifier_credentials",
                          "certifier_report"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Variables setup in official ONIX Accessibility Techniques."
     },
     {
@@ -26312,6 +31209,9 @@
                          "level_a",
                          "level_aa"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "If the certifier metadata value is a text-based badge or a credential, then only the text is displayed. If the badge or credential is expressed as a URL, then the URL can be made a link for users to access. The display of image logos or ..."
     },
     {
@@ -26328,6 +31228,9 @@
                          "navigation",
                          "onix_record_as_text"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This technique relates to the Navigation accessibility display field ."
     },
     {
@@ -26348,6 +31251,9 @@
                          "page_navigation",
                          "table_of_contents_navigation"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "If true, it indicates that code 12 of codelist 196 (Index navigation) is present in the ONIX record."
     },
     {
@@ -26370,6 +31276,9 @@
                          "page_navigation",
                          "table_of_contents_navigation"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Variables setup in official ONIX Accessibility Techniques."
     },
     {
@@ -26392,6 +31301,9 @@
                          "\"Index\"",
                          "\"Go to page\""
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Instructions in official ONIX Accessibility Techniques."
     },
     {
@@ -26409,6 +31321,9 @@
                          "content",
                          "onix_record_as_text"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This technique relates to the Rich content accessibility display field ."
     },
     {
@@ -26431,6 +31346,9 @@
                          "math_formula_as_latex",
                          "math_formula_as_mathml"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "If true, it indicates that code 16 of codelist 196 (Visualized data also available as non-graphical data) is present in the ONIX record."
     },
     {
@@ -26453,6 +31371,9 @@
                          "closed_captions",
                          "described_math"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Variables setup in official ONIX Accessibility Techniques."
     },
     {
@@ -26475,6 +31396,9 @@
                          "chemical_formula_as_mathml",
                          "\"Chemical formulas in MathML\""
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Instructions in official ONIX Accessibility Techniques."
     },
     {
@@ -26491,6 +31415,9 @@
                          "hazards",
                          "onix_record_as_text"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This technique relates to the Hazards accessibility display field ."
     },
     {
@@ -26513,6 +31440,9 @@
                          "no_motion_hazard",
                          "no_sound_hazard"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "If true, it indicates that code 13 of codelist 143 (WARNING - Flashing hazard) is present in the ONIX record."
     },
     {
@@ -26535,6 +31465,9 @@
                          "no_flashing_hazard",
                          "no_hazards_or_warnings_confirmed"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Variables setup in official ONIX Accessibility Techniques."
     },
     {
@@ -26557,6 +31490,9 @@
                          "unknown_if_contains_hazards",
                          "unknown_flashing_hazard"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Instructions in official ONIX Accessibility Techniques."
     },
     {
@@ -26574,6 +31510,9 @@
                          "summary",
                          "onix_record_as_text"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This technique relates to the Accessibility summary accessibility display field ."
     },
     {
@@ -26596,6 +31535,9 @@
                          "language_of_text",
                          "publisher_contact_for_accessibility"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Returns the description of code 92 of codelist 196 (Accessibility addendum) if present in the ONIX record."
     },
     {
@@ -26618,6 +31560,9 @@
                          "known_limited_accessibility",
                          "lang_known_limited_accessibility"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Variables setup in official ONIX Accessibility Techniques."
     },
     {
@@ -26640,6 +31585,9 @@
                          "accessibility_addendum",
                          "accessibility_summary"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Instructions in official ONIX Accessibility Techniques."
     },
     {
@@ -26657,6 +31605,9 @@
                          "considerations",
                          "onix_record_as_text"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "We are actively seeking comments on this \"legal consideration\" section. If you are a publisher, we want your feedback! Please visit the GitHub Issue tracking linked above to leave a comment."
     },
     {
@@ -26674,6 +31625,9 @@
                          "variables",
                          "eaa_exemption_micro_enterprises"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "If true, it indicates that code 76 of codelist 196 (EAA exception 2 – Disproportionate burden) is present in the ONIX record."
     },
     {
@@ -26693,6 +31647,9 @@
                          "onix_record_as_text",
                          "eaa_exemption_micro_enterprises"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Variables setup in official ONIX Accessibility Techniques."
     },
     {
@@ -26710,6 +31667,9 @@
                          "eaa_exemption_micro_enterprises",
                          "\"No information is available\""
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Instructions in official ONIX Accessibility Techniques."
     },
     {
@@ -26728,6 +31688,9 @@
                          "information",
                          "onix_record_as_text"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This technique relates to the Additional accessibility information accessibility display field ."
     },
     {
@@ -26750,6 +31713,9 @@
                          "visible_page_numbering",
                          "without_background_sounds"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "If true, it indicates that code 25 of codelist 196 (Use of color is not sole means of conveying information) is present in the ONIX record."
     },
     {
@@ -26772,6 +31738,9 @@
                          "sign_language",
                          "text_to_speech_hinting"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Variables setup in official ONIX Accessibility Techniques."
     },
     {
@@ -26794,6 +31763,9 @@
                          "\"Sign language\"",
                          "text_to_speech_hinting"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Instructions in official ONIX Accessibility Techniques."
     },
     {
@@ -26809,6 +31781,9 @@
         "keywords":  [
                          "acknowledgements"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The leadership and editing contributions of the following individuals were central to producing this guide:"
     },
     {
@@ -26824,6 +31799,9 @@
         "keywords":  [
                          "introduction"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "1. Introduction in official EPUB Accessibility Techniques (PubCG Final)."
     },
     {
@@ -26841,6 +31819,9 @@
                          "accessibility",
                          "metadata"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The metadata processed by these techniques is outlined in EPUB Accessibility 1.1 [ epub-a11y-11 ]. It is found in the EPUB package document [ EPUB-33 ]."
     },
     {
@@ -26857,6 +31838,9 @@
                          "implementation",
                          "conventions"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Implementation conventions in official EPUB Accessibility Techniques (PubCG Final)."
     },
     {
@@ -26879,6 +31863,9 @@
                          "\" Hazards \"",
                          "\" Accessibility summary \""
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The algorithms defined in this document do not include instructions for outputting their respective headings because if a given technique does not result in any information (i.e., would output a statement that no information is available..."
     },
     {
@@ -26895,6 +31882,9 @@
                          "coding",
                          "conventions"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The code conventions used in the provided code snippet follow a structure commonly found in programming languages like Python, Java, or C++. Here\u0027s an explanation of the conventions:"
     },
     {
@@ -26911,6 +31901,9 @@
                          "node",
                          "selectors"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "These techniques use XPath 1.0 expressions [ xpath-10 ] to verify the presence of accessibility metadata in an EPUB package document and to select information from it. Some of the selectors can be optimized for processors that support ne..."
     },
     {
@@ -26927,6 +31920,9 @@
                          "output",
                          "statements"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The outputs provided in this document demonstrate the compact strings to display. For every text string, however, both a compact and descriptive option is available. These strings are provided in a JSON structure, as shown in the followi..."
     },
     {
@@ -26943,6 +31939,9 @@
                          "common",
                          "functions"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "In this section we define the functions common to all techniques, which are called by them during execution."
     },
     {
@@ -26960,6 +31959,9 @@
                          "package_document_as_text",
                          "package_document"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Before working directly with the metadata we must read the metadata in the Package document (package document) inside the EPUB. This is a common starting point for all techniques that allows us to query the metadata directly."
     },
     {
@@ -26978,6 +31980,9 @@
                          "package_document",
                          "path"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Many of the techniques rely on checking for the presence or absence of metadata in the metadata section of the Package document."
     },
     {
@@ -26993,6 +31998,9 @@
         "keywords":  [
                          "techniques"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "3. Techniques in official EPUB Accessibility Techniques (PubCG Final)."
     },
     {
@@ -27010,6 +32018,9 @@
                          "reading",
                          "package_document_as_text"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This technique relates to the Ways of reading accessibility display field ."
     },
     {
@@ -27026,6 +32037,9 @@
                          "visual",
                          "adjustments"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This technique relates to the Visual adjustments accessibility display field ."
     },
     {
@@ -27044,6 +32058,9 @@
                          "all_textual_content_can_be_modified",
                          "is_fixed_layout"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "If true, it indicates that accessibilityFeature=\"displayTransformability\" is present in the package document."
     },
     {
@@ -27064,6 +32081,9 @@
                          "all_textual_content_can_be_modified",
                          "is_fixed_layout"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Variables setup in official EPUB Accessibility Techniques (PubCG Final)."
     },
     {
@@ -27083,6 +32103,9 @@
                          "is_fixed_layout",
                          "\"Appearance cannot be modified\""
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Instructions in official EPUB Accessibility Techniques (PubCG Final)."
     },
     {
@@ -27100,6 +32123,9 @@
                          "nonvisual",
                          "reading"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This technique relates to the Supports nonvisual reading accessibility display field ."
     },
     {
@@ -27121,6 +32147,9 @@
                          "textual_alternatives",
                          "visual_only_content"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "If true, it indicates that there is only a single access mode of textual or accessModeSufficient=\"textual\" (all main content is provided in textual form) is present in the package document."
     },
     {
@@ -27143,6 +32172,9 @@
                          "some_sufficient_text",
                          "textual_alternatives"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Variables setup in official EPUB Accessibility Techniques (PubCG Final)."
     },
     {
@@ -27164,6 +32196,9 @@
                          "visual_only_content",
                          "\"Has alternative text\""
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Instructions in official EPUB Accessibility Techniques (PubCG Final)."
     },
     {
@@ -27180,6 +32215,9 @@
                          "prerecorded",
                          "audio"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This technique relates to the Prerecorded audio accessibility display field ."
     },
     {
@@ -27199,6 +32237,9 @@
                          "audio_content",
                          "synchronised_pre_recorded_audio"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "If true, it indicates that the accessModeSufficient=\"auditory\" (all main content is provided in audio form) is present in the package document."
     },
     {
@@ -27220,6 +32261,9 @@
                          "audio_content",
                          "synchronised_pre_recorded_audio"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Variables setup in official EPUB Accessibility Techniques (PubCG Final)."
     },
     {
@@ -27240,6 +32284,9 @@
                          "audio_content",
                          "\"Prerecorded audio clips\""
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Instructions in official EPUB Accessibility Techniques (PubCG Final)."
     },
     {
@@ -27256,6 +32303,9 @@
                          "conformance",
                          "package_document_as_text"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This technique relates to the Conformance accessibility display field ."
     },
     {
@@ -27278,6 +32328,9 @@
                          "epub_version",
                          "epub10_wcag20a"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Returns the description of a11y:certifiedBy if present in the package document."
     },
     {
@@ -27300,6 +32353,9 @@
                          "epub10_wcag20aa",
                          "epub10_wcag20aaa"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The refines attribute is used to link evaluation metadata back to the right evaluator and the evaluator back to their conformance claim. This adds complexity to the xpaths because these refinement chains need to be resolved by matching f..."
     },
     {
@@ -27322,6 +32378,9 @@
                          "\"{certifier}\"",
                          "certifier_credentials"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "If the certifier metadata value is a text-based badge or a credential, then only the text is displayed. If the badge or credential is expressed as a URL, then the URL can be made a link for users to access. The display of image logos or ..."
     },
     {
@@ -27338,6 +32397,9 @@
                          "navigation",
                          "package_document_as_text"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This technique relates to the Navigation accessibility display field ."
     },
     {
@@ -27358,6 +32420,9 @@
                          "page_navigation",
                          "table_of_contents_navigation"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "If true, it indicates that accessibilityFeature=\"index\" is present in the package document."
     },
     {
@@ -27380,6 +32445,9 @@
                          "page_navigation",
                          "table_of_contents_navigation"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Variables setup in official EPUB Accessibility Techniques (PubCG Final)."
     },
     {
@@ -27402,6 +32470,9 @@
                          "\"Headings\"",
                          "\"Index\""
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Instructions in official EPUB Accessibility Techniques (PubCG Final)."
     },
     {
@@ -27419,6 +32490,9 @@
                          "content",
                          "package_document_as_text"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This technique relates to the Rich content accessibility display field ."
     },
     {
@@ -27441,6 +32515,9 @@
                          "math_formula_as_latex",
                          "math_formula_as_mathml"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "If true, it indicates that accessibilityFeature=\"latex-chemistry\" is present in the package document."
     },
     {
@@ -27463,6 +32540,9 @@
                          "closed_captions",
                          "contains_math_formula"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Variables setup in official EPUB Accessibility Techniques (PubCG Final)."
     },
     {
@@ -27485,6 +32565,9 @@
                          "math_formula_as_latex",
                          "\"Math as LaTeX\""
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Instructions in official EPUB Accessibility Techniques (PubCG Final)."
     },
     {
@@ -27501,6 +32584,9 @@
                          "hazards",
                          "package_document_as_text"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This technique relates to the Hazards accessibility display field ."
     },
     {
@@ -27523,6 +32609,9 @@
                          "no_motion_hazard",
                          "no_sound_hazard"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "If true, it indicates that accessibilityHazard=\"flashing\" is present in the package document."
     },
     {
@@ -27545,6 +32634,9 @@
                          "no_flashing_hazards",
                          "no_hazards_or_warnings_confirmed"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Variables setup in official EPUB Accessibility Techniques (PubCG Final)."
     },
     {
@@ -27567,6 +32659,9 @@
                          "unknown_if_contains_hazards",
                          "unknown_flashing_hazard"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Instructions in official EPUB Accessibility Techniques (PubCG Final)."
     },
     {
@@ -27584,6 +32679,9 @@
                          "summary",
                          "package_document_as_text"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This technique relates to the Accessibility summary accessibility display field ."
     },
     {
@@ -27602,6 +32700,9 @@
                          "accessibility_summary",
                          "language_of_text"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Contains the accessibilitySummary from the package document if it exists; otherwise, it will be blank."
     },
     {
@@ -27623,6 +32724,9 @@
                          "language_of_text",
                          "/package/metadata/dc:language[1]"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Variables setup in official EPUB Accessibility Techniques (PubCG Final)."
     },
     {
@@ -27642,6 +32746,9 @@
                          "accessibility_summary",
                          "\"No information is available\""
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Instructions in official EPUB Accessibility Techniques (PubCG Final)."
     },
     {
@@ -27659,6 +32766,9 @@
                          "considerations",
                          "package_document_as_text"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This technique relates to the Legal considerations accessibility display field ."
     },
     {
@@ -27676,6 +32786,9 @@
                          "variables",
                          "eaa_exemption_micro_enterprises"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "If true, it indicates that a11y:exemption =\" eaa_disproportionate_burden \" is present in the package document."
     },
     {
@@ -27695,6 +32808,9 @@
                          "package_document_as_text",
                          "eaa_exemption_micro_enterprises"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Variables setup in official EPUB Accessibility Techniques (PubCG Final)."
     },
     {
@@ -27712,6 +32828,9 @@
                          "eaa_exemption_micro_enterprises",
                          "\"No information is available\""
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Instructions in official EPUB Accessibility Techniques (PubCG Final)."
     },
     {
@@ -27730,6 +32849,9 @@
                          "information",
                          "package_document_as_text"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This technique relates to the Additional accessibility information accessibility display field ."
     },
     {
@@ -27752,6 +32874,9 @@
                          "large_print",
                          "page_break_markers"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "If true, it indicates that accessibilityFeature=\"aria\" is present in the package document."
     },
     {
@@ -27774,6 +32899,9 @@
                          "braille",
                          "full_ruby_annotations"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Variables setup in official EPUB Accessibility Techniques (PubCG Final)."
     },
     {
@@ -27796,6 +32924,9 @@
                          "\"Audio descriptions\"",
                          "braille"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Instructions in official EPUB Accessibility Techniques (PubCG Final)."
     },
     {
@@ -27811,6 +32942,9 @@
         "keywords":  [
                          "acknowledgements"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The leadership and editing contributions of the following individuals were central to producing this guide:"
     },
     {
@@ -27826,6 +32960,9 @@
         "keywords":  [
                          "introduction"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "1. Introduction in official Display Guidelines for Accessibility Metadata."
     },
     {
@@ -27841,6 +32978,9 @@
         "keywords":  [
                          "overview"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Reading a digital publication is a very personal experience. For most people this is routine, and little consideration is given to how the title was obtained before it is read. Users may go to a bookstore or library, search for the title..."
     },
     {
@@ -27857,6 +32997,9 @@
                          "metadata",
                          "processing"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The following diagram depicts how these guidelines relate to the format-specific techniques in the process of receiving and displaying accessibility metadata."
     },
     {
@@ -27873,6 +33016,9 @@
                          "display",
                          "techniques"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "To assist developers in implementing these guidelines, in-depth notes are available to explain how to extract information from publishing industry metadata standards."
     },
     {
@@ -27892,6 +33038,9 @@
                          "read aloud speech",
                          "reading system"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "There are several terms used in these guidelines that should be defined for clarity:"
     },
     {
@@ -27908,6 +33057,9 @@
                          "metadata",
                          "display"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "2. Metadata display in official Display Guidelines for Accessibility Metadata."
     },
     {
@@ -27923,6 +33075,9 @@
         "keywords":  [
                          "accessibility"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Accessibility section in official Display Guidelines for Accessibility Metadata."
     },
     {
@@ -27939,6 +33094,9 @@
                          "display",
                          "heading"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "When presenting accessibility metadata provided by the publisher, it is suggested that the section is introduced using terms such as \"claims\" or \"declarations\" (e.g., \"Accessibility Claims\")."
     },
     {
@@ -27956,6 +33114,9 @@
                          "display",
                          "fields"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "There are several pieces of information that are central to describing the accessibility of a digital publication:"
     },
     {
@@ -27973,6 +33134,9 @@
                          "field",
                          "order"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Implementers can choose the order in which they prefer to display the accessibility metadata fields ."
     },
     {
@@ -27990,6 +33154,9 @@
                          "accessibility",
                          "metadata"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Although this document showcases examples of important metadata that is expected to be present in a wide range of publications, available metadata schemas can support statements about many other features."
     },
     {
@@ -28006,6 +33173,9 @@
                          "missing",
                          "metadata"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "When no accessibility metadata is provided by the publisher, it is best to avoid making a negative statement that could be attributed to them (e.g., stating it is not known if a feature is available could be misconstrued as the publisher..."
     },
     {
@@ -28022,6 +33192,9 @@
                          "alternative",
                          "statements"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Although the display statements listed in this document and in the techniques documents are recommended for use, and have been translated to support localization, implementors may prefer to use different wording in some situations."
     },
     {
@@ -28038,6 +33211,9 @@
                          "non-accessibility",
                          "metadata"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Not all metadata used in determining the accessibility of a publication is strictly categorized as accessibility metadata. The product details, for example, provide important information about the usability of an ebook in relation to spe..."
     },
     {
@@ -28055,6 +33231,9 @@
                          "display",
                          "fields"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "3. Accessibility display fields in official Display Guidelines for Accessibility Metadata."
     },
     {
@@ -28071,6 +33250,9 @@
                          "ways",
                          "reading"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This display field should be rendered even if there is no metadata."
     },
     {
@@ -28087,6 +33269,9 @@
                          "visual",
                          "adjustments"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Indicates if users can modify the appearance of the text and the page layout according to the possibilities offered by the reading system."
     },
     {
@@ -28103,6 +33288,9 @@
                          "display",
                          "statements"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The descriptive and compact statements for visual adjustment are as follows."
     },
     {
@@ -28122,6 +33310,9 @@
                          "adjustments",
                          "support"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Specific techniques for meeting this principle are defined in the following documents:"
     },
     {
@@ -28139,6 +33330,9 @@
                          "nonvisual",
                          "reading"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Indicates whether all content required for comprehension can be consumed in text and therefore is available to reading systems with read aloud speech or dynamic braille capabilities."
     },
     {
@@ -28155,6 +33349,9 @@
                          "display",
                          "statements"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The descriptive and compact statements for nonvisual reading are as follows."
     },
     {
@@ -28174,6 +33371,9 @@
                          "nonvisual",
                          "reading"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Specific techniques for meeting this principle are defined in the following documents:"
     },
     {
@@ -28190,6 +33390,9 @@
                          "prerecorded",
                          "audio"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The prerecorded audio display strings can be hidden if metadata is missing. Alternatively it can be stated that No information about prerecorded audio is available ."
     },
     {
@@ -28206,6 +33409,9 @@
                          "display",
                          "statements"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The descriptive and compact statements for prerecorded audio are as follows."
     },
     {
@@ -28225,6 +33431,9 @@
                          "audio",
                          "support"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Specific techniques for meeting this principle are defined in the following documents:"
     },
     {
@@ -28240,6 +33449,9 @@
         "keywords":  [
                          "examples"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The following example shows the descriptive and compact statements that would display for a typical text-based publication with images that have text alternatives."
     },
     {
@@ -28255,6 +33467,9 @@
         "keywords":  [
                          "conformance"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This display field should be rendered even if there is no metadata."
     },
     {
@@ -28271,6 +33486,9 @@
                          "display",
                          "statements"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Some conformance statements incorporate publication metadata. To indicate where this text will be inserted, the statements include placeholder variables. These placeholders are identified by being enclosed in angle brackets (e.g., \u003cplace..."
     },
     {
@@ -28287,6 +33505,9 @@
                          "general",
                          "conformance"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This publication meets minimum accessibility standards"
     },
     {
@@ -28303,6 +33524,9 @@
                          "detailed",
                          "conformance"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The following detailed information may be too technical for the average reader, which is why it is separated from the general conformance information. Implementors may opt to include it without distinction from the general information, b..."
     },
     {
@@ -28318,6 +33542,9 @@
         "keywords":  [
                          "examples"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "In this example, the detailed conformance information is minimized by default in the compact display and expanded for the descriptive."
     },
     {
@@ -28336,6 +33563,9 @@
                          "conformance",
                          "support"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Specific techniques for meeting this principle are defined in the following documents:"
     },
     {
@@ -28351,6 +33581,9 @@
         "keywords":  [
                          "navigation"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This display field can be hidden if metadata is missing. Alternatively it can be stated that No information is available ."
     },
     {
@@ -28367,6 +33600,9 @@
                          "display",
                          "statements"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The descriptive and compact statements for navigation are as follows."
     },
     {
@@ -28382,6 +33618,9 @@
         "keywords":  [
                          "examples"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The following example shows the descriptive and compact statements that would display for a publication with a table of contents and page navigation."
     },
     {
@@ -28400,6 +33639,9 @@
                          "navigation",
                          "support"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Specific techniques for meeting this principle are defined in the following documents:"
     },
     {
@@ -28416,6 +33658,9 @@
                          "rich",
                          "content"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This group should be displayed only if the metadata indicates the presence of accessible math, accessible chemical formulas, extended descriptions, captions or transcriptions for videos, or transcripts of audio within the title, otherwis..."
     },
     {
@@ -28432,6 +33677,9 @@
                          "display",
                          "statements"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The descriptive and compact statements for rich content are as follows."
     },
     {
@@ -28447,6 +33695,9 @@
         "keywords":  [
                          "examples"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The following example shows the descriptive and compact statements that would display for a publication with a math equations in MathML and videos with closed captions and transcripts of the dialogue."
     },
     {
@@ -28466,6 +33717,9 @@
                          "content",
                          "support"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Specific techniques for meeting this principle are defined in the following documents:"
     },
     {
@@ -28481,6 +33735,9 @@
         "keywords":  [
                          "hazards"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This display field can be hidden if metadata is missing. Alternatively it can be stated that No information is available"
     },
     {
@@ -28497,6 +33754,9 @@
                          "display",
                          "statements"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The descriptive and compact statements for hazards are as follows."
     },
     {
@@ -28512,6 +33772,9 @@
         "keywords":  [
                          "examples"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The following example shows the descriptive and compact statements that would display for a publication with no flashing, motion simulation, or sound hazards."
     },
     {
@@ -28530,6 +33793,9 @@
                          "hazards",
                          "reporting"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Specific techniques for meeting this principle are defined in the following documents:"
     },
     {
@@ -28546,6 +33812,9 @@
                          "accessibility",
                          "summary"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This display field can be hidden if metadata is missing. Alternatively it can be stated that No information is available"
     },
     {
@@ -28561,6 +33830,9 @@
         "keywords":  [
                          "examples"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Subject experts were used to create the ALT text. The tables are represented as images, and the full text of the table is provided below the image within the details element, which can be expanded. There are several short videos in Ameri..."
     },
     {
@@ -28580,6 +33852,9 @@
                          "summary",
                          "support"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Specific techniques for meeting this principle are defined in the following documents:"
     },
     {
@@ -28596,6 +33871,9 @@
                          "legal",
                          "considerations"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This display field should be hidden if metadata is not present ."
     },
     {
@@ -28612,6 +33890,9 @@
                          "display",
                          "statements"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The descriptive and compact statements for legal exemptions are as follows."
     },
     {
@@ -28627,6 +33908,9 @@
         "keywords":  [
                          "examples"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The following example shows the descriptive and compact statements that would display for a publication that claims legal exemption in a jurisdiction\u0027s accessibility requirements."
     },
     {
@@ -28645,6 +33929,9 @@
                          "legal",
                          "considerations"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Specific techniques for meeting this principle are defined in the following documents:"
     },
     {
@@ -28662,6 +33949,9 @@
                          "accessibility",
                          "information"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This display field can be hidden if metadata is missing."
     },
     {
@@ -28678,6 +33968,9 @@
                          "display",
                          "statements"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The descriptive and compact statements for additional information are as follows."
     },
     {
@@ -28693,6 +33986,9 @@
         "keywords":  [
                          "examples"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The following example shows the descriptive and compact statements that would display for a publication that includes ARIA roles and has static page numbers."
     },
     {
@@ -28712,6 +34008,9 @@
                          "accessibility",
                          "information"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Specific techniques for meeting this principle are defined in the following documents:"
     },
     {
@@ -28729,6 +34028,9 @@
                          "accessible",
                          "content"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The guidelines for presenting accessibility metadata detailed in this document are intended to improve the user experience when readers browse the catalogue entry for a publication. However, accessibility metadata also has a vital role t..."
     },
     {
@@ -28746,6 +34048,9 @@
                          "filtering",
                          "set"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Reading systems, commerce, and distribution platforms will typically have specific filtering options; having uniformity for key aspects and providing guidance for a standardized approach can help the discovery process for users searching..."
     },
     {
@@ -28763,6 +34068,9 @@
                          "filtering",
                          "set"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "In specific domains, the addition of other options will be important to help users find content that responds to a particular need or scenario. Each domain case would drive the selection of appropriate items. Some examples of these domai..."
     },
     {
@@ -28778,6 +34086,9 @@
         "keywords":  [
                          "localization"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "An ebook can be purchased in any country and be made available through a distributor or a library. Readers want consistent display of accessibility information that spans multiple languages, and that’s the primary role of this display gu..."
     },
     {
@@ -28793,6 +34104,9 @@
         "keywords":  [
                          "implementations"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "These guidelines provide a general framework and make suggestions on the display of accessibility metadata. It is not a normative description of what must be done. It is instructive to provide examples of implementations from the community."
     },
     {
@@ -28808,6 +34122,9 @@
         "keywords":  [
                          "acknowledgements"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The leadership and editing contributions of the following individuals were central to producing this guide:"
     },
     {
@@ -28830,6 +34147,9 @@
                          "dcterms:conformsTo",
                          "a11y:exemption"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The following table provides a crosswalk between the properties defined in the EPUB Accessibility specification [ EPUB-A11Y-11 ] and The EPUB Accessibility exemption property [ EPUB-A11Y-Exemption ] and the equivalents defined in the ONI..."
     },
     {
@@ -28852,6 +34172,9 @@
                          "audioDescription",
                          "bookmarks"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The following table provides a crosswalk between the Schema.org metadata and ONIX standard [ ONIX ]."
     },
     {
@@ -28867,6 +34190,9 @@
         "keywords":  [
                          "introduction"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The EPUB Accessibility Conformance and Discovery Specification defines a schema.org metadata term called \"accessibilitySummary.\" This piece of metadata is important in that it provides additional accessibility information or refines the ..."
     },
     {
@@ -28885,6 +34211,9 @@
                          "start",
                          "writing"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The Accessibility Checker for EPUB (Ace by DAISY) is a tool which can be used to help you determine some of the accessibility features within the publication. This will help you determine what should be included in the accessibilitySummary."
     },
     {
@@ -28902,6 +34231,9 @@
                          "considerations",
                          "accessibilitySummary"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "3. Some High-Level Considerations in official Schema.org Accessibility Summary Recommendation."
     },
     {
@@ -28919,6 +34251,9 @@
                          "accessibilitysummary",
                          "AccessibilitySummary"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Here is a list of areas that the summary should address :"
     },
     {
@@ -28937,6 +34272,9 @@
                          "related",
                          "statements"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The group of conformance statements are listed below. The level of conformance should be identified such as AA or A. There is also the possibility of referencing conformance to an \"optomized\" specification, which might not meet WCAG guid..."
     },
     {
@@ -28953,6 +34291,9 @@
                          "accessibility",
                          "features"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Features that have been included in metadata may benefit from additional information that more clearly explains the feature. Some examples have been provided in the table below."
     },
     {
@@ -28969,6 +34310,9 @@
                          "accessibility",
                          "hazards"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Accessibility hazards: Some content, especially videos, may contain elements that have been found to be problematic. Most common items are motion effects that make some people motion sick, flashing that can cause severe distractions or e..."
     },
     {
@@ -28985,6 +34329,9 @@
                          "examples",
                          "\u003c meta"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Here is another example in Japanese:"
     },
     {
@@ -29000,6 +34347,9 @@
         "keywords":  [
                          "introduction"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "1. Introduction in official Page Source Identification (Print Pagination Reference)."
     },
     {
@@ -29019,6 +34369,9 @@
                          "refines",
                          "pageBreakSource"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Providing navigation to static page break markers is a key accessibility feature for digital publications that are used in both print and digital formats in the same environment (e.g., classrooms). But without a means of identifying what..."
     },
     {
@@ -29034,6 +34387,9 @@
         "keywords":  [
                          "terminology"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This specification uses terminology defined in EPUB 3 [ epub-3 ]."
     },
     {
@@ -29049,6 +34405,9 @@
         "keywords":  [
                          "conformance"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "As well as sections marked as non-normative, all authoring guidelines, diagrams, examples, and notes in this specification are non-normative. Everything else in this specification is normative."
     },
     {
@@ -29066,6 +34425,9 @@
                          "property",
                          "pageBreakSource"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "2. The pageBreakSource property in official Page Source Identification (Print Pagination Reference)."
     },
     {
@@ -29083,6 +34445,9 @@
                          "pageBreakSource",
                          "xsd:string"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "Provides a unique identifier for the source of the page break markers in an EPUB publication ."
     },
     {
@@ -29099,6 +34464,9 @@
                          "examples",
                          "\u003c meta"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "In this example, the pagination corresponds to a print edition with an ISBN number. A URN is used to identify the scheme the number conforms to."
     },
     {
@@ -29114,6 +34482,9 @@
         "keywords":  [
                          "overview"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Publishing has a sometimes-dizzying array of ways of referring to audio playback — audiobook, talking book, read aloud book, text-to-speech playback, media overlays and full audio are some of the most common terms."
     },
     {
@@ -29129,6 +34500,9 @@
         "keywords":  [
                          "audiobooks"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "An audiobook provides prerecorded narration of a work. Publishers typically structure audiobooks as a series of one or more audio files that readers will listen to in sequence."
     },
     {
@@ -29147,6 +34521,9 @@
                          "publications",
                          "read aloud books"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A publication with full audio differs from an audiobook in that formats that allow full audio content also allow the inclusion of, and synchronization with, the full text content (even if the full text is not always available)."
     },
     {
@@ -29163,6 +34540,9 @@
                          "text-to-speech",
                          "synthesis"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Text-To-Speech (TTS) synthesis is a form of audio rendering typically produced on demand by a Reading System or Assistive Technology. VoiceOver on Apple devices and Talkback on Android are a couple of the more commonly known examples of ..."
     },
     {
@@ -29179,6 +34559,9 @@
                          "working",
                          "groups"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Publishing@W3C is the Activity under which the specifically publishing-related groups in the W3C are organized: two Working Groups, two Community Groups, and a Business Group."
     },
     {
@@ -29194,6 +34577,9 @@
         "keywords":  [
                          "introduction"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "1. Introduction in official EPUB Standard (Latest W3C Recommendation Redirect)."
     },
     {
@@ -29209,6 +34595,9 @@
         "keywords":  [
                          "overview"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "EPUB 3 has been widely adopted as the format for digital books (ebooks), and this revision continues to increase the format\u0027s capabilities to better support a wider range of publication requirements, including complex layouts, rich media..."
     },
     {
@@ -29228,6 +34617,9 @@
                          "/META-INF",
                          "container.xml"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This section reviews the organization of this specification through the central product it defines: the EPUB publication ."
     },
     {
@@ -29245,6 +34637,9 @@
                          "other",
                          "specifications"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The technologies EPUB 3 builds on are constantly evolving. Some, typically referred to as \"living\" or \"evergreen\" standards, are subject to change daily and their impact on the validity of EPUB publications is immediate. Others are updat..."
     },
     {
@@ -29261,6 +34656,9 @@
                          "relationship",
                          "html"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The [ html ] standard is continuously evolving — there are no longer versioned releases of it. That standard, in turn, references various technologies that continue to evolve, such as MathML, SVG, CSS, and JavaScript."
     },
     {
@@ -29277,6 +34675,9 @@
                          "relationship",
                          "svg"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This specification does not reference a specific version of [ svg ], but instead uses an undated reference. Whenever there is any ambiguity in this reference, the latest recommended specification is the authoritative reference."
     },
     {
@@ -29293,6 +34694,9 @@
                          "relationship",
                          "css"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "EPUB 3 supports CSS as defined by the CSS Working Group Snapshot [ csssnapshot ]. EPUB 3 also maintains some prefixed CSS properties, to ensure consistent support for global languages."
     },
     {
@@ -29309,6 +34713,9 @@
                          "relationship",
                          "mathml"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "EPUB 3 only supports Presentation Markup [ mathml3 ]. Content Markup is only allowed in structured markup annotations ."
     },
     {
@@ -29325,6 +34732,9 @@
                          "relationship",
                          "smil"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This specification relies on a subset of [ smil3 ], from which the media overlays elements and attributes defined in 9.2.2 Media overlay document definition are derived."
     },
     {
@@ -29341,6 +34751,9 @@
                          "relationship",
                          "url"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This specification refers to the [ url ] standard for terminology and processing related to URLs expressed in EPUB publications . It is anticipated that new and revised web formats will adopt this standard, but until then this may put th..."
     },
     {
@@ -29363,6 +34776,9 @@
                          "EPUB conformance checker",
                          "EPUB container"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This specification defines the following terms specific to EPUB 3."
     },
     {
@@ -29378,6 +34794,16 @@
         "keywords":  [
                          "conformance"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "MUST NOT",
+                        "OPTIONAL",
+                        "RECOMMENDED",
+                        "REQUIRED",
+                        "SHOULD",
+                        "SHOULD NOT"
+                    ],
         "summary":  "As well as sections marked as non-normative, all authoring guidelines, diagrams, examples, and notes in this specification are non-normative. Everything else in this specification is normative."
     },
     {
@@ -29396,6 +34822,9 @@
                          "dc:",
                          "epub"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "In package document metadata examples, reserved prefixes are used without declaration."
     },
     {
@@ -29413,6 +34842,10 @@
                          "publication",
                          "conformance"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "SHOULD"
+                    ],
         "summary":  "MUST define at least one rendering of its content as follows:"
     },
     {
@@ -29429,6 +34862,14 @@
                          "conformance",
                          "checking"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "MUST NOT",
+                        "RECOMMENDED",
+                        "REQUIRED",
+                        "SHOULD",
+                        "SHOULD NOT"
+                    ],
         "summary":  "Due to the complexity of this specification and number of technologies used in EPUB publications , EPUB creators are advised to use an EPUB conformance checker to verify the conformance of their content."
     },
     {
@@ -29445,6 +34886,9 @@
                          "publication",
                          "resources"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "3. Publication resources in official EPUB Standard (Latest W3C Recommendation Redirect)."
     },
     {
@@ -29460,6 +34904,9 @@
         "keywords":  [
                          "introduction"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "An EPUB publication is made up of many different categories of resources, not all of which are mutually exclusive. Some resources are publication resources , some are not. Some publication resources are allowed in the spine by default, w..."
     },
     {
@@ -29479,6 +34926,9 @@
                          "link",
                          "item"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "To manifest plane defines all the resources of an EPUB publication . It is analogous to the package document manifest , but includes resources not present in that list."
     },
     {
@@ -29497,6 +34947,9 @@
                          "spine plane",
                          "fallback"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The spine plane defines resources used in the default reading order established by the spine , which includes both linear and non-linear content . The spine instructs reading systems on how to load these resources as the user progresses ..."
     },
     {
@@ -29516,6 +34969,9 @@
                          "picture",
                          "link"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The content plane classifies resources that are used when rendering EPUB content documents and foreign content documents . These types of resources include embedded media, CSS style sheets, scripts, and fonts. These resources fall into t..."
     },
     {
@@ -29538,6 +34994,10 @@
                          "image/svg+xml",
                          "image/webp"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST"
+                    ],
         "summary":  "EPUB creators MAY include publication resources that conform to the MIME media type [ rfc2046 ] specifications defined in the following table without fallbacks when they are used in EPUB content documents and foreign content documents . ..."
     },
     {
@@ -29555,6 +35015,9 @@
                          "resources",
                          "item"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "A foreign resource , unlike a core media type resource is one which is not guaranteed reading system support when used in an EPUB content document or foreign content document ."
     },
     {
@@ -29577,6 +35040,9 @@
                          "itemref",
                          "image"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "An exempt resource shares properties with both foreign resources and core media type resources . It is most similar to a foreign resource in that it is not guaranteed reading system support, but, like a core media type resource, does not..."
     },
     {
@@ -29593,6 +35059,9 @@
                          "resource",
                          "fallbacks"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Resource fallbacks in official EPUB Standard (Latest W3C Recommendation Redirect)."
     },
     {
@@ -29614,6 +35083,11 @@
                          "properties",
                          "img"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "MUST NOT"
+                    ],
         "summary":  "Manifest fallbacks are a feature of the package document that create a manifest fallback chain for a publication resource , allowing reading systems to select an alternative format they can render."
     },
     {
@@ -29630,6 +35104,9 @@
                          "intrinsic",
                          "fallbacks"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The following sections provide additional clarifications about the intrinsic fallback requirements of specific elements."
     },
     {
@@ -29649,6 +35126,9 @@
                          "fallbacks",
                          "source"
                      ],
+        "rfc2119":  [
+                        "MUST NOT"
+                    ],
         "summary":  "EPUB creators MUST NOT use embedded [ html ] flow content within a media element (i.e, audio or video ) as an intrinsic fallback for audio foreign resources . Only child source elements [ html ] provide intrinsic fallback capabilities."
     },
     {
@@ -29671,6 +35151,10 @@
                          "source",
                          "type"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST"
+                    ],
         "summary":  "Due to the variety of sources that EPUB creators can specify in the [ html ] img element, the following fallback conditions apply to its use:"
     },
     {
@@ -29688,6 +35172,9 @@
                          "script",
                          "element"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Although data blocks have a separate MIME media type [ rfc2046 ] from their containing XHTML content document , it is not possible to provide intrinsic fallbacks as no such mechanisms are specified for the [ html ] script element. It is ..."
     },
     {
@@ -29708,6 +35195,11 @@
                          "audio",
                          "\u003c html"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "RECOMMENDED"
+                    ],
         "summary":  "EPUB creators MAY host the following types of publication resources outside the EPUB container :"
     },
     {
@@ -29730,6 +35222,10 @@
                          "iframe",
                          "area"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "MUST NOT"
+                    ],
         "summary":  "The data: URL scheme [ rfc2397 ] is used to encode resources directly into a URL string. The advantage of this scheme is that it allows EPUB creators to embed a resource within another, avoiding the need for an external file."
     },
     {
@@ -29747,6 +35243,9 @@
                          "urls",
                          "file:"
                      ],
+        "rfc2119":  [
+                        "MUST NOT"
+                    ],
         "summary":  "The file: URL scheme is defined in [ rfc8089 ] as \"identifying an object (a \u0027file\u0027) stored in a structured object naming and accessing environment on a host (a \u0027file system\u0027).\" It is typically used to retrieve files from the local operat..."
     },
     {
@@ -29764,6 +35263,12 @@
                          "conformance",
                          "base"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "MUST NOT",
+                        "RECOMMENDED"
+                    ],
         "summary":  "Any publication resource that is an XML-based media type [ rfc2046 ]:"
     },
     {
@@ -29782,6 +35287,9 @@
                          "format",
                          "ocf"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "4. Open Container Format (OCF) in official EPUB Standard (Latest W3C Recommendation Redirect)."
     },
     {
@@ -29797,6 +35305,9 @@
         "keywords":  [
                          "introduction"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "OCF is the required container technology for EPUB publications . OCF may play a role in the following workflows:"
     },
     {
@@ -29814,6 +35325,9 @@
                          "abstract",
                          "container"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "OCF abstract container in official EPUB Standard (Latest W3C Recommendation Redirect)."
     },
     {
@@ -29836,6 +35350,9 @@
                          "encryption.xml",
                          "metadata.xml"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The OCF abstract container file system model uses a single common root directory . All container resources are located within the directory tree headed by the root directory, but no specific file system structure for them is mandated by ..."
     },
     {
@@ -29855,6 +35372,11 @@
                          "META-INF",
                          "mimetype"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "MUST NOT"
+                    ],
         "summary":  "The virtual file system for the OCF abstract container MUST have a single common root directory for all the contents of the container."
     },
     {
@@ -29877,6 +35399,11 @@
                          "U+002E",
                          "U+003A"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "MUST NOT",
+                        "SHOULD NOT"
+                    ],
         "summary":  "In the context of the OCF abstract container , file paths and file names are scalar value strings [ infra ] (i.e., their values are case sensitive)."
     },
     {
@@ -29897,6 +35424,9 @@
                          "current",
                          "U+002F (/)"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "To derive the file path , given a file or directory file in the OCF abstract container , apply the following steps (expressed using the terminology of [ infra ]):"
     },
     {
@@ -29919,6 +35449,9 @@
                          "https://www.example.org:12345/",
                          "file:///path/to.epub#path=/"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "The container root URL is the URL [ url ] of the root directory . It is implementation-specific, but EPUB creators MUST assume it has the following properties:"
     },
     {
@@ -29936,6 +35469,9 @@
                          "directory",
                          "META-INF"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "META-INF directory in official EPUB Standard (Latest W3C Recommendation Redirect)."
     },
     {
@@ -29955,6 +35491,9 @@
                          "container",
                          "META-INF"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "All OCF abstract containers MUST include a directory called META-INF in their root directory ."
     },
     {
@@ -29977,6 +35516,9 @@
                          "base",
                          "META-INF/container.xml"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "To parse a URL string url used in files located in the META-INF directory the URL parser MUST be applied to url , with the container root URL as base ."
     },
     {
@@ -29993,6 +35535,9 @@
                          "reserved",
                          "files"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Reserved files in official EPUB Standard (Latest W3C Recommendation Redirect)."
     },
     {
@@ -30012,6 +35557,10 @@
                          "container.xml",
                          "META-INF"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "REQUIRED"
+                    ],
         "summary":  "The REQUIRED container.xml file in the META-INF directory identifies the package documents available in the OCF abstract container ."
     },
     {
@@ -30034,6 +35583,10 @@
                          "rootfiles",
                          "links"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "REQUIRED"
+                    ],
         "summary":  "The container element encapsulates all the information in the container.xml file."
     },
     {
@@ -30052,6 +35605,9 @@
                          "container",
                          "rootfile"
                      ],
+        "rfc2119":  [
+                        "REQUIRED"
+                    ],
         "summary":  "The rootfiles element contains a list of package documents available in the EPUB container ."
     },
     {
@@ -30073,6 +35629,9 @@
                          "media-type",
                          "application/oebps-package+xml"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "Each rootfile element identifies the location of one package document in the EPUB container ."
     },
     {
@@ -30091,6 +35650,9 @@
                          "container",
                          "link"
                      ],
+        "rfc2119":  [
+                        "OPTIONAL"
+                    ],
         "summary":  "The links element identifies resources necessary for the processing of the OCF ZIP container ."
     },
     {
@@ -30113,6 +35675,9 @@
                          "[optional]",
                          "rel"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "As child of the links element. Repeatable."
     },
     {
@@ -30129,6 +35694,9 @@
                          "examples",
                          "\u003c?xml version= \"1.0\""
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Examples in official EPUB Standard (Latest W3C Recommendation Redirect)."
     },
     {
@@ -30148,6 +35716,10 @@
                          "encryption.xml",
                          "META-INF"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "OPTIONAL"
+                    ],
         "summary":  "The OPTIONAL encryption.xml file in the META-INF directory holds all encryption information on the contents of the container. If an EPUB creator encrypts any resources within the container, they MUST include an encryption.xml file to pro..."
     },
     {
@@ -30170,6 +35742,12 @@
                          "mimetype",
                          "META-INF/container.xml"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST NOT",
+                        "REQUIRED",
+                        "SHOULD"
+                    ],
         "summary":  "urn:oasis:names:tc:opendocument:xmlns:container"
     },
     {
@@ -30192,6 +35770,13 @@
                          "[required]",
                          "\u003c encryption"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "OPTIONAL",
+                        "SHOULD",
+                        "SHOULD NOT"
+                    ],
         "summary":  "When stored in an OCF ZIP container , EPUB creators SHOULD compress streams of data with non-codec content types before encrypting them. EPUB creators MUST use Deflate compression. This practice ensures that file entries stored in the ZI..."
     },
     {
@@ -30211,6 +35796,9 @@
                          "manifest.xml",
                          "META-INF"
                      ],
+        "rfc2119":  [
+                        "OPTIONAL"
+                    ],
         "summary":  "The OPTIONAL manifest.xml file in the META-INF directory provides a manifest of files in the container."
     },
     {
@@ -30231,6 +35819,11 @@
                          "META-INF",
                          "http://www.idpf.org/2013/metadata"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "OPTIONAL",
+                        "SHOULD"
+                    ],
         "summary":  "The OPTIONAL metadata.xml file in the META-INF directory is only for container-level metadata."
     },
     {
@@ -30251,6 +35844,9 @@
                          "rights.xml",
                          "META-INF"
                      ],
+        "rfc2119":  [
+                        "OPTIONAL"
+                    ],
         "summary":  "This specification reserves the OPTIONAL rights.xml file in the META-INF directory for the trusted exchange of EPUB publications among rights holders, intermediaries, and users."
     },
     {
@@ -30271,6 +35867,9 @@
                          "signatures.xml",
                          "META-INF"
                      ],
+        "rfc2119":  [
+                        "OPTIONAL"
+                    ],
         "summary":  "Adding a digital signature is not a guarantee that a malicious actor cannot tamper with an EPUB publication as reading systems do not have to check signatures."
     },
     {
@@ -30293,6 +35892,11 @@
                          "Manifest",
                          "Reference"
                      ],
+        "rfc2119":  [
+                        "REQUIRED",
+                        "SHOULD",
+                        "SHOULD NOT"
+                    ],
         "summary":  "urn:oasis:names:tc:opendocument:xmlns:container"
     },
     {
@@ -30310,6 +35914,9 @@
                          "zip",
                          "container"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "OCF ZIP container in official EPUB Standard (Latest W3C Recommendation Redirect)."
     },
     {
@@ -30325,6 +35932,9 @@
         "keywords":  [
                          "introduction"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "An OCF ZIP container is a physical single-file manifestation of an OCF abstract container . The container allows:"
     },
     {
@@ -30345,6 +35955,12 @@
                          "version needed to extract",
                          "compression"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "MUST NOT",
+                        "SHOULD"
+                    ],
         "summary":  "An OCF ZIP container uses the ZIP format as specified by [ zip ], but with the following constraints and clarifications:"
     },
     {
@@ -30367,6 +35983,10 @@
                          "mimetype",
                          "application/epub+zip"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "MUST NOT"
+                    ],
         "summary":  "EPUB creators MUST include the mimetype file as the first file in the OCF ZIP container . In addition:"
     },
     {
@@ -30383,6 +36003,9 @@
                          "font",
                          "obfuscation"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Better methods of protecting fonts exist. Both [ woff ] and [ woff2 ] fonts, for example, allow the embedding of licensing information and provide some protection through font table compression. The use of remotely hosted fonts also allo..."
     },
     {
@@ -30398,6 +36021,9 @@
         "keywords":  [
                          "introduction"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Since an OCF ZIP container is fundamentally a ZIP file, commonly available ZIP tools can be used to extract any unencrypted content stream from the package. Moreover, the nature of ZIP files means that their contents might appear like an..."
     },
     {
@@ -30413,6 +36039,9 @@
         "keywords":  [
                          "limitations"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This specification does not claim that obfuscation constitutes encryption, nor does it guarantee that the resource will be secure from copyright infringement. The hope is only that this algorithm will meet the requirements of vendors who..."
     },
     {
@@ -30433,6 +36062,9 @@
                          "U+000D",
                          "U+000A"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "EPUB creators MUST derive the key used in the obfuscation algorithm from the unique identifier ."
     },
     {
@@ -30455,6 +36087,9 @@
                          "keyData",
                          "outer"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "The algorithm employed to obfuscate fonts consists of modifying the first 1040 bytes (~1KB) of the font file. (In the unlikely event that the font file is less than 1040 bytes, this process will modify the entire file.)"
     },
     {
@@ -30477,6 +36112,10 @@
                          "Algorithm",
                          "http://www.idpf.org/2008/embedding"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "MUST NOT"
+                    ],
         "summary":  "Although not technically encrypted data, all obfuscated fonts MUST have an entry in the encryption.xml file accompanying the EPUB publication (see 4.2.6.3.2 Encryption file ( encryption.xml ) )."
     },
     {
@@ -30494,6 +36133,9 @@
                          "document",
                          "http://www.idpf.org/2007/opf"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "All [ xml ] elements defined in this section are in the http://www.idpf.org/2007/opf namespace [ xml-names ] unless otherwise specified."
     },
     {
@@ -30511,6 +36153,9 @@
                          "container.xml",
                          "application/oebps-package+xml"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The package document is an XML document that consists of a set of elements that each encapsulate information about a particular aspect of an EPUB publication . These elements serve to centralize metadata, detail the individual resources,..."
     },
     {
@@ -30531,6 +36176,9 @@
                          "url",
                          "base"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "To parse a URL string url used in the package document , the URL parser [ url ] MUST be applied to url , with the content URL of the package document as base ."
     },
     {
@@ -30547,6 +36195,9 @@
                          "shared",
                          "attributes"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This section provides definitions for shared attributes (i.e., attributes allowed on two or more elements)."
     },
     {
@@ -30569,6 +36220,9 @@
                          "\u003c package",
                          "collection"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The dir attribute is marked under-implemented as reading systems often only support a single default directionality for text display. EPUB creators are still strongly encouraged to set the proper directionality of text values in the pack..."
     },
     {
@@ -30589,6 +36243,9 @@
                          "\u003c package",
                          "link"
                      ],
+        "rfc2119":  [
+                        "MUST NOT"
+                    ],
         "summary":  "A valid URL string [ url ] that references a resource."
     },
     {
@@ -30611,6 +36268,9 @@
                          "manifest",
                          "meta"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "The ID [ xml ] of the element, which MUST be unique within the document scope."
     },
     {
@@ -30630,6 +36290,9 @@
                          "item",
                          "link"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A media type [ rfc2046 ] that specifies the type and format of the referenced resource."
     },
     {
@@ -30650,6 +36313,9 @@
                          "itemref",
                          "link"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A space-separated list of property values."
     },
     {
@@ -30670,6 +36336,12 @@
                          "link",
                          "meta"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "MUST NOT",
+                        "OPTIONAL",
+                        "SHOULD"
+                    ],
         "summary":  "Establishes an association between the current expression and the element or resource identified by its value. EPUB creators MUST use as the value a path-relative-scheme-less-URL string , optionally followed by U+0023 (#) and a URL-fragm..."
     },
     {
@@ -30690,6 +36362,9 @@
                          "meta",
                          "package"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "Specifies the language of the textual content and attribute values of the carrying element and its descendants, as defined in section 2.12 Language Identification of [ xml ]. The value of each xml:lang attribute MUST be a well-formed lan..."
     },
     {
@@ -30712,6 +36387,10 @@
                          "unique-identifier",
                          "[required]"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "REQUIRED"
+                    ],
         "summary":  "The package element encapsulates all the information expressed in the package document ."
     },
     {
@@ -30727,6 +36406,9 @@
         "keywords":  [
                          "metadata"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Metadata section in official EPUB Standard (Latest W3C Recommendation Redirect)."
     },
     {
@@ -30749,6 +36431,12 @@
                          "dc:language",
                          "Dublin Core Optional Elements"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "OPTIONAL",
+                        "REQUIRED"
+                    ],
         "summary":  "The metadata element encapsulates meta information."
     },
     {
@@ -30767,6 +36455,9 @@
                          "meta",
                          "value"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "The Dublin Core elements [ dcterms ] and meta element have mandatory child text content [ dom ]. In the descriptions for these elements, this specification refers to this content as the element\u0027s value ."
     },
     {
@@ -30783,6 +36474,9 @@
                          "dublin",
                          "core"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Dublin Core in official EPUB Standard (Latest W3C Recommendation Redirect)."
     },
     {
@@ -30799,6 +36493,9 @@
                          "required",
                          "elements"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Required elements in official EPUB Standard (Latest W3C Recommendation Redirect)."
     },
     {
@@ -30821,6 +36518,11 @@
                          "unique-identifier",
                          "\u003c package"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "REQUIRED"
+                    ],
         "summary":  "The dc:identifier element [ dcterms ] contains an identifier such as a UUID , DOI or ISBN ."
     },
     {
@@ -30843,6 +36545,9 @@
                          "xml:lang",
                          "\u003c metadata"
                      ],
+        "rfc2119":  [
+                        "REQUIRED"
+                    ],
         "summary":  "The dc:title element [ dcterms ] represents an instance of a name for the EPUB publication ."
     },
     {
@@ -30863,6 +36568,11 @@
                          "[optional]",
                          "\u003c metadata"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "REQUIRED"
+                    ],
         "summary":  "The dc:language element [ dcterms ] specifies the language of the content of the EPUB publication ."
     },
     {
@@ -30879,6 +36589,9 @@
                          "optional",
                          "elements"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Optional elements in official EPUB Standard (Latest W3C Recommendation Redirect)."
     },
     {
@@ -30901,6 +36614,9 @@
                          "dc:coverage",
                          "dc:creator"
                      ],
+        "rfc2119":  [
+                        "OPTIONAL"
+                    ],
         "summary":  "All [ dcterms ] elements except for dc:identifier , dc:language , and dc:title are designated as OPTIONAL . These elements conform to the following generalized definition:"
     },
     {
@@ -30918,6 +36634,9 @@
                          "element",
                          "dc:creator"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The dc:contributor element [ dcterms ] is used to represent the name of a person, organization, etc. that played a secondary role in the creation of the content."
     },
     {
@@ -30940,6 +36659,9 @@
                          "alternate-script",
                          "metadata"
                      ],
+        "rfc2119":  [
+                        "MAY"
+                    ],
         "summary":  "The dc:creator element [ dcterms ] represents the name of a person, organization, etc. responsible for the creation of the content. EPUB creators MAY associate a role property with the element to indicate the function the creator played."
     },
     {
@@ -30957,6 +36679,10 @@
                          "element",
                          "\u003c metadata"
                      ],
+        "rfc2119":  [
+                        "MUST NOT",
+                        "RECOMMENDED"
+                    ],
         "summary":  "The dc:date element [ dcterms ] defines the publication date of the EPUB publication . The publication date is not the same as the last modified date (the last time the EPUB creator changed the EPUB publication)."
     },
     {
@@ -30976,6 +36702,11 @@
                          "term",
                          "\u003c metadata"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "MUST NOT"
+                    ],
         "summary":  "The dc:subject element [ dcterms ] identifies the subject of the EPUB publication . EPUB creators should set the value of the element to the human-readable heading or label, but may use a code value if the subject taxonomy does not provi..."
     },
     {
@@ -30992,6 +36723,9 @@
                          "dc:type",
                          "element"
                      ],
+        "rfc2119":  [
+                        "MAY"
+                    ],
         "summary":  "The dc:type element [ dcterms ] is used to indicate that the EPUB publication is of a specialized type (e.g., annotations or a dictionary packaged in EPUB format)."
     },
     {
@@ -31014,6 +36748,10 @@
                          "[required]",
                          "refines"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST"
+                    ],
         "summary":  "The meta element provides a generic means of including package metadata."
     },
     {
@@ -31036,6 +36774,10 @@
                          "\u003c metadata",
                          "refines"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST"
+                    ],
         "summary":  "The metadata section MUST contain exactly one dcterms:modified property [ dcterms ] containing the last modification date. The value of this property MUST be an [ iso8601-1 ] complete representation of a date and time of day matching the..."
     },
     {
@@ -31058,6 +36800,13 @@
                          "[optional]",
                          "media-type"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "MUST NOT",
+                        "OPTIONAL",
+                        "REQUIRED"
+                    ],
         "summary":  "The link element associates resources with an EPUB publication , such as metadata records."
     },
     {
@@ -31073,6 +36822,9 @@
         "keywords":  [
                          "manifest"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Manifest section in official EPUB Standard (Latest W3C Recommendation Redirect)."
     },
     {
@@ -31095,6 +36847,11 @@
                          "[1 or more]",
                          "container.xml"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "MUST NOT",
+                        "REQUIRED"
+                    ],
         "summary":  "The manifest element provides an exhaustive list of publication resources used in the rendering of the content."
     },
     {
@@ -31117,6 +36874,10 @@
                          "[required]",
                          "media-overlay"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST"
+                    ],
         "summary":  "The item element represents a publication resource ."
     },
     {
@@ -31138,6 +36899,11 @@
                          "nav",
                          "cover-image"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "OPTIONAL"
+                    ],
         "summary":  "The properties attribute provides information to reading systems about the content of a resource. This information enables discovery of key resources, such as the cover image and EPUB navigation document . It also allows reading systems ..."
     },
     {
@@ -31158,6 +36924,9 @@
                          "XHTML",
                          "audio"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The following example shows the manifest fallback chain allowing a foreign content document (JPEG) to be listed in the spine with fallback to an SVG content document."
     },
     {
@@ -31175,6 +36944,9 @@
                          "element",
                          "deprecated"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The bindings element defines a set of custom handlers for media types not supported by this specification."
     },
     {
@@ -31190,6 +36962,9 @@
         "keywords":  [
                          "spine"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Spine section in official EPUB Standard (Latest W3C Recommendation Redirect)."
     },
     {
@@ -31212,6 +36987,11 @@
                          "page-progression-direction",
                          "toc"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "REQUIRED"
+                    ],
         "summary":  "The spine element defines an ordered list of manifest item references that represent the default reading order."
     },
     {
@@ -31234,6 +37014,11 @@
                          "linear",
                          "properties"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "MUST NOT"
+                    ],
         "summary":  "The itemref element identifies an EPUB content document or foreign content document in the default reading order."
     },
     {
@@ -31249,6 +37034,9 @@
         "keywords":  [
                          "collections"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Collections in official EPUB Standard (Latest W3C Recommendation Redirect)."
     },
     {
@@ -31271,6 +37059,10 @@
                          "[required]",
                          "xml:lang"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "OPTIONAL"
+                    ],
         "summary":  "The collection element defines a related group of resources."
     },
     {
@@ -31289,6 +37081,9 @@
                          "types",
                          "deprecated"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The creation of new collection element roles is now deprecated ."
     },
     {
@@ -31305,6 +37100,9 @@
                          "legacy",
                          "features"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Legacy features in official EPUB Standard (Latest W3C Recommendation Redirect)."
     },
     {
@@ -31320,6 +37118,9 @@
         "keywords":  [
                          "introduction"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The package document legacy features are retained from EPUB 2 only to allow EPUB creators to author content that can function, to some degree, in reading systems that only support EPUB 2 publications."
     },
     {
@@ -31335,6 +37136,9 @@
         "keywords":  [
                          "support"
                      ],
+        "rfc2119":  [
+                        "MAY"
+                    ],
         "summary":  "EPUB creators MAY include the legacy features defined in this section for compatibility purposes with EPUB 2 reading systems."
     },
     {
@@ -31353,6 +37157,9 @@
                          "cover-image",
                          "item"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The meta element [ opf-201 ] provides a means of including generic metadata for EPUB 2 reading systems ."
     },
     {
@@ -31369,6 +37176,9 @@
                          "guide",
                          "element"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The guide element [ opf-201 ] provides machine-processable navigation to key structures in EPUB 2 reading systems ."
     },
     {
@@ -31384,6 +37194,9 @@
         "keywords":  [
                          "ncx"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The NCX [ opf-201 ] provides a table of contents for EPUB 2 reading systems ."
     },
     {
@@ -31401,6 +37214,9 @@
                          "content",
                          "documents"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "6. EPUB content documents in official EPUB Standard (Latest W3C Recommendation Redirect)."
     },
     {
@@ -31418,6 +37234,9 @@
                          "content",
                          "documents"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "XHTML content documents in official EPUB Standard (Latest W3C Recommendation Redirect)."
     },
     {
@@ -31433,6 +37252,9 @@
         "keywords":  [
                          "introduction"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This section defines a profile of [ html ] for creating XHTML content documents . An instance of an XML document that conforms to this profile is a core media type resource and is referred to in this specification as an XHTML content doc..."
     },
     {
@@ -31449,6 +37271,10 @@
                          "xhtml",
                          "requirements"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST"
+                    ],
         "summary":  "MUST be an [ html ] document that conforms to the XML syntax."
     },
     {
@@ -31465,6 +37291,9 @@
                          "html",
                          "extensions"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This section defines EPUB 3 XHTML content document extensions to the underlying [ html ] document model."
     },
     {
@@ -31483,6 +37312,10 @@
                          "epub:type",
                          "head"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST NOT"
+                    ],
         "summary":  "EPUB creators MAY use the epub:type attribute in XHTML content documents to express structural semantics ."
     },
     {
@@ -31498,6 +37331,10 @@
         "keywords":  [
                          "rdfa"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST"
+                    ],
         "summary":  "The [ html-rdfa ] specification defines a set of attributes that EPUB creators MAY use in XHTML content documents to semantically enrich the content. The use of these attributes MUST conform to the requirements defined in [ html-rdfa ]."
     },
     {
@@ -31516,6 +37353,9 @@
                          "deprecated",
                          "switch"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The switch element provides a simple mechanism through which EPUB creators can tailor the content displayed to users, one that is not dependent on the scripting capabilities of the EPUB reading system ."
     },
     {
@@ -31534,6 +37374,9 @@
                          "deprecated",
                          "trigger"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The trigger element enables the creation of markup-defined user interfaces for controlling multimedia objects, such as audio and video playback, in both scripted and non-scripted contexts."
     },
     {
@@ -31552,6 +37395,10 @@
                          "w3.org",
                          "idpf.org"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST"
+                    ],
         "summary":  "XHTML content documents MAY contain custom attributes, which are prefixed [ xml-names ] attributes whose namespace URL does not include either of the following strings in its domain [ url ]:"
     },
     {
@@ -31569,6 +37416,9 @@
                          "deviations",
                          "constraints"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This section defines deviations from, and constraints on, the underlying [ html ] document model applicable to EPUB 3 XHTML content documents ."
     },
     {
@@ -31591,6 +37441,10 @@
                          "MathML-Content",
                          "application/mathml-content+xml"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST"
+                    ],
         "summary":  "XHTML content documents support embedded [ mathml3 ]. Occurrences of MathML markup MUST conform to the constraints expressed in the MathML specification [ mathml3 ], with the following additional restrictions:"
     },
     {
@@ -31610,6 +37464,9 @@
                          "object",
                          "item"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "XHTML content documents support the embedding of SVG:"
     },
     {
@@ -31626,6 +37483,9 @@
                          "discouraged",
                          "constructs"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Discouraged constructs in official EPUB Standard (Latest W3C Recommendation Redirect)."
     },
     {
@@ -31642,6 +37502,9 @@
                          "base",
                          "element"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The [ html ] base element can be used to specify the document base URL for the purposes of parsing URLs. When using it in an EPUB publication , the interpretation of the base element may inadvertently result in references to remote resou..."
     },
     {
@@ -31658,6 +37521,9 @@
                          "element",
                          "ruby"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The [ html ] rp element is intended to provide a fallback for older reading systems that do not recognize ruby markup (i.e., a parenthesis display around ruby markup). As EPUB 3 reading systems are ruby-aware, and can provide fallbacks, ..."
     },
     {
@@ -31675,6 +37541,9 @@
                          "element",
                          "object"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Since the [ html ] embed element element does not include intrinsic facilities to provide fallback content for reading systems that do not support scripting, EPUB creators are discouraged from using the element when the referenced resour..."
     },
     {
@@ -31692,6 +37561,9 @@
                          "content",
                          "documents"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Reading systems may not support all the features of [ svg ] or support them across all platforms that reading systems run on. When utilizing such features, EPUB creators should consider the inherent risks on interoperability and document..."
     },
     {
@@ -31707,6 +37579,9 @@
         "keywords":  [
                          "introduction"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The Scalable Vector Graphics (SVG) specification [ svg ] defines a format for representing final-form vector graphics and text."
     },
     {
@@ -31723,6 +37598,9 @@
                          "svg",
                          "requirements"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "An SVG content document MUST be a conforming SVG stand-alone file [ svg ] and conform to all content conformance constraints expressed in 6.2.3 Restrictions on SVG ."
     },
     {
@@ -31745,6 +37623,9 @@
                          "epub:prefix",
                          "prefix"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "This specification restricts the content model of SVG content documents and SVG embedded by inclusion in XHTML content documents as follows:"
     },
     {
@@ -31762,6 +37643,9 @@
                          "resource",
                          "requirements"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This section defines requirements for technologies usable in both XHTML and SVG content documents ."
     },
     {
@@ -31780,6 +37664,9 @@
                          "sheets",
                          "css"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Cascading Style Sheets (CSS) in official EPUB Standard (Latest W3C Recommendation Redirect)."
     },
     {
@@ -31795,6 +37682,9 @@
         "keywords":  [
                          "introduction"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "CSS is an integral part of the Open Web Platform. Readers, publishers, and document authors expect CSS to \"just work,\" as they expect HTML to just work."
     },
     {
@@ -31815,6 +37705,12 @@
                          "dir",
                          "bdo"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "MUST NOT",
+                        "RECOMMENDED"
+                    ],
         "summary":  "MAY include any CSS properties, with the following exceptions:"
     },
     {
@@ -31831,6 +37727,9 @@
                          "prefixed",
                          "properties"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Earlier version of EPUB included prefixed CSS properties, as many CSS features related to world languages were not yet mature. To ensure backwards compatibility for content authored using these prefixes, they have been retained in this s..."
     },
     {
@@ -31846,6 +37745,9 @@
         "keywords":  [
                          "scripting"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Scripting in official EPUB Standard (Latest W3C Recommendation Redirect)."
     },
     {
@@ -31865,6 +37767,9 @@
                          "scripted",
                          "item"
                      ],
+        "rfc2119":  [
+                        "MAY"
+                    ],
         "summary":  "EPUB content documents MAY contain scripting using the facilities defined for this in the respective underlying specifications ([ html ] and [ svg ]). When an EPUB content document contains scripting, this specification refers to it as a..."
     },
     {
@@ -31885,6 +37790,9 @@
                          "script",
                          "src"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "EPUB 3 defines two contexts for script execution:"
     },
     {
@@ -31903,6 +37811,9 @@
                          "script",
                          "iframe"
                      ],
+        "rfc2119":  [
+                        "MUST NOT"
+                    ],
         "summary":  "A container-constrained script is either of the following:"
     },
     {
@@ -31920,6 +37831,9 @@
                          "scripts",
                          "script"
                      ],
+        "rfc2119":  [
+                        "SHOULD"
+                    ],
         "summary":  "A spine-level script is an instance of the [ html ] script or [ svg ] script element contained in a top-level content document ."
     },
     {
@@ -31936,6 +37850,9 @@
                          "event",
                          "model"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "EPUB creators should consider the wide variety of possible reading system implementations when adding scripting functionality to their EPUB publications (e.g., not all devices have physical keyboards, and in many cases a soft keyboard is..."
     },
     {
@@ -31952,6 +37869,9 @@
                          "scripting",
                          "accessibility"
                      ],
+        "rfc2119":  [
+                        "SHOULD"
+                    ],
         "summary":  "EPUB content documents that contain scripting SHOULD employ relevant [ wai-aria ] accessibility techniques to ensure that the content remains consumable by all users."
     },
     {
@@ -31970,6 +37890,10 @@
                          "object",
                          "canvas"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST"
+                    ],
         "summary":  "EPUB content documents that contain scripting MAY provide fallbacks for such content, either by using intrinsic fallback mechanisms (such as those available for the [ html ] object and canvas elements) or, when an intrinsic fallback is n..."
     },
     {
@@ -31987,6 +37911,9 @@
                          "navigation",
                          "document"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "7. EPUB navigation document in official EPUB Standard (Latest W3C Recommendation Redirect)."
     },
     {
@@ -32003,6 +37930,9 @@
                          "introduction",
                          "hidden"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The EPUB navigation document is a mandatory component of an EPUB publication . It allows EPUB creators to include a human- and machine-readable global navigation layer, thereby ensuring increased usability and accessibility for the user."
     },
     {
@@ -32022,6 +37952,9 @@
                          "nav",
                          "toc nav"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "MUST conform to the content conformance constraints for XHTML content documents defined in 6.1.2 XHTML requirements ;"
     },
     {
@@ -32044,6 +37977,10 @@
                          "[exactly 1]",
                          "[1 or more]"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST"
+                    ],
         "summary":  "When a nav element carries the epub:type attribute in an EPUB navigation document , this specification restricts the content model of the element and its descendants as follows:"
     },
     {
@@ -32061,6 +37998,9 @@
                          "element:",
                          "types"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The nav element: types in official EPUB Standard (Latest W3C Recommendation Redirect)."
     },
     {
@@ -32082,6 +38022,9 @@
                          "page-list",
                          "landmarks"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The nav elements defined in an EPUB navigation document are distinguished semantically by the value of their epub:type attribute."
     },
     {
@@ -32101,6 +38044,9 @@
                          "toc nav",
                          "epub:type"
                      ],
+        "rfc2119":  [
+                        "SHOULD"
+                    ],
         "summary":  "The primary navigational hierarchy of an EPUB publication is defined in a nav element [ html ] whose epub:type attribute set to the value \" toc \" [ epub-ssv-11 ] (i.e., the toc nav element). This element conceptually corresponds to a tab..."
     },
     {
@@ -32121,6 +38067,12 @@
                          "epub:type",
                          "pagebreak"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST NOT",
+                        "OPTIONAL",
+                        "SHOULD"
+                    ],
         "summary":  "The page list provides navigation to static page boundaries in the content. These boundaries may correspond to a statically paginated source such as print or may be defined exclusively for the EPUB publication ."
     },
     {
@@ -32143,6 +38095,12 @@
                          "bodymatter",
                          "toc"
                      ],
+        "rfc2119":  [
+                        "MUST NOT",
+                        "OPTIONAL",
+                        "REQUIRED",
+                        "SHOULD"
+                    ],
         "summary":  "Landmarks identify fundamental structural components of the content to enable reading systems to provide the user efficient access to them (e.g., through a dedicated button in the user interface)."
     },
     {
@@ -32165,6 +38123,10 @@
                          "epub:type",
                          "lot"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST"
+                    ],
         "summary":  "EPUB navigation documents MAY contain one or more nav elements in addition to the toc , page-list , and landmarks nav elements defined in the preceding sections. If these nav elements are intended for reading system processing, they MUST..."
     },
     {
@@ -32184,6 +38146,9 @@
                          "nav",
                          "\u003c nav"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Although it is possible to reuse the EPUB navigation document in the spine , it is often the case that not all of the navigation structures, or branches within them, are needed. EPUB creators will often want to hide the page list and lan..."
     },
     {
@@ -32201,6 +38166,9 @@
                          "rendering",
                          "control"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "8. Layout rendering control in official EPUB Standard (Latest W3C Recommendation Redirect)."
     },
     {
@@ -32216,6 +38184,9 @@
         "keywords":  [
                          "introduction"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Not all rendering information can be expressed through the underlying technologies that EPUB is built upon. For example, although HTML with CSS provides powerful layout capabilities, those capabilities are limited to the scope of the doc..."
     },
     {
@@ -32232,6 +38203,9 @@
                          "fixed",
                          "layouts"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Fixed layouts in official EPUB Standard (Latest W3C Recommendation Redirect)."
     },
     {
@@ -32247,6 +38221,9 @@
         "keywords":  [
                          "introduction"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "EPUB publications , unlike print books or PDF files, are designed to change. The content flows, or reflows, to fit the screen and to fit the needs of the user. As noted in Rendering and CSS \"content presentation adapts to the user, rathe..."
     },
     {
@@ -32264,6 +38241,9 @@
                          "package",
                          "settings"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Fixed-layout package settings in official EPUB Standard (Latest W3C Recommendation Redirect)."
     },
     {
@@ -32286,6 +38266,10 @@
                          "viewport meta",
                          "\u003c package"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "MUST NOT"
+                    ],
         "summary":  "The rendition:layout property specifies whether the content is reflowable or pre-paginated."
     },
     {
@@ -32303,6 +38287,10 @@
                          "overrides",
                          "itemref"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST NOT"
+                    ],
         "summary":  "EPUB creators MAY specify the following properties locally on spine itemref elements to override the global value for the given spine item:"
     },
     {
@@ -32322,6 +38310,10 @@
                          "refines",
                          "\u003c package"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "MUST NOT"
+                    ],
         "summary":  "The rendition:orientation property specifies which orientation the EPUB creator intends the content to be rendered in."
     },
     {
@@ -32339,6 +38331,10 @@
                          "overrides",
                          "itemref"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST NOT"
+                    ],
         "summary":  "EPUB creators MAY specify the following properties locally on spine itemref elements to override the global value for the given spine item:"
     },
     {
@@ -32361,6 +38357,10 @@
                          "viewport meta",
                          "viewBox"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "MUST NOT"
+                    ],
         "summary":  "The rendition:spread property specifies the intended reading system synthetic spread behavior."
     },
     {
@@ -32381,6 +38381,10 @@
                          "rendition:spread-portrait",
                          "spread-portrait"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST NOT"
+                    ],
         "summary":  "EPUB creators MAY specify the following properties locally on spine itemref elements to override the global value for the given spine item:"
     },
     {
@@ -32403,6 +38407,11 @@
                          "page-spread-left",
                          "rendition:page-spread-right"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST NOT",
+                        "SHOULD"
+                    ],
         "summary":  "When a reading system renders a synthetic spread , the default behavior is to populate the spread by rendering the next EPUB content document in the next available unpopulated viewport , where the next available viewport is determined by..."
     },
     {
@@ -32423,6 +38432,9 @@
                          "rendition:layout",
                          "pre-paginated"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The rendition:viewport property allows EPUB creators to express the CSS initial containing block (ICB) [ css2 ] for XHTML and SVG content documents whose rendition:layout property has been set to pre-paginated ."
     },
     {
@@ -32445,6 +38457,11 @@
                          "device-height",
                          "device-width"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "MUST NOT",
+                        "REQUIRED"
+                    ],
         "summary":  "This section defines rules for the expression and interpretation of dimensional properties of fixed-layout documents ."
     },
     {
@@ -32461,6 +38478,9 @@
                          "reflowable",
                          "layouts"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Although control over the rendering of EPUB content documents to create fixed layouts is an obvious need not handled by other technologies, there are also considerations for reflowable content that are unique to EPUB publications (e.g., ..."
     },
     {
@@ -32483,6 +38503,12 @@
                          "refines",
                          "paginated"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "MUST NOT",
+                        "SHOULD NOT"
+                    ],
         "summary":  "The rendition:flow property specifies the EPUB creator preference for how reading systems should handle content overflow."
     },
     {
@@ -32501,6 +38527,10 @@
                          "itemref",
                          "\u003c package"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST NOT"
+                    ],
         "summary":  "EPUB creators MAY specify the following properties locally on spine itemref elements to override the global value for the given spine item:"
     },
     {
@@ -32521,6 +38551,9 @@
                          "itemref",
                          "properties"
                      ],
+        "rfc2119":  [
+                        "MUST NOT"
+                    ],
         "summary":  "The rendition:align-x-center property specifies that the given spine item should be centered horizontally in the viewport or spread."
     },
     {
@@ -32537,6 +38570,9 @@
                          "media",
                          "overlays"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "9. Media overlays in official EPUB Standard (Latest W3C Recommendation Redirect)."
     },
     {
@@ -32552,6 +38588,9 @@
         "keywords":  [
                          "introduction"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Mainstream ebooks, educational tools and ebooks formatted for persons with print disabilities are some examples of works that contain synchronized audio narration. In EPUB 3, EPUB creators can create these types of books using media over..."
     },
     {
@@ -32569,6 +38608,9 @@
                          "overlay",
                          "documents"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Media overlay documents in official EPUB Standard (Latest W3C Recommendation Redirect)."
     },
     {
@@ -32587,6 +38629,11 @@
                          "document",
                          "requirements"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "MUST NOT"
+                    ],
         "summary":  "MUST be valid to the media overlays schema as defined in G.3 Media overlays schema and conform to all content conformance constraints expressed in 9.2.2 Media overlay document definition ."
     },
     {
@@ -32606,6 +38653,9 @@
                          "definition",
                          "https://www.w3.org/ns/SMIL"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "All elements [ xml ] defined in this section are in the https://www.w3.org/ns/SMIL namespace [ xml-names ] unless otherwise specified."
     },
     {
@@ -32628,6 +38678,10 @@
                          "epub:prefix",
                          "head"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "REQUIRED"
+                    ],
         "summary":  "The smil element encapsulates all the information in an media overlay document ."
     },
     {
@@ -32647,6 +38701,9 @@
                          "metadata",
                          "[0 or 1]"
                      ],
+        "rfc2119":  [
+                        "OPTIONAL"
+                    ],
         "summary":  "The head element is the container for metadata in the media overlay document ."
     },
     {
@@ -32665,6 +38722,9 @@
                          "head",
                          "[0 or more]"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The metadata element represents metadata for the media overlay document . The metadata element is an extension point that allows the inclusion of metadata from any metainformation structuring language."
     },
     {
@@ -32687,6 +38747,10 @@
                          "epub:type",
                          "[optional]"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "REQUIRED"
+                    ],
         "summary":  "The body element is the starting point for the presentation contained in the media overlay document . It contains the main sequence of par and seq elements."
     },
     {
@@ -32709,6 +38773,10 @@
                          "[required]",
                          "U+0023 (#)"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST"
+                    ],
         "summary":  "The seq element is a sequential time container for media objects and/or child time containers."
     },
     {
@@ -32731,6 +38799,10 @@
                          "text",
                          "[exactly 1]"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST"
+                    ],
         "summary":  "The par element is a parallel time container for media objects."
     },
     {
@@ -32753,6 +38825,10 @@
                          "U+0023 (#)",
                          "[optional]"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "REQUIRED"
+                    ],
         "summary":  "The text element references an element in an EPUB content document . A text element typically refers to a textual element but can also refer to other EPUB content document media elements. In the absence of a sibling audio element, textua..."
     },
     {
@@ -32775,6 +38851,10 @@
                          "clipBegin",
                          "clipEnd"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "OPTIONAL"
+                    ],
         "summary":  "The audio element represents a clip of audio media."
     },
     {
@@ -32792,6 +38872,9 @@
                          "media",
                          "overlays"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Creating media overlays in official EPUB Standard (Latest W3C Recommendation Redirect)."
     },
     {
@@ -32814,6 +38897,9 @@
                          "src",
                          "clipBegin"
                      ],
+        "rfc2119":  [
+                        "OPTIONAL"
+                    ],
         "summary":  "EPUB creators can represent a pre-recorded narration of a publication as a series of audio clips, each corresponding to part of an EPUB content document . A single audio clip, for example, typically represents a single phrase or paragrap..."
     },
     {
@@ -32832,6 +38918,9 @@
                          "content",
                          "document"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "In this section, the EPUB content document is assumed to be an XHTML content document . While EPUB creators may use media overlays with SVG content documents , playback behavior might not be consistent and therefore interoperability is n..."
     },
     {
@@ -32854,6 +38943,9 @@
                          "audio",
                          "epub:textref"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "The body of a media overlay document consists of two elements: the par element and the seq element. The ordering of these elements represents how reading systems render the content in the corresponding EPUB content documents during playb..."
     },
     {
@@ -32874,6 +38966,10 @@
                          "text",
                          "src"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "SHOULD"
+                    ],
         "summary":  "Both the epub:textref attribute and the text element\u0027s src attribute may contain a URL-fragment string that references a specific part (e.g., an element via its ID) of the associated EPUB content document ."
     },
     {
@@ -32894,6 +38990,9 @@
                          "seq",
                          "epub:textref"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The granularity level of the media overlay depends on how EPUB creators mark up the EPUB content document and the type of fragment identifier they use in the text elements\u0027 src attributes and the seq elements\u0027 epub:textref attributes. Fo..."
     },
     {
@@ -32913,6 +39012,9 @@
                          "audio",
                          "text"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This specification allows the use of text-to-speech (TTS) — the rendering of the textual content of an EPUB publication as artificial human speech using a synthesized voice — in addition to pre-recorded audio clips."
     },
     {
@@ -32935,6 +39037,9 @@
                          "body",
                          "\u003c smil"
                      ],
+        "rfc2119":  [
+                        "MAY"
+                    ],
         "summary":  "To express structural semantics in media overlay documents , EPUB creators MAY specify the epub:type attribute on par , seq , and body elements."
     },
     {
@@ -32957,6 +39062,11 @@
                          "\u003c package",
                          "/* emphasize the active element */"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "MUST NOT"
+                    ],
         "summary":  "EPUB creators MAY express visual rendering information for the currently playing EPUB content document element in a CSS Style Sheet using author-defined classes."
     },
     {
@@ -32974,6 +39084,9 @@
                          "overlays",
                          "packaging"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Media overlays packaging in official EPUB Standard (Latest W3C Recommendation Redirect)."
     },
     {
@@ -32995,6 +39108,9 @@
                          "application/smil+xml",
                          "\u003cpackage …\u003e … \u003cmanifest\u003e \u003citem id ="
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "If an EPUB content document is wholly or partially referenced by a media overlay document , then its manifest item element MUST specify a media-overlay attribute. The attribute MUST reference the ID [ xml ] of the manifest item for the c..."
     },
     {
@@ -33017,6 +39133,11 @@
                          "item",
                          "narrator"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "SHOULD"
+                    ],
         "summary":  "EPUB creators MUST specify the duration of the entire EPUB publication in the package document using a meta element with the duration property ."
     },
     {
@@ -33033,6 +39154,9 @@
                          "skippability",
                          "escapability"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Skippability and escapability in official EPUB Standard (Latest W3C Recommendation Redirect)."
     },
     {
@@ -33054,6 +39178,9 @@
                          "\u003c smil",
                          "\u003c html"
                      ],
+        "rfc2119":  [
+                        "MAY"
+                    ],
         "summary":  "While reading, users may want to turn on or off certain features of the content, such as footnotes, page numbers, or other types of secondary content. This feature is called skippability. Reading systems use the semantic information prov..."
     },
     {
@@ -33073,6 +39200,9 @@
                          "aside",
                          "\u003c smil"
                      ],
+        "rfc2119":  [
+                        "MAY"
+                    ],
         "summary":  "Escapable items are nested structures, such as tables and lists, that users might wish to skip over, continuing to read from the point immediately after the nested structure. The escapability feature differs from the skippability feature..."
     },
     {
@@ -33090,6 +39220,9 @@
                          "document",
                          "overlays"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "As the EPUB navigation document is an XHTML content document , EPUB creators may associate a media overlay document with it. Unlike traditional XHTML content documents, however, reading systems must present the EPUB navigation document t..."
     },
     {
@@ -33105,6 +39238,9 @@
         "keywords":  [
                          "accessibility"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "EPUB 3 builds upon the Open Web Platform expressly so that it can leverage the structure, semantics and, by extension, accessibility built into its underlying technologies."
     },
     {
@@ -33121,6 +39257,9 @@
                          "security",
                          "privacy"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "11. Security and privacy in official EPUB Standard (Latest W3C Recommendation Redirect)."
     },
     {
@@ -33136,6 +39275,9 @@
         "keywords":  [
                          "overview"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The particularity of an EPUB publication is its structure. The EPUB format provides a means of representing, packaging, and encoding structured and semantically enhanced web content — including HTML, CSS, SVG, JavaScript, and other resou..."
     },
     {
@@ -33154,6 +39296,9 @@
                          "Content-Security-Policy",
                          "X-Frame-Options"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "EPUB publications pose a variety of privacy and security threats to unsuspecting users. Many of these threats intersect with web content, but EPUB also introduces its own unique methods of attack that can be used to trick users into acce..."
     },
     {
@@ -33171,6 +39316,9 @@
                          "features",
                          "epubReadingSystem"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "EPUB 3 tries to avoid extending the underlying technologies it builds on, but it has introduced some new features. The restricted scope of these features limits the threats they might pose, however:"
     },
     {
@@ -33186,6 +39334,10 @@
         "keywords":  [
                          "recommendations"
                      ],
+        "rfc2119":  [
+                        "SHOULD",
+                        "SHOULD NOT"
+                    ],
         "summary":  "Although EPUB creators cannot prevent every method of exploiting users, they are ultimately responsible for the secure construction of their content. That means that they need to take precautions to limit the exposure of their EPUB publi..."
     },
     {
@@ -33202,6 +39354,9 @@
                          "unsupported",
                          "features"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This specification contains certain features that are not yet fully supported in reading systems , that the Working Group no longer recommends for use, or that are only retained for interoperability with EPUB 2 reading systems. This sect..."
     },
     {
@@ -33218,6 +39373,9 @@
                          "under-implemented",
                          "features"
                      ],
+        "rfc2119":  [
+                        "MAY"
+                    ],
         "summary":  "A under-implemented feature is a feature introduced prior to EPUB 3.3 for which the Working Group has not been able to establish enough implementation experience ."
     },
     {
@@ -33234,6 +39392,9 @@
                          "deprecated",
                          "features"
                      ],
+        "rfc2119":  [
+                        "SHOULD NOT"
+                    ],
         "summary":  "A deprecated feature is one the Working Group no longer recommends for use in this version of the specification. Deprecated features typically have limited or no support in reading systems and/or usage in EPUB publications ."
     },
     {
@@ -33256,6 +39417,9 @@
                          "-// W3C //DTD MathML 3.0//EN",
                          "application/x-dtbncx+xml"
                      ],
+        "rfc2119":  [
+                        "MAY"
+                    ],
         "summary":  "The following table lists the public and system identifiers [ xml ] allowed in document type declarations . [ xml ]"
     },
     {
@@ -33273,6 +39437,9 @@
                          "structural",
                          "semantics"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "C. Expressing structural semantics in official EPUB Standard (Latest W3C Recommendation Redirect)."
     },
     {
@@ -33290,6 +39457,9 @@
                          "epub:type",
                          "role"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Structural semantics add additional meaning about the specific structural purpose an element plays. The epub:type attribute is used to express domain-specific semantics in EPUB content documents and media overlay documents , with the str..."
     },
     {
@@ -33309,6 +39479,9 @@
                          "role",
                          "\u003c html"
                      ],
+        "rfc2119":  [
+                        "MAY"
+                    ],
         "summary":  "Refer to the requirements for XHTML , SVG , and media overlays ."
     },
     {
@@ -33324,6 +39497,9 @@
         "keywords":  [
                          "vocabularies"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This appendix defines a general set of mechanisms by which attributes in this specification can reference terms from vocabularies. It also defines EPUB-specific vocabularies for use with the attributes."
     },
     {
@@ -33341,6 +39517,9 @@
                          "association",
                          "mechanisms"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "D.1 Vocabulary association mechanisms in official EPUB Standard (Latest W3C Recommendation Redirect)."
     },
     {
@@ -33359,6 +39538,9 @@
                          "epub:type",
                          "rel"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "EPUB defines a formal method of referencing terms and properties defined in metadata and semantic vocabularies using the property data type . The epub:type attribute uses this data type in EPUB content documents and media overlay documen..."
     },
     {
@@ -33381,6 +39563,9 @@
                          "\u003c meta",
                          "dcterms:"
                      ],
+        "rfc2119":  [
+                        "OPTIONAL"
+                    ],
         "summary":  "The property data type is a compact means of expressing a URL [ url ] and consists of an OPTIONAL prefix separated from a reference by a colon."
     },
     {
@@ -33399,6 +39584,9 @@
                          "property",
                          "prefix"
                      ],
+        "rfc2119":  [
+                        "MUST NOT"
+                    ],
         "summary":  "A default vocabulary is one that EPUB creators do not have to declare a prefix for in order to use its terms and properties where a property value is expected. EPUB creators MUST NOT add a prefix to terms and properties from a default vo..."
     },
     {
@@ -33421,6 +39609,10 @@
                          "http://www.idpf.org/2007/ops",
                          "\u003c html"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "MUST NOT"
+                    ],
         "summary":  "The prefix attribute defines prefix mappings for use in property values ."
     },
     {
@@ -33440,6 +39632,10 @@
                          "prefix",
                          "epub:type"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "SHOULD NOT"
+                    ],
         "summary":  "Although reserved prefixes are an authoring convenience, EPUB creators should avoid relying on them as they may cause interoperability issues. EPUB conformance checkers will often reject new prefixes until their developers update the too..."
     },
     {
@@ -33458,6 +39654,11 @@
                          "definitions",
                          "properties"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "REQUIRED"
+                    ],
         "summary":  "The fields in the vocabulary definition tables have the following implicit requirements:"
     },
     {
@@ -33477,6 +39678,9 @@
                          "property",
                          "refines"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "The properties in this vocabulary are usable in the meta element\u0027s property attribute."
     },
     {
@@ -33497,6 +39701,9 @@
                          "zero or more",
                          "\u003c metadata"
                      ],
+        "rfc2119":  [
+                        "MUST NOT"
+                    ],
         "summary":  "The alternate-script property provides an alternate expression of the associated property value in a different language and/or script. The language tags of the alternate-script property and its associated property — as expressed by their..."
     },
     {
@@ -33516,6 +39723,9 @@
                          "dc:subject",
                          "\u003c metadata"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The authority property identifies the system or scheme the referenced element\u0027s value is drawn from."
     },
     {
@@ -33538,6 +39748,10 @@
                          "zero or more",
                          "\u003c metadata"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "SHOULD"
+                    ],
         "summary":  "The belongs-to-collection property identifies the name of a collection to which the EPUB publication belongs. An EPUB publication MAY belong to one or more collections."
     },
     {
@@ -33560,6 +39774,9 @@
                          "belongs-to-collection",
                          "\u003c metadata"
                      ],
+        "rfc2119":  [
+                        "SHOULD"
+                    ],
         "summary":  "The collection-type property indicates the form or nature of a collection."
     },
     {
@@ -33577,6 +39794,9 @@
                          "xsd:unsignedInt",
                          "zero or one"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The display-seq property indicates the numeric position in which to display the current property relative to identical metadata properties."
     },
     {
@@ -33595,6 +39815,9 @@
                          "zero or one",
                          "\u003c metadata"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "D.3.6 file-as in official EPUB Standard (Latest W3C Recommendation Redirect)."
     },
     {
@@ -33615,6 +39838,9 @@
                          "zero or one",
                          "\u003c metadata"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The group-position property indicates the numeric position in which the EPUB publication is ordered relative to other works belonging to the same group (whether all EPUB publications or not)."
     },
     {
@@ -33637,6 +39863,9 @@
                          "dc:source",
                          "\u003c metadata"
                      ],
+        "rfc2119":  [
+                        "SHOULD"
+                    ],
         "summary":  "The identifier-type property indicates the form or nature of an identifier ."
     },
     {
@@ -33653,6 +39882,9 @@
                          "meta-auth",
                          "deprecated"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Use of this property is deprecated ."
     },
     {
@@ -33675,6 +39907,9 @@
                          "xsd:string",
                          "zero or more"
                      ],
+        "rfc2119":  [
+                        "SHOULD"
+                    ],
         "summary":  "The role property describes the role of a creator , contributor or publisher in the creation of an EPUB publication."
     },
     {
@@ -33695,6 +39930,9 @@
                          "zero or one",
                          "\u003c metadata"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The source-of property indicates a unique aspect of an adapted source resource that has been retained in the EPUB publication ."
     },
     {
@@ -33714,6 +39952,9 @@
                          "dc:subject",
                          "\u003c metadata"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The term property provides a subject code."
     },
     {
@@ -33736,6 +39977,9 @@
                          "collection",
                          "edition"
                      ],
+        "rfc2119":  [
+                        "SHOULD"
+                    ],
         "summary":  "The title-type property indicates the form or nature of a title ."
     },
     {
@@ -33752,6 +39996,9 @@
                          "examples",
                          "\u003c metadata"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "D.3.14 Examples in official EPUB Standard (Latest W3C Recommendation Redirect)."
     },
     {
@@ -33771,6 +40018,9 @@
                          "rel",
                          "properties"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The properties in this vocabulary are usable in the metadata link element\u0027s rel and properties attributes."
     },
     {
@@ -33789,6 +40039,9 @@
                          "rel",
                          "href"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The following values can be used in the link element rel attribute to establish the relationship of the resource referenced in the href attribute ."
     },
     {
@@ -33808,6 +40061,9 @@
                          "Zero or more",
                          "refines"
                      ],
+        "rfc2119":  [
+                        "MUST NOT"
+                    ],
         "summary":  "The alternate keyword is a subset of the HTML alternate keyword for links. It differs as follows:"
     },
     {
@@ -33827,6 +40083,9 @@
                          "media-type",
                          "application/marcxml+xml"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Use of the marc21xml-record keyword is deprecated . It is replaced by the record keyword with the media-type attribute value \" application/marcxml+xml \"."
     },
     {
@@ -33846,6 +40105,9 @@
                          "media-type",
                          "application/mods+xml"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Use of the mods-record keyword is deprecated . It is replaced by the record keyword with the media-type attribute value \" application/mods+xml \"."
     },
     {
@@ -33864,6 +40126,9 @@
                          "record",
                          "onix"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Use of the onix-record keyword is deprecated . It is replaced by the record keyword with the properties attribute value onix ."
     },
     {
@@ -33883,6 +40148,10 @@
                          "Zero or more",
                          "refines"
                      ],
+        "rfc2119":  [
+                        "MUST",
+                        "MUST NOT"
+                    ],
         "summary":  "Indicates that the referenced resource is a metadata record."
     },
     {
@@ -33901,6 +40170,9 @@
                          "Zero or more",
                          "refines"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "Indicates that the referenced audio file provides an aural representation of the expression or resource (typically, the title or creator) specified by the refines attribute."
     },
     {
@@ -33917,6 +40189,9 @@
                          "xml-signature",
                          "deprecated"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Use of the xml-signature keyword is deprecated . It is not replaced by another linking method."
     },
     {
@@ -33933,6 +40208,9 @@
                          "xmp-record",
                          "deprecated"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Use of the xmp-record keyword is deprecated ."
     },
     {
@@ -33949,6 +40227,9 @@
                          "link",
                          "properties"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The following values can be used in the link element\u0027s properties attribute to establish the type of record a referenced resource represents. These values are provided for record formats that cannot be uniquely identified by their media ..."
     },
     {
@@ -33964,6 +40245,9 @@
         "keywords":  [
                          "onix"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "D.4.2.1 onix in official EPUB Standard (Latest W3C Recommendation Redirect)."
     },
     {
@@ -33986,6 +40270,9 @@
                          "rendition:layout",
                          "rendition:layout-pre-paginated"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The prefix URL for referencing these properties is http://www.idpf.org/vocab/rendition/# ."
     },
     {
@@ -34004,6 +40291,9 @@
                          "properties",
                          "rendition:"
                      ],
+        "rfc2119":  [
+                        "MAY"
+                    ],
         "summary":  "Reading system developers may introduce functionality not defined in this specification to address reading system-specific issues rendering EPUB content documents ."
     },
     {
@@ -34022,6 +40312,9 @@
                          "vocabulary",
                          "item"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The properties in this vocabulary are usable in the manifest item element\u0027s properties attribute ."
     },
     {
@@ -34038,6 +40331,9 @@
                          "cover-image",
                          "Zero or one"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "D.6.1 cover-image in official EPUB Standard (Latest W3C Recommendation Redirect)."
     },
     {
@@ -34054,6 +40350,9 @@
                          "mathml",
                          "Zero or more"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "D.6.2 mathml in official EPUB Standard (Latest W3C Recommendation Redirect)."
     },
     {
@@ -34070,6 +40369,9 @@
                          "nav",
                          "Exactly one"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "D.6.3 nav in official EPUB Standard (Latest W3C Recommendation Redirect)."
     },
     {
@@ -34086,6 +40388,9 @@
                          "remote-resources",
                          "Zero or more"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The remote-resources property indicates that the described publication resource contains one or more internal references to other publication resources that are located outside of the EPUB container ."
     },
     {
@@ -34103,6 +40408,9 @@
                          "form",
                          "Zero or more"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "D.6.5 scripted in official EPUB Standard (Latest W3C Recommendation Redirect)."
     },
     {
@@ -34122,6 +40430,10 @@
                          "iframe",
                          "Zero or more"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST"
+                    ],
         "summary":  "The svg property indicates that the described publication resource embeds one or more instances of SVG markup."
     },
     {
@@ -34139,6 +40451,9 @@
                          "epub:switch",
                          "Zero or more"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The switch property indicates that the described publication resource contains one or more instances of the deprecated epub:switch element ."
     },
     {
@@ -34157,6 +40472,9 @@
                          "vocabulary",
                          "itemref"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The properties in this vocabulary are usable in the spine itemref element\u0027s properties attribute ."
     },
     {
@@ -34174,6 +40492,9 @@
                          "item",
                          "rendition:page-spread-left"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The page-spread-left property indicates that the first page of the associated item element\u0027s EPUB content document represents the left-hand side of a two-page spread."
     },
     {
@@ -34191,6 +40512,9 @@
                          "item",
                          "rendition:page-spread-right"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The page-spread-right property indicates that the first page of the associated item element\u0027s EPUB content document represents the right-hand side of a two-page spread."
     },
     {
@@ -34206,6 +40530,9 @@
         "keywords":  [
                          "examples"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "D.7.3 Examples in official EPUB Standard (Latest W3C Recommendation Redirect)."
     },
     {
@@ -34226,6 +40553,9 @@
                          "property",
                          "media:"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The properties in this vocabulary are usable in the meta element\u0027s property attribute."
     },
     {
@@ -34243,6 +40573,9 @@
                          "xsd:string",
                          "Zero or one"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "D.8.1 active-class in official EPUB Standard (Latest W3C Recommendation Redirect)."
     },
     {
@@ -34258,6 +40591,9 @@
         "keywords":  [
                          "duration"
                      ],
+        "rfc2119":  [
+                        "MUST"
+                    ],
         "summary":  "D.8.2 duration in official EPUB Standard (Latest W3C Recommendation Redirect)."
     },
     {
@@ -34275,6 +40611,9 @@
                          "xsd:string",
                          "Zero or more"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "D.8.3 narrator in official EPUB Standard (Latest W3C Recommendation Redirect)."
     },
     {
@@ -34292,6 +40631,9 @@
                          "xsd:string",
                          "Zero or one"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "D.8.4 playback-active-class in official EPUB Standard (Latest W3C Recommendation Redirect)."
     },
     {
@@ -34309,6 +40651,9 @@
                          "css",
                          "properties"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This appendix describes the prefixed CSS properties supported by EPUB."
     },
     {
@@ -34327,6 +40672,9 @@
                          "modes",
                          "-epub-"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This section describes the -epub- prefixed properties for [ css-writing-modes-3 ]."
     },
     {
@@ -34349,6 +40697,9 @@
                          "mixed",
                          "sideways"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This property is a prefixed version of the text-orientation property [ css-writing-modes-3 ]."
     },
     {
@@ -34366,6 +40717,9 @@
                          "property",
                          "writing-mode"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This property is a prefixed version of the writing-mode property [ css-writing-modes-3 ], with the same syntax and behavior."
     },
     {
@@ -34388,6 +40742,9 @@
                          "-epub-text-combine-horizontal: all",
                          "text-combine-upright: all"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "These properties are prefixed versions of the text-combine-upright property [ css-writing-modes-3 ], although -epub-text-combine is deprecated."
     },
     {
@@ -34406,6 +40763,9 @@
                          "level",
                          "-epub-"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This section describes the -epub- prefixed properties (and one prefixed value) for [ css-text-3 ]."
     },
     {
@@ -34424,6 +40784,9 @@
                          "hyphens",
                          "all"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This property is a prefixed version of the hyphens property [ css-text-3 ]."
     },
     {
@@ -34441,6 +40804,9 @@
                          "property",
                          "line-break"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This property is a prefixed version of the line-break property [ css-text-3 ]."
     },
     {
@@ -34458,6 +40824,9 @@
                          "property",
                          "text-align-last"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This property is a prefixed version of the text-align-last property [ css-text-3 ]."
     },
     {
@@ -34475,6 +40844,9 @@
                          "property",
                          "word-break"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This property is a prefixed version of the word-break property [ css-text-3 ]."
     },
     {
@@ -34493,6 +40865,9 @@
                          "-epub-fullwidth",
                          "text-transform: full-width"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This property is a prefixed value for the text-transform property [ css-text-3 ]."
     },
     {
@@ -34512,6 +40887,9 @@
                          "level",
                          "-epub-"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This section describes the -epub- prefixed properties for [ css-text-decor-3 ]."
     },
     {
@@ -34529,6 +40907,9 @@
                          "property",
                          "text-emphasis-color"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This property is a prefixed version of the text-emphasis-color property [ css-text-decor-3 ]."
     },
     {
@@ -34546,6 +40927,9 @@
                          "property",
                          "text-emphasis-position"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This property is a prefixed version of the text-emphasis-position property [ css-text-decor-3 ]."
     },
     {
@@ -34563,6 +40947,9 @@
                          "property",
                          "text-emphasis-style"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This property is a prefixed version of the text-emphasis-style property [ css-text-decor-3 ]."
     },
     {
@@ -34582,6 +40969,9 @@
                          "alphabetic",
                          "text-underline-position: auto"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This property is a prefixed version of the text-underline-position property [ css-text-decor-3 ]."
     },
     {
@@ -34600,6 +40990,9 @@
                          "tag",
                          "viewport meta"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "F. The viewport meta tag in official EPUB Standard (Latest W3C Recommendation Redirect)."
     },
     {
@@ -34616,6 +41009,9 @@
                          "introduction",
                          "viewport meta"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "As the Safari HTML definition of the viewport meta tag, that was used in earlier versions of EPUB 3, is not an officially recognized standard, this specification defines a basic syntax in order to allow EPUB creators to express width and..."
     },
     {
@@ -34638,6 +41034,11 @@
                          "width",
                          "viewport meta"
                      ],
+        "rfc2119":  [
+                        "MAY",
+                        "MUST",
+                        "MUST NOT"
+                    ],
         "summary":  "For fixed-layout documents , a viewport meta tag [ html ] MUST have name and content attributes that conform to the following definition:"
     },
     {
@@ -34653,6 +41054,9 @@
         "keywords":  [
                          "schemas"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "G. Schemas in official EPUB Standard (Latest W3C Recommendation Redirect)."
     },
     {
@@ -34670,6 +41074,9 @@
                          "document",
                          "schema"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A schema for package documents is available at https://github.com/w3c/epubcheck/tree/master/src/main/resources/com/adobe/epubcheck/schema/30/package-30.nvdl ."
     },
     {
@@ -34686,6 +41093,9 @@
                          "ocf",
                          "schemas"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "G.2 OCF schemas in official EPUB Standard (Latest W3C Recommendation Redirect)."
     },
     {
@@ -34704,6 +41114,9 @@
                          "xml",
                          "container.xml"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A schema for container.xml files is available at https://github.com/w3c/epubcheck/tree/master/src/main/resources/com/adobe/epubcheck/schema/30/ocf-container-30.nvdl ."
     },
     {
@@ -34722,6 +41135,9 @@
                          "xml",
                          "encryption.xml"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The schema for encryption.xml files is included in [ xmlsec-rngschema-20130411 ]."
     },
     {
@@ -34740,6 +41156,9 @@
                          "xml",
                          "signatures.xml"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The schema for signatures.xml files is included in [ xmlsec-rngschema-20130411 ]."
     },
     {
@@ -34757,6 +41176,9 @@
                          "overlays",
                          "schema"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A schema for media overlay documents is available at https://github.com/w3c/epubcheck/tree/main/src/master/resources/com/adobe/epubcheck/schema/30/media-overlay-30.nvdl ."
     },
     {
@@ -34773,6 +41195,9 @@
                          "detailed",
                          "examples"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "H. Detailed examples in official EPUB Standard (Latest W3C Recommendation Redirect)."
     },
     {
@@ -34795,6 +41220,9 @@
                          "font/font-file.otf",
                          "font/font-file.cff"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Consider the following extracts of a package document and an XHTML content document :"
     },
     {
@@ -34817,6 +41245,9 @@
                          "head",
                          "iframe"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Consider the following example package document :"
     },
     {
@@ -34839,6 +41270,9 @@
                          "\u003c?xml version= \"1.0\"",
                          "META-INF/signatures.xml"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This example demonstrates the use of the OCF format to contain a signed and encrypted EPUB publication within an OCF ZIP container ."
     },
     {
@@ -34861,6 +41295,9 @@
                          "09:58",
                          "00:56.78"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The following are examples of allowed clock values:"
     },
     {
@@ -34878,6 +41315,9 @@
                          "type",
                          "registrations"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "I. Media type registrations in official EPUB Standard (Latest W3C Recommendation Redirect)."
     },
     {
@@ -34900,6 +41340,9 @@
                          "oebps-package+xml",
                          "application/oepbs-package+xml"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This appendix registers the media type application/oebps-package+xml for the EPUB package document. This registration supersedes RFC4839 (see https://www.rfc-editor.org/rfc/rfc4839 )."
     },
     {
@@ -34922,6 +41365,9 @@
                          "epub+zip",
                          "application/zip"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This appendix registers the media type application/epub+zip for the EPUB Open Container Format (OCF)."
     },
     {
@@ -34944,6 +41390,9 @@
                          "container",
                          "dc:contributor"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "J.1 Terms defined by this specification in official EPUB Standard (Latest W3C Recommendation Redirect)."
     },
     {
@@ -34966,6 +41415,9 @@
                          "content",
                          "meta"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "J.2 Terms defined by reference in official EPUB Standard (Latest W3C Recommendation Redirect)."
     },
     {
@@ -34981,6 +41433,9 @@
         "keywords":  [
                          "acknowledgements"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Specifications, like art, are human creations. No human has done more for EPUB than Garth Conboy, who has been there every step of the way, from the very first OEB 1.0 in 1999 to today\u0027s EPUB 3.3. None of this would have happened without..."
     },
     {
@@ -34996,6 +41451,9 @@
         "keywords":  [
                          "introduction"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "1. Introduction in official EPUB 3.4 Authoring Guidelines \u0026 Overview."
     },
     {
@@ -35012,6 +41470,9 @@
                          "reading",
                          "document"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The EPUB 3 format offers publishers the ability to create advanced reading experiences by leveraging the features and functionalities of the Open Web Platform. The ability to use HTML, SVG, CSS, and JavaScript enables not only rich and i..."
     },
     {
@@ -35028,6 +41489,9 @@
                          "reading",
                          "specifications"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "For those interested in going beyond the general introduction presented in this document, the EPUB 3.4 specification [ epub-34 ] contains all the essential authoring information."
     },
     {
@@ -35044,6 +41508,9 @@
                          "version",
                          "numbering"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "An initial point of confusion for people new to EPUB is the difference between \"EPUB 3\" the format and the EPUB 3 specification numbering. The current version of EPUB 3 is defined in the EPUB 3.4 specification [ epub-34 ]. The minor numb..."
     },
     {
@@ -35060,6 +41527,9 @@
                          "epub",
                          "container"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "An EPUB publication is transported and interchanged as a single file (a \"portable document\") that contains the package document , the EPUB content documents , and all other required resources for processing the publication. The single-fi..."
     },
     {
@@ -35079,6 +41549,9 @@
                          "link",
                          "unique-identifier"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Every EPUB publication is represented by a package document . The package document specifies all the resources required to render that representation of the content. The package document also defines a reading order for linear consumptio..."
     },
     {
@@ -35095,6 +41568,9 @@
                          "reading",
                          "order"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A key concept of EPUB is that an EPUB publication consists of multiple resources that can be completely navigated and consumed by a person or program in some specific order ."
     },
     {
@@ -35113,6 +41589,9 @@
                          "nav",
                          "hidden"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Each EPUB publication contains a special XHTML content document called the EPUB navigation document . This document uses the [ html ] nav element to define human- and machine-readable navigation information. All reading systems make use ..."
     },
     {
@@ -35131,6 +41610,9 @@
                          "audio",
                          "video"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Each EPUB publication contains one or more EPUB content documents , as defined in [ epub-34 ]. These are HTML or SVG documents that describe the readable content and reference associated media resources (e.g., images, audio, and video cl..."
     },
     {
@@ -35147,6 +41629,9 @@
                          "rendering",
                          "css"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A key concept of EPUB is that content presentation adapts to the user, rather than the user having to adapt to a particular presentation of content. HTML was originally designed to support dynamic rendering of structured content, but ove..."
     },
     {
@@ -35164,6 +41649,9 @@
                          "audio",
                          "video"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "EPUB 3 supports the embedding of audio and video in XHTML content documents via the [ html ] audio and video elements, inheriting all the functionality and features these elements provide (e.g., built-in start, stop, and volume controls)..."
     },
     {
@@ -35179,6 +41667,9 @@
         "keywords":  [
                          "fonts"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "EPUB 3 supports two closely related font formats — OpenType [ opentype ] and WOFF [ woff ] [ woff2 ] — to accommodate both traditional publishing workflows and emerging web-based workflows. Word processing programs used to create EPUB pu..."
     },
     {
@@ -35194,6 +41685,9 @@
         "keywords":  [
                          "scripting"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "EPUB strives to treat content declaratively — as data that can be manipulated, not as programs to be executed — but does support scripting as defined in [ html ] and [ svg ]. This allows publishers to build and add dynamic content such a..."
     },
     {
@@ -35211,6 +41705,9 @@
                          "enrichment",
                          "script"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "XHTML content documents also include the means of adding rich metadata to document markup, making them more semantically meaningful and useful both for processing and accessibility purposes. Publishers can use both RDFa [ rdfa-in-html ] ..."
     },
     {
@@ -35228,6 +41725,9 @@
                          "semantics",
                          "epub:type"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "EPUB 3 also includes the epub:type attribute [ epub-34 ] for adding additional information to any element in an EPUB content document to express its purpose and meaning within the work."
     },
     {
@@ -35243,6 +41743,9 @@
         "keywords":  [
                          "layouts"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "7. Layouts in official EPUB 3.4 Authoring Guidelines \u0026 Overview."
     },
     {
@@ -35259,6 +41762,9 @@
                          "reflowable",
                          "layouts"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "At its core, EPUB is designed for dynamic layout: content is typically intended to be formatted on the fly rather than being typeset in a paginated manner in advance. This core capability is useful for optimizing rendering onto different..."
     },
     {
@@ -35275,6 +41781,9 @@
                          "fixed",
                          "layouts"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Although EPUB\u0027s history is steeped in enabling reflowable content, not all publications lend themselves easily to reflowing. Page-precise layouts are required to meaningfully represent children\u0027s books, comics and manga, magazines, and m..."
     },
     {
@@ -35291,6 +41800,9 @@
                          "aural",
                          "rendering"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Although EPUB 3 is primarily considered a visual reading format, EPUB publications are designed to enable their aural rendering as well. There are two primary ways this can done:"
     },
     {
@@ -35306,6 +41818,9 @@
         "keywords":  [
                          "text-to-speech"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Unfortunately, there are currently no broadly supported technologies for text-to-speech, which also means that the EPUB specification cannot normatively refer any specific approach. Nevertheless, there exist a number of specifications th..."
     },
     {
@@ -35322,6 +41837,9 @@
                          "media",
                          "overlays"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A key multimedia feature of EPUB 3 is the ability to define media overlays. When pre-recorded narration is available for an EPUB publication , media overlays provide the ability to synchronize the playback of that audio with the text of ..."
     },
     {
@@ -35342,6 +41860,9 @@
                          "xml:lang",
                          "page-progression-direction"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "EPUB 3 leverages the features in XHTML, SVG, CSS, or MathML for global language support. Publishers may use the Internationalization Tag Set (ITS) [ its20 ] to facilitate translations and multilingual publications. EPUB 3 also relies on ..."
     },
     {
@@ -35361,6 +41882,9 @@
                          "audio",
                          "video"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A major goal of EPUB is to facilitate content accessibility. To achieve this goal, the EPUB Accessibility specification [ epub-a11y-12 ] provides a framework for evaluating the accessibility of EPUB publications . It leverages the extens..."
     },
     {
@@ -35376,6 +41900,9 @@
         "keywords":  [
                          "annotations"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Most reading systems include the possibility to add annotations to their content. These are usually anchored to a specific position in a way that the anchor remains valid even if the content is repaginated or changed. The annotation itse..."
     },
     {
@@ -35393,6 +41920,9 @@
                          "experimental",
                          "features"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "EPUB 3 is continuously evolving with the web to adapt new features and technologies. The specification references a number of web standards that automatically becomes valid to use as soon as they change. HTML, for example, is now called ..."
     },
     {
@@ -35409,6 +41939,9 @@
                          "epub",
                          "documents"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A. EPUB 3 documents in official EPUB 3.4 Authoring Guidelines \u0026 Overview."
     },
     {
@@ -35424,6 +41957,9 @@
         "keywords":  [
                          "specifications"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "EPUB 3 is currently defined by the following specifications:"
     },
     {
@@ -35440,6 +41976,9 @@
                          "notes",
                          "exemption"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Although the following documents are informative, they provide guidance related to implementing the EPUB 3 specifications as well as define experimental features."
     },
     {
@@ -35457,6 +41996,9 @@
                          "revision",
                          "history"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "B. EPUB revision history in official EPUB 3.4 Authoring Guidelines \u0026 Overview."
     },
     {
@@ -35476,6 +42018,9 @@
                          "1999",
                          "2010"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "EPUB has its roots in the interchange format known as the Open EBook Publication Structure (OEBPS). OEBPS 1.0 was approved in 1999 by the Open eBook Forum, an organization that later became the International Digital Publishing Forum (IDP..."
     },
     {
@@ -35492,6 +42037,9 @@
                          "epub",
                          "2010"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Work on a major revision of the EPUB specifications began in 2010, with the goal of aligning EPUB more closely with HTML. As part of that alignment, the reference to HTML was changed: while EPUB 2.0 referred to XHTML 1.1 [ xhtml11 ], EPU..."
     },
     {
@@ -35508,6 +42056,9 @@
                          "epub",
                          "2014"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The EPUB 3.0.1 revision was undertaken in 2013-14. Although introducing mostly minor fixes and updates, it did see the integration of fixed layout documents to provide greater control over the presentation of EPUB publications. See [ epu..."
     },
     {
@@ -35524,6 +42075,9 @@
                          "epub",
                          "2017"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "EPUB 3.1 was the first minor revision of EPUB 3. The goal of that revision was to better align EPUB 3 with web standards of the time. References to important standards were made undated, meaning that whenever they are updated they are le..."
     },
     {
@@ -35540,6 +42094,9 @@
                          "epub",
                          "2018"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The work on EPUB 3.2 was undertaken shortly after EPUB 3.1 to restore compatibility of content to EPUB 3. The change of version number introduced in EPUB 3.1 meant that publishers, vendors and reading system developers would have had to ..."
     },
     {
@@ -35556,6 +42113,9 @@
                          "epub",
                          "2022"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The work on EPUB 3.3 [ epub-33 ] was undertaken in 2020-21, and was the first version of the EPUB 3 series published as a W3C Recommendation. EPUB 3.3 did not include any significant technical change to, and is strongly backward compatib..."
     },
     {
@@ -35572,6 +42132,9 @@
                          "epub",
                          "2027"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Part of the work on EPUB 3.4, which started in 2025, was simplification: a number of attributes, primarily related to layout, were removed from the specification. These attributes were usually ignored by reading systems, due to the way t..."
     },
     {
@@ -35594,6 +42157,9 @@
                          "audio",
                          "nav"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "C.1 Terms defined by reference in official EPUB 3.4 Authoring Guidelines \u0026 Overview."
     },
     {
@@ -35609,6 +42175,9 @@
         "keywords":  [
                          "events"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Events in official W3C Publishing Events Archive."
     },
     {
@@ -35624,6 +42193,9 @@
         "keywords":  [
                          "presentations"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Presentations in official W3C Publishing Events Archive."
     },
     {
@@ -35640,6 +42212,9 @@
                          "current",
                          "testimonials"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Current Testimonials in official W3C Publishing Testimonials."
     },
     {
@@ -35656,6 +42231,9 @@
                          "past",
                          "testimonials"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Past Testimonials in official W3C Publishing Testimonials."
     },
     {
@@ -35671,6 +42249,9 @@
         "keywords":  [
                          "introduction"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Introduction in official Package Metadata Authoring Guide."
     },
     {
@@ -35693,6 +42274,9 @@
                          "a11y:contactEmail",
                          "dcterms:date"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Accessibility metadata expressed in the EPUB 3 package document [[epub-3]] is derived from three main sources: Schema.org [[schema-org]], the EPUB accessibility vocabulary [[epub-a11y]], and Dublin Core [[dcterms]]."
     },
     {
@@ -35714,6 +42298,9 @@
                          "content",
                          "refines"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Although the primary focus of this document is on EPUB 3 [[epub-3]], it is also expected that it can be used as a reference for adding accessibility metadata to EPUB 2 publications [[opf-201]]."
     },
     {
@@ -35730,6 +42317,9 @@
                          "content",
                          "readability"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Content readability in official Package Metadata Authoring Guide."
     },
     {
@@ -35752,6 +42342,9 @@
                          "accessModeSufficient",
                          "textual"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "When it comes to applying discovery metadata to an EPUB publication [[epub-3]], most of the accessibility properties are easily understood from their names \u0026#8212; accessibilityFeature describes accessible features of the content, for ex..."
     },
     {
@@ -35768,6 +42361,9 @@
                          "access",
                          "modes"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "For an introduction to access modes and how they differ from sufficient access modes, refer to the readability metadata explainer ."
     },
     {
@@ -35788,6 +42384,9 @@
                          "textual",
                          "visual"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Access modes are declared using the schema:accessMode property [[schema-org]], repeating the property for each applicable mode. The access modes must not be grouped together in a single tag."
     },
     {
@@ -35806,6 +42405,9 @@
                          "conformance",
                          "accessMode"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "[[[epub-a11y]]] [[epub-a11y]] only recommends that the access modes of a publication be specified in the accessMode property [[a11y-discov-vocab]] as they are not as important for determining usability as the sufficient access modes ."
     },
     {
@@ -35823,6 +42425,9 @@
                          "access",
                          "mode"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The primary access modes are the ones that directly capture how the information necessary to read and understand a publication is encoded. They do not include affordances to make content accessible, such as alternative text and extended ..."
     },
     {
@@ -35843,6 +42448,9 @@
                          "title",
                          "desc"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The most common access mode for EPUB publications [[epub-3]] is textual. It indicates that at least some of the information necessary to read a publication is encoded using Unicode characters [[unicode]], and is declared by setting a tex..."
     },
     {
@@ -35860,6 +42468,9 @@
                          "content",
                          "visual (access mode)"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "It is common for EPUB publications [[epub-3]] to contain some visual content. Some publications, such as comics and manga, will even be entirely image based. But visual does not mean the information is only in static images. Visual conte..."
     },
     {
@@ -35882,6 +42493,9 @@
                          "colorDependent",
                          "mathOnVisual"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The visual content indicators are a special class of values that extend the visual access mode . As a supplementary piece of information, their use is only advisory and they must always be paired with a visual access mode declaration."
     },
     {
@@ -35899,6 +42513,9 @@
                          "content",
                          "auditory (access mode)"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Auditory content includes any content that requires a user to be able to hear it in order to understand it. The most common forms of auditory content are standalone audio clips embedded in a publication and any video that is accompanied ..."
     },
     {
@@ -35918,6 +42535,9 @@
                          "synchronizedAudioText",
                          "textual"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A special case for audio in EPUB 3 involves text and audio synchronization using the media overlays feature [[epub-3]]. Setting the correct access modes and sufficient access modes for EPUB 3 publications that contain synchronized text-a..."
     },
     {
@@ -35937,6 +42557,9 @@
                          "visual",
                          "tactile (access mode)"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Tactile content is less common in mainstream EPUB publications [[epub-3]] but it is sometimes found in content produced specially for users who are blind, and in particular is central to the eBraille format which is based on EPUB 3."
     },
     {
@@ -35954,6 +42577,9 @@
                          "access",
                          "modes"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "For an introduction to sufficient access modes and how they differ from access modes, refer to the readability metadata explainer ."
     },
     {
@@ -35973,6 +42599,9 @@
                          "modes",
                          "schema:accessModeSufficient"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Sufficient access modes are declared in the schema:accessModeSufficient property [[schema-org]]."
     },
     {
@@ -35991,6 +42620,9 @@
                          "conformance",
                          "accessModeSufficient"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "[[[epub-a11y]]] [[epub-a11y]] requires that the sufficient access modes of a publication be specified in the accessModeSufficient property [[a11y-discov-vocab]]."
     },
     {
@@ -36008,6 +42640,9 @@
                          "reading",
                          "modes"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Although sufficient access mode are expressed as sets consisting of one or more values, the most strongly recommended sets to list are the ones that consist of only a single value. The reason why these are so important is because they te..."
     },
     {
@@ -36024,6 +42659,9 @@
                          "textual",
                          "textual (sufficient access mode)"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Setting the textual (sufficient access mode) value indicates that information necessary to read a publication is available in text form."
     },
     {
@@ -36040,6 +42678,9 @@
                          "visual",
                          "visual (sufficient access mode)"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Setting the visual (sufficient access mode) value indicates that information necessary to read a publication is available in visual form, such as in images and video."
     },
     {
@@ -36061,6 +42702,9 @@
                          "textual",
                          "visual"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Setting the auditory (sufficient access mode) value indicates that information necessary to read a publication is available as prerecorded audio (whether prerecorded human speech or prerecorded synthetic speech)."
     },
     {
@@ -36077,6 +42721,9 @@
                          "tactile",
                          "tactile (sufficient access mode)"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Setting the tactile (sufficient access mode) value indicates that information necessary to read a publication is available in tactile form. It indicates some mix of braille Unicode characters [[unicode]], tactile graphics, and tactile ob..."
     },
     {
@@ -36096,6 +42743,9 @@
                          "textual",
                          "visual"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Although the single sufficient access modes are considered the most important to set, it is also helpful to give users a complete picture of all the ways the content can be read, especially if the primary access modes are not set."
     },
     {
@@ -36112,6 +42762,9 @@
                          "accessibility",
                          "features"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Accessibility features in official Package Metadata Authoring Guide."
     },
     {
@@ -36127,6 +42780,9 @@
         "keywords":  [
                          "overview"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Overview in official Package Metadata Authoring Guide."
     },
     {
@@ -36144,6 +42800,9 @@
                          "features",
                          "schema:accessibilityFeature"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Identifying the accessibility features and adaptations included in an EPUB publication [[epub-3]] allows users to determine whether the content is usable at a more fine-grained level than the access modes do."
     },
     {
@@ -36163,6 +42822,9 @@
                          "accessibilityFeature",
                          "unknown"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "[[[epub-a11y]]] [[epub-a11y]] requires that the accessibility features of an EPUB publication [[epub-3]] be specified in the accessibilityFeature property [[a11y-discov-vocab]]. This means that at least one accessibility feature must be ..."
     },
     {
@@ -36179,6 +42841,9 @@
                          "claim",
                          "features"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "One of the most common questions about accessibility features is not what they refer to but when they can be claimed for an EPUB publication [[epub-3]]. Features may not be applicable in every situation, for example, such as extended des..."
     },
     {
@@ -36198,6 +42863,9 @@
                          "unknown",
                          "accessibilityFeature"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "There may be times when the presence of accessibility features is not known but a statement is still needed in the package document [[epub-3]] metadata. This usually happens if a placeholder is needed until an accessibility evaluation is..."
     },
     {
@@ -36216,6 +42884,9 @@
                          "none (feature)",
                          "accessibilityFeature"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "It is first worth noting that it is rare that there are no accessibility features in an EPUB publication [[epub-3]], even if the publication as a whole does not meet minimum accessibility conformance standards. Except for some edge cases..."
     },
     {
@@ -36231,6 +42902,9 @@
         "keywords":  [
                          "organization"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Accessibility features are addressed in this document based on common use patterns rather than as individual values in isolation."
     },
     {
@@ -36253,6 +42927,9 @@
                          "describedMath",
                          "displayTransformability"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "As EPUB 2 uses XHTML 1.1 [[xhtml11]] for authoring content, it lacks many of the enhanced features of EPUB 3. The following table identifies whether accessibility features can be authored in EPUB 2 publications."
     },
     {
@@ -36272,6 +42949,9 @@
                          "synchronizedAudioText",
                          "text"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "EPUB 3 publications allow the aural rendering of text content through the use of text-to-speech (TTS) playback (commonly referred to as \"read aloud\" capability) and media overlays [[epub-3]]. Both are capable of providing audio playback ..."
     },
     {
@@ -36289,6 +42969,9 @@
                          "MathML-chemistry",
                          "latex-chemistry"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Providing accessible markup for chemical formulas and equations allows users to inspect the equations themselves rather than rely on images of the content with alternative text and descriptions. Even when care is taken in the writing of ..."
     },
     {
@@ -36306,6 +42989,9 @@
                          "control",
                          "displayTransformability"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The displayTransformability accessibility feature value is used to indicate that the user can modify the presentation of the text content of an EPUB publication [[epub-3]] without negatively affecting the readability."
     },
     {
@@ -36324,6 +43010,9 @@
                          "highContrastDisplay",
                          "largePrint"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "There are two values for indicating that the display of an EPUB publication [[epub-3]] has been enhanced by the publisher."
     },
     {
@@ -36343,6 +43032,9 @@
                          "longDescription",
                          "longdesc"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Providing text alternatives is key to making images accessible to readers who cannot perceive them or have difficulty processing the content."
     },
     {
@@ -36363,6 +43055,9 @@
                          "alternativeText",
                          "longDescription"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "There are several ways to provide accessible math equations in EPUB publications but support in reading systems [[epub-3]] has historically been a barrier to the adoption of the most accessible methods. For example, although MathML [[mat..."
     },
     {
@@ -36384,6 +43079,9 @@
                          "transcript",
                          "highContrastAudio"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Audio and video content often require a mix of features to improve their accessibility. While audio-only files only have to take their sound into consideration, video content typically mixes both important visual information with essenti..."
     },
     {
@@ -36403,6 +43101,9 @@
                          "ARIA",
                          "structuralNavigation"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "EPUB requires that every publication provide a table of contents in the navigation document, so it is almost always possible to claim the tableOfContents accessibility feature."
     },
     {
@@ -36425,6 +43126,9 @@
                          "a11y:pageBreakSource",
                          "schema:accessibilityFeature"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Whether an EPUB publication [[epub-3]] is produced with a print equivalent or not, being able to locate and move to static page break locations is an important feature to help users navigate the content. It is useful in educational setti..."
     },
     {
@@ -36441,6 +43145,9 @@
                          "portability",
                          "unlocked"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The absence of digital rights management (DRM) schemes is a critical accessibility feature as it ensures that users can access the content with their preferred reading systems [[epub-3]] and assistive technologies, which might otherwise ..."
     },
     {
@@ -36458,6 +43165,9 @@
                          "order",
                          "readingOrder"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "It is important to indicate if an EPUB has a defined reading order in the markup because it ensures that users of assistive technologies can follow the narrative in order. When the visual presentation of the content does not match the or..."
     },
     {
@@ -36476,6 +43186,9 @@
                          "fullRubyAnnotations",
                          "rubyAnnotations"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Ruby annotations are used as pronunciation guides for logographic characters in languages like Chinese, Japanese, and Korean (CJK). They make difficult CJK ideographic characters more accessible for language learners, native speakers of ..."
     },
     {
@@ -36492,6 +43205,9 @@
                          "scripting",
                          "timingControl"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The accessibility of scripted content is generally covered by conformance to WCAG 2 [[wcag2]]. As a result, the schema.org vocabulary currently only contains a single term related to timed content."
     },
     {
@@ -36511,6 +43227,9 @@
                          "tactileGraphic",
                          "tactileObject"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "As EPUB publications [[epub-3]] can be read on refreshable braille devices, it is possible for a publication to include textual alternatives encoded using Unicode braille characters (see the Braille Patterns [[unicode]])."
     },
     {
@@ -36529,6 +43248,9 @@
                          "withAdditionalWordSegmentation",
                          "withoutAdditionalWordSegmentation"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Word segmentation refers to whether additional spacing is added to languages that do not normally use whitespace characters to separate words (e.g., Chinese, Japanese, Thai, and Lao). Adding additional whitespace can make it easier to re..."
     },
     {
@@ -36547,6 +43269,9 @@
                          "horizontalWriting",
                          "verticalWriting"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Some languages, such as Chinese, Japanese, and Korean, can be written both vertically and horizontally, but the choice of writing direction can make it harder for some users to follow the text."
     },
     {
@@ -36563,6 +43288,9 @@
                          "accessibility",
                          "hazards"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Accessibility hazards in official Package Metadata Authoring Guide."
     },
     {
@@ -36585,6 +43313,9 @@
                          "noFlashingHazard",
                          "noMotionSimulationHazard"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "There are three types of hazards that can affect readers of digital content:"
     },
     {
@@ -36607,6 +43338,9 @@
                          "unknownMotionSimulationHazard",
                          "unknownSoundHazard"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "[[[epub-a11y]]] [[epub-a11y]] requires the status of all content hazards be identified using the accessibilityHazard property [[a11y-discov-vocab]]."
     },
     {
@@ -36626,6 +43360,9 @@
                          "motionSimulation",
                          "sound"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "It is a critical health and safety issue to alert photosensitive users if a publication is known to contain content that flashes more than three times in any one second period or where the flash is below the general flash and red flash t..."
     },
     {
@@ -36646,6 +43383,9 @@
                          "noMotionSimulationHazard",
                          "noFlashingHazard"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Many books have no content that will pose a hazard to users. This is especially true of novels and similar books that consist only of headings and text. Instead of having to declare that each individual hazard type is not present, a shor..."
     },
     {
@@ -36667,6 +43407,9 @@
                          "unknownMotionSimulationHazard",
                          "unknownFlashingHazard"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "There may be times when the presence of accessibility hazards is not known but a statement is still needed in the package document [[epub-3]] metadata. This usually happens if a placeholder is needed until an accessibility evaluation is ..."
     },
     {
@@ -36687,6 +43430,9 @@
                          "schema:accessibilityFeature",
                          "xml:lang"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "An accessibility summary provides a brief, human-readable description of the accessibility characteristics of an EPUB publication [[epub-3]] that cannot be expressed through the other discovery metadata. It is also used to provide additi..."
     },
     {
@@ -36705,6 +43451,9 @@
                          "conformance",
                          "accessibilitySummary"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "[[[epub-a11y]]] [[epub-a11y]] only recommends an accessibilitySummary property [[a11y-discov-vocab]] be included if there is information to express that is not already captured by the other accessibility metadata."
     },
     {
@@ -36721,6 +43470,9 @@
                          "conformance",
                          "metadata"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Conformance metadata in official Package Metadata Authoring Guide."
     },
     {
@@ -36736,6 +43488,9 @@
         "keywords":  [
                          "overview"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "[[[epub-a11y]]] [[epub-a11y]] defines metadata for indicating whether a publication meets its conformance requirements, as well as how to report information such as who performed the evaluation, what credentials the evaluator holds, and ..."
     },
     {
@@ -36752,6 +43507,9 @@
                          "conformance",
                          "claims"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "For historical reasons, the EPUB accessibility vocabulary uses \"certifier\" and \"certified\" in the names of its properties. No official authority was intended from this choice of name, but it often causes confusion in regions where certif..."
     },
     {
@@ -36770,6 +43528,9 @@
                          "dcterms:conformsTo",
                          "dctems:conformsTo"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "When an EPUB publication [[epub-3]] meets the discovery and accessibility requirements of [[[epub-a11y]]] [[epub-a11y]], a conformance claim can be made using the dcterms:conformsTo property [[dcterms]]."
     },
     {
@@ -36789,6 +43550,9 @@
                          "refines",
                          "refines attribute"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "It is possible for an EPUB publication to contain more than one conformance claim. For example, a publisher might add a dcterms:conformsTo tag that identifies an internal standard that the publication meets. Or a claim could be made to a..."
     },
     {
@@ -36810,6 +43574,9 @@
                          "meta",
                          "alternate-script"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Providing the name of the evaluator is required when a conformance claim is made. It is helpful to users in terms of assessing the quality of the evaluation performed. A user might be warier of a publisher self-certifying their work, for..."
     },
     {
@@ -36830,6 +43597,9 @@
                          "refines",
                          "meta"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "To help users establish trust that the evaluator of the publication has the skills necessary to properly evaluate an EPUB publication [[epub-3]] for conformance, a credential can be attached to their name using the a11y:certifierCredenti..."
     },
     {
@@ -36849,6 +43619,9 @@
                          "dcterms:date",
                          "refines"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Although users will typically assume that an evaluation was performed prior to the release of an EPUB publication [[epub-3]], it can be helpful to users to have the date explicitly stated. More often, though, this date is only used by th..."
     },
     {
@@ -36870,6 +43643,9 @@
                          "refines",
                          "href"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "When performing a conformance evaluation, a detailed report is often produced to prove that a publication meets all the requirements of the EPUB Accessibility standard [[epub-a11y]] and WCAG success criteria [[wcag2]]. Making this report..."
     },
     {
@@ -36891,6 +43667,9 @@
                          "eaa-fundamental-alteration",
                          "eaa-microenterprise"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "In jurisdictions where accessibility conformance is mandated by law, it is also possible that some publishers are granted exemptions from full conformance. Exemptions may be granted, for example, for small and self-publishers who cannot ..."
     },
     {
@@ -36910,6 +43689,9 @@
                          "a11y:contactEmail",
                          "refines"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Providing a contact email address for accessibility inquiries is another helpful way to establish trust with users. While conformance and discovery metadata provide a useful picture of the accessibility of a publication, it cannot cover ..."
     },
     {
@@ -36926,6 +43708,9 @@
                          "accessibility",
                          "metadata"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The following example show the full set of accessibility metadata for an EPUB publication [[epub-3]] that:"
     },
     {
@@ -36944,6 +43729,9 @@
                          "readability",
                          "metadata"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Evaluating content readability metadata in official Package Metadata Authoring Guide."
     },
     {
@@ -36962,6 +43750,9 @@
                          "synchronizedAudioText",
                          "schema:accessMode"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This section provides a process for evaluating which access modes and sufficient access modes to declare for an EPUB publication [[epub-3]]."
     },
     {
@@ -36977,6 +43768,9 @@
         "keywords":  [
                          "results"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The following examples show the access modes and sufficient access modes that would result from carrying out a readability evaluation for common content scenarios."
     },
     {
@@ -36994,6 +43788,9 @@
                          "accessibility",
                          "features"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "This appendix provides introductory information on what accessibility features are and how to determine if an EPUB publication [[epub-3]] contains them. It is only for intended for individuals unfamiliar with their markup or styling."
     },
     {
@@ -37012,6 +43809,9 @@
                          "title",
                          "desc"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Alternative text provides a brief description of an image."
     },
     {
@@ -37029,6 +43829,9 @@
                          "structural",
                          "roles"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "ARIA structural roles provide additional context for assistive technologies about the type of content the user is reading."
     },
     {
@@ -37045,6 +43848,9 @@
                          "audio",
                          "descriptions"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Audio descriptions provide additional information about what is going on in a scene beyond the dialogue. For example, the movements of actors."
     },
     {
@@ -37061,6 +43867,9 @@
                          "closed",
                          "captions"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Closed captions capture character dialogue in text form for display on screen during video playback. The captions can be turned on or off."
     },
     {
@@ -37077,6 +43886,9 @@
                          "described",
                          "math"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Described math refers to images of math content that have been made accessible through a combination of alternative text and/or extended descriptions ."
     },
     {
@@ -37093,6 +43905,9 @@
                          "display",
                          "transformability"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Display transformability is an assertion that the content does not include any impediments that would prevent a user from being able to adjust the content display to their preferences. For example, to change the font family or enlarge th..."
     },
     {
@@ -37113,6 +43928,9 @@
                          "figcaption",
                          "figure"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Extended descriptions provide additional context for an image that cannot be expressed in shorter alternative text runs."
     },
     {
@@ -37130,6 +43948,9 @@
                          "contrast",
                          "audio"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "High contrast audio refers to audio content \u0026#8212; whether in a standalone audio file or as part of a video \u0026#8212; that meets the audio contrast requirements of [[wcag2]] success criterion 1.4.7 ."
     },
     {
@@ -37147,6 +43968,9 @@
                          "contrast",
                          "display"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "High contrast display refers to content that meets the visual contrast requirements of [[wcag2]] success criterion 1.4.6 ."
     },
     {
@@ -37163,6 +43987,9 @@
                          "indexes",
                          "doc-index"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Indexes make it easier for users to locate content of interest in a work. Common types of indexes in books include general subject indexes, name indexes, geographic indexes, and recipe indexes."
     },
     {
@@ -37185,6 +44012,9 @@
                          "xyz",
                          "math"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "LaTeX is a text-based formatting language that allows both mathematical and chemical equations to be expressed. It is not human readable in its raw form but is meant to be transformed \u0026#8212; into images or MathML \u0026#8212; for presentation."
     },
     {
@@ -37202,6 +44032,9 @@
                          "print",
                          "rem"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Although large print is not commonly found in EPUB publications, it is possible to set the font size to a large print standard such as 18pt (point)."
     },
     {
@@ -37222,6 +44055,9 @@
                          "mml:math",
                          "properties"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "MathML [[mathml3]] is a markup language used to encode mathematical and chemical equations for display. The markup can be embedded directly in EPUB content document [[epub-3]]."
     },
     {
@@ -37238,6 +44074,9 @@
                          "open",
                          "captions"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Open captions serve the same function as closed captions but part of the video stream instead of stored in a separate captioning file. Consequently, with open captions the user cannot change their appearance or even turn them off."
     },
     {
@@ -37256,6 +44095,9 @@
                          "markers",
                          "doc-pagebreak"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Page break markers provide users the ability to locate their position relative to a pre-paginted equivalent edition, such as a hard or soft cover version of a book. They also provide link destinations for a page list ."
     },
     {
@@ -37275,6 +44117,9 @@
                          "page-list",
                          "pageList"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "A page list is a list of links to static page break locations. It allows users, for example, to coordinate their reading with others using a print edition of the work."
     },
     {
@@ -37291,6 +44136,9 @@
                          "reading",
                          "order"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The reading order establishes the narrative flow of the content. It must be represented logically in the markup, not just in how the content gets displayed. Fixed layout publications, for example, allow authors to position content visual..."
     },
     {
@@ -37307,6 +44155,9 @@
                          "ruby",
                          "annotations"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Ruby annotations are pronunciation guides for Chinese, Japanese, and Korean characters. They are either provided for all characters or only difficult or obscure ones ."
     },
     {
@@ -37323,6 +44174,9 @@
                          "sign",
                          "language"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Sign language interpretation makes spoken language accessible to individuals who are deaf or hard of hearing."
     },
     {
@@ -37339,6 +44193,9 @@
                          "structural",
                          "navigation"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Structural navigation is the ability for users of assistive technologies to skip from one heading to the next without having to go through the table of contents every time. It is enabled by having all the headings marked up at their corr..."
     },
     {
@@ -37357,6 +44214,9 @@
                          "text",
                          "media-overlay"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Synchronized audio and text is better known as read-aloud functionality in EPUB reading systems. It is when the user can opt to have an aural rendering of the content played back as the corresponding text is highlighted."
     },
     {
@@ -37373,6 +44233,9 @@
                          "tactile",
                          "content"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Tactile content includes braille text , tactile graphics , and tactile objects included in an EPUB publication to aid reading for users who are blind or have low vision."
     },
     {
@@ -37390,6 +44253,9 @@
                          "control",
                          "quiz.js"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Timing control is the ability for users to extend the time needed to complete timed tasks such as completing embedded quizzes or playing interactive games."
     },
     {
@@ -37411,6 +44277,9 @@
                          "link",
                          "style"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Text-to-speech enhancements are used to improve the quality of synthetically generated audio in reading systems. There are three technologies that can be used: SSML, pronunciation lexicons, and CSS Speech. Support for these technologies ..."
     },
     {
@@ -37427,6 +44296,9 @@
                          "transcripts",
                          "aria-details"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Transcripts provide a text account of audio content for users who cannot hear the content."
     },
     {
@@ -37446,6 +44318,9 @@
                          "encryption.xml",
                          "META-INF"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Unlocked content refers to an EPUB publication that does not make use of digital rights management schemes."
     },
     {
@@ -37463,6 +44338,9 @@
                          "mode",
                          "writing-mode"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The writing mode refers to whether the text content is presented horizontally or vertically . For accessibility purposes, the distinction only matters for languages that can be written both ways (e.g., the Chinese, Japanese and Korean la..."
     },
     {
@@ -37479,6 +44357,9 @@
                          "word",
                          "segmentation"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Word segmentation refers to the use of space to separate written words. Not all languages use space to separate words, as is the case with Chinese, Japanese, Lao, Khmer, Burmese, and Tibetan languages, among others."
     },
     {
@@ -37495,6 +44376,9 @@
                          "obsolete",
                          "metadata"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "Obsolete metadata in official Package Metadata Authoring Guide."
     },
     {
@@ -37513,6 +44397,9 @@
                          "schema:accessibilityAPI",
                          "schema:accessibilityControl"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The following schema.org properties [[schema-org]] are no longer recommended for use."
     },
     {
@@ -37535,6 +44422,9 @@
                          "closedCaptions",
                          "openCaptions"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The following accessibility features from the [[[a11y-discov-vocab]]] [[a11y-discov-vocab]] are no longer recommended for use."
     },
     {
@@ -37553,6 +44443,9 @@
                          "ChemML",
                          "taggedPDF"
                      ],
+        "rfc2119":  [
+
+                    ],
         "summary":  "The following accessibility features from the [[[a11y-discov-vocab]]] [[a11y-discov-vocab]] do not apply to EPUB publications."
     }
 ];

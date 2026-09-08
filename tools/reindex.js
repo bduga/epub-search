@@ -90,6 +90,11 @@ const STOP_WORDS = new Set([
     'see', 'note', 'section', 'appendix', 'table', 'example', 'using', 'used', 'defined'
 ]);
 
+// Canonical RFC 2119 requirement keywords
+const VALID_RFC2119 = new Set([
+    'MAY', 'MUST', 'MUST NOT', 'OPTIONAL', 'RECOMMENDED', 'REQUIRED', 'SHOULD', 'SHOULD NOT'
+]);
+
 async function reindex(options = {}) {
     const startTime = Date.now();
     const {
@@ -238,6 +243,17 @@ async function reindex(options = {}) {
                 }
             }
 
+            // Extract RFC 2119 requirement keywords (strictly elements with class="rfc2119")
+            const rfcMatches = secContent.matchAll(/<([a-z0-9]+)\b[^>]*class="[^"]*\brfc2119\b[^"]*"[^>]*>([\s\S]*?)<\/\1>/gi);
+            const rfcSet = new Set();
+            for (const rm of rfcMatches) {
+                const term = cleanHtmlText(rm[2]).toUpperCase();
+                if (VALID_RFC2119.has(term)) {
+                    rfcSet.add(term);
+                }
+            }
+            const rfcTerms = Array.from(rfcSet).sort();
+
             const baseUrl = src.url.replace(/\/+$/, '');
             const anchorUrl = `${baseUrl}/#${secId}`;
 
@@ -252,6 +268,7 @@ async function reindex(options = {}) {
                 type: src.type,
                 publisher: src.publisher,
                 keywords: keywords,
+                rfc2119: rfcTerms,
                 summary: summary
             });
 

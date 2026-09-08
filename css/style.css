@@ -768,6 +768,128 @@ body {
     margin-bottom: 0.85rem;
 }
 
+/* RFC 2119 Requirement Badges */
+.card-rfc-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 0.85rem;
+    padding: 0.4rem 0.65rem;
+    background: var(--bg-subtle);
+    border-radius: 8px;
+    border: 1px dashed var(--border-color);
+}
+
+.rfc-title {
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--text-muted);
+}
+
+.rfc-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    align-items: center;
+}
+
+.badge-rfc {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.15rem 0.5rem;
+    border-radius: 5px;
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: all 0.15s ease;
+    user-select: none;
+    line-height: 1.3;
+}
+
+.badge-rfc:hover {
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-sm);
+    filter: brightness(0.95);
+}
+
+[data-theme="dark"] .badge-rfc:hover {
+    filter: brightness(1.15);
+}
+
+/* MUST / REQUIRED (Red/Rose) */
+.badge-rfc-must,
+.badge-rfc-required {
+    background: #fef2f2;
+    color: #dc2626;
+    border-color: #fca5a5;
+}
+[data-theme="dark"] .badge-rfc-must,
+[data-theme="dark"] .badge-rfc-required {
+    background: rgba(239, 68, 68, 0.15);
+    color: #f87171;
+    border-color: rgba(239, 68, 68, 0.35);
+}
+
+/* MUST NOT (Dark Crimson) */
+.badge-rfc-must-not {
+    background: #991b1b;
+    color: #ffffff;
+    border-color: #7f1d1d;
+}
+[data-theme="dark"] .badge-rfc-must-not {
+    background: #7f1d1d;
+    color: #fecaca;
+    border-color: #ef4444;
+}
+
+/* SHOULD / RECOMMENDED (Amber) */
+.badge-rfc-should,
+.badge-rfc-recommended {
+    background: #fffbeb;
+    color: #d97706;
+    border-color: #fcd34d;
+}
+[data-theme="dark"] .badge-rfc-should,
+[data-theme="dark"] .badge-rfc-recommended {
+    background: rgba(245, 158, 11, 0.15);
+    color: #fbbf24;
+    border-color: rgba(245, 158, 11, 0.35);
+}
+
+/* SHOULD NOT (Amber dashed) */
+.badge-rfc-should-not {
+    background: #fef3c7;
+    color: #b45309;
+    border-color: #f59e0b;
+    border-style: dashed;
+}
+[data-theme="dark"] .badge-rfc-should-not {
+    background: rgba(217, 119, 6, 0.2);
+    color: #fde68a;
+    border-color: #d97706;
+    border-style: dashed;
+}
+
+/* MAY / OPTIONAL (Emerald/Green) */
+.badge-rfc-may,
+.badge-rfc-optional {
+    background: #f0fdf4;
+    color: #16a34a;
+    border-color: #86efac;
+}
+[data-theme="dark"] .badge-rfc-may,
+[data-theme="dark"] .badge-rfc-optional {
+    background: rgba(34, 197, 94, 0.15);
+    color: #4ade80;
+    border-color: rgba(34, 197, 94, 0.35);
+}
+
 .card-keywords {
     display: flex;
     flex-wrap: wrap;
@@ -1086,6 +1208,7 @@ mark {
 .syntax-phrase { background: rgba(168, 85, 247, 0.15); color: #7e22ce; }
 .syntax-group { background: rgba(245, 158, 11, 0.15); color: #d97706; }
 .syntax-field { background: rgba(14, 165, 233, 0.15); color: #0284c7; }
+.syntax-req { background: rgba(239, 68, 68, 0.15); color: #dc2626; }
 .syntax-prefix { background: rgba(100, 116, 139, 0.15); color: #475569; }
 .syntax-complex { background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(168, 85, 247, 0.2)); color: var(--accent); }
 
@@ -1095,6 +1218,7 @@ mark {
 [data-theme="dark"] .syntax-phrase { color: #c084fc; }
 [data-theme="dark"] .syntax-group { color: #fbbf24; }
 [data-theme="dark"] .syntax-field { color: #38bdf8; }
+[data-theme="dark"] .syntax-req { color: #f87171; }
 [data-theme="dark"] .syntax-prefix { color: #94a3b8; }
 
 .syntax-example {

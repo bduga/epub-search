@@ -99,6 +99,35 @@
         const phraseHighlighted = EpubSearchEngine.highlightText(phraseText, '"package document"');
         log('Highlighting marks exact phrase as single unit', phraseHighlighted.includes('<mark>package document</mark>'));
 
+        // 13. RFC 2119 Qualifier: req:any
+        const rReqAny = engine.search('req:any');
+        log('req:any returns normative sections (' + rReqAny.length + ' sections)', rReqAny.length > 0);
+        log('All req:any sections contain at least 1 RFC 2119 keyword', rReqAny.every(d => d.rfc2119 && d.rfc2119.length > 0));
+
+        // 14. RFC 2119 Qualifier: req:must (collapses MUST and MUST NOT)
+        const rReqMust = engine.search('req:must');
+        log('req:must returns sections (' + rReqMust.length + ' sections)', rReqMust.length > 0);
+        log('All req:must sections contain MUST or MUST NOT', 
+            rReqMust.every(d => d.rfc2119 && (d.rfc2119.includes('MUST') || d.rfc2119.includes('MUST NOT'))));
+
+        // 15. RFC 2119 Qualifier: req:should (collapses SHOULD and SHOULD NOT)
+        const rReqShould = engine.search('req:should');
+        log('req:should returns sections (' + rReqShould.length + ' sections)', rReqShould.length > 0);
+        log('All req:should sections contain SHOULD or SHOULD NOT',
+            rReqShould.every(d => d.rfc2119 && (d.rfc2119.includes('SHOULD') || d.rfc2119.includes('SHOULD NOT'))));
+
+        // 16. RFC 2119 Qualifier: specific negative req:"must not"
+        const rReqMustNot = engine.search('req:"must not"');
+        log('req:"must not" returns sections (' + rReqMustNot.length + ' sections)', rReqMustNot.length > 0);
+        log('All req:"must not" sections explicitly contain MUST NOT',
+            rReqMustNot.every(d => d.rfc2119 && d.rfc2119.includes('MUST NOT')));
+
+        // 17. RFC 2119 Combined boolean query: req:must AND type:Recommendation
+        const rReqCombo = engine.search('req:must AND type:Recommendation');
+        log('req:must AND type:Recommendation returns matching results (' + rReqCombo.length + ' sections)', rReqCombo.length > 0);
+        log('Combined results satisfy both requirement and type',
+            rReqCombo.every(d => d.type === 'Recommendation' && d.rfc2119 && (d.rfc2119.includes('MUST') || d.rfc2119.includes('MUST NOT'))));
+
         const summary = document.createElement('div');
         summary.className = 'summary ' + (failed === 0 ? 'pass' : 'fail');
         summary.textContent = `SUMMARY: ${passed} passed, ${failed} failed.`;
