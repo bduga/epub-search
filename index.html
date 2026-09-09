@@ -11,7 +11,12 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="app-container">
+    <!-- Skip Links for Keyboard & Screen Reader Users -->
+    <a href="#search-input" class="skip-link">Skip to search</a>
+    <a href="#filter-bar" class="skip-link">Skip to filters</a>
+    <a href="#results-heading" class="skip-link">Skip to search results</a>
+
+    <div class="app-container" id="app-container">
         <!-- Header -->
         <header class="app-header">
             <div class="brand-section">
@@ -22,12 +27,12 @@
                 </div>
             </div>
             <div class="header-controls">
-                <button id="theme-toggle" class="theme-btn" aria-label="Toggle dark mode">🌙 Dark</button>
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle dark mode" aria-pressed="false">🌙 Dark</button>
             </div>
         </header>
 
         <!-- Stats Ribbon -->
-        <div class="stats-ribbon">
+        <div class="stats-ribbon" role="region" aria-label="Documentation Statistics">
             <div class="stat-item">
                 <span>Indexed Official Sources:</span>
                 <strong id="total-sources-count">38</strong>
@@ -43,8 +48,9 @@
         </div>
 
         <!-- Search Bar -->
-        <section class="search-section" aria-label="Search">
+        <div class="search-section" role="search">
             <div class="search-input-wrapper">
+                <label for="search-input" class="sr-only">Search official EPUB documentation</label>
                 <span class="search-icon" aria-hidden="true">🔍</span>
                 <input 
                     type="search" 
@@ -53,21 +59,20 @@
                     placeholder="Search specifications, elements, attributes, or topics... (e.g. manifest, metadata, a11y, spine)" 
                     autocomplete="off" 
                     spellcheck="false"
-                    aria-label="Search official EPUB documentation"
                 >
                 <div class="search-input-actions">
                     <button id="clear-btn" class="clear-btn" aria-label="Clear search">✕</button>
-                    <button id="syntax-guide-btn" class="syntax-guide-btn" type="button" aria-label="Search syntax guide" title="Search Syntax Guide (AND, OR, NOT, phrases, filters)">
+                    <button id="syntax-guide-btn" class="syntax-guide-btn" type="button" aria-haspopup="dialog" aria-expanded="false" aria-label="Open search syntax guide" title="Search Syntax Guide (AND, OR, NOT, phrases, filters)">
                         <span class="syntax-icon" aria-hidden="true">⚡</span>
                         <span class="syntax-btn-text">Syntax Guide</span>
                     </button>
-                    <span class="search-shortcut" title="Press / to focus">/</span>
+                    <span class="search-shortcut" title="Press / to focus" aria-hidden="true">/</span>
                 </div>
             </div>
 
             <!-- Quick Topic Pills -->
-            <div class="quick-tags-wrapper">
-                <span class="quick-tags-label">Quick & Boolean Searches:</span>
+            <div class="quick-tags-wrapper" role="group" aria-label="Quick search examples">
+                <span class="quick-tags-label">Quick &amp; Boolean Searches:</span>
                 <button class="quick-tag" data-query="manifest AND spine">manifest AND spine</button>
                 <button class="quick-tag" data-query='"package document"'>"package document"</button>
                 <button class="quick-tag" data-query="accessibility NOT draft">accessibility NOT draft</button>
@@ -77,28 +82,28 @@
                 <button class="quick-tag" data-query="pub:PMWG spine">pub:PMWG spine</button>
                 <button class="quick-tag" data-query="nav*">nav*</button>
             </div>
-        </section>
+        </div>
 
         <!-- Facet Filter Bar -->
-        <div class="filter-bar" aria-label="Search filters">
+        <section class="filter-bar" id="filter-bar" aria-label="Search filters">
             <div class="filter-group">
                 <!-- Multi-select Types -->
                 <div class="dropdown-multiselect" id="dropdown-type">
-                    <button type="button" class="dropdown-trigger" aria-haspopup="true" aria-expanded="false" id="trigger-type">
+                    <button type="button" class="dropdown-trigger" aria-haspopup="true" aria-expanded="false" aria-controls="menu-type" id="trigger-type">
                         <span class="dropdown-trigger-label">Document Types</span>
-                        <span class="dropdown-badge" id="badge-count-type" style="display: none;">0</span>
+                        <span class="dropdown-badge" id="badge-count-type" style="display: none;">0<span class="sr-only"> selected</span></span>
                         <span class="dropdown-arrow" aria-hidden="true">▾</span>
                     </button>
-                    <div class="dropdown-menu" id="menu-type" role="menu">
+                    <div class="dropdown-menu" id="menu-type" role="group" aria-labelledby="trigger-type">
                         <div class="dropdown-menu-header">
                             <span class="dropdown-menu-title">Document Types</span>
                             <div class="dropdown-actions">
-                                <button type="button" class="dropdown-action-btn action-select-all" data-target="type">Select All</button>
-                                <span class="dropdown-action-sep">·</span>
-                                <button type="button" class="dropdown-action-btn action-clear" data-target="type">Clear</button>
+                                <button type="button" class="dropdown-action-btn action-select-all" data-target="type" aria-label="Select all document types">Select All</button>
+                                <span class="dropdown-action-sep" aria-hidden="true">·</span>
+                                <button type="button" class="dropdown-action-btn action-clear" data-target="type" aria-label="Clear document type filters">Clear</button>
                             </div>
                         </div>
-                        <div class="dropdown-options-list" id="options-type">
+                        <div class="dropdown-options-list" id="options-type" tabindex="-1">
                             <!-- Populated dynamically with checkboxes -->
                         </div>
                     </div>
@@ -106,21 +111,21 @@
 
                 <!-- Multi-select Topics / Categories -->
                 <div class="dropdown-multiselect" id="dropdown-category">
-                    <button type="button" class="dropdown-trigger" aria-haspopup="true" aria-expanded="false" id="trigger-category">
+                    <button type="button" class="dropdown-trigger" aria-haspopup="true" aria-expanded="false" aria-controls="menu-category" id="trigger-category">
                         <span class="dropdown-trigger-label">Topics / Categories</span>
-                        <span class="dropdown-badge" id="badge-count-category" style="display: none;">0</span>
+                        <span class="dropdown-badge" id="badge-count-category" style="display: none;">0<span class="sr-only"> selected</span></span>
                         <span class="dropdown-arrow" aria-hidden="true">▾</span>
                     </button>
-                    <div class="dropdown-menu" id="menu-category" role="menu">
+                    <div class="dropdown-menu" id="menu-category" role="group" aria-labelledby="trigger-category">
                         <div class="dropdown-menu-header">
                             <span class="dropdown-menu-title">Topics</span>
                             <div class="dropdown-actions">
-                                <button type="button" class="dropdown-action-btn action-select-all" data-target="category">Select All</button>
-                                <span class="dropdown-action-sep">·</span>
-                                <button type="button" class="dropdown-action-btn action-clear" data-target="category">Clear</button>
+                                <button type="button" class="dropdown-action-btn action-select-all" data-target="category" aria-label="Select all topics">Select All</button>
+                                <span class="dropdown-action-sep" aria-hidden="true">·</span>
+                                <button type="button" class="dropdown-action-btn action-clear" data-target="category" aria-label="Clear topic filters">Clear</button>
                             </div>
                         </div>
-                        <div class="dropdown-options-list" id="options-category">
+                        <div class="dropdown-options-list" id="options-category" tabindex="-1">
                             <!-- Populated dynamically -->
                         </div>
                     </div>
@@ -128,21 +133,21 @@
 
                 <!-- Multi-select Publishers / Groups -->
                 <div class="dropdown-multiselect" id="dropdown-publisher">
-                    <button type="button" class="dropdown-trigger" aria-haspopup="true" aria-expanded="false" id="trigger-publisher">
+                    <button type="button" class="dropdown-trigger" aria-haspopup="true" aria-expanded="false" aria-controls="menu-publisher" id="trigger-publisher">
                         <span class="dropdown-trigger-label">Publishers / Groups</span>
-                        <span class="dropdown-badge" id="badge-count-publisher" style="display: none;">0</span>
+                        <span class="dropdown-badge" id="badge-count-publisher" style="display: none;">0<span class="sr-only"> selected</span></span>
                         <span class="dropdown-arrow" aria-hidden="true">▾</span>
                     </button>
-                    <div class="dropdown-menu" id="menu-publisher" role="menu">
+                    <div class="dropdown-menu" id="menu-publisher" role="group" aria-labelledby="trigger-publisher">
                         <div class="dropdown-menu-header">
                             <span class="dropdown-menu-title">Publishers</span>
                             <div class="dropdown-actions">
-                                <button type="button" class="dropdown-action-btn action-select-all" data-target="publisher">Select All</button>
-                                <span class="dropdown-action-sep">·</span>
-                                <button type="button" class="dropdown-action-btn action-clear" data-target="publisher">Clear</button>
+                                <button type="button" class="dropdown-action-btn action-select-all" data-target="publisher" aria-label="Select all publishers">Select All</button>
+                                <span class="dropdown-action-sep" aria-hidden="true">·</span>
+                                <button type="button" class="dropdown-action-btn action-clear" data-target="publisher" aria-label="Clear publisher filters">Clear</button>
                             </div>
                         </div>
-                        <div class="dropdown-options-list" id="options-publisher">
+                        <div class="dropdown-options-list" id="options-publisher" tabindex="-1">
                             <!-- Populated dynamically -->
                         </div>
                     </div>
@@ -151,26 +156,30 @@
 
             <!-- Scope Toggle -->
             <div class="scope-toggle" role="group" aria-label="Search scope">
-                <button class="scope-btn active" data-scope="all">All Content</button>
-                <button class="scope-btn" data-scope="sections">Spec Sections</button>
-                <button class="scope-btn" data-scope="sources">Full Documents</button>
+                <button class="scope-btn active" data-scope="all" aria-pressed="true">All Content</button>
+                <button class="scope-btn" data-scope="sections" aria-pressed="false">Spec Sections</button>
+                <button class="scope-btn" data-scope="sources" aria-pressed="false">Full Documents</button>
             </div>
-        </div>
+        </section>
 
         <!-- Active Filter Pills Bar -->
-        <div id="active-filters-bar" class="active-filters-bar" style="display: none;">
+        <div id="active-filters-bar" class="active-filters-bar" style="display: none;" role="region" aria-label="Active filters">
             <span class="active-filters-label">Active Filters:</span>
             <div id="active-filter-chips" class="active-filter-chips">
                 <!-- Dynamically populated with removable pill chips -->
             </div>
-            <button id="clear-all-filters-btn" class="clear-all-filters-btn">Clear All</button>
+            <button id="clear-all-filters-btn" class="clear-all-filters-btn" aria-label="Clear all active filters">Clear All</button>
         </div>
 
+        <!-- Dedicated Polite Live Announcer for Screen Readers -->
+        <div id="a11y-announcer" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></div>
+
         <!-- Results Section -->
-        <main>
+        <main id="main-content" tabindex="-1">
+            <h2 id="results-heading" class="sr-only">Search Results</h2>
             <div class="results-info">
                 <div class="results-info-left">
-                    <span>Showing <strong id="result-count">0</strong> results</span>
+                    <span aria-live="off">Showing <strong id="result-count">0</strong> results</span>
                     <span id="parsed-query-pill" class="parsed-query-pill" style="display: none;"></span>
                 </div>
                 <div class="results-info-right">
@@ -178,10 +187,20 @@
                 </div>
             </div>
 
-            <div id="results-container" class="results-list" aria-live="polite">
+            <div id="results-container" class="results-list">
                 <!-- Dynamically populated by app.js -->
             </div>
         </main>
+
+        <!-- Page Footer Landmark -->
+        <footer class="app-footer">
+            <div class="footer-left">
+                <span>EPUB Documentation Search Engine — Accessibility Compliant (WCAG 2.1/2.2 AA).</span>
+            </div>
+            <div class="footer-right">
+                <span>Keyboard shortcut: Press <kbd>/</kbd> to focus search, <kbd>Esc</kbd> to dismiss.</span>
+            </div>
+        </footer>
     </div>
 
     <!-- Syntax Guide Modal -->
@@ -207,7 +226,7 @@
                         <p>Matches documents containing both specified terms or phrases.</p>
                         <div class="syntax-example">
                             <code>manifest AND spine</code>
-                            <button class="use-example-btn" data-query="manifest AND spine">Try It</button>
+                            <button class="use-example-btn" data-query="manifest AND spine" aria-label="Try example query: manifest AND spine">Try It</button>
                         </div>
                     </div>
 
@@ -219,7 +238,7 @@
                         <p>Matches documents containing one or more of the specified terms.</p>
                         <div class="syntax-example">
                             <code>metadata OR navigation</code>
-                            <button class="use-example-btn" data-query="metadata OR navigation">Try It</button>
+                            <button class="use-example-btn" data-query="metadata OR navigation" aria-label="Try example query: metadata OR navigation">Try It</button>
                         </div>
                     </div>
 
@@ -231,7 +250,7 @@
                         <p>Strictly excludes documents containing the term or matching draft status.</p>
                         <div class="syntax-example">
                             <code>accessibility NOT draft</code>
-                            <button class="use-example-btn" data-query="accessibility NOT draft">Try It</button>
+                            <button class="use-example-btn" data-query="accessibility NOT draft" aria-label="Try example query: accessibility NOT draft">Try It</button>
                         </div>
                     </div>
 
@@ -243,7 +262,7 @@
                         <p>Matches exact contiguous word sequences in titles, sections, or descriptions.</p>
                         <div class="syntax-example">
                             <code>"package document"</code>
-                            <button class="use-example-btn" data-query='"package document"'>Try It</button>
+                            <button class="use-example-btn" data-query='"package document"' aria-label='Try example query: "package document"'>Try It</button>
                         </div>
                     </div>
 
@@ -255,7 +274,7 @@
                         <p>Group boolean expressions using parentheses for precise evaluation precedence.</p>
                         <div class="syntax-example">
                             <code>(manifest OR spine) AND package</code>
-                            <button class="use-example-btn" data-query="(manifest OR spine) AND package">Try It</button>
+                            <button class="use-example-btn" data-query="(manifest OR spine) AND package" aria-label="Try example query: (manifest OR spine) AND package">Try It</button>
                         </div>
                     </div>
 
@@ -267,7 +286,7 @@
                         <p>Filter by document metadata: <code>type:</code>, <code>pub:</code>, <code>cat:</code>, or <code>title:</code>.</p>
                         <div class="syntax-example">
                             <code>type:Recommendation AND manifest</code>
-                            <button class="use-example-btn" data-query="type:Recommendation AND manifest">Try It</button>
+                            <button class="use-example-btn" data-query="type:Recommendation AND manifest" aria-label="Try example query: type:Recommendation AND manifest">Try It</button>
                         </div>
                     </div>
 
@@ -279,7 +298,7 @@
                         <p>Filter by normative requirement: <code>req:must</code> (matches MUST &amp; MUST NOT), <code>req:should</code>, or <code>req:any</code>.</p>
                         <div class="syntax-example">
                             <code>req:must fallback</code>
-                            <button class="use-example-btn" data-query="req:must fallback">Try It</button>
+                            <button class="use-example-btn" data-query="req:must fallback" aria-label="Try example query: req:must fallback">Try It</button>
                         </div>
                     </div>
 
@@ -291,7 +310,7 @@
                         <p>Matches words starting with the specified prefix.</p>
                         <div class="syntax-example">
                             <code>nav*</code>
-                            <button class="use-example-btn" data-query="nav*">Try It</button>
+                            <button class="use-example-btn" data-query="nav*" aria-label="Try example query: nav*">Try It</button>
                         </div>
                     </div>
 
@@ -303,7 +322,7 @@
                         <p>Combine field filters, boolean groups, and exclusion shorthand.</p>
                         <div class="syntax-example">
                             <code>type:Recommendation (manifest OR spine) -legacy</code>
-                            <button class="use-example-btn" data-query="type:Recommendation (manifest OR spine) -legacy">Try It</button>
+                            <button class="use-example-btn" data-query="type:Recommendation (manifest OR spine) -legacy" aria-label="Try example query: type:Recommendation (manifest OR spine) -legacy">Try It</button>
                         </div>
                     </div>
                 </div>

@@ -6,8 +6,9 @@ const path = require('path');
 const { EpubSearchEngine, QueryLexer, QueryParser } = require('../js/search-engine.js');
 
 const projectRoot = path.resolve(__dirname, '..');
-const sources = JSON.parse(fs.readFileSync(path.join(projectRoot, 'data', 'sources.json'), 'utf8'));
-const entries = JSON.parse(fs.readFileSync(path.join(projectRoot, 'data', 'index-entries.json'), 'utf8'));
+const readJson = (filePath) => JSON.parse(fs.readFileSync(filePath, 'utf8').replace(/^\uFEFF/, ''));
+const sources = readJson(path.join(projectRoot, 'data', 'sources.json'));
+const entries = readJson(path.join(projectRoot, 'data', 'index-entries.json'));
 
 console.log(`\n======================================================`);
 console.log(`Running Advanced Query Engine Test Suite`);
